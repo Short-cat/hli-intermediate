@@ -7,7 +7,7 @@
   #sbs-1308 {
     padding: var(--sectionPadding);
     overflow: hidden;
-    padding-top: 28.125rem;
+    padding-top: 40.875rem;
   }
   #sbs-1308 .cs-container {
     width: 100%;
@@ -224,6 +224,12 @@
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
     z-index: -1;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #sbs-1308 {
+    padding-top: 14.375rem;
   }
 }
 /* Desktop - 1024px */
