@@ -51,7 +51,7 @@
     bottom: 0;
     right: 0;
     /* 6px - 12px */
-    border: clamp(0.375em, 1.5vw, 0.75em) solid #fff;
+    border: clamp(0.375em, 1.5vw, 0.75em) solid #ffffff;
     background-color: #fff;
     height: 25em;
     width: 25.875em;

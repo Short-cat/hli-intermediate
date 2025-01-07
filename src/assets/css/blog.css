@@ -696,7 +696,7 @@
   }
   #cs-footer .cs-nav-link:before {
     position: absolute;
-    bottom: calc(-2 / 16 * 1rem);
+    bottom: calc(-0.125rem);
     left: 0;
     /* underline */
     content: "";
@@ -744,7 +744,7 @@
     transition: transform 0.3s, background-color 0.3s;
   }
   #cs-footer .cs-social-link:hover {
-    transform: translateY(calc(-3 / 16 * 1rem));
+    transform: translateY(calc(-0.1875rem));
     background-color: var(--primary);
   }
   #cs-footer .cs-social-img {

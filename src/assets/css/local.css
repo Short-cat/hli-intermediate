@@ -6,6 +6,7 @@
 @media only screen and (min-width: 0rem) {
   #sbs {
     padding: var(--sectionPadding);
+    padding-top: 25rem;
   }
   #sbs .cs-container {
     display: flex;
@@ -51,7 +52,7 @@
     bottom: 0;
     right: 0;
     /* 6px - 12px */
-    border: clamp(0.375em, 1.5vw, 0.75em) solid #fff;
+    border: clamp(0.375em, 1.5vw, 0.75em) solid #ffffff;
     background-color: #fff;
     height: 25em;
     width: 25.875em;
@@ -218,7 +219,7 @@
     bottom: 0;
     left: 0;
     /* 6px - 12px */
-    border: clamp(0.375em, 1.5vw, 0.75em) solid #fff;
+    border: clamp(0.375em, 1.5vw, 0.75em) solid #ffffff;
     background-color: #fff;
     height: 25em;
     width: 25.875em;
@@ -493,7 +494,7 @@
   }
   #reviews .cs-item-img {
     position: absolute;
-    top: calc(-40 / 16 * 1rem);
+    top: calc(-2.5rem);
     height: 5rem;
     width: 5rem;
   }

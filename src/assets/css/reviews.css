@@ -28,7 +28,7 @@
   }
   #reviews .review .profile {
     position: absolute;
-    top: calc(-51 / 16 * 1rem);
+    top: calc(-3.1875rem);
     left: 1.875rem;
     display: block;
     border-radius: 50%;
