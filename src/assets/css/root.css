@@ -308,7 +308,7 @@
     width: 40%;
     max-width: 9.125rem;
     height: 100%;
-    background: var(--primary);
+    background: #fff;
     opacity: 1;
     display: block;
     position: absolute;
@@ -1063,7 +1063,7 @@
             box-sizing: border-box;
     /* 32px - 48px */
     padding: 1rem clamp(2rem, 3vw, 3rem);
-    background-color: var(--primary);
+    background-color: #fff;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1326,7 +1326,7 @@
     opacity: .5;
   }
   body.dark-mode #cs-navigation .cs-logo {
-    background-color: var(--medium);
+    background-color: #fff;
   }
   body.dark-mode #cs-navigation .cs-picture {
     background-color: var(--accent);
@@ -1978,7 +1978,7 @@
     height: 31.625rem;
     margin-left: 34.375rem;
     border-radius: 50%;
-    border: 6px solid var(--primary);
+    border: 2px solid var(--primary);
     opacity: 0.1;
     display: none;
     position: absolute;
@@ -2004,7 +2004,7 @@
     content: "";
     width: 60.1875rem;
     height: 60.1875rem;
-    border: 6px solid var(--primary);
+    border: 2px solid var(--primary);
     border-radius: 50%;
     opacity: 0.3;
     position: absolute;
