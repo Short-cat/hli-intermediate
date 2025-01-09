@@ -8,19 +8,10 @@
     padding: var(--sectionPadding);
   }
   #sbs .cs-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: auto;
     max-width: 80rem;
     width: 100%;
@@ -48,8 +39,7 @@
     height: 100%;
     width: 100%;
     /* makes image act like a background image */
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   #sbs .cs-picture1 {
     top: 0;
@@ -61,12 +51,11 @@
     bottom: 0;
     right: 0;
     /* 6px - 12px */
-    border: clamp(0.375em, 1.5vw, 0.75em) solid #ffffff;
+    border: clamp(0.375em, 1.5vw, 0.75em) solid #fff;
     background-color: #fff;
     height: 25em;
     width: 25.875em;
-    -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 40px;
-            box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 40px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 40px;
   }
   #sbs .cs-right {
     margin: auto;
@@ -134,20 +123,13 @@
 /* Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
   #sbs .cs-container {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row;
-            flex-flow: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    flex-flow: row;
+    justify-content: space-between;
     gap: 3.25rem;
   }
   #sbs .cs-left {
     font-size: min(1.2vw, 1em);
-    -webkit-box-flex: 0;
-        -ms-flex: none;
-            flex: none;
+    flex: none;
   }
   #sbs .cs-right {
     margin: 0;

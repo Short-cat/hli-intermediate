@@ -14,19 +14,10 @@
     /* changes to 1280px at desktop */
     max-width: 36.5rem;
     margin: auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     gap: clamp(3rem, 4vw, 4rem);
   }
   #sbs-1308 .cs-content {
@@ -34,17 +25,10 @@
     text-align: left;
     width: 100%;
     max-width: 33.875rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     /* centers content horizontally, set to flex-start to left align */
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    align-items: flex-start;
     position: relative;
     z-index: 10;
   }
@@ -70,9 +54,7 @@
     position: relative;
     z-index: 1;
     /* prevents padding from adding to the width */
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    -webkit-transition: color 0.3s;
+    box-sizing: border-box;
     transition: color 0.3s;
   }
   #sbs-1308 .cs-button-solid:before {
@@ -85,7 +67,6 @@
     top: 0;
     left: 0;
     z-index: -1;
-    -webkit-transition: width 0.3s;
     transition: width 0.3s;
   }
   #sbs-1308 .cs-button-solid:hover {
@@ -102,33 +83,19 @@
     /* 32px - 48px */
     padding: clamp(2rem, 5vw, 3rem) 0 0 0;
     border-top: 1px solid #e8e8e8;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-column-gap: 0.75rem;
-            column-gap: 0.75rem;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 0.75rem;
   }
   #sbs-1308 .cs-item {
     list-style: none;
     width: 32%;
     /* making flex so we can align a heading with 1 line to the bottom */
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-item-align: stretch;
-        align-self: stretch;
-    -ms-flex-line-pack: justify;
-        align-content: space-between;
+    flex-direction: column;
+    align-self: stretch;
+    align-content: space-between;
   }
   #sbs-1308 .cs-number {
     font-size: 1.5625rem;
@@ -172,8 +139,7 @@
     left: 0;
     height: 100%;
     width: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   #sbs-1308 .cs-box {
     text-align: left;
@@ -182,22 +148,12 @@
     /* 20px - 40px */
     padding: clamp(1.25rem, 4vw, 2.5rem);
     /* prevents padding and border from affecting height and width */
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     background-color: #1a1a1a;
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
     display: inline-flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
     gap: 0.5rem;
     position: absolute;
     right: 0;
@@ -221,8 +177,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     z-index: -1;
   }
 }
@@ -237,26 +192,16 @@
   #sbs-1308 .cs-container {
     max-width: 80rem;
     /* set to horizontal arrangement */
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: stretch;
-        -ms-flex-align: stretch;
-            align-items: stretch;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
   }
   #sbs-1308 .cs-content {
     width: 48%;
     padding: 3rem 0;
-    -ms-flex-item-align: center;
-        align-self: center;
+    align-self: center;
     /* prevents flexbox from squishing it */
-    -webkit-box-flex: 0;
-        -ms-flex: none;
-            flex: none;
+    flex: none;
   }
   #sbs-1308 .cs-image-group {
     width: 55%;
@@ -277,8 +222,7 @@
     max-width: 44.6875rem;
     left: auto;
     right: 8.125rem;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
+    transform: translateY(-50%);
   }
 }
 /* Dark Mode */
@@ -311,25 +255,22 @@
     z-index: 2;
   }
   #grids .cs-button-solid {
-    height: 2.5em;
-    line-height: 2.5em;
+    height: 40/16em;
+    line-height: 40/16em;
     color: #fff;
   }
   #grids .florida {
     width: 100%;
-    max-width: 75em;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    max-width: 1200/16em;
+    justify-content: center;
     text-align: center;
-    -ms-flex-line-pack: center;
-        align-content: center;
+    align-content: center;
     margin: auto;
-    padding-bottom: 2.8125em;
+    padding-bottom: 45/16em;
   }
   #grids .care {
     font-size: var(--headerFontSize);
-    padding-bottom: 0.5em;
+    padding-bottom: 8/16em;
   }
   #grids .cs-topper {
     font-size: clamp(1.1rem, 1.6vw, 1.2rem);
@@ -338,16 +279,11 @@
   }
   #grids .grid-1 {
     width: 100%;
-    max-width: 84.375em;
+    max-width: 1350/16em;
     margin: auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    gap: 0.9375em;
+    flex-direction: column;
+    gap: 15/16em;
   }
   #grids .s-pic {
     position: relative;
@@ -359,8 +295,7 @@
     left: 0;
     height: 100%;
     width: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     z-index: 0;
   }
   #grids .gt {
@@ -372,12 +307,11 @@
   }
   #grids .box1 {
     width: 100%;
-    height: 14.375em;
+    height: 230/16em;
     position: relative;
-    -ms-flex-line-pack: end;
-        align-content: end;
-    padding-left: 0.9375em;
-    padding-bottom: 0.9375em;
+    align-content: end;
+    padding-left: 15/16em;
+    padding-bottom: 15/16em;
   }
   #grids .s-pic1 {
     overflow: hidden;
@@ -388,17 +322,15 @@
     top: 0;
     left: 0;
     z-index: -1;
-    -o-object-position: 30px 80%;
-       object-position: 30px 80%;
+    object-position: 30px 80%;
   }
   #grids .box2 {
     width: 100%;
-    height: 14.375em;
+    height: 230/16em;
     position: relative;
-    -ms-flex-line-pack: end;
-        align-content: end;
-    padding-left: 0.9375em;
-    padding-bottom: 0.9375em;
+    align-content: end;
+    padding-left: 15/16em;
+    padding-bottom: 15/16em;
   }
   #grids .s-pic2 {
     overflow: hidden;
@@ -409,18 +341,16 @@
     top: 0;
     left: 0;
     z-index: -1;
-    -o-object-fit: contain;
-       object-fit: contain;
+    object-fit: contain;
     font-size: min(1.1vw, 1em);
   }
   #grids .box3 {
     width: 100%;
-    height: 14.375em;
+    height: 230/16em;
     position: relative;
-    -ms-flex-line-pack: end;
-        align-content: end;
-    padding-left: 0.9375em;
-    padding-bottom: 0.9375em;
+    align-content: end;
+    padding-left: 15/16em;
+    padding-bottom: 15/16em;
   }
   #grids .s-pic3 {
     overflow: hidden;
@@ -431,20 +361,17 @@
     top: 0;
     left: 0;
     z-index: -2;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     font-size: min(1.1vw, 1em);
-    -o-object-position: 50%;
-       object-position: 50%;
+    object-position: 50%;
   }
   #grids .box4 {
     width: 100%;
-    height: 14.375em;
+    height: 230/16em;
     position: relative;
-    -ms-flex-line-pack: end;
-        align-content: end;
-    padding-left: 0.9375em;
-    padding-bottom: 0.9375em;
+    align-content: end;
+    padding-left: 15/16em;
+    padding-bottom: 15/16em;
   }
   #grids .s-pic4 {
     overflow: hidden;
@@ -455,18 +382,16 @@
     top: 0;
     left: 0;
     z-index: -2;
-    -o-object-fit: contain;
-       object-fit: contain;
+    object-fit: contain;
     font-size: min(1.1vw, 1em);
   }
   #grids .box5 {
     width: 100%;
-    height: 14.375em;
+    height: 230/16em;
     position: relative;
-    -ms-flex-line-pack: end;
-        align-content: end;
-    padding-left: 0.9375em;
-    padding-bottom: 0.9375em;
+    align-content: end;
+    padding-left: 15/16em;
+    padding-bottom: 15/16em;
   }
   #grids .s-pic5 {
     overflow: hidden;
@@ -477,18 +402,16 @@
     top: 0;
     left: 0;
     z-index: -2;
-    -o-object-fit: contain;
-       object-fit: contain;
+    object-fit: contain;
     font-size: min(1.1vw, 1em);
   }
   #grids .box6 {
     width: 100%;
-    height: 14.375em;
+    height: 230/16em;
     position: relative;
-    -ms-flex-line-pack: end;
-        align-content: end;
-    padding-left: 0.9375em;
-    padding-bottom: 0.9375em;
+    align-content: end;
+    padding-left: 15/16em;
+    padding-bottom: 15/16em;
   }
   #grids .s-pic6 {
     overflow: hidden;
@@ -499,8 +422,7 @@
     top: 0;
     left: 0;
     z-index: -2;
-    -o-object-fit: contain;
-       object-fit: contain;
+    object-fit: contain;
     font-size: min(1.1vw, 1em);
   }
 }
@@ -514,12 +436,12 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     width: 100%;
-    max-width: 84.375em;
+    max-width: 1350/16em;
     grid-auto-rows: 20vw;
     color: #fff;
-    gap: 1em;
+    gap: 16/16em;
     margin: auto;
-    padding: 0 0.9375em;
+    padding: 0 15/16em;
   }
   #grids .s-pic {
     position: relative;
@@ -531,8 +453,7 @@
     left: 0;
     height: 100%;
     width: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   #grids .box1 {
     grid-column-start: 1;
@@ -542,17 +463,13 @@
     width: 100%;
     height: 100%;
     position: relative;
-    -ms-flex-line-pack: end;
-        align-content: end;
-    padding-left: 0.9375em;
-    padding-bottom: 0.9375em;
-    -webkit-filter: grayscale(0);
-            filter: grayscale(0);
+    align-content: end;
+    padding-left: 15/16em;
+    padding-bottom: 15/16em;
+    filter: grayscale(0);
   }
   #grids .box1:hover .s-pic1 {
-    -webkit-filter: grayscale(1);
-            filter: grayscale(1);
-    -webkit-transition: ease 0.5s;
+    filter: grayscale(1);
     transition: ease 0.5s;
   }
   #grids .gt {
@@ -569,15 +486,12 @@
     top: 0;
     left: 0;
     z-index: -2;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     font-size: min(1.1vw, 1em);
-    -webkit-filter: grayscale(0);
-            filter: grayscale(0);
+    filter: grayscale(0);
   }
   #grids .s-pic1:hover {
-    -webkit-filter: grayscale(1);
-            filter: grayscale(1);
+    filter: grayscale(1);
   }
   #grids .box2 {
     grid-column-start: 2;
@@ -587,17 +501,13 @@
     width: 100%;
     height: 100%;
     position: relative;
-    -ms-flex-line-pack: end;
-        align-content: end;
-    padding-left: 0.9375em;
-    padding-bottom: 0.9375em;
-    -webkit-filter: grayscale(0);
-            filter: grayscale(0);
+    align-content: end;
+    padding-left: 15/16em;
+    padding-bottom: 15/16em;
+    filter: grayscale(0);
   }
   #grids .box2:hover .s-pic2 {
-    -webkit-filter: grayscale(1);
-            filter: grayscale(1);
-    -webkit-transition: ease 0.5s;
+    filter: grayscale(1);
     transition: ease 0.5s;
   }
   #grids .s-pic2 {
@@ -609,8 +519,7 @@
     top: 0;
     left: 0;
     z-index: -1;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     font-size: min(1.1vw, 1em);
   }
   #grids .box3 {
@@ -620,17 +529,13 @@
     grid-row-end: 3;
     height: 100%;
     position: relative;
-    -ms-flex-line-pack: end;
-        align-content: end;
-    padding-left: 0.9375em;
-    padding-bottom: 0.9375em;
-    -webkit-filter: grayscale(0);
-            filter: grayscale(0);
+    align-content: end;
+    padding-left: 15/16em;
+    padding-bottom: 15/16em;
+    filter: grayscale(0);
   }
   #grids .box3:hover .s-pic3 {
-    -webkit-filter: grayscale(1);
-            filter: grayscale(1);
-    -webkit-transition: ease 0.5s;
+    filter: grayscale(1);
     transition: ease 0.5s;
   }
   #grids .s-pic3 {
@@ -642,8 +547,7 @@
     top: 0;
     left: 0;
     z-index: -1;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     font-size: min(1.1vw, 1em);
   }
   #grids .box4 {
@@ -654,17 +558,13 @@
     width: 100%;
     height: 100%;
     position: relative;
-    -ms-flex-line-pack: end;
-        align-content: end;
-    padding-left: 0.9375em;
-    padding-bottom: 0.9375em;
-    -webkit-filter: grayscale(0);
-            filter: grayscale(0);
+    align-content: end;
+    padding-left: 15/16em;
+    padding-bottom: 15/16em;
+    filter: grayscale(0);
   }
   #grids .box4:hover .s-pic4 {
-    -webkit-filter: grayscale(1);
-            filter: grayscale(1);
-    -webkit-transition: ease 0.5s;
+    filter: grayscale(1);
     transition: ease 0.5s;
   }
   #grids .s-pic4 {
@@ -676,10 +576,8 @@
     top: 0;
     left: 0;
     z-index: -2;
-    -o-object-fit: contain;
-       object-fit: contain;
-    -o-object-position: 30px 80%;
-       object-position: 30px 80%;
+    object-fit: contain;
+    object-position: 30px 80%;
   }
   #grids .box5 {
     grid-column-start: 1;
@@ -689,17 +587,13 @@
     width: 100%;
     height: 100%;
     position: relative;
-    -ms-flex-line-pack: end;
-        align-content: end;
-    padding-left: 0.9375em;
-    padding-bottom: 0.9375em;
-    -webkit-filter: grayscale(0);
-            filter: grayscale(0);
+    align-content: end;
+    padding-left: 15/16em;
+    padding-bottom: 15/16em;
+    filter: grayscale(0);
   }
   #grids .box5:hover .s-pic5 {
-    -webkit-filter: grayscale(1);
-            filter: grayscale(1);
-    -webkit-transition: ease 0.5s;
+    filter: grayscale(1);
     transition: ease 0.5s;
   }
   #grids .s-pic5 {
@@ -711,8 +605,7 @@
     top: 0;
     left: 0;
     z-index: -2;
-    -o-object-position: 30px 80%;
-       object-position: 30px 80%;
+    object-position: 30px 80%;
   }
   #grids .box6 {
     grid-column-start: 2;
@@ -722,17 +615,13 @@
     width: 100%;
     height: 100%;
     position: relative;
-    -ms-flex-line-pack: end;
-        align-content: end;
-    padding-left: 0.9375em;
-    padding-bottom: 0.9375em;
-    -webkit-filter: grayscale(0);
-            filter: grayscale(0);
+    align-content: end;
+    padding-left: 15/16em;
+    padding-bottom: 15/16em;
+    filter: grayscale(0);
   }
   #grids .box6:hover .s-pic6 {
-    -webkit-filter: grayscale(1);
-            filter: grayscale(1);
-    -webkit-transition: ease 0.5s;
+    filter: grayscale(1);
     transition: ease 0.5s;
   }
   #grids .s-pic6 {
@@ -744,8 +633,7 @@
     top: 0;
     left: 0;
     z-index: -2;
-    -o-object-position: 30px 80%;
-       object-position: 30px 80%;
+    object-position: 30px 80%;
   }
 }
 /* Small Desktop */
@@ -758,10 +646,10 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     width: 100%;
-    max-width: 84.375em;
-    grid-auto-rows: 15.625rem;
+    max-width: 1350/16em;
+    grid-auto-rows: 250/16rem;
     color: #fff;
-    gap: 1em;
+    gap: 16/16em;
     margin: auto;
   }
   #grids .s-pic {
@@ -774,8 +662,7 @@
     left: 0;
     height: 100%;
     width: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   #grids .box1 {
     grid-column-start: 1;
@@ -785,17 +672,13 @@
     width: 100%;
     height: 100%;
     position: relative;
-    -ms-flex-line-pack: end;
-        align-content: end;
-    padding-left: 0.9375em;
-    padding-bottom: 0.9375em;
-    -webkit-filter: grayscale(0);
-            filter: grayscale(0);
+    align-content: end;
+    padding-left: 15/16em;
+    padding-bottom: 15/16em;
+    filter: grayscale(0);
   }
   #grids .box1:hover .s-pic1 {
-    -webkit-filter: grayscale(1);
-            filter: grayscale(1);
-    -webkit-transition: ease 0.5s;
+    filter: grayscale(1);
     transition: ease 0.5s;
   }
   #grids .gt {
@@ -812,15 +695,12 @@
     top: 0;
     left: 0;
     z-index: -2;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     font-size: min(1.1vw, 1em);
-    -webkit-filter: grayscale(0);
-            filter: grayscale(0);
+    filter: grayscale(0);
   }
   #grids .s-pic1:hover {
-    -webkit-filter: grayscale(1);
-            filter: grayscale(1);
+    filter: grayscale(1);
   }
   #grids .box2 {
     grid-column-start: 2;
@@ -830,17 +710,13 @@
     width: 100%;
     height: 100%;
     position: relative;
-    -ms-flex-line-pack: end;
-        align-content: end;
-    padding-left: 0.9375em;
-    padding-bottom: 0.9375em;
-    -webkit-filter: grayscale(0);
-            filter: grayscale(0);
+    align-content: end;
+    padding-left: 15/16em;
+    padding-bottom: 15/16em;
+    filter: grayscale(0);
   }
   #grids .box2:hover .s-pic2 {
-    -webkit-filter: grayscale(1);
-            filter: grayscale(1);
-    -webkit-transition: ease 0.5s;
+    filter: grayscale(1);
     transition: ease 0.5s;
   }
   #grids .s-pic2 {
@@ -852,8 +728,7 @@
     top: 0;
     left: 0;
     z-index: -1;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     font-size: min(1.1vw, 1em);
   }
   #grids .box3 {
@@ -863,17 +738,13 @@
     grid-row-end: 3;
     height: 100%;
     position: relative;
-    -ms-flex-line-pack: end;
-        align-content: end;
-    padding-left: 0.9375em;
-    padding-bottom: 0.9375em;
-    -webkit-filter: grayscale(0);
-            filter: grayscale(0);
+    align-content: end;
+    padding-left: 15/16em;
+    padding-bottom: 15/16em;
+    filter: grayscale(0);
   }
   #grids .box3:hover .s-pic3 {
-    -webkit-filter: grayscale(1);
-            filter: grayscale(1);
-    -webkit-transition: ease 0.5s;
+    filter: grayscale(1);
     transition: ease 0.5s;
   }
   #grids .s-pic3 {
@@ -885,8 +756,7 @@
     top: 0;
     left: 0;
     z-index: -1;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     font-size: min(1.1vw, 1em);
   }
   #grids .box4 {
@@ -897,17 +767,13 @@
     width: 100%;
     height: 100%;
     position: relative;
-    -ms-flex-line-pack: end;
-        align-content: end;
-    padding-left: 0.9375em;
-    padding-bottom: 0.9375em;
-    -webkit-filter: grayscale(0);
-            filter: grayscale(0);
+    align-content: end;
+    padding-left: 15/16em;
+    padding-bottom: 15/16em;
+    filter: grayscale(0);
   }
   #grids .box4:hover .s-pic4 {
-    -webkit-filter: grayscale(1);
-            filter: grayscale(1);
-    -webkit-transition: ease 0.5s;
+    filter: grayscale(1);
     transition: ease 0.5s;
   }
   #grids .s-pic4 {
@@ -919,10 +785,8 @@
     top: 0;
     left: 0;
     z-index: -2;
-    -o-object-fit: contain;
-       object-fit: contain;
-    -o-object-position: 30px 80%;
-       object-position: 30px 80%;
+    object-fit: contain;
+    object-position: 30px 80%;
   }
   #grids .box5 {
     grid-column-start: 1;
@@ -932,17 +796,13 @@
     width: 100%;
     height: 100%;
     position: relative;
-    -ms-flex-line-pack: end;
-        align-content: end;
-    padding-left: 0.9375em;
-    padding-bottom: 0.9375em;
-    -webkit-filter: grayscale(0);
-            filter: grayscale(0);
+    align-content: end;
+    padding-left: 15/16em;
+    padding-bottom: 15/16em;
+    filter: grayscale(0);
   }
   #grids .box5:hover .s-pic5 {
-    -webkit-filter: grayscale(1);
-            filter: grayscale(1);
-    -webkit-transition: ease 0.5s;
+    filter: grayscale(1);
     transition: ease 0.5s;
   }
   #grids .s-pic5 {
@@ -954,8 +814,7 @@
     top: 0;
     left: 0;
     z-index: -2;
-    -o-object-position: 30px 80%;
-       object-position: 30px 80%;
+    object-position: 30px 80%;
   }
   #grids .box6 {
     grid-column-start: 2;
@@ -965,17 +824,13 @@
     width: 100%;
     height: 100%;
     position: relative;
-    -ms-flex-line-pack: end;
-        align-content: end;
-    padding-left: 0.9375em;
-    padding-bottom: 0.9375em;
-    -webkit-filter: grayscale(0);
-            filter: grayscale(0);
+    align-content: end;
+    padding-left: 15/16em;
+    padding-bottom: 15/16em;
+    filter: grayscale(0);
   }
   #grids .box6:hover .s-pic6 {
-    -webkit-filter: grayscale(1);
-            filter: grayscale(1);
-    -webkit-transition: ease 0.5s;
+    filter: grayscale(1);
     transition: ease 0.5s;
   }
   #grids .s-pic6 {
@@ -987,8 +842,7 @@
     top: 0;
     left: 0;
     z-index: -2;
-    -o-object-position: 30px 80%;
-       object-position: 30px 80%;
+    object-position: 30px 80%;
   }
 }
 /* Dark Mode */
@@ -1011,19 +865,10 @@
     padding: var(--sectionPadding);
   }
   #sbs-r .cs-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: auto;
     max-width: 80rem;
     width: 100%;
@@ -1051,8 +896,7 @@
     height: 100%;
     width: 100%;
     /* makes image act like a background image */
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   #sbs-r .cs-picture1 {
     top: 0;
@@ -1064,12 +908,11 @@
     bottom: 0;
     left: 0;
     /* 6px - 12px */
-    border: clamp(0.375em, 1.5vw, 0.75em) solid #ffffff;
+    border: clamp(0.375em, 1.5vw, 0.75em) solid #fff;
     background-color: #fff;
     height: 25em;
     width: 25.875em;
-    -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 40px;
-            box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 40px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 40px;
   }
   #sbs-r .cs-right {
     margin: auto;
@@ -1133,24 +976,15 @@
 /* Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
   #sbs-r .cs-container {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row;
-            flex-flow: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    flex-flow: row;
+    justify-content: space-between;
     gap: 3.25rem;
   }
   #sbs-r .cs-left {
     /* sends it to the right */
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
+    order: 2;
     font-size: min(1.2vw, 1em);
-    -webkit-box-flex: 0;
-        -ms-flex: none;
-            flex: none;
+    flex: none;
   }
   #sbs-r .cs-right {
     margin: 0;
@@ -1205,9 +1039,7 @@
     margin: auto;
     max-width: 82.625em;
     width: 100%;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
   }
   #gallery .cs-topper {
     margin-bottom: 1rem;
@@ -1216,21 +1048,13 @@
   #gallery .cs-title {
     max-width: 38.8125rem;
     text-align: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
     margin: auto auto 2.5rem;
   }
   #gallery .cs-image-group {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    justify-content: center;
+    align-items: flex-start;
     margin: 0 auto 3.75rem;
     max-width: 82.625em;
     width: 100%;
@@ -1240,19 +1064,10 @@
     gap: 1.875em;
   }
   #gallery .cs-row {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
     gap: 1.875em;
   }
   #gallery .cs-picture {
@@ -1265,8 +1080,7 @@
     left: 0;
     height: 100%;
     width: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   #gallery .cs-row-1 .cs-picture1 {
     height: 35.4375em;
@@ -1348,40 +1162,31 @@
   }
   #reviews .cs-item {
     position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
     border-radius: 0.25rem;
     margin: 0 auto 4rem;
     background: #fff;
     max-width: 33.875rem;
     width: 100%;
     /* Prevents padding from affecting height & width */
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     /* Padding L & R - 16px - 32px */
     padding: 3.75rem clamp(1rem, 3.2vw, 2rem) 0;
     /* 32px - 40px */
     padding-bottom: clamp(2rem, 5.4vw, 2.5rem);
     list-style: none;
     text-align: left;
-    -webkit-box-shadow: 0px 20px 39px 0px rgba(0, 0, 0, 0.05);
-            box-shadow: 0px 20px 39px 0px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 20px 39px 0px rgba(0, 0, 0, 0.05);
   }
   #reviews .cs-item:last-of-type {
     margin-bottom: 0;
   }
   #reviews .cs-item-img {
     position: absolute;
-    top: calc(-2.5rem);
+    top: calc(-40 / 16 * 1rem);
     height: 5rem;
     width: 5rem;
   }
@@ -1416,15 +1221,9 @@
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
   #reviews .cs-card-group {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: space-between;
+    align-items: center;
     gap: 1rem;
   }
   #reviews .cs-item {
@@ -1459,30 +1258,24 @@
   }
   #faq .f-header {
     width: 100%;
-    max-width: 75em;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    max-width: 1200/16em;
+    justify-content: center;
     text-align: center;
-    -ms-flex-line-pack: center;
-        align-content: center;
+    align-content: center;
     margin: auto;
-    padding-bottom: 2.8125em;
+    padding-bottom: 45/16em;
   }
   #faq .f-title {
     font-size: var(--headerFontSize);
-    padding-bottom: 0.5em;
-    padding-top: 0.5em;
+    padding-bottom: 8/16em;
+    padding-top: 8/16em;
   }
   #faq .flex-accordion {
     width: 100%;
-    max-width: 75em;
+    max-width: 1200/16em;
     margin: auto;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-flex-line-pack: center;
-        align-content: center;
+    justify-content: center;
+    align-content: center;
   }
   #faq .accordion,
   #faq .accordion1,
@@ -1492,17 +1285,16 @@
   #faq .accordion5,
   #faq .accordion6,
   #faq .accordion7 {
-    max-width: 28.125em;
-    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 450/16em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    border-radius: 0.3125em;
+    border-radius: 5/16em;
     margin: auto;
-    margin-bottom: 0.9375em;
+    margin-bottom: 15/16em;
   }
   #faq .accordion__label,
   #faq .accordion__content {
-    padding: 0.875em 0.625em;
+    padding: 14/16em 10/16em;
   }
   #faq .accordion__label {
     display: block;
@@ -1511,27 +1303,23 @@
     cursor: pointer;
     position: relative;
     font-size: clamp(1.1rem, 1.6vw, 1.2rem);
-    padding-right: 1.3125em;
+    padding-right: 21/16em;
   }
   #faq .accordion__label::after {
     content: "";
     position: absolute;
     top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-    right: 0.9375em;
-    height: 0.375em;
-    width: 0.75em;
+    transform: translateY(-50%);
+    right: 15/16em;
+    height: 6/16em;
+    width: 12/16em;
     background-image: url('data:image/svg+xml;utf8,<svg width="100" height="50" xmlns="http://www.w3.org/2000/svg"><polygon points="0,0 100,0 50,50" style="fill:%2300000099;" /></svg>');
     background-size: contain;
-    -webkit-transition: -webkit-transform 0.5s;
-    transition: -webkit-transform 0.5s;
     transition: transform 0.5s;
-    transition: transform 0.5s, -webkit-transform 0.5s;
   }
   #faq .accordion__content {
     line-height: 1.6em;
-    padding-bottom: 0.625em;
+    padding-bottom: 10/16em;
     display: none;
   }
   #faq .accordion__input {
@@ -1541,8 +1329,7 @@
     display: block;
   }
   #faq .accordion__input:checked ~ .accordion__label::after {
-    -webkit-transform: translateY(-50%) rotate(0.5turn);
-            transform: translateY(-50%) rotate(0.5turn);
+    transform: translateY(-50%) rotate(0.5turn);
   }
 }
 /* Dark Mode */
@@ -1566,28 +1353,23 @@
   #faq .flex-accordion {
     display: grid;
     grid-template-columns: repeat(2, 40vw);
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
     justify-items: center;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
+    align-content: center;
+    align-items: baseline;
     width: 100%;
-    max-width: 75em;
-    gap: 0.625em;
+    max-width: 1200/16em;
+    gap: 10/16em;
   }
   #faq .l-accordion {
     width: 100%;
-    max-width: 28.125em;
+    max-width: 450/16em;
     justify-items: center;
     margin-left: auto;
   }
   #faq .r-accordion {
     width: 100%;
-    max-width: 28.125em;
+    max-width: 450/16em;
     margin-right: auto;
   }
 }
