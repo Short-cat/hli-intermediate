@@ -255,22 +255,22 @@
     z-index: 2;
   }
   #grids .cs-button-solid {
-    height: 40/16em;
-    line-height: 40/16em;
+    height: 2.5em;
+    line-height: 2.5em;
     color: #fff;
   }
   #grids .florida {
     width: 100%;
-    max-width: 1200/16em;
+    max-width: 75em;
     justify-content: center;
     text-align: center;
     align-content: center;
     margin: auto;
-    padding-bottom: 45/16em;
+    padding-bottom: 2.8125em;
   }
   #grids .care {
     font-size: var(--headerFontSize);
-    padding-bottom: 8/16em;
+    padding-bottom: 0.5em;
   }
   #grids .cs-topper {
     font-size: clamp(1.1rem, 1.6vw, 1.2rem);
@@ -279,11 +279,11 @@
   }
   #grids .grid-1 {
     width: 100%;
-    max-width: 1350/16em;
+    max-width: 84.375em;
     margin: auto;
     display: flex;
     flex-direction: column;
-    gap: 15/16em;
+    gap: 0.9375em;
   }
   #grids .s-pic {
     position: relative;
@@ -307,11 +307,11 @@
   }
   #grids .box1 {
     width: 100%;
-    height: 230/16em;
+    height: 14.375em;
     position: relative;
     align-content: end;
-    padding-left: 15/16em;
-    padding-bottom: 15/16em;
+    padding-left: 0.9375em;
+    padding-bottom: 0.9375em;
   }
   #grids .s-pic1 {
     overflow: hidden;
@@ -326,11 +326,11 @@
   }
   #grids .box2 {
     width: 100%;
-    height: 230/16em;
+    height: 14.375em;
     position: relative;
     align-content: end;
-    padding-left: 15/16em;
-    padding-bottom: 15/16em;
+    padding-left: 0.9375em;
+    padding-bottom: 0.9375em;
   }
   #grids .s-pic2 {
     overflow: hidden;
@@ -346,11 +346,11 @@
   }
   #grids .box3 {
     width: 100%;
-    height: 230/16em;
+    height: 14.375em;
     position: relative;
     align-content: end;
-    padding-left: 15/16em;
-    padding-bottom: 15/16em;
+    padding-left: 0.9375em;
+    padding-bottom: 0.9375em;
   }
   #grids .s-pic3 {
     overflow: hidden;
@@ -367,11 +367,11 @@
   }
   #grids .box4 {
     width: 100%;
-    height: 230/16em;
+    height: 14.375em;
     position: relative;
     align-content: end;
-    padding-left: 15/16em;
-    padding-bottom: 15/16em;
+    padding-left: 0.9375em;
+    padding-bottom: 0.9375em;
   }
   #grids .s-pic4 {
     overflow: hidden;
@@ -387,11 +387,11 @@
   }
   #grids .box5 {
     width: 100%;
-    height: 230/16em;
+    height: 14.375em;
     position: relative;
     align-content: end;
-    padding-left: 15/16em;
-    padding-bottom: 15/16em;
+    padding-left: 0.9375em;
+    padding-bottom: 0.9375em;
   }
   #grids .s-pic5 {
     overflow: hidden;
@@ -407,11 +407,11 @@
   }
   #grids .box6 {
     width: 100%;
-    height: 230/16em;
+    height: 14.375em;
     position: relative;
     align-content: end;
-    padding-left: 15/16em;
-    padding-bottom: 15/16em;
+    padding-left: 0.9375em;
+    padding-bottom: 0.9375em;
   }
   #grids .s-pic6 {
     overflow: hidden;
@@ -436,12 +436,12 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     width: 100%;
-    max-width: 1350/16em;
+    max-width: 84.375em;
     grid-auto-rows: 20vw;
     color: #fff;
-    gap: 16/16em;
+    gap: 1em;
     margin: auto;
-    padding: 0 15/16em;
+    padding: 0 0.9375em;
   }
   #grids .s-pic {
     position: relative;
@@ -464,8 +464,8 @@
     height: 100%;
     position: relative;
     align-content: end;
-    padding-left: 15/16em;
-    padding-bottom: 15/16em;
+    padding-left: 0.9375em;
+    padding-bottom: 0.9375em;
     filter: grayscale(0);
   }
   #grids .box1:hover .s-pic1 {
@@ -502,8 +502,8 @@
     height: 100%;
     position: relative;
     align-content: end;
-    padding-left: 15/16em;
-    padding-bottom: 15/16em;
+    padding-left: 0.9375em;
+    padding-bottom: 0.9375em;
     filter: grayscale(0);
   }
   #grids .box2:hover .s-pic2 {
@@ -530,8 +530,8 @@
     height: 100%;
     position: relative;
     align-content: end;
-    padding-left: 15/16em;
-    padding-bottom: 15/16em;
+    padding-left: 0.9375em;
+    padding-bottom: 0.9375em;
     filter: grayscale(0);
   }
   #grids .box3:hover .s-pic3 {
@@ -559,8 +559,8 @@
     height: 100%;
     position: relative;
     align-content: end;
-    padding-left: 15/16em;
-    padding-bottom: 15/16em;
+    padding-left: 0.9375em;
+    padding-bottom: 0.9375em;
     filter: grayscale(0);
   }
   #grids .box4:hover .s-pic4 {
@@ -588,8 +588,8 @@
     height: 100%;
     position: relative;
     align-content: end;
-    padding-left: 15/16em;
-    padding-bottom: 15/16em;
+    padding-left: 0.9375em;
+    padding-bottom: 0.9375em;
     filter: grayscale(0);
   }
   #grids .box5:hover .s-pic5 {
@@ -616,8 +616,8 @@
     height: 100%;
     position: relative;
     align-content: end;
-    padding-left: 15/16em;
-    padding-bottom: 15/16em;
+    padding-left: 0.9375em;
+    padding-bottom: 0.9375em;
     filter: grayscale(0);
   }
   #grids .box6:hover .s-pic6 {
@@ -646,10 +646,10 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     width: 100%;
-    max-width: 1350/16em;
-    grid-auto-rows: 250/16rem;
+    max-width: 84.375em;
+    grid-auto-rows: 15.625rem;
     color: #fff;
-    gap: 16/16em;
+    gap: 1em;
     margin: auto;
   }
   #grids .s-pic {
@@ -673,8 +673,8 @@
     height: 100%;
     position: relative;
     align-content: end;
-    padding-left: 15/16em;
-    padding-bottom: 15/16em;
+    padding-left: 0.9375em;
+    padding-bottom: 0.9375em;
     filter: grayscale(0);
   }
   #grids .box1:hover .s-pic1 {
@@ -711,8 +711,8 @@
     height: 100%;
     position: relative;
     align-content: end;
-    padding-left: 15/16em;
-    padding-bottom: 15/16em;
+    padding-left: 0.9375em;
+    padding-bottom: 0.9375em;
     filter: grayscale(0);
   }
   #grids .box2:hover .s-pic2 {
@@ -739,8 +739,8 @@
     height: 100%;
     position: relative;
     align-content: end;
-    padding-left: 15/16em;
-    padding-bottom: 15/16em;
+    padding-left: 0.9375em;
+    padding-bottom: 0.9375em;
     filter: grayscale(0);
   }
   #grids .box3:hover .s-pic3 {
@@ -768,8 +768,8 @@
     height: 100%;
     position: relative;
     align-content: end;
-    padding-left: 15/16em;
-    padding-bottom: 15/16em;
+    padding-left: 0.9375em;
+    padding-bottom: 0.9375em;
     filter: grayscale(0);
   }
   #grids .box4:hover .s-pic4 {
@@ -797,8 +797,8 @@
     height: 100%;
     position: relative;
     align-content: end;
-    padding-left: 15/16em;
-    padding-bottom: 15/16em;
+    padding-left: 0.9375em;
+    padding-bottom: 0.9375em;
     filter: grayscale(0);
   }
   #grids .box5:hover .s-pic5 {
@@ -825,8 +825,8 @@
     height: 100%;
     position: relative;
     align-content: end;
-    padding-left: 15/16em;
-    padding-bottom: 15/16em;
+    padding-left: 0.9375em;
+    padding-bottom: 0.9375em;
     filter: grayscale(0);
   }
   #grids .box6:hover .s-pic6 {
@@ -1258,21 +1258,21 @@
   }
   #faq .f-header {
     width: 100%;
-    max-width: 1200/16em;
+    max-width: 75em;
     justify-content: center;
     text-align: center;
     align-content: center;
     margin: auto;
-    padding-bottom: 45/16em;
+    padding-bottom: 2.8125em;
   }
   #faq .f-title {
     font-size: var(--headerFontSize);
-    padding-bottom: 8/16em;
-    padding-top: 8/16em;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
   }
   #faq .flex-accordion {
     width: 100%;
-    max-width: 1200/16em;
+    max-width: 75em;
     margin: auto;
     justify-content: center;
     align-content: center;
@@ -1285,16 +1285,16 @@
   #faq .accordion5,
   #faq .accordion6,
   #faq .accordion7 {
-    max-width: 450/16em;
+    max-width: 28.125em;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    border-radius: 5/16em;
+    border-radius: 0.3125em;
     margin: auto;
-    margin-bottom: 15/16em;
+    margin-bottom: 0.9375em;
   }
   #faq .accordion__label,
   #faq .accordion__content {
-    padding: 14/16em 10/16em;
+    padding: 0.875em 0.625em;
   }
   #faq .accordion__label {
     display: block;
@@ -1303,23 +1303,23 @@
     cursor: pointer;
     position: relative;
     font-size: clamp(1.1rem, 1.6vw, 1.2rem);
-    padding-right: 21/16em;
+    padding-right: 1.3125em;
   }
   #faq .accordion__label::after {
     content: "";
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    right: 15/16em;
-    height: 6/16em;
-    width: 12/16em;
+    right: 0.9375em;
+    height: 0.375em;
+    width: 0.75em;
     background-image: url('data:image/svg+xml;utf8,<svg width="100" height="50" xmlns="http://www.w3.org/2000/svg"><polygon points="0,0 100,0 50,50" style="fill:%2300000099;" /></svg>');
     background-size: contain;
     transition: transform 0.5s;
   }
   #faq .accordion__content {
     line-height: 1.6em;
-    padding-bottom: 10/16em;
+    padding-bottom: 0.625em;
     display: none;
   }
   #faq .accordion__input {
@@ -1342,7 +1342,7 @@
   body.dark-mode #faq .accordion5,
   body.dark-mode #faq .accordion6,
   body.dark-mode #faq .accordion7 {
-    background-color: #888458;
+    background-color: var(--primary);
   }
   body.dark-mode #faq .accordion__label {
     color: #fff;
@@ -1358,18 +1358,18 @@
     align-content: center;
     align-items: baseline;
     width: 100%;
-    max-width: 1200/16em;
-    gap: 10/16em;
+    max-width: 75em;
+    gap: 0.625em;
   }
   #faq .l-accordion {
     width: 100%;
-    max-width: 450/16em;
+    max-width: 28.125em;
     justify-items: center;
     margin-left: auto;
   }
   #faq .r-accordion {
     width: 100%;
-    max-width: 450/16em;
+    max-width: 28.125em;
     margin-right: auto;
   }
 }
