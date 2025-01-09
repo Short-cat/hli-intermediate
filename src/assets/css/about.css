@@ -320,6 +320,7 @@
 @media only screen and (min-width: 0rem) {
   #about-1451 {
     padding: var(--sectionPadding);
+    padding-bottom: 11.25em;
   }
   #about-1451 .cs-container {
     width: 100%;
