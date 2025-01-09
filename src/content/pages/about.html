@@ -16,18 +16,27 @@ eleventyNavigation:
 
 {% block body %}
     <!-- ============================================ -->
-    <!--                    LANDING                   -->
+    <!--                   Banner                     -->
     <!-- ============================================ -->
 
-    <section id="int-hero">
-        <h1 id="home-h">About Us</h1>
-        <picture>
-            <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
-            <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
-            <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="kitchen cabinets" loading="eager" width="2500" height="1667">
+    <div id="banner-1106">
+        <div class="cs-container">
+            <span class="cs-int-title">About Us</span>
+            <div class="cs-breadcrumbs">
+                <a href="" class="cs-link">Home</a>
+                <a href="" class="cs-link cs-active">About</a>
+            </div>
+        </div>
+        <!--Background Image-->
+        <picture class="cs-background">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="/assets/images/cabinets.jpg">
+            <!--Tablet and above Image-->
+            <source media="(min-width: 601px)" srcset="/assets/images/cabinets.jpg">
+            <img decoding="async" src="/assets/images/cabinets.jpg" alt="mechanic" width="1280" height="568" aria-hidden="true">
         </picture>
-
-    </section>
+    </div>
+                                
 
     <!-- ============================================ -->
     <!--                 Side By Side                 -->
@@ -38,9 +47,9 @@ eleventyNavigation:
             <!-- Left Image Section -->
             <div class="cs-left">
                 <picture class="cs-picture cs-picture1">
-                    <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
-                    <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="cabinets" loading="lazy" width="400" height="563">
+                    <source media="(max-width: 600px)" srcset="/assets/images/cabinets.jpg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/cabinets.jpg">
+                    <img aria-hidden="true" decoding="async" src="/assets/images/cabinets.jpg" alt="cabinets" loading="lazy" width="400" height="563">
                 </picture>
                 <picture class="cs-picture cs-picture2">
                     <source media="(max-width: 600px)" srcset="/assets/images/construction-m.jpg">
@@ -70,6 +79,107 @@ eleventyNavigation:
             </div>
         </div>
     </section>
+
+    <!-- ============================================ -->
+    <!--                  Reviews                     -->
+    <!-- ============================================ -->
+
+    <section id="about-1451">
+        <div class="cs-container">
+            <h2 class="team">Meet The Team</h2>
+            <div class="cs-info">
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/team1.jpg">
+                    <!--Tablet and above Image-->
+                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/team1.jpg">
+                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/team1.jpg" alt="person" width="522" height="696">
+                </picture>
+                <div class="cs-content">
+                    <span class="cs-header">Leslie Alexander</span>
+                    <p class="cs-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quo in tenetur eveniet iste voluptates vel, molestiae id ab nisi, nihil ipsam voluptas, sapiente doloribus facere earum vitae provident! Aperiam modi cupiditate facere eos consectetur illo necessitatibus. Deleniti corrupti molestias mollitia ipsam eius, vel dolorum quaerat totam recusandae eum voluptas quisquam harum accusantium blanditiis, reprehenderit, a aperiam nihil. Doloremque eius placeat alias excepturi esse cupiditate? Illum iure reprehenderit expedita, incidunt optio non quae harum molestiae quas sit. Dicta, ullam tempo
+                    </p>
+                    <p class="cs-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quo in tenetur eveniet iste voluptates vel, molestiae id ab nisi, nihil ipsam voluptas, sapiente doloribus facere earum vitae provident! Aperiam modi cupiditate facere eos consectetur illo necessitatibus. Deleniti corrupti molestias mollitia ipsam eius, vel dolorum quaerat totam recusandae eum voluptas quisquam harum accusantium blanditiis, reprehenderit, a aperiam nihil. Doloremque eius placeat alias excepturi esse cupiditate? Illum iure reprehenderit expedita, incidunt optio non quae harum molestiae quas sit. Dicta, ullam tempo
+                    </p>
+                </div>
+            </div>
+            <div class="cs-info">
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/team2.jpg">
+                    <!--Tablet and above Image-->
+                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/team2.jpg">
+                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/team2.jpg" alt="person" width="522" height="696">
+                </picture>
+                <div class="cs-content">
+                    <span class="cs-header">Guy Hawkins</span>
+                    <p class="cs-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quo in tenetur eveniet iste voluptates vel, molestiae id ab nisi, nihil ipsam voluptas, sapiente doloribus facere earum vitae provident! Aperiam modi cupiditate facere eos consectetur illo necessitatibus. Deleniti corrupti molestias mollitia ipsam eius, vel dolorum quaerat totam recusandae eum voluptas quisquam harum accusantium blanditiis, reprehenderit, a aperiam nihil. Doloremque eius placeat alias excepturi esse cupiditate? Illum iure reprehenderit expedita, incidunt optio non quae harum molestiae quas sit. Dicta, ullam tempo
+                    </p>
+                    <p class="cs-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quo in tenetur eveniet iste voluptates vel, molestiae id ab nisi, nihil ipsam voluptas, sapiente doloribus facere earum vitae provident! Aperiam modi cupiditate facere eos consectetur illo necessitatibus. Deleniti corrupti molestias mollitia ipsam eius, vel dolorum quaerat totam recusandae eum voluptas quisquam harum accusantium blanditiis, reprehenderit, a aperiam nihil. Doloremque eius placeat alias excepturi esse cupiditate? Illum iure reprehenderit expedita, incidunt optio non quae harum molestiae quas sit. Dicta, ullam tempo
+                    </p>
+                </div>
+            </div>
+            <div class="cs-info">
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/team3.jpg">
+                    <!--Tablet and above Image-->
+                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/team3.jpg">
+                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/team3.jpg" alt="person" width="522" height="696">
+                </picture>
+                <div class="cs-content">
+                    <span class="cs-header">Cameron Williamson</span>
+                    <p class="cs-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quo in tenetur eveniet iste voluptates vel, molestiae id ab nisi, nihil ipsam voluptas, sapiente doloribus facere earum vitae provident! Aperiam modi cupiditate facere eos consectetur illo necessitatibus. Deleniti corrupti molestias mollitia ipsam eius, vel dolorum quaerat totam recusandae eum voluptas quisquam harum accusantium blanditiis, reprehenderit, a aperiam nihil. Doloremque eius placeat alias excepturi esse cupiditate? Illum iure reprehenderit expedita, incidunt optio non quae harum molestiae quas sit. Dicta, ullam tempo
+                    </p>
+                    <p class="cs-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quo in tenetur eveniet iste voluptates vel, molestiae id ab nisi, nihil ipsam voluptas, sapiente doloribus facere earum vitae provident! Aperiam modi cupiditate facere eos consectetur illo necessitatibus. Deleniti corrupti molestias mollitia ipsam eius, vel dolorum quaerat totam recusandae eum voluptas quisquam harum accusantium blanditiis, reprehenderit, a aperiam nihil. Doloremque eius placeat alias excepturi esse cupiditate? Illum iure reprehenderit expedita, incidunt optio non quae harum molestiae quas sit. Dicta, ullam tempo
+                    </p>
+                </div>
+            </div>
+            <div class="cs-info">
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/team4.jpg">
+                    <!--Tablet and above Image-->
+                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/team4.jpg">
+                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/team4.jpg" alt="person" width="522" height="696">
+                </picture>
+                <div class="cs-content">
+                    <span class="cs-header">Kristin Watson</span>
+                    <p class="cs-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quo in tenetur eveniet iste voluptates vel, molestiae id ab nisi, nihil ipsam voluptas, sapiente doloribus facere earum vitae provident! Aperiam modi cupiditate facere eos consectetur illo necessitatibus. Deleniti corrupti molestias mollitia ipsam eius, vel dolorum quaerat totam recusandae eum voluptas quisquam harum accusantium blanditiis, reprehenderit, a aperiam nihil. Doloremque eius placeat alias excepturi esse cupiditate? Illum iure reprehenderit expedita, incidunt optio non quae harum molestiae quas sit. Dicta, ullam tempo
+                    </p>
+                    <p class="cs-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quo in tenetur eveniet iste voluptates vel, molestiae id ab nisi, nihil ipsam voluptas, sapiente doloribus facere earum vitae provident! Aperiam modi cupiditate facere eos consectetur illo necessitatibus. Deleniti corrupti molestias mollitia ipsam eius, vel dolorum quaerat totam recusandae eum voluptas quisquam harum accusantium blanditiis, reprehenderit, a aperiam nihil. Doloremque eius placeat alias excepturi esse cupiditate? Illum iure reprehenderit expedita, incidunt optio non quae harum molestiae quas sit. Dicta, ullam tempo
+                    </p>
+                </div>
+            </div>
+            <div class="cs-info">
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/team3.jpg">
+                    <!--Tablet and above Image-->
+                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/team3.jpg">
+                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/team3.jpg" alt="person" width="522" height="696">
+                </picture>
+                <div class="cs-content">
+                    <span class="cs-header">Cameron Williamson</span>
+                    <p class="cs-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quo in tenetur eveniet iste voluptates vel, molestiae id ab nisi, nihil ipsam voluptas, sapiente doloribus facere earum vitae provident! Aperiam modi cupiditate facere eos consectetur illo necessitatibus. Deleniti corrupti molestias mollitia ipsam eius, vel dolorum quaerat totam recusandae eum voluptas quisquam harum accusantium blanditiis, reprehenderit, a aperiam nihil. Doloremque eius placeat alias excepturi esse cupiditate? Illum iure reprehenderit expedita, incidunt optio non quae harum molestiae quas sit. Dicta, ullam tempo
+                    </p>
+                    <p class="cs-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quo in tenetur eveniet iste voluptates vel, molestiae id ab nisi, nihil ipsam voluptas, sapiente doloribus facere earum vitae provident! Aperiam modi cupiditate facere eos consectetur illo necessitatibus. Deleniti corrupti molestias mollitia ipsam eius, vel dolorum quaerat totam recusandae eum voluptas quisquam harum accusantium blanditiis, reprehenderit, a aperiam nihil. Doloremque eius placeat alias excepturi esse cupiditate? Illum iure reprehenderit expedita, incidunt optio non quae harum molestiae quas sit. Dicta, ullam tempo
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+                                
 
     {% include 'components/cta.html' %}
 

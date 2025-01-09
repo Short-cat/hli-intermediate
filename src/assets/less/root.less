@@ -1879,11 +1879,24 @@
         .cs-logo-img {
             width: 100%;
             height: auto;
-
-            &.dark {
-                display: none;
-            }
         }
+
+        .cs-logo-dark {
+            display: none;
+            width: (197/16rem);
+            height: auto;
+            display: block;
+            /* 20px - 24px */
+            margin: 0 0 clamp(1.25rem, 2vw, 1.5rem) 0;
+        }
+
+        .cs-logo-dimg {
+            display: none;
+            width: 100%;
+            height: auto;
+        }
+
+
         .cs-link {
             font-size: (14/16rem);
             line-height: 1.5em;
@@ -2132,6 +2145,22 @@
             .cs-copyright,
             .cs-copyright-link {
                 color: var(--bodyTextColorWhite);
+            }
+
+            .cs-logo-dark {
+                display: block;
+            }
+
+            .cs-logo-dimg {
+                display: block;
+            }
+
+            .cs-logo {
+                display: none;
+            }
+
+            .cs-logo-img {
+                display: none;
             }
 
             .cs-link {

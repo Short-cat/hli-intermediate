@@ -18,17 +18,27 @@ eleventyNavigation:
 {% block body %}
 
     <!-- ============================================ -->
-    <!--                    LANDING                   -->
+    <!--                   Banner                     -->
     <!-- ============================================ -->
 
-    <section id="int-hero">
-        <h1 id="home-h">Project One Gallery</h1>
-        <picture>
-            <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
-            <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
-            <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="kitchen cabinets" loading="eager" width="2500" height="1667">
+    <div id="banner-1106">
+        <div class="cs-container">
+            <span class="cs-int-title">Gallery</span>
+            <div class="cs-breadcrumbs">
+                <a href="" class="cs-link">Home</a>
+                <a href="" class="cs-link cs-active">Gallery</a>
+            </div>
+        </div>
+        <!--Background Image-->
+        <picture class="cs-background">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/mechanic-20.jpg">
+            <!--Tablet and above Image-->
+            <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/mechanic-20.jpg">
+            <img decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/mechanic-20.jpg" alt="mechanic" width="1280" height="568" aria-hidden="true">
         </picture>
-    </section>
+    </div>
+                                
 
     <!-- ============================================ -->
     <!--                   Gallery                    -->
@@ -96,10 +106,7 @@ eleventyNavigation:
                     <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
                 </div>
             </div>
-            <a href="/contact" class="cs-button-solid">Get Free Quote</a>
         </div>
     </section>
-
-    {% include 'components/cta.html' %}
 
 {% endblock %}
