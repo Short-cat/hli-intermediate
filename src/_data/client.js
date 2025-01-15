@@ -1,6 +1,6 @@
 module.exports = {
-    "name": "Code Stitch Web Designs",
-    "email": "help@codestitch.app",
+    "name": "Supreme Landscaping & Fencing",
+    "email": "help@gmail.app",
     "phoneForTel": "555-779-4407",
     "phoneFormatted": "(555) 779-4407",
     "address": {

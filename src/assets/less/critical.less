@@ -4,22 +4,22 @@
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-    #hero-1249 {
+    #hero-1250 {
         padding: var(--sectionPadding);
         /* 200px - 300px - leaving extra space for the navigation */
-        padding-top: clamp(12.5rem, 30.95vw, 23.75rem);
+        padding-top: clamp(12.5rem, 31.95vw, 18.75rem);
         position: relative;
         z-index: 10;
 
         .cs-container {
             width: 100%;
-            max-width: (1280/16rem);
+            max-width: (1440/16rem);
             margin: auto;
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            gap: (200/16rem);
+            gap: (100/16rem);
         }
 
         .cs-content {
@@ -68,6 +68,7 @@
             color: #fff;
             padding: 0 (24/16rem);
             overflow: hidden;
+            border-radius: (4/16rem);
             background-color: var(--primary);
             display: inline-block;
             position: relative;
@@ -98,6 +99,7 @@
             /* changes to -150px at tablet */
             margin: 0 0 (-654/16rem) 0;
             padding: 0;
+            padding-top: (140/16em);
             width: 100%;
             display: grid;
             grid-template-columns: repeat(12, 1fr);
@@ -111,7 +113,7 @@
             list-style: none;
             margin: 0;
             padding: 0;
-            background-color: #a1a1a1;
+            background-color: #000;
             border-radius: (8/16rem);
             /* clips background image corners */
             overflow: hidden;
@@ -293,21 +295,30 @@
 
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-    #hero-1249 {
+    #hero-1250 {
         padding-bottom: 0;
         .cs-card-group {
             margin-bottom: (-150/16rem);
         }
 
         .cs-item {
-            grid-column: span 4;
+            grid-column: span 6;
+        }
+    }
+}
+
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+    #hero-1250 {
+        .cs-item {
+            grid-column: span 3;
         }
     }
 }
 
 /* Large Desktop Parallax Effect - 100px */
 @media only screen and (min-width: 100rem) {
-    #hero-1249 {
+    #hero-1250 {
         .cs-background {
             background: url("https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/construction.jpg");
             background-size: cover;
@@ -321,6 +332,8 @@
         }
     }
 }
+
+                                
 
                                 
 

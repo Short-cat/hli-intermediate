@@ -109,87 +109,228 @@
 /*-- -------------------------- -->
 <---          Gallery           -->
 <--- -------------------------- -*/
-/* Mobile - 360px - Contains hover animation */
+/* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #gallery {
-    position: relative;
-    /* Prevents overflow from the image going off screen */
-    overflow: hidden;
-    padding: var(--sectionPadding);
-    padding-bottom: 7.5em;
-    /* Centers button */
+  #gallery-453 {
+    /* centers the inline-block button */
     text-align: center;
+    padding: var(--sectionPadding);
+    padding-bottom: 13.75em;
   }
-  #gallery .cs-container {
+  #gallery-453 .cs-container {
+    width: 100%;
+    /* changes to 1280px at tablet */
+    max-width: 34.375rem;
     margin: auto;
-    max-width: 82.625em;
-    width: 100%;
-  }
-  #gallery .cs-image-group {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    margin: 0 auto 3.75rem;
-    max-width: 82.625em;
-    width: 100%;
-    padding: 0;
-    /* used rem so it doesn't scale with the font size of on parent */
-    font-size: min(1.1vw, 1em);
-    gap: 1.875em;
-  }
-  #gallery .cs-row {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+    position: relative;
+  }
+  #gallery-453 .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: left;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: flex-start;
+  }
+  #gallery-453 .cs-button-group {
+    width: 100%;
+    max-width: 37.5rem;
+    margin: 0;
+    display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap: 1.875em;
+    flex-wrap: wrap;
+    row-gap: 0.5rem;
+    column-gap: 1.5rem;
   }
-  #gallery .cs-picture {
+  #gallery-453 .cs-button {
+    font-size: 1rem;
+    line-height: 1.5em;
+    padding: 0 0 0 1rem;
+    color: var(--bodyTextColor);
+    background-color: transparent;
+    border: none;
     position: relative;
-    display: block;
+    transition: color 0.3s;
   }
-  #gallery .cs-picture img {
+  #gallery-453 .cs-button:before {
+    content: "";
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background: var(--primary);
+    /* starting value, this will animate to 1 when the button is hovered, and when the active class is on it */
+    opacity: 0;
+    /* prevents mouse from interacting with it */
+    pointer-events: none;
+    position: absolute;
+    display: block;
+    top: 50%;
+    /* start -20px left of the button */
+    left: -1.25rem;
+    transform: translateY(-50%);
+    /* transition to and from the active class styles on hover*/
+    transition: opacity 0.3s, left 0.3s;
+  }
+  #gallery-453 .cs-button:hover {
+    color: var(--primary);
+    cursor: pointer;
+  }
+  #gallery-453 .cs-button:hover:before {
+    left: 0;
+    opacity: 1;
+  }
+  #gallery-453 .cs-button.cs-active {
+    /* when the button is active, add these styles to the button and its pseudo */
+    font-weight: 700;
+    color: var(--primary);
+  }
+  #gallery-453 .cs-button.cs-active:before {
+    /* animate to these values when the cs-active class is added to the button and on hover */
+    left: 0;
+    opacity: 1;
+  }
+  #gallery-453 .cs-wrapper {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+  #gallery-453 .cs-gallery {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    /* 48px - 64px */
+    margin-bottom: clamp(3rem, 3vw, 4rem);
+    opacity: 1;
+    visibility: visible;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    left: 0;
+    /* 16px - 20px */
+    gap: clamp(1rem, 1vw, 1.25rem);
+    transition: transform 0.7s, opacity 0.3s, visibility 0.5s, top 0.3s, left 0.3s;
+    /* makes the transform scaling origin the top left corner, dictates the direction by which the scale transforms animate towards */
+    transform-origin: left top;
+  }
+  #gallery-453 .cs-gallery.cs-hidden {
+    /* by using visibility:hidden instead of display:none, we can see the animations from the opacity and transforms, display:none won't render animations. */
+    visibility: hidden;
+    /* prevents the mouse from interacting with it */
+    pointer-events: none;
+    /* hidden galleries have a 0 opacity, and we animate the opacity to 1 when they become active */
+    opacity: 0;
+    /* this top and left value help control the animation, by setting it to position absolute and left 0, the gallery won't fly off screen to the left, it will stop its position to be at the left edge of the .cs-container (left: 0). Same for the bottom:0 value, the gallery won't go past that posiiton when it animates */
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    /* prevents the hidden galleries from overflowing the section, and makes a nice animations to transition to and from */
+    transform: scaleY(0) scaleX(0);
+  }
+  #gallery-453 .cs-gallery.cs-hidden .cs-image {
+    /* when gallery is hidden, add these styles to the cs-image to animate from when cs-hidden is removed from the .cs-gallery */
+    transform: translateY(2.1875rem);
+    opacity: 0;
+  }
+  #gallery-453 .cs-image {
+    border-radius: 0.25rem;
+    width: clamp(47%, 42.5vw, 48.5%);
+    /* changes at tablet */
+    aspect-ratio: 154/211;
+    /* clips the image corners */
+    overflow: hidden;
+    display: block;
+    position: relative;
+    /* when .cs-hidden is removed from the .cs-gallery, reset these values and animate from their hidden styles */
+    transform: translateY(0rem);
+    opacity: 1;
+    transition: opacity 0.6s, transform 0.6s;
+  }
+  #gallery-453 .cs-image:nth-of-type(1) {
+    /* these delays stagger the reveal of each image so they all go one after the other and not all at once */
+    transition-delay: 0.15s;
+  }
+  #gallery-453 .cs-image:nth-of-type(2) {
+    transition-delay: 0.3s;
+  }
+  #gallery-453 .cs-image:nth-of-type(3) {
+    transition-delay: 0.45s;
+  }
+  #gallery-453 .cs-image:nth-of-type(4) {
+    transition-delay: 0.6s;
+  }
+  #gallery-453 .cs-image:nth-of-type(5) {
+    transition-delay: 0.75s;
+  }
+  #gallery-453 .cs-image:nth-of-type(6) {
+    transition-delay: 0.9s;
+  }
+  #gallery-453 .cs-image:nth-of-type(7) {
+    transition-delay: 1.05s;
+  }
+  #gallery-453 .cs-image:nth-of-type(8) {
+    transition-delay: 1.2s;
+  }
+  #gallery-453 .cs-image img {
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
+    /* makes it act like a background image */
     object-fit: cover;
   }
-  #gallery .cs-row-1 .cs-picture1 {
-    height: 35.4375em;
-    width: 26.25em;
+}
+/* Tablet - 600px */
+@media only screen and (min-width: 48rem) {
+  #gallery-453 .cs-container {
+    max-width: 80rem;
   }
-  #gallery .cs-row-1 .cs-picture2 {
-    height: 39.3125em;
-    width: 26.25em;
+  #gallery-453 .cs-content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
   }
-  #gallery .cs-row-1 .cs-picture3 {
-    height: 32em;
-    width: 26.25em;
+  #gallery-453 .cs-flex {
+    width: 50%;
   }
-  #gallery .cs-row-2 .cs-picture1 {
-    height: 30.75em;
-    width: 26.25em;
+  #gallery-453 .cs-title {
+    margin: 0;
   }
-  #gallery .cs-row-2 .cs-picture2 {
-    height: 32.3125em;
-    width: 26.25em;
+  #gallery-453 .cs-button-group {
+    width: auto;
   }
-  #gallery .cs-row-2 .cs-picture3 {
-    height: 39.3125em;
-    width: 26.25em;
+  #gallery-453 .cs-gallery {
+    justify-content: space-between;
   }
-  #gallery .cs-row-3 .cs-picture1 {
-    height: 39.0625em;
-    width: 26.25em;
+  #gallery-453 .cs-image {
+    /* 171px - 305px */
+    width: clamp(10.6875rem, 23.3%, 19.0625rem);
+    aspect-ratio: 304/425;
   }
-  #gallery .cs-row-3 .cs-picture2 {
-    height: 28.25em;
-    width: 26.25em;
+}
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode #gallery-453 .cs-topper {
+    color: var(--primaryLight);
   }
-  #gallery .cs-row-3 .cs-picture3 {
-    height: 39.3125em;
-    width: 26.25em;
+  body.dark-mode #gallery-453 .cs-title,
+  body.dark-mode #gallery-453 .cs-text,
+  body.dark-mode #gallery-453 .cs-button {
+    color: var(--bodyTextColorWhite);
+  }
+  body.dark-mode #gallery-453 .cs-title.cs-active,
+  body.dark-mode #gallery-453 .cs-text.cs-active,
+  body.dark-mode #gallery-453 .cs-button.cs-active {
+    color: var(--primaryLight);
   }
 }
