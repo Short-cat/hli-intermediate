@@ -8,8 +8,8 @@
 @media only screen and (min-width: 0rem) {
     // Website colors
     :root {
-        --primary: #ffc701;
-        --primaryLight: #ffc701;
+        --primary: #82d179;
+        --primaryLight: #ffd675;
         --secondary: #001f3f;
         --secondaryLight: #001f3f;
         --headerColor: #1a1a1a;
@@ -1255,7 +1255,7 @@
             justify-content: flex-start;
             align-items: center;
             position: relative;
-            &:last-of-type {
+            &:nth-last-of-type(2) {
                 &:after {
                     display: none;
                 }
@@ -1279,6 +1279,10 @@
                 display: block;
                 position: relative;
             }
+        }
+
+        .cs-remove {
+            display: none;
         }
 
         .cs-picture {
