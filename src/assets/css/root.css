@@ -1158,7 +1158,7 @@
     content: '';
     width: 0%;
     height: 2px;
-    background: var(--primary);
+    background: #82d179;
     opacity: 1;
     display: block;
     position: absolute;
