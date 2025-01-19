@@ -18,10 +18,19 @@
     width: 100%;
     max-width: 80rem;
     margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: 0.75rem;
   }
   #banner-1106 .cs-int-title {
@@ -35,9 +44,15 @@
     position: relative;
   }
   #banner-1106 .cs-breadcrumbs {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   #banner-1106 .cs-link {
     font-size: 1rem;
@@ -45,9 +60,15 @@
     text-decoration: none;
     color: var(--bodyTextColorWhite);
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   #banner-1106 .cs-link:last-of-type {
     /* remove the chevron on the last list item */
@@ -87,7 +108,6 @@
     display: block;
     height: 100%;
     width: 100%;
-    background: -moz-linear-gradient(left, rgba(26, 26, 26, 0.94) 0%, rgba(26, 26, 26, 0) 100%);
     /* FF3.6-15 */
     background: -webkit-linear-gradient(left, rgba(26, 26, 26, 0.94) 0%, rgba(26, 26, 26, 0) 100%);
     /* Chrome10-25,Safari5.1-6 */
@@ -103,7 +123,8 @@
     height: 100%;
     width: 100%;
     /* Makes img tag act as a background image */
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 /*-- -------------------------- -->
@@ -122,9 +143,16 @@
     /* changes to 1280px at tablet */
     max-width: 34.375rem;
     margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     /* 48px - 64px */
     gap: clamp(3rem, 6vw, 4rem);
     position: relative;
@@ -133,21 +161,36 @@
     /* set text align to left if content needs to be left aligned */
     text-align: left;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     /* centers content horizontally, set to flex-start to left align */
-    align-items: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
   #gallery-453 .cs-button-group {
     width: 100%;
     max-width: 37.5rem;
     margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     row-gap: 0.5rem;
-    column-gap: 1.5rem;
+    -webkit-column-gap: 1.5rem;
+            column-gap: 1.5rem;
   }
   #gallery-453 .cs-button {
     font-size: 1rem;
@@ -157,6 +200,7 @@
     background-color: transparent;
     border: none;
     position: relative;
+    -webkit-transition: color 0.3s;
     transition: color 0.3s;
   }
   #gallery-453 .cs-button:before {
@@ -174,9 +218,13 @@
     top: 50%;
     /* start -20px left of the button */
     left: -1.25rem;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
     /* transition to and from the active class styles on hover*/
-    transition: opacity 0.3s, left 0.3s;
+    -webkit-transition: opacity 0.3s,
+                    left 0.3s;
+    transition: opacity 0.3s,
+                    left 0.3s;
   }
   #gallery-453 .cs-button:hover {
     color: var(--primary);
@@ -211,16 +259,44 @@
     opacity: 1;
     visibility: visible;
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     left: 0;
     /* 16px - 20px */
     gap: clamp(1rem, 1vw, 1.25rem);
-    transition: transform 0.7s, opacity 0.3s, visibility 0.5s, top 0.3s, left 0.3s;
+    -webkit-transition: opacity 0.3s,
+                visibility 0.5s,
+                top 0.3s,
+                left 0.3s,
+                -webkit-transform 0.7s;
+    transition: opacity 0.3s,
+                visibility 0.5s,
+                top 0.3s,
+                left 0.3s,
+                -webkit-transform 0.7s;
+    transition: transform 0.7s,
+                opacity 0.3s,
+                visibility 0.5s,
+                top 0.3s,
+                left 0.3s;
+    transition: transform 0.7s,
+                opacity 0.3s,
+                visibility 0.5s,
+                top 0.3s,
+                left 0.3s,
+                -webkit-transform 0.7s;
     /* makes the transform scaling origin the top left corner, dictates the direction by which the scale transforms animate towards */
-    transform-origin: left top;
+    -webkit-transform-origin: left top;
+            transform-origin: left top;
   }
   #gallery-453 .cs-gallery.cs-hidden {
     /* by using visibility:hidden instead of display:none, we can see the animations from the opacity and transforms, display:none won't render animations. */
@@ -234,51 +310,70 @@
     left: 0;
     position: absolute;
     /* prevents the hidden galleries from overflowing the section, and makes a nice animations to transition to and from */
-    transform: scaleY(0) scaleX(0);
+    -webkit-transform: scaleY(0) scaleX(0);
+            transform: scaleY(0) scaleX(0);
   }
   #gallery-453 .cs-gallery.cs-hidden .cs-image {
     /* when gallery is hidden, add these styles to the cs-image to animate from when cs-hidden is removed from the .cs-gallery */
-    transform: translateY(2.1875rem);
+    -webkit-transform: translateY(2.1875rem);
+            transform: translateY(2.1875rem);
     opacity: 0;
   }
   #gallery-453 .cs-image {
     border-radius: 0.25rem;
     width: clamp(47%, 42.5vw, 48.5%);
     /* changes at tablet */
-    aspect-ratio: 154/211;
+    aspect-ratio: 0.72985782;
     /* clips the image corners */
     overflow: hidden;
     display: block;
     position: relative;
     /* when .cs-hidden is removed from the .cs-gallery, reset these values and animate from their hidden styles */
-    transform: translateY(0rem);
+    -webkit-transform: translateY(0rem);
+            transform: translateY(0rem);
     opacity: 1;
-    transition: opacity 0.6s, transform 0.6s;
+    -webkit-transition: opacity 0.6s,
+                -webkit-transform 0.6s;
+    transition: opacity 0.6s,
+                -webkit-transform 0.6s;
+    transition: opacity 0.6s,
+                transform 0.6s;
+    transition: opacity 0.6s,
+                transform 0.6s,
+                -webkit-transform 0.6s;
   }
   #gallery-453 .cs-image:nth-of-type(1) {
     /* these delays stagger the reveal of each image so they all go one after the other and not all at once */
-    transition-delay: 0.15s;
+    -webkit-transition-delay: 0.15s;
+            transition-delay: 0.15s;
   }
   #gallery-453 .cs-image:nth-of-type(2) {
-    transition-delay: 0.3s;
+    -webkit-transition-delay: 0.3s;
+            transition-delay: 0.3s;
   }
   #gallery-453 .cs-image:nth-of-type(3) {
-    transition-delay: 0.45s;
+    -webkit-transition-delay: 0.45s;
+            transition-delay: 0.45s;
   }
   #gallery-453 .cs-image:nth-of-type(4) {
-    transition-delay: 0.6s;
+    -webkit-transition-delay: 0.6s;
+            transition-delay: 0.6s;
   }
   #gallery-453 .cs-image:nth-of-type(5) {
-    transition-delay: 0.75s;
+    -webkit-transition-delay: 0.75s;
+            transition-delay: 0.75s;
   }
   #gallery-453 .cs-image:nth-of-type(6) {
-    transition-delay: 0.9s;
+    -webkit-transition-delay: 0.9s;
+            transition-delay: 0.9s;
   }
   #gallery-453 .cs-image:nth-of-type(7) {
-    transition-delay: 1.05s;
+    -webkit-transition-delay: 1.05s;
+            transition-delay: 1.05s;
   }
   #gallery-453 .cs-image:nth-of-type(8) {
-    transition-delay: 1.2s;
+    -webkit-transition-delay: 1.2s;
+            transition-delay: 1.2s;
   }
   #gallery-453 .cs-image img {
     position: absolute;
@@ -287,7 +382,8 @@
     height: 100%;
     width: 100%;
     /* makes it act like a background image */
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 /* Tablet - 600px */
@@ -296,9 +392,16 @@
     max-width: 80rem;
   }
   #gallery-453 .cs-content {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-end;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
   }
   #gallery-453 .cs-flex {
     width: 50%;
@@ -310,18 +413,20 @@
     width: auto;
   }
   #gallery-453 .cs-gallery {
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   #gallery-453 .cs-image {
     /* 171px - 305px */
     width: clamp(10.6875rem, 23.3%, 19.0625rem);
-    aspect-ratio: 304/425;
+    aspect-ratio: 0.71529412;
   }
 }
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
   body.dark-mode #gallery-453 .cs-topper {
-    color: var(--primaryLight);
+    color: var(--primary);
   }
   body.dark-mode #gallery-453 .cs-title,
   body.dark-mode #gallery-453 .cs-text,
@@ -331,6 +436,6 @@
   body.dark-mode #gallery-453 .cs-title.cs-active,
   body.dark-mode #gallery-453 .cs-text.cs-active,
   body.dark-mode #gallery-453 .cs-button.cs-active {
-    color: var(--primaryLight);
+    color: var(--primary);
   }
 }
