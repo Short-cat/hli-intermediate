@@ -3,6 +3,7 @@ module.exports = {
     "email": "help@gmail.app",
     "phoneForTel": "555-779-4407",
     "phoneFormatted": "(555) 779-4407",
+    "founder": "Isaac Artavia",
     "address": {
         "lineOne": "First Address Line",
         "lineTwo": "Second Address Line",
