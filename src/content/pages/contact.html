@@ -34,47 +34,47 @@ eleventyNavigation:
     <!--                Contact Form                  -->
     <!-- ============================================ -->
 
-    <!-- ============================================ -->
+<!-- ============================================ -->
 <!--                   Contact                    -->
 <!-- ============================================ -->
 
-<section id="contact-1239">
+<section id="contact-1600">
     <div class="cs-container">
         <div class="cs-content">
             <span class="cs-topper">Contact Us</span>
-            <h2 class="cs-title">Make An Appointment</h2>
+            <h2 class="cs-title">Get In Touch</h2>
             <!--Form-->
-            <form class="cs-form" id="cs-form-1239" name="Contact Form" method="post">
+            <form class="cs-form" id="cs-form-1600" name="Contact Form" method="post">
                 <label class="cs-label">
                     Name
-                    <input class="cs-input" required type="text" id="name-1239" name="name" placeholder="Name">
+                    <input class="cs-input" required type="text" id="name-1600" name="name" placeholder="Name">
                 </label>
                 <label class="cs-label cs-email">
                     Email
-                    <input class="cs-input" required type="email" id="email-1239" name="email" placeholder="Email">
+                    <input class="cs-input" required type="email" id="email-1600" name="email" placeholder="Email">
                 </label>
                 <label class="cs-label cs-phone">
                     Phone
-                    <input class="cs-input" required type="phone" id="phone-1239" name="phone" placeholder="Phone">
+                    <input class="cs-input" required type="phone" id="phone-1600" name="phone" placeholder="Phone">
                 </label>
                 <label class="cs-label">
                     Message
-                    <textarea class="cs-input cs-textarea" required name="Message" id="message-1239" placeholder="Write message..."></textarea>
+                    <textarea class="cs-input cs-textarea" required name="Message" id="message-1600" placeholder="Write message..."></textarea>
                 </label>
-                <button class="cs-button-solid cs-submit" type="submit">Make an Appointment</button>
+                <button class="cs-button-solid cs-submit" type="submit">Submit Now</button>
             </form>
         </div>
         <div class="cs-wrapper">
             <ul class="cs-card-group">
                 <li class="cs-item">
-                    <span class="cs-header">Call Us</span>
+                    <span class="cs-header">Our Support</span>
                     <p class="cs-item-text">
                         We are available for your 24/7 support.<br>
                         <a class="cs-link" href="tell:555-555-5555">(555) 555-5555</a>                    
                     </p>
                 </li>
                 <li class="cs-item">
-                    <span class="cs-header">Email</span>
+                    <span class="cs-header">Email Us</span>
                     <p class="cs-item-text">
                         Email your questions at
                         <a class="cs-link" href="mailto:info@invetexfinance.com">info@invetexfinance.com</a>     
@@ -91,24 +91,25 @@ eleventyNavigation:
                     </p>
                 </li>
             </ul>
-            <!--Background image on mobile. We have to wrap the list in a wrpper div so we can place the image in the HTML as its background. It's better to insert images on your site in the HTML than the CSS as a background because it improves performance and load times being in the HTML.-->
-            <picture class="cs-card-background">
+            <picture class="cs-background">
                 <!--Mobile Image-->
-                <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/HEADPHONES.jpg">
+                <source media="(max-width: 600px)" srcset="/assets/images/cabinets.jpg">
                 <!--Tablet and above Image-->
-                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/HEADPHONES.jpg">
-                <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/HEADPHONES.jpg" alt="people" width="960" height="839">
+                <source media="(min-width: 601px)" srcset="/assets/images/cabinets.jpg">
+                <img loading="lazy" decoding="async" src="/assets/images/cabinets.jpg" alt="people" width="522" height="771">
             </picture>
         </div>
+        <picture class="cs-background1">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/waves-side.svg">
+            <!--Tablet and above Image-->
+            <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/waves-side.svg">
+            <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/waves-side.svg" alt="wave" width="1280" height="568">
+        </picture>
     </div>
-    <!--Background image-->
-    <picture class="cs-background">
-        <!--Mobile Image-->
-        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/HEADPHONES.jpg">
-        <!--Tablet and above Image-->
-        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/HEADPHONES.jpg">
-        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/HEADPHONES.jpg" alt="people" width="960" height="839">
-    </picture>
 </section>
+                                
+
+{% include "components/cta.html" %}
                                 
 {% endblock %}

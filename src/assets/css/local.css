@@ -1174,6 +1174,18 @@
     /* 23 characters wide including spaces */
     max-width: 26ch;
   }
+  #sbs-1362 .cs-title::before {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 4px;
+    width: 1.515625em;
+    background: var(--primary);
+    opacity: 1;
+    bottom: -0.390625em;
+    left: 0;
+    margin-bottom: 0.625rem;
+  }
   #sbs-1362 .cs-text {
     margin-bottom: 1rem;
   }
@@ -1593,7 +1605,7 @@
     content: "";
     width: 50%;
     height: 60%;
-    background: var(--secondary);
+    background: var(--primary);
     opacity: 1;
     display: block;
     position: absolute;

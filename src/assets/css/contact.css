@@ -3,82 +3,98 @@
 <--- -------------------------- -*/
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #contact-1239 {
-    background-color: #f7f7f7;
+  #contact-1600 {
+    padding: var(--sectionPadding);
+    overflow: hidden;
     position: relative;
     z-index: 1;
   }
-  #contact-1239:before {
-    /* background pattern */
-    content: "";
-    position: absolute;
-    display: block;
-    height: 100%;
+  #contact-1600 .cs-container {
     width: 100%;
-    background: url("https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/zag-pattern.svg");
-    background-size: auto;
-    background-position: center;
-    background-repeat: repeat;
-    opacity: 0.48;
-    top: 0;
-    left: 0;
-    z-index: -1;
-  }
-  #contact-1239 .cs-container {
-    width: 100%;
-    max-width: 80rem;
+    /* changes to 1280px at tablet */
+    max-width: 34.375rem;
     margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: stretch;
-    flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     /* 48px - 80px */
     gap: clamp(3rem, 6vw, 5rem);
-    padding-bottom: 18.125em;
   }
-  #contact-1239 .cs-content {
+  #contact-1600 .cs-content {
     /* set text align to left if content needs to be left aligned */
-    text-align: center;
+    text-align: left;
     width: 100%;
-    max-width: 32.625rem;
+    max-width: 37.5rem;
     /* resets to 0 at tablet */
     margin: auto;
-    padding: var(--sectionPadding);
-    padding-top: 0;
-    /* prevents padding and border from affecting height and width */
-    box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     /* centers content horizontally, set to flex-start to left align */
-    align-items: center;
-    order: 2;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
-  #contact-1239 .cs-title {
+  #contact-1600 .cs-title {
     margin: 0 0 2rem 0;
   }
-  #contact-1239 .cs-form {
+  #contact-1600 .cs-form {
     width: 100%;
     padding: 0;
     /* prevents flexbox from affecting height and width */
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     gap: 0.75rem;
   }
-  #contact-1239 .cs-label {
+  #contact-1600 .cs-label {
     /* 14px - 16px */
     font-size: clamp(0.875rem, 1.5vw, 1rem);
     width: 100%;
     color: var(--headerColor);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     gap: 0.25rem;
   }
-  #contact-1239 .cs-input {
+  #contact-1600 .cs-label:last-of-type {
+    margin-bottom: 2rem;
+  }
+  #contact-1600 .cs-input {
     font-size: 1rem;
     width: 100%;
     /* 46px - 56px */
@@ -86,30 +102,34 @@
     padding: 0;
     padding-left: 1.5rem;
     color: var(--headerColor);
-    background-color: #fff;
+    background-color: #f7f7f7;
     border: none;
     /* prevents padding from adding to height and width */
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   }
-  #contact-1239 .cs-input::placeholder {
-    color: #7d799c;
-    opacity: 0.6;
+  #contact-1600 .cs-input::-webkit-input-placeholder {
+    color: #7D799C;
+    opacity: .6;
   }
-  #contact-1239 .cs-textarea {
+  #contact-1600 .cs-input:-ms-input-placeholder {
+    color: #7D799C;
+    opacity: .6;
+  }
+  #contact-1600 .cs-input::-ms-input-placeholder {
+    color: #7D799C;
+    opacity: .6;
+  }
+  #contact-1600 .cs-input::placeholder {
+    color: #7D799C;
+    opacity: .6;
+  }
+  #contact-1600 .cs-textarea {
     min-height: 7.5rem;
     padding-top: 1.5rem;
-    margin-bottom: 2rem;
     font-family: inherit;
   }
-  #contact-1239 input,
-  #contact-1239 textarea {
-    transition: border 0.3s;
-  }
-  #contact-1239 input:hover,
-  #contact-1239 textarea:hover {
-    border: 1px solid var(--primary);
-  }
-  #contact-1239 .cs-button-solid {
+  #contact-1600 .cs-button-solid {
     font-size: 1rem;
     /* 46px - 56px */
     line-height: clamp(2.875em, 5.5vw, 3.5em);
@@ -117,20 +137,21 @@
     font-weight: 700;
     text-align: center;
     margin: 0;
-    color: #1a1a1a;
+    color: #fff;
     border: none;
-    min-width: 9.375rem;
     padding: 0 1.5rem;
     background-color: var(--primary);
     display: inline-block;
     position: relative;
     z-index: 1;
     /* prevents padding from adding to the width */
-    box-sizing: border-box;
-    transition: color 0.3s;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-transition: color .3s;
+    transition: color .3s;
   }
-  #contact-1239 .cs-button-solid:before {
-    content: "";
+  #contact-1600 .cs-button-solid:before {
+    content: '';
     position: absolute;
     height: 100%;
     width: 0%;
@@ -139,90 +160,106 @@
     top: 0;
     left: 0;
     z-index: -1;
-    transition: width 0.3s;
+    -webkit-transition: width .3s;
+    transition: width .3s;
   }
-  #contact-1239 .cs-button-solid:hover {
+  #contact-1600 .cs-button-solid:hover {
     color: #fff;
   }
-  #contact-1239 .cs-button-solid:hover:before {
+  #contact-1600 .cs-button-solid:hover:before {
     width: 100%;
   }
-  #contact-1239 .cs-submit {
-    min-width: 17.6875rem;
-    margin: auto;
-  }
-  #contact-1239 .cs-submit:hover {
+  #contact-1600 .cs-submit:hover {
     cursor: pointer;
   }
-  #contact-1239 .cs-wrapper {
+  #contact-1600 .cs-wrapper {
+    /* 32px - 108px */
+    padding: clamp(2rem, 8vw, 6.75rem) 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-  }
-  #contact-1239 .cs-card-group {
-    width: 100%;
-    max-width: 32.625rem;
-    margin: 0;
-    padding: var(--sectionPadding);
-    /* prevents padding and border from affecting height and width */
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* 16px - 20px */
-    gap: clamp(1rem, 2.3vw, 1.25rem);
-    order: 1;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     position: relative;
     z-index: 1;
   }
-  #contact-1239 .cs-item {
+  #contact-1600 .cs-card-group {
+    width: 75%;
+    max-width: 25.8125rem;
+    margin: 0;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    /* 16px - 20px */
+    gap: clamp(1rem, 2.3vw, 1.25rem);
+    position: relative;
+    z-index: 1;
+  }
+  #contact-1600 .cs-item {
     text-align: left;
     list-style: none;
     width: 100%;
     margin: 0;
-    /* 16px - 20px */
-    padding: clamp(1rem, 4vw, 2.5rem);
-    /* prevents padding and border from affecting height and width */
-    box-sizing: border-box;
+    /* 16px - 40px top & Bottom */
+    /* 24px - 40px left & right */
+    padding: clamp(1rem, 4vw, 2.5rem) clamp(1.5rem, 5vw, 2.5rem);
+    /* prevents padding from affecting height and width */
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border: 1px solid #E8E8E8;
     background-color: #fff;
     position: relative;
     z-index: 1;
   }
-  #contact-1239 .cs-item:hover:before {
+  #contact-1600 .cs-item:hover:before {
     opacity: 1;
   }
-  #contact-1239 .cs-item:hover .cs-header,
-  #contact-1239 .cs-item:hover .cs-item-text,
-  #contact-1239 .cs-item:hover .cs-link {
-    color: var(--bodyTextColorWhite);
-  }
-  #contact-1239 .cs-item:hover .cs-text,
-  #contact-1239 .cs-item:hover .cs-link {
-    opacity: 0.8;
-  }
-  #contact-1239 .cs-item:hover .cs-link:hover {
+  #contact-1600 .cs-item:hover .cs-header {
     color: var(--primary);
   }
-  #contact-1239 .cs-item:hover .cs-icon {
-    filter: grayscale(1) brightness(1000%);
+  #contact-1600 .cs-item:hover .cs-item-text,
+  #contact-1600 .cs-item:hover .cs-link {
+    color: var(--bodyTextColorWhite);
   }
-  #contact-1239 .cs-item:before {
+  #contact-1600 .cs-item:hover .cs-text,
+  #contact-1600 .cs-item:hover .cs-link {
+    opacity: .8;
+  }
+  #contact-1600 .cs-item:hover .cs-link:hover {
+    color: var(--primary);
+  }
+  #contact-1600 .cs-item:hover .cs-icon {
+    -webkit-filter: grayscale(1) brightness(1000%);
+            filter: grayscale(1) brightness(1000%);
+  }
+  #contact-1600 .cs-item:before {
     /* hover border and background */
-    content: "";
+    content: '';
     width: 100%;
     height: 100%;
     background: #1a1a1a;
-    border: 1px solid var(--primary);
     opacity: 0;
     position: absolute;
     display: block;
     top: 0;
     left: 0;
     z-index: -1;
-    transition: opacity 0.3s;
+    -webkit-transition: opacity .3s;
+    transition: opacity .3s;
   }
-  #contact-1239 .cs-header {
+  #contact-1600 .cs-header {
     font-size: 1.25rem;
     line-height: 1.2em;
     text-align: inherit;
@@ -230,36 +267,64 @@
     /* 12px - 16px */
     margin: 0 0 clamp(0.75rem, 1.6vw, 1rem);
     display: block;
-    transition: color 0.3s;
+    -webkit-transition: color .3s;
+    transition: color .3s;
   }
-  #contact-1239 .cs-item-text {
-    /* 14px - 16px */
-    font-size: clamp(0.875rem, 1.5vw, 1rem);
-    line-height: 1.5em;
-    text-align: inherit;
-    margin: 0 0 0.25rem;
-    color: var(--bodyTextColor);
-    display: block;
-    transition: color 0.3s;
-  }
-  #contact-1239 .cs-link {
+  #contact-1600 .cs-item-text {
     /* 14px - 16px */
     font-size: clamp(0.875rem, 1.5vw, 1rem);
     line-height: 1.5em;
     text-align: inherit;
     margin: 0;
     color: var(--bodyTextColor);
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 0.25rem;
-    transition: color 0.3s;
+    display: block;
+    -webkit-transition: color .3s;
+    transition: color .3s;
   }
-  #contact-1239 .cs-icon {
+  #contact-1600 .cs-link {
+    /* 14px - 16px */
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    line-height: 1.5em;
+    text-align: inherit;
+    margin: 0;
+    color: var(--bodyTextColor);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 0.25rem;
+    -webkit-transition: color .3s;
+    transition: color .3s;
+  }
+  #contact-1600 .cs-icon {
     width: 1rem;
     height: auto;
   }
-  #contact-1239 .cs-card-background {
+  #contact-1600 .cs-background {
+    height: 100%;
+    width: 100%;
+    max-width: 32.625rem;
+    position: absolute;
+    /* 60px - 188px */
+    left: clamp(3.75rem, 9vw, 11.75rem);
+    top: 0;
+    z-index: -1;
+  }
+  #contact-1600 .cs-background img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  #contact-1600 .cs-background1 {
     width: 100%;
     height: 100%;
     display: block;
@@ -268,370 +333,129 @@
     left: 0;
     z-index: -1;
   }
-  #contact-1239 .cs-card-background img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-  #contact-1239 .cs-background {
-    width: 55vw;
-    height: 100%;
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    z-index: -1;
-  }
-  #contact-1239 .cs-background img {
+  #contact-1600 .cs-background1 img {
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
     /* Makes img tag act as a background image */
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-  #contact-1239 {
-    /* moved padding back to the section container */
-    padding: var(--sectionPadding);
+  #contact-1600 .cs-container {
+    max-width: 80rem;
+    /* removed at large desktop. This is to clip the cs-background */
+    overflow: hidden;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
-  #contact-1239 .cs-container {
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-  }
-  #contact-1239 .cs-content {
+  #contact-1600 .cs-content {
     text-align: left;
     width: 42%;
     margin: 0;
     padding: 0;
-    align-items: flex-start;
-    order: 1;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
   }
-  #contact-1239 .cs-form {
+  #contact-1600 .cs-form {
     padding: 0;
   }
-  #contact-1239 .cs-submit {
+  #contact-1600 .cs-submit {
     margin-left: 0;
   }
-  #contact-1239 .cs-wrapper {
-    width: 42%;
-    max-width: 25.8125rem;
-    order: 2;
+  #contact-1600 .cs-wrapper {
+    width: 50%;
+    max-width: 39.375rem;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
-  #contact-1239 .cs-card-group {
+  #contact-1600 .cs-card-group {
     padding: 0;
   }
-  #contact-1239 .cs-card-background {
+  #contact-1600 .cs-card-background {
     display: none;
   }
-  #contact-1239 .cs-background {
+  #contact-1600 .cs-background {
     display: block;
+  }
+}
+/* Large Desktop - 1500px */
+@media only screen and (min-width: 93.75rem) {
+  #contact-1600 .cs-container {
+    overflow: visible;
+  }
+  #contact-1600 .cs-background {
+    left: 11.75rem;
   }
 }
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
-  body.dark-mode #contact-1239 {
+  body.dark-mode #contact-1600 {
     background-color: rgba(0, 0, 0, 0.2);
   }
-  body.dark-mode #contact-1239:before {
-    opacity: 0.1;
+  body.dark-mode #contact-1600:before {
+    opacity: .1;
   }
-  body.dark-mode #contact-1239 .cs-title,
-  body.dark-mode #contact-1239 .cs-text,
-  body.dark-mode #contact-1239 .cs-header,
-  body.dark-mode #contact-1239 .cs-item-text,
-  body.dark-mode #contact-1239 .cs-link {
+  body.dark-mode #contact-1600 .cs-title,
+  body.dark-mode #contact-1600 .cs-text,
+  body.dark-mode #contact-1600 .cs-header,
+  body.dark-mode #contact-1600 .cs-item-text,
+  body.dark-mode #contact-1600 .cs-link {
     color: var(--bodyTextColorWhite);
   }
-  body.dark-mode #contact-1239 .cs-link,
-  body.dark-mode #contact-1239 .cs-item-text {
-    opacity: 0.8;
+  body.dark-mode #contact-1600 .cs-link,
+  body.dark-mode #contact-1600 .cs-item-text {
+    opacity: .8;
   }
-  body.dark-mode #contact-1239 .cs-icon {
-    filter: grayscale(1) brightness(1000%);
+  body.dark-mode #contact-1600 .cs-icon {
+    -webkit-filter: grayscale(1) brightness(1000%);
+            filter: grayscale(1) brightness(1000%);
   }
-  body.dark-mode #contact-1239 .cs-label {
+  body.dark-mode #contact-1600 .cs-label {
     color: var(--bodyTextColorWhite);
   }
-  body.dark-mode #contact-1239 .cs-input {
+  body.dark-mode #contact-1600 .cs-input {
     background-color: var(--medium);
     color: var(--bodyTextColorWhite);
   }
-  body.dark-mode #contact-1239 .cs-input::placeholder {
+  body.dark-mode #contact-1600 .cs-input::-webkit-input-placeholder {
     color: #fff;
-    opacity: 0.5;
+    opacity: .5;
   }
-  body.dark-mode #contact-1239 .cs-item:before {
+  body.dark-mode #contact-1600 .cs-input:-ms-input-placeholder {
+    color: #fff;
+    opacity: .5;
+  }
+  body.dark-mode #contact-1600 .cs-input::-ms-input-placeholder {
+    color: #fff;
+    opacity: .5;
+  }
+  body.dark-mode #contact-1600 .cs-input::placeholder {
+    color: #fff;
+    opacity: .5;
+  }
+  body.dark-mode #contact-1600 .cs-item {
+    border: 1px solid var(--accent);
+  }
+  body.dark-mode #contact-1600 .cs-item:before {
     opacity: 1;
-  }
-}
-@media only screen and (min-width: 0rem) {
-  :root {
-    /* 13px - 16px */
-    --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
-    /* 31px - 49px */
-    --headerFontSize: clamp(1.9375rem, 4.5vw, 3.0625rem);
-    --bodyFontSize: 1rem;
-    /* 60px - 100px top and bottom */
-    --sectionPadding: clamp(3.75em, 7.82vw, 6.25em) 1rem;
-  }
-  #cs-contact {
-    padding: var(--sectionPadding);
-    font-family: "Roboto", "Arial", sans-serif;
-    padding-bottom: 13.75em;
-  }
-  #cs-contact .cs-container {
-    margin: auto;
-    /* changes to 1280px at desktop */
-    max-width: 50rem;
-    width: 100%;
-  }
-  #cs-contact .cs-content {
-    width: 100%;
-  }
-  #cs-contact .cs-topper {
-    /* 8px - 12px */
-    margin-bottom: clamp(0.5rem, 1.4vw, 0.75rem);
-    text-align: left;
-  }
-  #cs-contact .cs-title {
-    max-width: 50rem;
-    text-align: left;
-  }
-  #cs-contact .cs-text {
-    margin: 0 auto 0 0;
-    /* 40px - 48px */
-    margin-bottom: clamp(2.5rem, 6.3vw, 3rem);
-    /* 404px - 522px */
-    max-width: clamp(25.25rem, 30vw, 32.625rem);
-    text-align: left;
-  }
-  #cs-contact #cs-form {
-    margin-bottom: 2.5rem;
-  }
-  #cs-contact #cs-form label {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    /* 12px - 20px */
-    margin-bottom: clamp(0.75rem, 1.3em, 1.25rem);
-    font-size: 1rem;
-    line-height: 1.5em;
-    font-weight: 700;
-    color: var(--headerColor);
-  }
-  #cs-contact #cs-form .cs-label-message {
-    /* 32px - 48px */
-    margin-bottom: clamp(2rem, 6.3vw, 3rem);
-  }
-  #cs-contact #cs-form input,
-  #cs-contact #cs-form textarea {
-    border: 1px solid #b4b2c7;
-    border-radius: 0.5rem;
-    margin-top: 0.25rem;
-    height: 4rem;
-    width: 100%;
-    /* prevents border & padding from affecting height */
-    box-sizing: border-box;
-    padding-left: 1.25rem;
-    font-size: 1rem;
-    transition: border 0.3s;
-  }
-  #cs-contact #cs-form input:hover,
-  #cs-contact #cs-form textarea:hover {
-    border: 1px solid var(--primary);
-  }
-  #cs-contact #cs-form textarea {
-    min-height: 7.5rem;
-    padding-top: 1.25rem;
-    font-family: inherit;
-  }
-  #cs-contact #cs-form .cs-button-solid {
-    border: none;
-    width: 100%;
-  }
-  #cs-contact .cs-right-section {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-start;
-    border-radius: 0.5rem;
-    height: 20rem;
-    /* cuts off corners on img tag */
-    overflow: hidden;
-    /* 24px - 40px top & bottom */
-    /* 20px - 40px left & right */
-    padding: clamp(1.5rem, 3vw, 2.5rem) clamp(1.25rem, 3vw, 2.5rem);
-  }
-  #cs-contact .cs-header {
-    display: block;
-    margin-bottom: 0.5rem;
-    /* 16px - 20px */
-    font-size: clamp(1rem, 3vw, 1.25rem);
-    line-height: 1.2em;
-    font-weight: 700;
-    color: var(--bodyTextColorWhite);
-  }
-  #cs-contact .cs-link {
-    position: relative;
-    display: block;
-    margin-bottom: 1.25rem;
-    text-decoration: none;
-    /* 16px - 20px */
-    font-size: clamp(1rem, 3vw, 1.25rem);
-    line-height: 1.2em;
-    color: var(--bodyTextColorWhite);
-  }
-  #cs-contact .cs-link:before {
-    position: absolute;
-    bottom: calc(-2 / 16 * 1rem);
-    left: 0;
-    /* Animated underline */
-    content: "";
-    opacity: 1;
-    display: block;
-    /* current color of the parent */
-    background: currentColor;
-    height: 2px;
-    width: 0%;
-    transition: width 0.3s;
-  }
-  #cs-contact .cs-link:hover:before {
-    width: 100%;
-  }
-  #cs-contact .cs-link:last-of-type {
-    margin-bottom: 0;
-  }
-  #cs-contact .cs-block {
-    /* sends second address line to the bottom on its own line */
-    display: block;
-  }
-  #cs-contact .cs-bg-picture {
-    z-index: -1;
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-    height: 100%;
-    width: 100%;
-    transition: transform 0.6s;
-  }
-  #cs-contact .cs-bg-picture img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    /* Makes img tag act as a background image */
-    object-fit: cover;
-  }
-  #cs-contact .cs-bg-picture:before {
-    z-index: 1;
-    position: absolute;
-    top: 0;
-    left: 0;
-    /* background color overlay */
-    content: "";
-    display: block;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
-    height: 100%;
-    width: 100%;
-  }
-}
-/* Tablet - 700px */
-@media only screen and (min-width: 43.75em) {
-  #cs-contact #cs-form {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
-  #cs-contact #cs-form label {
-    width: 48%;
-  }
-  #cs-contact #cs-form .cs-label-message {
-    width: 100%;
-  }
-}
-/* Small Desktop - 1024px */
-@media only screen and (min-width: 64rem) {
-  #cs-contact .cs-container {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-start;
-    max-width: 80rem;
-    gap: 5rem;
-  }
-  #cs-contact #cs-form {
-    max-width: 39.375rem;
-  }
-  #cs-contact #cs-form label {
-    width: 100%;
-  }
-  #cs-contact .cs-right-section {
-    /* changes to 578px at 1300px wide */
-    height: 42.875rem;
-    max-width: 33.875rem;
-    width: 40%;
-    /* prevents flexbox from squishing it */
-    flex: none;
-  }
-  #cs-contact .cs-right-section:hover .cs-bg-picture {
-    transform: scale(1.1);
-  }
-  #cs-contact .cs-block {
-    /* goes back to inline so it stays "in line" with the rest of the text */
-    display: inline-block;
-  }
-}
-/* Small Desktop - 1300px */
-@media only screen and (min-width: 81.25em) {
-  #cs-contact #cs-form {
-    column-gap: 0rem;
-  }
-  #cs-contact #cs-form label {
-    max-width: 19.0625rem;
-    width: 48%;
-  }
-  #cs-contact #cs-form .cs-label-message {
-    max-width: 100%;
-  }
-  #cs-contact .cs-right-section {
-    height: 36.125rem;
-  }
-}
-/* Dark Mode */
-@media only screen and (min-width: 0rem) {
-  body.dark-mode #cs-contact .cs-text,
-  body.dark-mode #cs-contact .cs-title {
-    color: var(--bodyTextColorWhite);
-  }
-  body.dark-mode #cs-contact #cs-form label,
-  body.dark-mode #cs-contact #cs-form input,
-  body.dark-mode #cs-contact #cs-form textarea {
-    background-color: transparent;
-    color: var(--bodyTextColorWhite);
-  }
-  body.dark-mode #cs-contact #cs-form label::placeholder,
-  body.dark-mode #cs-contact #cs-form input::placeholder,
-  body.dark-mode #cs-contact #cs-form textarea::placeholder {
-    /* lighten up the color of the text by 40%*/
-    filter: brightness(1.4);
-  }
-  body.dark-mode #cs-contact .cs-bg-picture {
-    background-color: #000;
-  }
-  body.dark-mode #cs-contact .cs-bg-picture img {
-    /* lets parent background-color bleed through and darken it */
-    opacity: 0.5;
+    background-color: var(--dark);
   }
 }
