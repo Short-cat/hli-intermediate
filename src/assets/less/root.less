@@ -9,7 +9,7 @@
     // Website colors
     :root {
         --primary: #82d179;
-        --primaryLight: #ffd675;
+        --primaryLight: #82d179;
         --secondary: #001f3f;
         --secondaryLight: #001f3f;
         --headerColor: #1a1a1a;
@@ -1714,19 +1714,19 @@
 @media only screen and (min-width: 0em) {
     #footer {
       background: #1c1c1c;
-      padding: 84/16rem 0 20/16rem;
+      padding: (84/16rem) 0 (20/16rem);
       font-size: ~"min(4vw, 1.2em)";
   
       .left-section {
         margin: auto;
-        margin-bottom: 50/16rem;
+        margin-bottom: (50/16rem);
         text-align: center;
         .logo {
           display: inline-block;
           margin: auto;
           width: auto;
-          height: 5/16em;
-          margin-bottom: 30/16em;
+          height: (65/16em);
+          margin-bottom: (30/16em);
           text-align: center;
   
           img {
@@ -1737,13 +1737,13 @@
         }
   
         p {
-          font-size: 14/16rem;
-          line-height: 27/14;
+          font-size: (14/16rem);
+          line-height: (27/14);
           color: #fff;
           opacity: 0.9;
           text-align: center;
           width: 100%;
-          width: 307/14rem;
+          width: (307/14rem);
           margin: auto;
         }
   
@@ -1752,7 +1752,7 @@
           justify-content: center;
           align-items: center;
           align-content: center;
-          gap: 10/16em;
+          gap: (10/16em);
   
           picture {
             img {
@@ -1769,31 +1769,32 @@
   
       .right-section {
         width: 96%;
-        max-width: 407/16rem;
+        max-width: (407/16rem);
         margin: auto;
         .lists {
           display: flex;
           justify-content: space-between;
           flex-wrap: wrap;
           width: 96%;
-          max-width: 307/16rem;
+          max-width: (400/16rem);
           margin: auto;
+          gap: (15/16em);
   
           .button-c {
-            font-size: 16/16rem;
+            font-size: (16/16rem);
             font-weight: bold;
             text-transform: uppercase;
             text-decoration: none;
             display: inline-block;
             width: auto;
-            line-height: 50/16em;
-            height: 50/16rem;
+            line-height: (50/16em);
+            height: (50/16rem);
             text-align: center;
-            padding: 0 43.5/16rem;
+            padding: 0 (43.5/16rem);
             position: relative;
             z-index: 1;
             background: linear-gradient(120deg, #7deb71 10%, #5fb056 90%);
-            border-radius: 5/16em;
+            border-radius: (5/16em);
   
             // Transition Properties
             color: #000;
@@ -1817,7 +1818,7 @@
               left: 0;
               z-index: -1;
               background-color: #000;
-              border-radius: 5/16em;
+              border-radius: (5/16em);
   
               //Transition properties
               width: 0;
@@ -1826,20 +1827,20 @@
           }
   
           .button-r {
-            font-size: 16/16rem;
+            font-size: (16/16rem);
             font-weight: bold;
             text-transform: uppercase;
             text-decoration: none;
             display: inline-block;
             width: auto;
-            line-height: 50/16em;
-            height: 50/16rem;
+            line-height: (50/16em);
+            height: (50/16rem);
             text-align: center;
-            padding: 0 30/16rem;
+            padding: 0 (30/16rem);
             position: relative;
             z-index: 1;
             background-color: #fff;
-            border-radius: 5/16em;
+            border-radius: (5/16em);
   
             // Transition Properties
             color: #000;
@@ -1863,7 +1864,7 @@
               left: 0;
               z-index: -1;
               background-color: #000;
-              border-radius: 5/16em;
+              border-radius: (5/16em);
   
               //Transition properties
               width: 0;
@@ -1877,12 +1878,12 @@
             margin-top: 0;
   
             &:nth-of-type(3) {
-              margin-top: 50/16rem;
+              margin-top: (50/16rem);
               li {
                 display: flex;
                 justify-content: flex-start;
                 align-items: center;
-                margin-bottom: 16/16rem;
+                margin-bottom: (16/16rem);
   
                 &:last-of-type {
                   margin-bottom: 0;
@@ -1892,15 +1893,15 @@
   
             li {
               list-style: none;
-              margin-bottom: 12/16rem;
+              margin-bottom: (12/16rem);
               color: #fff;
-              font-size: 18/16rem;
+              font-size: (18/16rem);
               opacity: 0.9;
   
               a {
                 text-decoration: none;
                 color: #fff;
-                line-height: 21/18em;
+                line-height: (21/18em);
                 transition: color 0.3s;
                 &:hover {
                   color: var(--primary);
@@ -1909,9 +1910,9 @@
             }
             h2 {
               color: #fff;
-              font-size: 18/16rem;
-              line-height: 21/18em;
-              margin-bottom: 37/16rem;
+              font-size: (18/16rem);
+              line-height: (21/18em);
+              margin-bottom: (37/16rem);
               text-transform: uppercase;
               font-weight: bold;
               position: relative;
@@ -1920,11 +1921,11 @@
                 content: "";
                 position: absolute;
                 display: block;
-                height: 2/16rem;
-                width: 97/16rem;
+                height: (2/16rem);
+                width: (97/16rem);
                 background: var(--primary);
                 opacity: 1;
-                bottom: -16/16rem;
+                bottom: (-16/16rem);
                 left: 0;
               }
             }
@@ -1938,9 +1939,9 @@
   
         .button-solid {
           margin: 0;
-          height: 53/16rem;
-          padding-top: 3/16rem;
-          width: 250/16rem;
+          height: (53/16rem);
+          padding-top: (3/16rem);
+          width: (250/16rem);
         }
       }
   
@@ -1948,16 +1949,16 @@
         color: #fff;
         width: 96%;
         margin: auto;
-        padding: 20/16em 40/16em;
+        padding: (20/16em) (40/16em);
         text-align: center;
-        margin-top: 50/16rem;
-        line-height: 36/16rem;
-        font-size: 16/16rem;
+        margin-top: (50/16rem);
+        line-height: (36/16rem);
+        font-size: (16/16rem);
   
         a {
           color: var(--primary);
           text-decoration: none;
-          font-size: 16/16rem;
+          font-size: (16/16rem);
   
           &:hover {
             text-decoration: underline;
@@ -1966,7 +1967,7 @@
   
         .copyright {
           display: block;
-          font-size: 16/16rem;
+          font-size: (16/16rem);
         }
       }
     }
@@ -1982,20 +1983,20 @@
         flex-wrap: nowrap;
         justify-content: space-between;
         width: 96%;
-        max-width: 1320/16rem;
+        max-width: (1320/16rem);
         margin: auto;
-        padding-bottom: 60/16em;
+        padding-bottom: (60/16em);
       }
   
       .left-section {
-        width: 409/16rem;
+        width: (409/16rem);
         margin: 0;
         text-align: left;
   
         .logo {
           text-align: left;
           margin-left: 0;
-          height: 130/16rem;
+          height: (130/16rem);
         }
   
         p {
@@ -2008,25 +2009,25 @@
           justify-content: flex-start;
           align-items: center;
           align-content: center;
-          gap: 10/16em;
+          gap: (10/16em);
           picture {
             img {
-              height: 65/16em;
-              width: 65/16em;
+              height: (65/16em);
+              width: (65/16em);
             }
           }
   
           a {
             &:nth-of-type(2) {
               img {
-                height: 69/16em;
-                width: 69/16em;
+                height: (69/16em);
+                width: (69/16em);
               }
             }
             &:nth-of-type(3) {
               img {
-                height: 62/16em;
-                width: 62/16em;
+                height: (62/16em);
+                width: (62/16em);
               }
             }
           }
@@ -2035,7 +2036,7 @@
   
       .right-section {
         margin: 0;
-        width: 609/16rem;
+        width: (609/16rem);
         max-width: none;
         .lists {
           width: 96%;

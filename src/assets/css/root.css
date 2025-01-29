@@ -6,7 +6,7 @@
 @media only screen and (min-width: 0rem) {
   :root {
     --primary: #82d179;
-    --primaryLight: #ffd675;
+    --primaryLight: #82d179;
     --secondary: #001f3f;
     --secondaryLight: #001f3f;
     --headerColor: #1a1a1a;
@@ -1704,7 +1704,7 @@
     display: inline-block;
     margin: auto;
     width: auto;
-    height: 0.3125em;
+    height: 4.0625em;
     margin-bottom: 1.875em;
     text-align: center;
   }
@@ -1764,8 +1764,9 @@
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     width: 96%;
-    max-width: 19.1875rem;
+    max-width: 25rem;
     margin: auto;
+    gap: 0.9375em;
   }
   #footer .right-section .lists .button-c {
     font-size: 1rem;
