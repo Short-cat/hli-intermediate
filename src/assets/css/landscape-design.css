@@ -531,8 +531,6 @@
   body.dark-mode #content-page-1399 .cs-title,
   body.dark-mode #content-page-1399 .cs-text,
   body.dark-mode #content-page-1399 h2,
-  body.dark-mode #content-page-1399 h3,
-  body.dark-mode #content-page-1399 h4,
   body.dark-mode #content-page-1399 h5,
   body.dark-mode #content-page-1399 h6,
   body.dark-mode #content-page-1399 li,
@@ -540,12 +538,17 @@
     color: var(--bodyTextColorWhite);
   }
   body.dark-mode #content-page-1399 .cs-color,
-  body.dark-mode #content-page-1399 a {
+  body.dark-mode #content-page-1399 a,
+  body.dark-mode #content-page-1399 h3,
+  body.dark-mode #content-page-1399 h4 {
     color: var(--primaryLight);
   }
   body.dark-mode #content-page-1399 p,
   body.dark-mode #content-page-1399 li {
     color: #ebebeb;
+  }
+  body.dark-mode #content-page-1399 li::before {
+    background: #fff;
   }
   body.dark-mode #content-page-1399 .cs-item {
     background-color: rgba(0, 0, 0, 0.2);
