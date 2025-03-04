@@ -49,21 +49,20 @@
             padding: 0;
             margin: auto;
             display: flex;
-            justify-content: start;
+            justify-content: center;
             align-items: flex-start;
-            flex-direction: column;
             gap: (100/16rem);
         }
 
         .cs-content {
             /* set text align to left if content needs to be left aligned */
-            text-align: left;
+            text-align: center;
             width: 100%;
             max-width: (646/16rem);
             display: flex;
             flex-direction: column;
             /* centers content horizontally, set to flex-start to left align */
-            align-items: flex-start;
+            align-items: center;
 
         }
 
@@ -125,6 +124,13 @@
             &:hover {
                 &:before {
                     width: 100%;
+                }
+            }
+
+            &:nth-of-type(2) {
+                background-color: #000;
+                &::before {
+                    background: var(--primary);
                 }
             }
         }
@@ -229,7 +235,7 @@
         }
 
         .cs-background {
-            background: url("https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/construction.jpg");
+            background-image: url("/assets/images/landing1.png");
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -238,6 +244,7 @@
             img {
                 display: none;
             }
+
         }
     }
 }
