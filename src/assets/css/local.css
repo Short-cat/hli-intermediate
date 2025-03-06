@@ -1,243 +1,508 @@
 /*-- -------------------------- -->
-<---   Side By Side Reverse     -->
+<---          Award             -->
 <--- -------------------------- -*/
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #sbsr-524 {
+  #services-563 {
     padding: var(--sectionPadding);
   }
-  @keyframes floatAnimation {
-    0% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-0.6em);
-    }
-    100% {
-      transform: translateY(0);
-    }
-  }
-  @keyframes floatAnimation2 {
-    0% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-1em);
-    }
-    100% {
-      transform: translateY(0);
-    }
-  }
-  #sbsr-524 .cs-container {
+  #services-563 .cs-container {
     width: 100%;
-    /* changes to 1280px at desktop */
-    max-width: 34.375em;
+    /* changes to 1280px at tablet */
+    max-width: 34.375rem;
     margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     /* 48px - 64px */
-    gap: clamp(3rem, 6vw, 4rem);
+    gap: clamp(1rem, 3vw, 4.05rem);
   }
-  #sbsr-524 .cs-content {
-    /* set text align to left if content needs to be left aligned */
+  #services-563 .cs-content {
     text-align: left;
-    width: 100%;
     display: flex;
     flex-direction: column;
-    /* centers content horizontally, set to flex-start to left align */
     align-items: flex-start;
   }
-  #sbsr-524 .cs-title::before {
-    content: '';
-    position: absolute;
-    display: block;
-    height: 4px;
-    width: 1.515625em;
-    background: var(--primary);
-    opacity: 1;
-    bottom: -0.390625em;
-    left: 0;
-    margin-bottom: 0.625rem;
+  #services-563 .cs-topper {
+    color: var(--headerColor);
   }
-  #sbsr-524 .cs-text {
+  #services-563 .cs-text {
     margin-bottom: 1rem;
   }
-  #sbsr-524 .cs-text:last-of-type {
+  #services-563 .cs-text:last-of-type {
     margin-bottom: 2rem;
   }
-  #sbsr-524 .cs-flex-group {
-    /* 16px - 32px */
-    padding: clamp(1rem, 3vw, 2rem);
-    background-color: #f7f7f7;
-    border-radius: 1rem;
-    position: relative;
+  #services-563 .cs-color {
+    color: var(--primary);
   }
-  #sbsr-524 .cs-flex-p {
-    /* 14px - 16px */
-    font-size: clamp(0.875rem, 1.5vw, 1rem);
-    line-height: 1.5em;
-    margin: 0 0 1rem;
-    color: #767676;
-  }
-  #sbsr-524 .cs-name {
-    font-size: 1rem;
+  #services-563 .cs-h3 {
+    /* 25px - 31px */
+    font-size: clamp(1.5625rem, 3vw, 1.9375rem);
     line-height: 1.2em;
-    text-transform: uppercase;
-    font-weight: bold;
-    margin: 0 0 0.25rem;
+    font-weight: 700;
+    text-align: inherit;
+    /* 16px - 20px */
+    margin: 0 0 clamp(1rem, 1.9vw, 1.25rem) 0;
     color: var(--headerColor);
-    display: block;
   }
-  #sbsr-524 .cs-job {
-    font-size: 0.875rem;
-    line-height: 1.5em;
-    color: #767676;
-    display: block;
-  }
-  #sbsr-524 .cs-quote-icon {
-    /* 60px - 136px */
-    width: clamp(3.75rem, 10vw, 8.5rem);
-    height: auto;
-    position: absolute;
-    bottom: 0rem;
-    /* 16px - 32px */
-    right: clamp(1rem, 4vw, 2rem);
-  }
-  #sbsr-524 .cs-button-solid {
-    z-index: 1;
-    position: relative;
-    display: inline-block;
-    background-color: var(--primary);
-    width: auto;
-    padding: 0 1.875rem;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 1rem;
-    line-height: 3.125em;
-    font-weight: bold;
-    margin-top: 0.9375rem;
-    color: #000;
-    transition: color 0.3s;
-    transition-delay: 0.1s;
-    text-align: center;
-  }
-  #sbsr-524 .cs-button-solid:hover {
-    color: #fff;
-  }
-  #sbsr-524 .cs-button-solid:hover:before {
+  #services-563 .cs-ul {
     width: 100%;
+    margin: 0 0 2rem 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* 16px - 24px */
+    gap: clamp(1rem, 2.5vw, 1.5rem);
   }
-  #sbsr-524 .cs-button-solid:before {
-    z-index: -1;
+  #services-563 .cs-li {
+    /* 16px - 20px */
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    font-weight: 700;
+    list-style: none;
+    line-height: 1.5em;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    /* push icon top the top so if the list item goes to two lines the icon stays at the top */
+    align-items: flex-start;
+    gap: 1.25rem;
+  }
+  #services-563 .cs-icon {
+    /* adds extra space between the icon and top of parent so it's more centered */
+    margin-top: clamp(0.125rem, 0.47vw, 0.4375rem);
+  }
+  #services-563 .cs-button-solid {
+    font-size: 1rem;
+    /* 46px - 56px */
+    line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    color: #000;
+    min-width: 9.375rem;
+    padding: 0 1.5rem;
+    background-color: var(--secondary);
+    border-radius: 0.25rem;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    /* prevents padding from adding to the width */
+    box-sizing: border-box;
+  }
+  #services-563 .cs-button-solid:before {
+    content: "";
     position: absolute;
+    height: 100%;
+    width: 0%;
+    background: #000;
+    opacity: 1;
     top: 0;
     left: 0;
-    content: "";
-    opacity: 1;
-    display: block;
-    background-color: #000;
-    height: 100%;
-    width: 0;
+    z-index: -1;
+    border-radius: 0.25rem;
     transition: width 0.3s;
   }
-  #sbsr-524 .cs-image-group {
-    /* this is how we can scale entire groups using ems.  Font size is tied to the view width, so as the screen gets bigger, so does the font size, and this scales up and down the elements with em values.  Then it stops growing once the font size reaches the defined value of 1em (16px which is default on the html element). Font size changes at desktop */
-    font-size: min(2.3vw, .875em);
-    /* all values are done in ems, not rems, so we can scale the group with a font size min/max equation */
-    width: 39.375em;
-    height: 51.0625em;
+  #services-563 .cs-button-solid:hover:before {
+    width: 100%;
+  }
+  #services-563 .cs-picture {
+    /* changes at tablet */
+    width: 100%;
+    /* changes to a clamp at tablet */
+    height: 24.75rem;
+    display: block;
     position: relative;
-    /* pushes it to the top in the first position */
-    order: -1;
   }
-  #sbsr-524 .cs-image-group:before {
-    content: "";
-    width: 11.625em;
-    height: 10.0625em;
-    background: var(--primary);
-    opacity: 1;
-    position: absolute;
-    display: block;
-    top: 0em;
-    right: 0em;
-    border-radius: 0.625em;
-    animation-name: floatAnimation;
-    animation-duration: 4s;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: forwards;
-    animation-iteration-count: infinite;
-  }
-  #sbsr-524 .cs-picture {
-    display: block;
-    position: absolute;
-  }
-  #sbsr-524 .cs-picture img {
+  #services-563 .cs-picture img {
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
-    border-radius: 0.625em;
-    /* makes it act like a background image */
-    object-fit: cover;
+    object-fit: contain;
   }
-  #sbsr-524 .cs-picture-large {
-    width: 29.75em;
-    height: 42.3125em;
-    top: 4.375em;
-    right: 3.875em;
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #services-563 .cs-container {
+    max-width: 80rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
-  #sbsr-524 .cs-picture-small {
-    width: 16.25em;
-    height: 14.0625em;
-    border: 0.625em solid #fff;
-    border-radius: 0.625em;
-    background-color: #fff;
-    bottom: 0;
-    left: 0;
-    animation-name: floatAnimation2;
-    animation-duration: 10s;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: forwards;
-    animation-iteration-count: infinite;
+  #services-563 .cs-picture {
+    width: 53%;
+    /* 415px - 528px */
+    height: clamp(28.5rem, 46vw, 37.375rem);
+    /* sends it to the right in the 2nd position */
+    order: 2;
   }
-  #sbsr-524 .cs-picture-small img {
-    border-radius: 0.625em;
+  #services-563 .cs-content {
+    width: 45%;
+    max-width: 20rem;
   }
 }
 /* Small Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
-  #sbsr-524 .cs-container {
-    max-width: 80rem;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  #sbsr-524 .cs-content {
-    width: 51%;
-    max-width: 34.375rem;
-  }
-  #sbsr-524 .cs-image-group {
-    font-size: min(1.1vw, 1em);
-    /* sends it to the right in the 2nd position */
-    order: 2;
+  #services-563 .cs-picture {
+    width: 63%;
   }
 }
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
-  body.dark-mode #sbsr-524 .cs-title,
-  body.dark-mode #sbsr-524 .cs-text {
+  body.dark-mode #services-563 .cs-topper {
     color: var(--bodyTextColorWhite);
   }
-  body.dark-mode #sbsr-524 .cs-text {
+  body.dark-mode #services-563 .cs-color {
+    color: var(--primaryLight);
+  }
+  body.dark-mode #services-563 .cs-title,
+  body.dark-mode #services-563 .cs-text,
+  body.dark-mode #services-563 .cs-h3,
+  body.dark-mode #services-563 .cs-li {
+    color: var(--bodyTextColorWhite);
+  }
+  body.dark-mode #services-563 .cs-text {
     opacity: 0.8;
   }
-  body.dark-mode #sbsr-524 .cs-image-group:before {
-    opacity: 0.3;
+  body.dark-mode #services-563 .cs-icon {
+    filter: brightness(150%);
   }
-  body.dark-mode #sbsr-524 .cs-picture-small {
-    border-color: var(--dark);
+}
+/*-- -------------------------- -->
+<---   About Side By Side       -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #sbs {
+    padding: var(--sectionPadding);
+  }
+  #sbs .cs-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    max-width: 80rem;
+    width: 100%;
+    row-gap: 2.5rem;
+  }
+  #sbs .cs-left {
+    position: relative;
+    height: 39.75em;
+    /* using ems so we can use font size to scale the whole section */
+    width: 39.4375em;
+    /* scaling the font size with the view width */
+    font-size: min(2.31vw, 0.7em);
+  }
+  #sbs .cs-picture {
+    position: absolute;
+    display: block;
+    border-radius: 1.5em;
+    /* clips img tag corners */
+    overflow: hidden;
+  }
+  #sbs .cs-picture img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* makes image act like a background image */
+    object-fit: cover;
+  }
+  #sbs .cs-picture1 {
+    top: 0;
+    left: 0;
+    height: 36.3125em;
+    width: 32.625em;
+  }
+  #sbs .cs-picture2 {
+    bottom: 0;
+    right: 0;
+    /* 6px - 12px */
+    border: clamp(0.375em, 1.5vw, 0.75em) solid #fff;
+    background-color: #fff;
+    height: 25em;
+    width: 25.875em;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 40px;
+  }
+  #sbs .cs-right {
+    margin: auto;
+    max-width: 33.875rem;
+  }
+  #sbs .cs-topper {
+    margin-bottom: 0.25rem;
+    text-align: left;
+  }
+  #sbs .cs-title {
+    max-width: 50rem;
+    text-align: left;
+  }
+  #sbs .cs-text {
+    margin-bottom: 1rem;
+    max-width: 46.875rem;
+    color: var(--bodyTextColor);
+    text-align: left;
+  }
+  #sbs .cs-text:last-of-type {
+    margin-bottom: 2rem;
+  }
+  #sbs .cs-flex-group {
+    position: relative;
+    border-radius: 1rem;
+    background-color: #f7f7f7;
+    /* 16px - 32px */
+    padding: clamp(1rem, 3vw, 2rem);
+  }
+  #sbs .cs-flex-p {
+    margin: 0 0 1rem;
+    /* 14px - 16px */
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    line-height: 1.5em;
+    color: #353535;
+  }
+  #sbs .cs-name {
+    display: block;
+    margin: 0 0 0.25rem;
+    text-transform: uppercase;
+    font-size: 1rem;
+    line-height: 1.2em;
+    font-weight: bold;
+    color: var(--headerColor);
+  }
+  #sbs .cs-job {
+    display: block;
+    font-size: 0.875rem;
+    line-height: 1.5em;
+    color: #353535;
+  }
+  #sbs .cs-quote-icon {
+    position: absolute;
+    bottom: 0rem;
+    /* 16px - 32px */
+    right: clamp(1rem, 4vw, 2rem);
+    height: auto;
+    /* 60px - 136px */
+    width: clamp(3.75rem, 10vw, 8.5rem);
+  }
+  #sbs .cs-button-solid {
+    margin-top: 2rem;
+  }
+}
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #sbs .cs-container {
+    flex-flow: row;
+    justify-content: space-between;
+    gap: 3.25rem;
+  }
+  #sbs .cs-left {
+    font-size: min(1.2vw, 1em);
+    flex: none;
+  }
+  #sbs .cs-right {
+    margin: 0;
+  }
+}
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode #sbs .cs-left:before,
+  body.dark-mode #sbs .cs-left:after {
+    background: var(--accent);
+  }
+  body.dark-mode #sbs .cs-picture2 {
+    /* 6px - 12px */
+    border: clamp(0.375em, 1.5vw, 0.75em) solid var(--dark);
     background-color: var(--dark);
+  }
+  body.dark-mode #sbs .cs-topper {
+    color: var(--primaryLight);
+  }
+  body.dark-mode #sbs .cs-title,
+  body.dark-mode #sbs .cs-text,
+  body.dark-mode #sbs .cs-h3,
+  body.dark-mode #sbs .cs-flex-p,
+  body.dark-mode #sbs .cs-name {
+    color: var(--bodyTextColorWhite);
+  }
+  body.dark-mode #sbs .cs-flex-group {
+    background-color: var(--accent);
+  }
+  body.dark-mode #sbs .cs-job {
+    opacity: 0.8;
+    color: var(--bodyTextColorWhite);
+  }
+  body.dark-mode #sbs .cs-quote-icon {
+    opacity: 0.2;
+  }
+}
+/*-- -------------------------- -->
+<---  Extra Content to Rank     -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #sbs-r {
+    padding: var(--sectionPadding);
+  }
+  #sbs-r .cs-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    max-width: 80rem;
+    width: 100%;
+    row-gap: 2.5rem;
+  }
+  #sbs-r .cs-left {
+    position: relative;
+    height: 39.75em;
+    /* using ems so we can use font size to scale the whole section */
+    width: 39.4375em;
+    /* scaling the font size with the view width */
+    font-size: min(2.31vw, 0.7em);
+  }
+  #sbs-r .cs-picture {
+    position: absolute;
+    display: block;
+    border-radius: 1.5em;
+    /* clips img tag corners */
+    overflow: hidden;
+  }
+  #sbs-r .cs-picture img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* makes image act like a background image */
+    object-fit: cover;
+  }
+  #sbs-r .cs-picture1 {
+    top: 0;
+    right: 0;
+    height: 36.3125em;
+    width: 32.625em;
+  }
+  #sbs-r .cs-picture2 {
+    bottom: 0;
+    left: 0;
+    /* 6px - 12px */
+    border: clamp(0.375em, 1.5vw, 0.75em) solid #fff;
+    background-color: #fff;
+    height: 25em;
+    width: 25.875em;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 40px;
+  }
+  #sbs-r .cs-right {
+    margin: auto;
+    max-width: 33.875rem;
+  }
+  #sbs-r .cs-topper {
+    margin-bottom: 0.25rem;
+    text-align: left;
+  }
+  #sbs-r .cs-title {
+    max-width: 50rem;
+    text-align: left;
+  }
+  #sbs-r .cs-text {
+    margin-bottom: 1rem;
+    max-width: 46.875rem;
+    text-align: left;
+  }
+  #sbs-r .cs-text:last-of-type {
+    margin-bottom: 2rem;
+  }
+  #sbs-r .cs-flex-group {
+    position: relative;
+    border-radius: 1rem;
+    background-color: #f7f7f7;
+    /* 16px - 32px */
+    padding: clamp(1rem, 3vw, 2rem);
+  }
+  #sbs-r .cs-flex-p {
+    margin: 0 0 1rem;
+    /* 14px - 16px */
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    line-height: 1.5em;
+    color: #353535;
+  }
+  #sbs-r .cs-name {
+    display: block;
+    margin: 0 0 0.25rem;
+    text-transform: uppercase;
+    font-size: 1rem;
+    line-height: 1.2em;
+    font-weight: bold;
+    color: var(--headerColor);
+  }
+  #sbs-r .cs-job {
+    display: block;
+    font-size: 0.875rem;
+    line-height: 1.5em;
+    color: #353535;
+  }
+  #sbs-r .cs-quote-icon {
+    position: absolute;
+    bottom: 0rem;
+    /* 16px - 32px */
+    right: clamp(1rem, 4vw, 2rem);
+    height: auto;
+    /* 60px - 136px */
+    width: clamp(3.75rem, 10vw, 8.5rem);
+  }
+}
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #sbs-r .cs-container {
+    flex-flow: row;
+    justify-content: space-between;
+    gap: 3.25rem;
+  }
+  #sbs-r .cs-left {
+    /* sends it to the right */
+    order: 2;
+    font-size: min(1.2vw, 1em);
+    flex: none;
+  }
+  #sbs-r .cs-right {
+    margin: 0;
+  }
+}
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode #sbs-r .cs-left:before,
+  body.dark-mode #sbs-r .cs-left:after {
+    background: var(--accent);
+  }
+  body.dark-mode #sbs-r .cs-picture2 {
+    /* 6px - 12px */
+    border: clamp(0.375em, 1.5vw, 0.75em) solid var(--dark);
+    background-color: var(--dark);
+  }
+  body.dark-mode #sbs-r .cs-topper {
+    color: var(--primaryLight);
+  }
+  body.dark-mode #sbs-r .cs-title,
+  body.dark-mode #sbs-r .cs-text,
+  body.dark-mode #sbs-r .cs-h3,
+  body.dark-mode #sbs-r .cs-flex-p,
+  body.dark-mode #sbs-r .cs-name {
+    color: var(--bodyTextColorWhite);
+  }
+  body.dark-mode #sbs-r .cs-flex-group {
+    background-color: var(--accent);
+  }
+  body.dark-mode #sbs-r .cs-job {
+    opacity: 0.8;
+    color: var(--bodyTextColorWhite);
+  }
+  body.dark-mode #sbs-r .cs-quote-icon {
+    opacity: 0.2;
   }
 }
 /*-- -------------------------- -->
