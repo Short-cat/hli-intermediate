@@ -3,44 +3,11 @@
 <!-- ============================================ -->
 
 <header id="cs-navigation">
-    <!--Nav Logo-->
-    <a href="/" class="cs-logo" aria-label="back to home">
-        <img src="/assets/svgs/hli-logo6.svg" alt="logo" width="210" height="29" aria-hidden="true" decoding="async">
-    </a>
-    <a href="/" class="cs-logo-dark" aria-label="back to home">
-        <img src="/assets/svgs/hli-logo6.svg" alt="logo" width="210" height="29" aria-hidden="true" decoding="async">
-    </a>
-    <!--Top Bar-->
-    <ul class="cs-top-bar">
-        <li class="cs-item">
-            <picture class="cs-picture">
-                <img class="cs-icon" src="/assets/svgs/Icon_phone.svg" alt="icon" width="24" height="24" aria-hidden="true" decoding="async">
-            </picture>
-            <div class="cs-flex">
-                <span class="cs-header">Call Us Now</span>
-                <a href="tel:555-555-0234" class="cs-link">(555) 555-0234</a>
-            </div>
-        </li>
-        <li class="cs-item">
-            <picture class="cs-picture">
-                <img class="cs-icon" src="/assets/svgs/Icons_mail.svg" alt="icon" width="24" height="24" aria-hidden="true" decoding="async">
-            </picture>
-            <div class="cs-flex">
-                <span class="cs-header">Send A Message</span>
-                <a href="mailto:Info@email.com" class="cs-link">Info@email.com</a>
-            </div>
-        </li>
-        <li class="cs-item cs-remove">
-            <picture class="cs-picture">
-                <img class="cs-icon" src="https://storage.googleapis.com/msgsndr/KyjRd7UvrcBxsUcDlTRs/media/67871beea54a2249afc5ab40.svg" alt="icon" width="24" height="24" aria-hidden="true" decoding="async">
-            </picture>
-            <div class="cs-flex">
-                <span class="cs-header">Visit Us At</span>
-                <a href="" class="cs-link">2492 Fake Rd.</a>
-            </div>
-        </li>
-    </ul>
-    <div class="cs-bottom-bar">
+    <div class="cs-container">
+        <!--Nav Logo-->
+        <a href="/" class="cs-logo" aria-label="back to home">
+            <img src="/assets/svgs/hli-logo6.svg" alt="logo" width="110" height="110" aria-hidden="true" decoding="async">
+        </a>
         <!--Navigation List-->
         <nav class="cs-nav" role="navigation">
             <!--Mobile Nav Toggle-->
@@ -51,31 +18,33 @@
                     <span class="cs-line cs-line3" aria-hidden="true"></span>
                 </div>
             </button>
-            <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how many there are-->
+            <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
             <div class="cs-ul-wrapper">
                 <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
                     <li class="cs-li">
-                        <a href="/" class="cs-li-link cs-active">
+                        <a href="/" class="cs-li-link {{ 'cs-active' if '' == page.fileSlug }}">
                             Home
                         </a>
                     </li>
                     <li class="cs-li">
-                        <a href="/about" class="cs-li-link">
+                        <a href="/about" class="cs-li-link {{ 'cs-active' if 'about' == page.fileSlug }}">
                             About
                         </a>
                     </li>
                     <!--Copy and paste this cs-dropdown list item and replace any .cs-li with this cs-dropdown group to make a new dropdown and it will work-->
-                    <li class="cs-li cs-dropdown cs-active" tabindex="0">
-                        <span class="cs-li-link">
+                    <!--Copy and paste this cs-dropdown list item and replace any .cs-li with this cs-dropdown group to make a new dropdown and it will work-->
+                    <li class="cs-li cs-dropdown" tabindex="0">
+                        <a href="/services" class="cs-li-link cs-dropdown-toggle {{ 'cs-active' if 'services' == page.fileSlug }}">
                             Services
-                            <img class="cs-drop-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fdown.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
-                        </span>
+                            <img class="cs-drop-icon" src="/assets/svgs/down-arrow.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
+                        </a>
                         <ul class="cs-drop-ul">
-                            <li class="cs-drop-li">
-                                <span class="cs-li-link cs-drop-link cs-drop3-main">
+                            <li class="cs-drop-li cs-drop3-main">
+                                <span class="cs-li-link cs-drop-link ">
                                     Landscaping
-                                    <img class="cs-drop-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fdown.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
+                                    <img class="cs-drop-icon" src="/assets/svgs/down-arrow.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
                                 </span>
+                                <!--Tertiary-->
                                 <ul class="cs-drop3">
                                     <li class="cs-drop-li3">
                                         <a href="/landscape-design" class="cs-li-link cs-drop-link cs-drop-link3">Landscape Design</a>
@@ -84,88 +53,144 @@
                                         <a href="/plant-beds" class="cs-li-link cs-drop-link cs-drop-link3">Plant Beds</a>
                                     </li>
                                     <li class="cs-drop-li3">
-                                        <a href="/lighting" class="cs-li-link cs-drop-link cs-drop-link3">Landscape Lighting</a>
+                                        <a href="/artificial-turf" class="cs-li-link cs-drop-link cs-drop-link3">Artificial Turf</a>
                                     </li>
                                     <li class="cs-drop-li3">
                                         <a href="/sod" class="cs-li-link cs-drop-link cs-drop-link3">Sod</a>
                                     </li>
                                     <li class="cs-drop-li3">
-                                        <a href="/turf" class="cs-li-link cs-drop-link cs-drop-link3">Synthetic Turf</a>
+                                        <a href="/tree-trimming" class="cs-li-link cs-drop-link cs-drop-link3">Tree Trimming & Stump Grinding</a>
                                     </li>
+                                    
                                 </ul>
                             </li>
-                            <li class="cs-drop-li">
-                                <span class="cs-li-link cs-drop-link cs-drop3-main">
+                            <li class="cs-drop-li cs-drop3-main">
+                                <span class="cs-li-link cs-drop-link">
                                     Hardscaping
-                                    <img class="cs-drop-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fdown.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
+                                    <img class="cs-drop-icon" src="/assets/svgs/down-arrow.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
                                 </span>
+                                <!--Tertiary-->
                                 <ul class="cs-drop3">
                                     <li class="cs-drop-li3">
-                                        <a href="/walkways" class="cs-li-link cs-drop-link cs-drop-link3">Walkways</a>
+                                        <a href="/patios" class="cs-li-link cs-drop-link cs-drop-link3">Patios</a>
                                     </li>
                                     <li class="cs-drop-li3">
-                                        <a href="/fire" class="cs-li-link cs-drop-link cs-drop-link3">Fire & Water Features</a>
-                                    </li>
-                                    <li class="cs-drop-li3">
-                                        <a href="/retaining-walls" class="cs-li-link cs-drop-link cs-drop-link3">Curbing & Retaining Walls</a>
-                                    </li>
-                                    <li class="cs-drop-li3">
-                                        <a href="/kitchen" class="cs-li-link cs-drop-link cs-drop-link3">Outdoor Kitchens</a>
+                                        <a href="/outdoor-kitchens" class="cs-li-link cs-drop-link cs-drop-link3">Outdoor Kitchens</a>
                                     </li>
                                     <li class="cs-drop-li3">
                                         <a href="/driveways" class="cs-li-link cs-drop-link cs-drop-link3">Driveways</a>
                                     </li>
                                     <li class="cs-drop-li3">
-                                        <a href="/concrete-overlay" class="cs-li-link cs-drop-link cs-drop-link3">Concrete Overlay</a>
+                                        <a href="/walkways" class="cs-li-link cs-drop-link cs-drop-link3">Walkways & Sidewalks</a>
+                                    </li>
+                                    <li class="cs-drop-li3">
+                                        <a href="/concrete" class="cs-li-link cs-drop-link cs-drop-link3">Concrete Overlay</a>
+                                    </li>
+                                    <li class="cs-drop-li3">
+                                        <a href="/retaining-walls" class="cs-li-link cs-drop-link cs-drop-link3">Borders & Retaining Walls</a>
                                     </li>
                                 </ul>
                             </li>
                             <li class="cs-drop-li">
-                                <a href="/lawncare" class="cs-li-link cs-drop-link">Lawn Care</a>
+                                <a href="/fencing" class="cs-li-link cs-drop-link">
+                                    Fencing
+                                </a>
                             </li>
                             <li class="cs-drop-li">
-                                <a href="/fencing" class="cs-li-link cs-drop-link">Fencing</a>
+                                <a href="/drainage" class="cs-li-link cs-drop-link">
+                                    Drainage & French Drains
+                                </a>
                             </li>
                             <li class="cs-drop-li">
-                                <a href="/drainage" class="cs-li-link cs-drop-link">Drainage</a>
+                                <a href="/lighting" class="cs-li-link cs-drop-link">
+                                    Landscape Lighting
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                                
+                    <!--<li class="cs-li">
+                        <a href="/gallery" class="cs-li-link">
+                            Gallery
+                        </a>
+                    </li>-->
+                    <li class="cs-li cs-dropdown" tabindex="0">
+                        <a href="/servicearea" class="cs-li-link cs-dropdown-toggle">
+                            Service Areas
+                            <img class="cs-drop-icon" src="/assets/svgs/down-arrow.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
+                        </a>
+                        <ul class="cs-drop-ul">
+                            <li class="cs-drop-li">
+                                <a href="/servicearea-dallas" class="cs-li-link cs-drop-link">
+                                    Dallas
+                                </a>
                             </li>
                             <li class="cs-drop-li">
-                                <a href="/irrigation" class="cs-li-link cs-drop-link">Irrigation & Sprinklers</a>
+                                <a href="/servicearea-preston" class="cs-li-link cs-drop-link">
+                                    Preston Hollow
+                                </a>
                             </li>
                             <li class="cs-drop-li">
-                                <a href="/tree-removal" class="cs-li-link cs-drop-link">Tree Removal</a>
+                                <a href="/servicearea-park" class="cs-li-link cs-drop-link">
+                                    Park Cities
+                                </a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="/servicearea-oak" class="cs-li-link cs-drop-link">
+                                    Oak Lawn
+                                </a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="/servicearea-north" class="cs-li-link cs-drop-link">
+                                    North Dallas
+                                </a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="/servicearea-colinas" class="cs-li-link cs-drop-link">
+                                    Las Colinas
+                                </a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="/servicearea-highlandpark" class="cs-li-link cs-drop-link">
+                                    Highland Park
+                                </a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="/servicearea-meadows" class="cs-li-link cs-drop-link">
+                                    Highland Meadows
+                                </a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="/servicearea-bluff" class="cs-li-link cs-drop-link">
+                                    Bluff View
+                                </a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="/servicearea-russwood" class="cs-li-link cs-drop-link">
+                                    Russwood Acres
+                                </a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="/servicearea-casa" class="cs-li-link cs-drop-link">
+                                    Casa View
+                                </a>
                             </li>
                         </ul>
                     </li>
                     <li class="cs-li">
-                        <a href="/project-one" class="cs-li-link">
-                            Gallery
-                        </a>
-                    </li>
-                    <li class="cs-li">
-                        <a href="/blog" class="cs-li-link">
-                            Blog
-                        </a>
-                    </li>
-                    <li class="cs-li">
-                        <a href="/faq" class="cs-li-link">
-                            FAQ
-                        </a>
-                    </li>
-                    <li class="cs-li">
-                        <a href="/contact" class="cs-li-link">
+                        <a href="/contact" class="cs-li-link {{ 'cs-active' if 'contact' == page.fileSlug }}">
                             Contact
                         </a>
                     </li>
                 </ul>
             </div>
         </nav>
-        <a href="" class="cs-button-solid cs-nav-button">Contact Us</a>
+        <a href="/contact" class="cs-button-solid cs-nav-button">Contact</a>
         <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
-        <button id="dark-mode-toggle" aria-label="dark mode toggle">
+       <button id="dark-mode-toggle" aria-label="dark mode toggle">
             <svg class="cs-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480" xml:space="preserve"><path d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z"/></svg>
-            <img class="cs-sun" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fsun.svg" decoding="async" alt="moon" width="15" height="15">
-        </button> 
+            <img class="cs-sun" aria-hidden="true" src="/assets/svgs/sun-icon.svg" decoding="async" alt="moon" width="15" height="15">
+        </button>
     </div>
 </header>
                                 
