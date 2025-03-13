@@ -1656,6 +1656,12 @@
           width: (307/14rem);
           margin: auto;
         }
+
+        .tik {
+            img {
+              height: (50/16em);
+            }
+          }
   
         .logo-box {
           display: flex;
@@ -1703,7 +1709,7 @@
             padding: 0 (43.5/16rem);
             position: relative;
             z-index: 1;
-            background: linear-gradient(120deg, #7deb71 10%, #5fb056 90%);
+            background: var(--primary);
             border-radius: (5/16em);
   
             // Transition Properties
@@ -1940,6 +1946,12 @@
                 width: (62/16em);
               }
             }
+            &:nth-of-type(5) {
+                img {
+                  height: (50/16em);
+                  width: (50/16em);
+                }
+              }
           }
         }
       }
@@ -1950,7 +1962,7 @@
         max-width: none;
         .lists {
           width: 96%;
-          max-width: 769/16rem;
+          max-width: (769/16rem);
           margin: 0;
           max-width: initial;
   
@@ -1971,11 +1983,11 @@
                   content: "";
                   position: absolute;
                   display: block;
-                  height: 2/16rem;
+                  height: (2/16rem);
                   width: 0%;
                   background: var(--primary);
                   opacity: 1;
-                  bottom: -3/16rem;
+                  bottom: (-3/16rem);
                   left: 0;
                   transition: width 0.3s;
                 }

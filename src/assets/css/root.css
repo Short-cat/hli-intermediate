@@ -1354,6 +1354,9 @@
     width: 21.92857143rem;
     margin: auto;
   }
+  #footer .left-section .tik img {
+    height: 3.125em;
+  }
   #footer .left-section .logo-box {
     display: flex;
     justify-content: center;
@@ -1396,7 +1399,7 @@
     padding: 0 2.71875rem;
     position: relative;
     z-index: 1;
-    background: linear-gradient(120deg, #7deb71 10%, #5fb056 90%);
+    background: var(--primary);
     border-radius: 0.3125em;
     color: #000;
     transition: color 0.3s;
@@ -1595,6 +1598,10 @@
     height: 3.875em;
     width: 3.875em;
   }
+  #footer .left-section .logo-box a:nth-of-type(5) img {
+    height: 3.125em;
+    width: 3.125em;
+  }
   #footer .right-section {
     margin: 0;
     width: 38.0625rem;
@@ -1602,7 +1609,7 @@
   }
   #footer .right-section .lists {
     width: 96%;
-    max-width: 769/16rem;
+    max-width: 48.0625rem;
     margin: 0;
     max-width: initial;
   }
@@ -1619,11 +1626,11 @@
     content: "";
     position: absolute;
     display: block;
-    height: 2/16rem;
+    height: 0.125rem;
     width: 0%;
     background: var(--primary);
     opacity: 1;
-    bottom: -3/16rem;
+    bottom: -0.1875rem;
     left: 0;
     transition: width 0.3s;
   }
