@@ -335,6 +335,9 @@
   #cs-navigation .serv {
     text-decoration: none;
   }
+  #cs-navigation .group {
+    display: none;
+  }
   #cs-navigation .cs-container {
     width: 100%;
     display: flex;
@@ -838,6 +841,9 @@
   body.scroll #cs-navigation .cs-button-solid {
     color: #000;
   }
+  body.scroll #cs-navigation .google {
+    color: #000;
+  }
   body.scroll #cs-navigation .cs-moon {
     fill: #000;
   }
@@ -904,6 +910,107 @@
     /* ensures the image never overflows the container. It stays contained within it's width and height and expands to fill it then stops once it reaches an edge */
     object-fit: contain;
   }
+  #cs-navigation .group {
+    display: none;
+    grid-template-columns: auto auto;
+    align-items: end;
+    align-content: center;
+    align-self: center;
+    row-gap: 0.3125em;
+    gap: 0.3125rem;
+    margin-left: 2.5em;
+    width: 100%;
+    max-width: fit-content;
+    height: 100%;
+    padding-left: 0.3125em;
+  }
+  #cs-navigation .google {
+    color: #fff;
+    font-size: min(1.3vw, 1.1em);
+    white-space: nowrap;
+    z-index: 5;
+    margin-left: -3.75em;
+    margin-bottom: -0.125em;
+    color: #ffffff;
+    transition: color 0.3s;
+  }
+  #cs-navigation .stars {
+    height: 1.25rem;
+    width: 4.375rem;
+    z-index: 5;
+    margin-top: -0.125em;
+  }
+  #cs-navigation .call {
+    height: 2.5rem;
+    width: 8.4375rem;
+    font-size: min(1.4vw, 1em);
+    text-decoration: none;
+    font-weight: 700;
+    color: #fff;
+    padding: 0;
+    background: linear-gradient(220deg, #628962 10%, #88ab75 90%);
+    position: relative;
+    z-index: 1;
+    transition: color 0.3s;
+    border-radius: 0.1875em;
+    border-width: 0px;
+  }
+  #cs-navigation .call:before {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: #f1f1f1;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: opacity 0.5s ease;
+    border-radius: 0.1875em;
+  }
+  #cs-navigation .call:hover {
+    color: #000;
+  }
+  #cs-navigation .call:hover:before {
+    width: 100%;
+    opacity: 1;
+  }
+  #cs-navigation .contact {
+    height: 2.5rem;
+    width: 8.4375rem;
+    font-size: min(1.4vw, 1em);
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--headerColor);
+    padding: 0;
+    background-color: #f1f1f1;
+    position: relative;
+    z-index: 1;
+    transition: color 0.3s;
+    border-radius: 0.1875rem;
+    border-width: 0px;
+  }
+  #cs-navigation .contact:before {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 0%;
+    background: #000;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: width 0.3s;
+    border-radius: 0.1875em;
+  }
+  #cs-navigation .contact:hover {
+    color: var(--bodyTextColorWhite);
+  }
+  #cs-navigation .contact:hover:before {
+    width: 100%;
+  }
   #cs-navigation .cs-ul-wrapper {
     /* absolutely positioned to be dead center */
     position: absolute;
@@ -967,7 +1074,7 @@
   #cs-navigation .cs-button-solid {
     font-size: 1rem;
     /* 46px - 56px */
-    line-height: clamp(2.875em, 5.5vw, 3.5em);
+    line-height: clamp(2.875em, 5vw, 3.5em);
     text-decoration: none;
     font-weight: 700;
     text-align: center;
@@ -997,6 +1104,30 @@
   }
   #cs-navigation .cs-button-solid:hover:before {
     width: 100%;
+  }
+}
+/* Large Desktop */
+@media only screen and (min-width: 1250px) {
+  #cs-navigation .group {
+    display: grid;
+  }
+  #cs-navigation .cs-nav-button {
+    display: none;
+  }
+  #cs-navigation .cs-ul-wrapper {
+    left: 40%;
+  }
+  #cs-navigation .contact {
+    width: 12.5rem;
+  }
+  #cs-navigation .call {
+    width: 12.5rem;
+  }
+  #cs-navigation .google {
+    font-size: min(1.5vw, 1.2em);
+  }
+  #cs-navigation .stars {
+    transform: translate(80%);
   }
 }
 /*-- -------------------------- -->
@@ -1204,7 +1335,7 @@
     display: inline-block;
     margin: auto;
     width: auto;
-    height: 4.0625em;
+    height: 3.75em;
     margin-bottom: 1.875em;
     text-align: center;
   }
@@ -1439,7 +1570,7 @@
   #footer .left-section .logo {
     text-align: left;
     margin-left: 0;
-    height: 8.125rem;
+    height: 5rem;
   }
   #footer .left-section p {
     text-align: left;

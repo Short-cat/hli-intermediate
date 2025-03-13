@@ -62,6 +62,11 @@
             color: #fff;
         }
 
+        .button-box {
+            display: flex;
+            align-items: center;
+        }
+
         .cs-button-solid {
             font-size: (16/16rem);
             /* 46px - 56px */
@@ -74,6 +79,7 @@
             padding: 0;
             background-color: var(--primary);
             display: inline-block;
+            
             position: relative;
             z-index: 1;
             transition: color 0.3s;
@@ -109,7 +115,7 @@
             height: clamp(2.875em, 5.5vw, 3.5em);
             text-decoration: none;
             font-weight: 700;
-            margin: 0 (8/16rem);
+            margin: 0 (8/16rem) (16/16rem) (8/16rem);
             color: #fff;
             padding: 0;
             background-color: transparent;
