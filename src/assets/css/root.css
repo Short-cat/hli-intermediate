@@ -562,6 +562,7 @@
     height: auto;
     opacity: 1;
     visibility: visible;
+    transform: scale(1);
     margin: 0.75rem 0 0 0;
     padding: 0.75rem 0;
   }
@@ -589,6 +590,7 @@
     height: 0;
     margin: 0;
     padding: 0;
+    transform: scale(0);
     background-color: var(--primary);
     overflow: hidden;
     opacity: 0;
@@ -599,6 +601,7 @@
     align-items: center;
     gap: 0.75rem;
     transition: padding 0.3s, margin 0.3s, height 0.3s, opacity 0.3s, visibility 0.3s;
+    transform-origin: top;
   }
   #cs-navigation .cs-drop-li {
     list-style: none;
@@ -622,6 +625,9 @@
     opacity: 1;
     visibility: visible;
   }
+  #cs-navigation .cs-dropdown:hover .cs-drop-ul .cs-li-link {
+    color: #000;
+  }
   #cs-navigation .cs-dropdown:hover .cs-drop-li {
     opacity: 1;
     transform: translateY(0);
@@ -635,7 +641,7 @@
     min-width: 12.5rem;
     margin: 0;
     padding: 0;
-    background-color: #1a1a1a;
+    background-color: #fff;
     overflow: hidden;
     opacity: 0;
     visibility: hidden;
@@ -728,6 +734,7 @@
     margin: 0.75rem auto 0 auto;
     height: auto;
     padding: 1.5rem;
+    border-radius: 0.75rem;
   }
   #cs-navigation .cs-dropdown.cs-active .cs-drop-link {
     opacity: 1;
@@ -749,6 +756,7 @@
     display: flex;
     flex-direction: column;
     background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 0.75rem;
     box-sizing: border-box;
     height: 0;
     width: 100%;
@@ -786,6 +794,7 @@
 @media only screen and (min-width: 1024px) {
   #cs-navigation .cs-drop-ul {
     overflow: visible;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   }
   #cs-navigation .cs-drop-li {
     z-index: 1;
@@ -800,7 +809,7 @@
     top: 0;
     left: 100%;
     display: none;
-    background-color: #1a1a1a;
+    background-color: #fff;
     min-width: 12.5rem;
     padding: 0;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -818,7 +827,7 @@
 /* Dark Mode */
 @media only screen and (min-width: 1024px) {
   body.dark-mode #cs-navigation .cs-drop3 {
-    background-color: var(--dark);
+    background-color: #fff;
   }
 }
 /*-- -------------------------- -->
@@ -909,6 +918,9 @@
     height: 100%;
     /* ensures the image never overflows the container. It stays contained within it's width and height and expands to fill it then stops once it reaches an edge */
     object-fit: contain;
+  }
+  #cs-navigation .cs-drop-link {
+    color: #fff;
   }
   #cs-navigation .group {
     display: none;
