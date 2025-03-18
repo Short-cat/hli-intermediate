@@ -640,26 +640,75 @@
   #design-options .cs-services {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 3rem;
     margin-bottom: 2rem;
   }
   #design-options .cs-service {
+    display: flex;
+    flex-direction: column;
     background-color: #fff;
-    border-radius: 0.5rem;
-    padding: 1.5rem;
+    border-radius: 0.75rem;
+    padding: 0;
     text-align: left;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border-top: 4px solid var(--primary);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    position: relative;
+    transition: all 0.4s ease;
+  }
+  #design-options .cs-service:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+  }
+  #design-options .cs-service:hover h3 {
+    color: var(--primary);
+  }
+  #design-options .cs-service:hover .cs-service-image img {
+    transform: scale(1.05);
+  }
+  #design-options .cs-service:hover .cs-link {
+    color: var(--primary);
+    transform: translateX(5px);
+  }
+  #design-options .cs-service:hover .cs-link:after {
+    transform: translateX(5px, 650%);
+  }
+  #design-options .cs-service .cs-service-content {
+    padding: 2rem;
+    flex: 1;
+    position: relative;
+    z-index: 1;
+  }
+  #design-options .cs-service .cs-step-icon {
+    background-color: var(--primary);
+    color: white;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+  }
+  #design-options .cs-service .cs-step-icon svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    fill: white;
+  }
+  #design-options .cs-service:hover .cs-step-icon {
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
   }
   #design-options .cs-service h3 {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     margin-bottom: 0.75rem;
     color: var(--headerColor);
+    transition: color 0.3s ease;
   }
   #design-options .cs-service p {
     font-size: 1rem;
-    line-height: 1.5;
-    margin-bottom: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.25rem;
     color: var(--bodyTextColor);
   }
   #design-options .cs-service ul {
@@ -669,23 +718,54 @@
   }
   #design-options .cs-service ul li {
     position: relative;
-    padding-left: 1.5rem;
-    margin-bottom: 0.5rem;
+    padding-left: 1.75rem;
+    margin-bottom: 0.75rem;
     line-height: 1.4;
-    font-size: 0.95rem;
+    font-size: 1rem;
   }
   #design-options .cs-service ul li:before {
     content: '';
     position: absolute;
     left: 0;
     top: 0.5rem;
-    width: 0.5rem;
-    height: 0.5rem;
+    width: 0.75rem;
+    height: 0.75rem;
     background-color: var(--primary);
     border-radius: 50%;
   }
   #design-options .cs-service ul li:last-child {
     margin-bottom: 0;
+  }
+  #design-options .cs-service .cs-service-image {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  #design-options .cs-service .cs-service-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+  #design-options .cs-service .cs-link {
+    display: inline-block;
+    color: #000;
+    font-weight: 600;
+    text-decoration: none;
+    position: relative;
+    padding-right: 1.5rem;
+    align-self: flex-start;
+    margin-top: 1.5rem;
+    transition: all 0.3s ease;
+  }
+  #design-options .cs-service .cs-link:after {
+    content: '→';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.2s ease;
   }
 }
 /* Tablet - 768px */
@@ -698,12 +778,23 @@
     padding: 0 8rem 0 2rem;
   }
   #design-options .cs-services {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
   }
   #design-options .cs-service {
+    flex-direction: row;
+  }
+  #design-options .cs-service:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+  #design-options .cs-service .cs-service-content,
+  #design-options .cs-service .cs-service-image {
+    width: 50%;
+  }
+  #design-options .cs-service .cs-service-image img {
     height: 100%;
+    object-fit: cover;
   }
 }
 /* Desktop - 1024px */
@@ -726,7 +817,18 @@
     }
   }
   #design-options .cs-services {
-    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+  }
+  #design-options .cs-service .cs-service-content {
+    padding: 3rem;
+  }
+  #design-options .cs-service .cs-step-number {
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.5rem;
+  }
+  #design-options .cs-service h3 {
+    font-size: 1.75rem;
   }
 }
 /*-- -------------------------- -->
@@ -826,6 +928,9 @@
     padding: var(--sectionPadding);
     background-color: #f8f8f8;
     position: relative;
+    /* Remove duplicate rule */
+    /* Gallery card hover for dropdown */
+    /* Button hover state */
   }
   #recent-projects .cs-container {
     width: 100%;
@@ -857,47 +962,145 @@
     color: var(--bodyTextColor);
   }
   #recent-projects .cs-gallery {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
     gap: 1.5rem;
     width: 100%;
+    margin-top: 2rem;
   }
-  #recent-projects .cs-gallery-item {
+  #recent-projects .gallery-card {
+    position: relative;
+    border-radius: 0.5rem;
+    overflow: hidden;
+  }
+  #recent-projects .gallery-card-main {
+    position: relative;
     background-color: #fff;
     border-radius: 0.5rem;
     overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
   }
-  #recent-projects .cs-gallery-item img {
+  #recent-projects .gallery-card-dropdown {
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease, opacity 0.3s ease;
+    padding: 0;
+    opacity: 0;
+    border-radius: 0 0 0.5rem 0.5rem;
+    border-top: 1px solid lightgray;
+  }
+  #recent-projects .gallery-card-dropdown p {
+    margin: 0;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    color: #666;
+    transform: translateY(-10px);
+    transition: transform 0.3s ease;
+  }
+  #recent-projects .gallery-card:hover .gallery-card-dropdown {
+    max-height: 150px;
+    padding: 0.75rem 1.125rem 1.25rem;
+    opacity: 1;
+  }
+  #recent-projects .gallery-card:hover .gallery-card-dropdown p {
+    transform: translateY(0);
+  }
+  #recent-projects .gallery-card img {
     width: 100%;
-    height: auto;
+    height: 320px;
     object-fit: cover;
     display: block;
   }
-  #recent-projects .cs-gallery-item p {
-    padding: 1rem;
-    font-size: 0.9rem;
+  #recent-projects .gallery-card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.25rem 1rem;
+    background-color: white;
+  }
+  #recent-projects .gallery-card:hover .gallery-card-main {
+    border-radius: 0;
+  }
+  #recent-projects .gallery-card-footer h3 {
+    width: 100%;
+    font-size: 1rem;
     font-weight: 600;
+    color: #000;
     margin: 0;
+    line-height: 1.3;
+    padding-right: 1rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: left;
+  }
+  #recent-projects .gallery-button {
+    width: 2.25rem;
+    height: 2.25rem;
+    min-width: 2.25rem;
+    background-color: var(--primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 24 24'%3E%3Cpath d='M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z'/%3E%3C/svg%3E");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+  }
+  #recent-projects .gallery-card:hover .gallery-button {
+    transform: scale(1.1);
+    transform: rotate(90deg);
+    background-color: #89a563;
   }
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
   #recent-projects .cs-gallery {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
   }
-  #recent-projects .cs-gallery-item {
-    flex: 0 0 calc(50% - 0.75rem);
-    max-width: calc(50% - 0.75rem);
+  #recent-projects .cs-gallery-item img {
+    height: 220px;
   }
 }
 /* Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
-  #recent-projects .cs-gallery-item {
-    flex: 0 0 calc(33.333% - 1rem);
-    max-width: calc(33.333% - 1rem);
+  #recent-projects .cs-gallery {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+  #recent-projects .cs-gallery-item img {
+    height: 240px;
+  }
+  #recent-projects .cs-gallery-footer {
+    padding: 1.25rem 1.125rem;
+  }
+  #recent-projects .cs-gallery-footer h3 {
+    font-size: 1.125rem;
+  }
+  #recent-projects .cs-gallery-button {
+    width: 2.5rem;
+    height: 2.5rem;
+    min-width: 2.5rem;
+  }
+  #recent-projects .cs-gallery-dropdown {
+    max-height: 0;
+  }
+  #recent-projects #gallery-item-1:hover #dropdown-1 {
+    max-height: 150px;
+  }
+  #recent-projects #gallery-item-2:hover #dropdown-2 {
+    max-height: 150px;
+  }
+  #recent-projects #gallery-item-3:hover #dropdown-3 {
+    max-height: 150px;
+  }
+  #recent-projects .cs-gallery-dropdown p {
+    font-size: 0.9375rem;
   }
 }
 /*-- -------------------------- -->
