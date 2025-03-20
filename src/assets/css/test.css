@@ -159,7 +159,7 @@
     max-width: 80rem;
     margin: auto;
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
     gap: 2rem;
@@ -563,6 +563,7 @@
   margin-bottom: 2rem;
   overflow: hidden;
   max-width: none;
+  mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
 }
 #design-options .cs-carousel:before,
 #design-options .cs-carousel:after {
@@ -573,14 +574,6 @@
   height: 100%;
   z-index: 1;
   pointer-events: none;
-}
-#design-options .cs-carousel:before {
-  left: 0;
-  background: linear-gradient(to right, #fcfcfc, rgba(240, 240, 240, 0));
-}
-#design-options .cs-carousel:after {
-  right: 0;
-  background: linear-gradient(to left, #fcfcfc, rgba(240, 240, 240, 0));
 }
 #design-options .cs-carousel:hover .cs-carousel-track {
   animation-play-state: paused;
@@ -684,20 +677,21 @@
     padding: 1.5rem 0;
   }
   #design-options .cs-carousel-track {
+    width: 6760px;
     display: flex;
     width: max-content;
     gap: 1.5rem;
-    padding: 0 8rem 0 1.5rem;
-    /* Extra padding on right to ensure full width display */
-    animation: carousel-scroll 60s linear infinite;
+    padding: 0;
+    /* Remove padding to ensure seamless looping */
+    animation: carousel-scroll 80s cubic-bezier(0, 0, 0, 0) infinite;
   }
   @keyframes carousel-scroll {
     0% {
       transform: translateX(0);
     }
     100% {
-      transform: translateX(calc(-400px * 8 - 1.5rem * 8));
-      /* Width of 8 images plus gap */
+      transform: translateX(-3200px);
+      /* Move exactly half the width for seamless loop */
     }
   }
   #design-options .cs-services {
@@ -785,6 +779,14 @@
   #design-options .cs-service:nth-child(even) {
     flex-direction: row-reverse;
   }
+  #design-options .cs-service .cs-carousel:before {
+    left: 0;
+    background: linear-gradient(to right, #fcfcfc, rgba(240, 240, 240, 0));
+  }
+  #design-options .cs-service .cs-carousel:after {
+    right: 0;
+    background: linear-gradient(to left, #fcfcfc, rgba(240, 240, 240, 0));
+  }
   #design-options .cs-service .cs-service-content,
   #design-options .cs-service .cs-service-image {
     width: 50%;
@@ -798,19 +800,24 @@
 @media only screen and (min-width: 64rem) {
   #design-options .cs-carousel {
     padding: 2.5rem 0;
+    width: 100vw;
+    overflow: hidden;
+    mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
   }
   #design-options .cs-carousel-track {
+    width: 6528px;
     gap: 0.5rem;
-    padding: 0 10rem 0 2.5rem;
-    animation: carousel-scroll 70s linear infinite;
+    padding: 0;
+    /* Remove padding to ensure seamless looping */
+    animation: carousel-scroll 60s linear infinite;
   }
   @keyframes carousel-scroll {
     0% {
       transform: translateX(0);
     }
     100% {
-      transform: translateX(calc(-400px * 8 - 0.5rem * 8));
-      /* Width of 8 images plus gap */
+      transform: translateX(-3264px);
+      /* Move exactly half the width for seamless loop */
     }
   }
   #design-options .cs-services {
@@ -1060,69 +1067,6 @@
     padding: 2.5rem 1.875rem;
   }
 }
-/* Tablet - 768px */
-@media only screen and (min-width: 48rem) {
-  #design-options .cs-carousel {
-    padding: 2rem 0;
-  }
-  #design-options .cs-carousel-track {
-    gap: 2rem;
-    padding: 0 8rem 0 2rem;
-  }
-  #design-options .cs-services {
-    display: flex;
-    flex-direction: column;
-    gap: 2.5rem;
-  }
-  #design-options .cs-service {
-    flex-direction: row;
-  }
-  #design-options .cs-service:nth-child(even) {
-    flex-direction: row-reverse;
-  }
-  #design-options .cs-service .cs-service-content,
-  #design-options .cs-service .cs-service-image {
-    width: 50%;
-  }
-  #design-options .cs-service .cs-service-image img {
-    height: 100%;
-    object-fit: cover;
-  }
-}
-/* Desktop - 1024px */
-@media only screen and (min-width: 64rem) {
-  #design-options .cs-carousel {
-    padding: 2.5rem 0;
-  }
-  #design-options .cs-carousel-track {
-    gap: 0.5rem;
-    padding: 0 10rem 0 2.5rem;
-    animation: carousel-scroll 70s linear infinite;
-  }
-  @keyframes carousel-scroll {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(calc(-400px * 8 - 0.5rem * 8));
-      /* Width of 8 images plus gap */
-    }
-  }
-  #design-options .cs-services {
-    gap: 4rem;
-  }
-  #design-options .cs-service .cs-service-content {
-    padding: 3rem;
-  }
-  #design-options .cs-service .cs-step-number {
-    width: 3rem;
-    height: 3rem;
-    font-size: 1.5rem;
-  }
-  #design-options .cs-service h3 {
-    font-size: 1.75rem;
-  }
-}
 /*-- -------------------------- -->
 <---  Commercial & Residential  -->
 <--- -------------------------- -*/
@@ -1147,7 +1091,6 @@
     flex-direction: column;
     gap: 2rem;
     width: 100%;
-    max-width: 62.5rem;
     margin-bottom: 2rem;
   }
   #custom-designs .cs-content {
@@ -1209,6 +1152,98 @@
   }
   #custom-designs .cs-image {
     width: 45%;
+  }
+}
+/*Image Slider*/
+.before-after-section {
+  padding: 2rem;
+  width: 43.75rem;
+}
+.before-after-section .before-after-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.before-after-section .before-after {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+.before-after-section .before-after__before,
+.before-after-section .before-after__after-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.before-after-section .before-after__before {
+  z-index: 1;
+}
+.before-after-section .before-after__after-img {
+  z-index: 2;
+  clip-path: inset(0 50% 0 0);
+}
+.before-after-section .before-after__after {
+  display: none;
+}
+.before-after-section .before-after__slider {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 4px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  cursor: ew-resize;
+  z-index: 4;
+}
+.before-after-section .before-after__slider .before-after__handle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+  background: white;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.before-after-section .before-after__slider .before-after__handle::before {
+  content: "↔";
+  font-size: 20px;
+  color: #333;
+  margin-top: -2px;
+}
+@media (max-width: 768px) {
+  .before-after-section .before-after {
+    height: 400px;
+  }
+  .before-after-section .before-after__slider .before-after__handle {
+    width: 30px;
+    height: 30px;
+  }
+  .before-after-section .before-after__slider .before-after__handle::before {
+    font-size: 16px;
+  }
+}
+@media (max-width: 480px) {
+  .before-after-section .before-after {
+    height: 300px;
+  }
+  .before-after-section .before-after__slider {
+    width: 3px;
+  }
+  .before-after-section .before-after__slider .before-after__handle {
+    width: 24px;
+    height: 24px;
+  }
+  .before-after-section .before-after__slider .before-after__handle::before {
+    font-size: 12px;
   }
 }
 /*-- -------------------------- -->
@@ -1284,10 +1319,11 @@
   #recent-projects .gallery-card-dropdown p {
     margin: 0;
     font-size: 0.875rem;
-    line-height: 1.5;
+    line-height: 0;
+    opacity: 0;
     color: #666;
     transform: translateY(-10px);
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, line-height 0.3s ease, opacity 0.2s ease;
   }
   #recent-projects .gallery-card:hover .gallery-card-dropdown {
     max-height: 150px;
@@ -1296,6 +1332,8 @@
   }
   #recent-projects .gallery-card:hover .gallery-card-dropdown p {
     transform: translateY(0);
+    line-height: 1.5;
+    opacity: 1;
   }
   #recent-projects .gallery-card img {
     width: 100%;
@@ -1482,12 +1520,19 @@
   }
   #trusted-company .cs-container {
     width: 100%;
-    max-width: 50rem;
+    max-width: 80rem;
     margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+  }
+  #trusted-company .cs-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2.5rem;
   }
   #trusted-company .cs-trust-points {
     list-style: none;
@@ -1531,6 +1576,50 @@
     display: block;
     font-size: 0.9rem;
     color: var(--bodyTextColor);
+  }
+  #trusted-company .feat-img {
+    position: absolute;
+    display: block;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* clips img tag corners */
+    overflow: hidden;
+  }
+  #trusted-company .feat-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* makes image act like a background image */
+    object-fit: cover;
+  }
+  #trusted-company .cs-image {
+    /* changes at tablet */
+    width: 100%;
+    /* changes to a clamp at tablet */
+    height: 31.25rem;
+    display: block;
+    position: relative;
+    border-radius: 1rem;
+  }
+  #trusted-company .cs-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 0.5rem;
+  }
+}
+/*tablet*/
+@media only screen and (min-width: 64rem) {
+  #trusted-company .cs-content {
+    flex-direction: row-reverse;
+  }
+  #trusted-company .cs-image {
+    width: 49%;
   }
 }
 /*-- -------------------------- -->
