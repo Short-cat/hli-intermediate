@@ -1157,11 +1157,15 @@
 /*Image Slider*/
 .before-after-section {
   padding: 2rem;
-  width: 43.75rem;
+  user-select: none;
+  width: 100%;
+  /* Desktop */
 }
 .before-after-section .before-after-container {
   max-width: 1200px;
   margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
 }
 .before-after-section .before-after {
   position: relative;
@@ -1169,6 +1173,7 @@
   height: 500px;
   overflow: hidden;
   border-radius: 8px;
+  user-select: none;
 }
 .before-after-section .before-after__before,
 .before-after-section .before-after__after-img {
@@ -1178,6 +1183,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  user-select: none;
 }
 .before-after-section .before-after__before {
   z-index: 1;
@@ -1185,9 +1191,6 @@
 .before-after-section .before-after__after-img {
   z-index: 2;
   clip-path: inset(0 50% 0 0);
-}
-.before-after-section .before-after__after {
-  display: none;
 }
 .before-after-section .before-after__slider {
   position: absolute;
@@ -1198,6 +1201,7 @@
   background: rgba(255, 255, 255, 0.5);
   cursor: ew-resize;
   z-index: 4;
+  user-select: none;
 }
 .before-after-section .before-after__slider .before-after__handle {
   position: absolute;
@@ -1212,14 +1216,18 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  user-select: none;
 }
 .before-after-section .before-after__slider .before-after__handle::before {
   content: "↔";
   font-size: 20px;
   color: #333;
-  margin-top: -2px;
 }
 @media (max-width: 768px) {
+  .before-after-section .before-after-container {
+    max-width: 90%;
+    margin: 0 auto;
+  }
   .before-after-section .before-after {
     height: 400px;
   }
@@ -1232,6 +1240,10 @@
   }
 }
 @media (max-width: 480px) {
+  .before-after-section .before-after-container {
+    max-width: 95%;
+    margin: 0 auto;
+  }
   .before-after-section .before-after {
     height: 300px;
   }
@@ -1244,6 +1256,17 @@
   }
   .before-after-section .before-after__slider .before-after__handle::before {
     font-size: 12px;
+  }
+}
+@media only screen and (min-width: 64rem) {
+  .before-after-section {
+    width: 80%;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+  .before-after-section .before-after-container {
+    max-width: 100%;
+    margin: 0 auto;
   }
 }
 /*-- -------------------------- -->

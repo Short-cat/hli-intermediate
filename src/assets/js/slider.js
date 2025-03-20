@@ -7,6 +7,7 @@ if (!slider || !afterImg || !container) {
 }
 
 let isDragging = false;
+let originalUserSelect = ''; // Store the original user-select value
 
 const moveSlider = (x) => {
   const containerRect = container.getBoundingClientRect();
@@ -23,36 +24,55 @@ const moveSlider = (x) => {
   }
 };
 
-slider.addEventListener("mousedown", () => {
+const startDragging = () => {
   isDragging = true;
-  console.log("Dragging started"); // Debug log
+  // Store the original user-select value and disable text selection on the body
+  originalUserSelect = document.body.style.userSelect || document.body.style.webkitUserSelect || '';
+  document.body.style.userSelect = 'none';
+  document.body.style.webkitUserSelect = 'none'; // For Safari
+  console.log("Dragging started");
+};
+
+const stopDragging = () => {
+  isDragging = false;
+  // Restore the original user-select value
+  document.body.style.userSelect = originalUserSelect;
+  document.body.style.webkitUserSelect = originalUserSelect;
+  console.log("Dragging stopped");
+};
+
+slider.addEventListener("mousedown", (e) => {
+  e.preventDefault(); // Prevent text selection
+  startDragging();
 });
 
 document.addEventListener("mousemove", (e) => {
   if (isDragging) {
+    e.preventDefault(); // Prevent text selection
     moveSlider(e.clientX);
   }
 });
 
-document.addEventListener("mouseup", () => {
-  isDragging = false;
-  console.log("Dragging stopped"); // Debug log
+document.addEventListener("mouseup", (e) => {
+  e.preventDefault(); // Prevent text selection
+  stopDragging();
 });
 
 // Touch support for mobile
-slider.addEventListener("touchstart", () => {
-  isDragging = true;
-  console.log("Touch dragging started"); // Debug log
+slider.addEventListener("touchstart", (e) => {
+  e.preventDefault(); // Prevent text selection
+  startDragging();
 });
 
 document.addEventListener("touchmove", (e) => {
   if (isDragging) {
+    e.preventDefault(); // Prevent text selection
     const touch = e.touches[0];
     moveSlider(touch.clientX);
   }
 });
 
-document.addEventListener("touchend", () => {
-  isDragging = false;
-  console.log("Touch dragging stopped"); // Debug log
+document.addEventListener("touchend", (e) => {
+  e.preventDefault(); // Prevent text selection
+  stopDragging();
 });
