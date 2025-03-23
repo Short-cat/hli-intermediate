@@ -139,15 +139,19 @@ eleventyNavigation:
 
 <section id="steps-1713">
     <picture class="cs-background">
-        <!--Mobile Image-->
-        <source media="(max-width: 600px)"
-                srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/business-meeting-women.jpeg">
-        <!--Tablet and above Image-->
-        <source media="(min-width: 601px)"
-                srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/business-meeting-women.jpeg">
-        <img loading="lazy" decoding="async"
-                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/business-meeting-women.jpeg"
-                alt="busines meeting" width="522" height="609" aria-hidden="true">
+       <!--Mobile Image-->
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 640, height: 720 }) | avif %}" type="image/avif">
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 640, height: 720 }) | webp %}" type="image/webp">
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 640, height: 720 }) | jpeg %}" type="image/jpeg">
+       <!--Tablet Image-->
+       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 612, height: 1944 }) | avif %}" type="image/avif">
+       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 612, height: 1944 }) | webp %}" type="image/webp">
+       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 612, height: 1944 }) | jpeg %}" type="image/jpeg">
+       <!--Desktop Image-->
+       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 1920, height: 2224 }) | avif %}" type="image/avif">
+       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 1920, height: 2224 }) | webp %}" type="image/webp">
+       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 1920, height: 2224 }) | jpeg %}" type="image/jpeg">
+       <img src="{% getUrl "/assets/images/landing1.png" | resize({ width: 1920, height: 2224 }) | jpeg %}" alt="" width="960" height="1112" loading="lazy" decoding="async" aria-hidden="true">
     </picture>
     <div class="cs-container">
         <div class="cs-wrapper">
@@ -499,7 +503,21 @@ eleventyNavigation:
                     <a href="#" class="cs-link">Learn More </a>
                 </div>
                 <div class="cs-service-image">
-                    <img src="/assets/images/landing1.png" alt="Houston custom landscape design" width="400" height="300">
+                    <picture>
+                       <!--Mobile Image-->
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 576, height: 282 }) | avif %}" type="image/avif">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 576, height: 282 }) | webp %}" type="image/webp">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 576, height: 282 }) | jpeg %}" type="image/jpeg">
+                       <!--Tablet Image-->
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 990, height: 942 }) | avif %}" type="image/avif">
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 990, height: 942 }) | webp %}" type="image/webp">
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 990, height: 942 }) | jpeg %}" type="image/jpeg">
+                       <!--Desktop Image-->
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 1280, height: 926 }) | avif %}" type="image/avif">
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 1280, height: 926 }) | webp %}" type="image/webp">
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 1280, height: 926 }) | jpeg %}" type="image/jpeg">
+                       <img src="{% getUrl "/assets/images/landing1.png" | resize({ width: 1280, height: 926 }) | jpeg %}" alt="" width="640" height="463" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>
                 </div>
             </div>
             
@@ -518,8 +536,21 @@ eleventyNavigation:
                     <a href="#" class="cs-link">Learn More </a>
                 </div>
                 <div class="cs-service-image">
-                    <img src="/assets/images/landing1.png" alt="Plant selection for Houston yards" width="400" height="300">
-                </div>
+                    <picture>
+                       <!--Mobile Image-->
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 576, height: 282 }) | avif %}" type="image/avif">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 576, height: 282 }) | webp %}" type="image/webp">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 576, height: 282 }) | jpeg %}" type="image/jpeg">
+                       <!--Tablet Image-->
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 990, height: 942 }) | avif %}" type="image/avif">
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 990, height: 942 }) | webp %}" type="image/webp">
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 990, height: 942 }) | jpeg %}" type="image/jpeg">
+                       <!--Desktop Image-->
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 1280, height: 926 }) | avif %}" type="image/avif">
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 1280, height: 926 }) | webp %}" type="image/webp">
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 1280, height: 926 }) | jpeg %}" type="image/jpeg">
+                       <img src="{% getUrl "/assets/images/landing1.png" | resize({ width: 1280, height: 926 }) | jpeg %}" alt="" width="640" height="463" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>                </div>
             </div>
             
             <div class="cs-service">
@@ -537,8 +568,21 @@ eleventyNavigation:
                     <a href="#" class="cs-link">Learn More </a>
                 </div>
                 <div class="cs-service-image">
-                    <img src="/assets/images/landing1.png" alt="Hardscaping services" width="400" height="300">
-                </div>
+                    <picture>
+                       <!--Mobile Image-->
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 576, height: 282 }) | avif %}" type="image/avif">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 576, height: 282 }) | webp %}" type="image/webp">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 576, height: 282 }) | jpeg %}" type="image/jpeg">
+                       <!--Tablet Image-->
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 990, height: 942 }) | avif %}" type="image/avif">
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 990, height: 942 }) | webp %}" type="image/webp">
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 990, height: 942 }) | jpeg %}" type="image/jpeg">
+                       <!--Desktop Image-->
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 1280, height: 926 }) | avif %}" type="image/avif">
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 1280, height: 926 }) | webp %}" type="image/webp">
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 1280, height: 926 }) | jpeg %}" type="image/jpeg">
+                       <img src="{% getUrl "/assets/images/landing1.png" | resize({ width: 1280, height: 926 }) | jpeg %}" alt="" width="640" height="463" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>                </div>
             </div>
             
             <div class="cs-service">
@@ -556,8 +600,21 @@ eleventyNavigation:
                     <a href="#" class="cs-link">Learn More </a>
                 </div>
                 <div class="cs-service-image">
-                    <img src="/assets/images/landing1.png" alt="Outdoor living space design" width="400" height="300">
-                </div>
+                    <picture>
+                       <!--Mobile Image-->
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 576, height: 282 }) | avif %}" type="image/avif">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 576, height: 282 }) | webp %}" type="image/webp">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 576, height: 282 }) | jpeg %}" type="image/jpeg">
+                       <!--Tablet Image-->
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 990, height: 942 }) | avif %}" type="image/avif">
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 990, height: 942 }) | webp %}" type="image/webp">
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 990, height: 942 }) | jpeg %}" type="image/jpeg">
+                       <!--Desktop Image-->
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 1280, height: 926 }) | avif %}" type="image/avif">
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 1280, height: 926 }) | webp %}" type="image/webp">
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 1280, height: 926 }) | jpeg %}" type="image/jpeg">
+                       <img src="{% getUrl "/assets/images/landing1.png" | resize({ width: 1280, height: 926 }) | jpeg %}" alt="" width="640" height="463" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>                </div>
             </div>
             
             <div class="cs-service">
@@ -575,8 +632,21 @@ eleventyNavigation:
                     <a href="#" class="cs-link">Learn More </a>
                 </div>
                 <div class="cs-service-image">
-                    <img src="/assets/images/landing1.png" alt="Lawn and turf design" width="400" height="300">
-                </div>
+                    <picture>
+                       <!--Mobile Image-->
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 576, height: 282 }) | avif %}" type="image/avif">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 576, height: 282 }) | webp %}" type="image/webp">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 576, height: 282 }) | jpeg %}" type="image/jpeg">
+                       <!--Tablet Image-->
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 990, height: 942 }) | avif %}" type="image/avif">
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 990, height: 942 }) | webp %}" type="image/webp">
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 990, height: 942 }) | jpeg %}" type="image/jpeg">
+                       <!--Desktop Image-->
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 1280, height: 926 }) | avif %}" type="image/avif">
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 1280, height: 926 }) | webp %}" type="image/webp">
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 1280, height: 926 }) | jpeg %}" type="image/jpeg">
+                       <img src="{% getUrl "/assets/images/landing1.png" | resize({ width: 1280, height: 926 }) | jpeg %}" alt="" width="640" height="463" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>                </div>
             </div>
             
             <div class="cs-service">
@@ -594,8 +664,21 @@ eleventyNavigation:
                     <a href="#" class="cs-link">Learn More </a>
                 </div>
                 <div class="cs-service-image">
-                    <img src="/assets/images/landing1.png" alt="Outdoor lighting design" width="400" height="300">
-                </div>
+                    <picture>
+                       <!--Mobile Image-->
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 576, height: 282 }) | avif %}" type="image/avif">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 576, height: 282 }) | webp %}" type="image/webp">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 576, height: 282 }) | jpeg %}" type="image/jpeg">
+                       <!--Tablet Image-->
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 990, height: 942 }) | avif %}" type="image/avif">
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 990, height: 942 }) | webp %}" type="image/webp">
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 990, height: 942 }) | jpeg %}" type="image/jpeg">
+                       <!--Desktop Image-->
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 1280, height: 926 }) | avif %}" type="image/avif">
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 1280, height: 926 }) | webp %}" type="image/webp">
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 1280, height: 926 }) | jpeg %}" type="image/jpeg">
+                       <img src="{% getUrl "/assets/images/landing1.png" | resize({ width: 1280, height: 926 }) | jpeg %}" alt="" width="640" height="463" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>                </div>
             </div>
             
             <div class="cs-service">
@@ -613,8 +696,21 @@ eleventyNavigation:
                     <a href="#" class="cs-link">Learn More </a>
                 </div>
                 <div class="cs-service-image">
-                    <img src="/assets/images/landing1.png" alt="Erosion control and grading" width="400" height="300">
-                </div>
+                    <picture>
+                       <!--Mobile Image-->
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 576, height: 282 }) | avif %}" type="image/avif">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 576, height: 282 }) | webp %}" type="image/webp">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 576, height: 282 }) | jpeg %}" type="image/jpeg">
+                       <!--Tablet Image-->
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 990, height: 942 }) | avif %}" type="image/avif">
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 990, height: 942 }) | webp %}" type="image/webp">
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 990, height: 942 }) | jpeg %}" type="image/jpeg">
+                       <!--Desktop Image-->
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 1280, height: 926 }) | avif %}" type="image/avif">
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 1280, height: 926 }) | webp %}" type="image/webp">
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 1280, height: 926 }) | jpeg %}" type="image/jpeg">
+                       <img src="{% getUrl "/assets/images/landing1.png" | resize({ width: 1280, height: 926 }) | jpeg %}" alt="" width="640" height="463" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>                </div>
             </div>
             
             <div class="cs-service">
@@ -632,8 +728,21 @@ eleventyNavigation:
                     <a href="#" class="cs-link">Learn More </a>
                 </div>
                 <div class="cs-service-image">
-                    <img src="/assets/images/landing1.png" alt="Houston drainage and irrigation systems" width="400" height="300">
-                </div>
+                    <picture>
+                       <!--Mobile Image-->
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 576, height: 282 }) | avif %}" type="image/avif">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 576, height: 282 }) | webp %}" type="image/webp">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 576, height: 282 }) | jpeg %}" type="image/jpeg">
+                       <!--Tablet Image-->
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 990, height: 942 }) | avif %}" type="image/avif">
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 990, height: 942 }) | webp %}" type="image/webp">
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 990, height: 942 }) | jpeg %}" type="image/jpeg">
+                       <!--Desktop Image-->
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 1280, height: 926 }) | avif %}" type="image/avif">
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 1280, height: 926 }) | webp %}" type="image/webp">
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 1280, height: 926 }) | jpeg %}" type="image/jpeg">
+                       <img src="{% getUrl "/assets/images/landing1.png" | resize({ width: 1280, height: 926 }) | jpeg %}" alt="" width="640" height="463" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>                </div>
             </div>
         </div>
         <a href="#" class="cs-button-solid">View Design Ideas</a>
@@ -653,8 +762,36 @@ eleventyNavigation:
                 <div class="cs-topper">Commercial & Residential</div>
                 <div class="before-after-container">
                     <div class="before-after">
-                        <img src="/assets/images/landing1.png" alt="Landscape before transformation" class="before-after__before">
-                        <img src="/assets/images/hli-award.jpg" alt="Landscape after transformation" class="before-after__after-img">
+                        <picture class="before-after__before-img">
+                           <!--Mobile Image-->
+                           <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 424, height:  600}) | avif %}" type="image/avif">
+                           <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 424, height:  600}) | webp %}" type="image/webp">
+                           <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 424, height:  600}) | jpeg %}" type="image/jpeg">
+                           <!--Tablet Image-->
+                           <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 1126, height: 1000 }) | avif %}" type="image/avif">
+                           <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 1126, height: 1000 }) | webp %}" type="image/webp">
+                           <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 1126, height: 1000 }) | jpeg %}" type="image/jpeg">
+                           <!--Desktop Image-->
+                           <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 1366, height: 1000 }) | avif %}" type="image/avif">
+                           <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 1366, height: 1000 }) | webp %}" type="image/webp">
+                           <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 1366, height: 1000 }) | jpeg %}" type="image/jpeg">
+                           <img src="{% getUrl "/assets/images/landing1.png" | resize({ width: 1366, height: 1000 }) | jpeg %}" alt="" width="683" height="500" loading="lazy" decoding="async" aria-hidden="true">
+                        </picture>
+                        <picture class="before-after__after-img">
+                           <!--Mobile Image-->
+                           <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-award.jpg" | resize({ width: 424, height:  600}) | avif %}" type="image/avif">
+                           <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-award.jpg" | resize({ width: 424, height:  600}) | webp %}" type="image/webp">
+                           <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-award.jpg" | resize({ width: 424, height:  600}) | jpeg %}" type="image/jpeg">
+                           <!--Tablet Image-->
+                           <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-award.jpg" | resize({ width: 1126, height: 1000 }) | avif %}" type="image/avif">
+                           <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-award.jpg" | resize({ width: 1126, height: 1000 }) | webp %}" type="image/webp">
+                           <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-award.jpg" | resize({ width: 1126, height: 1000 }) | jpeg %}" type="image/jpeg">
+                           <!--Desktop Image-->
+                           <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-award.jpg" | resize({ width: 1366, height: 1000 }) | avif %}" type="image/avif">
+                           <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-award.jpg" | resize({ width: 1366, height: 1000 }) | webp %}" type="image/webp">
+                           <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-award.jpg" | resize({ width: 1366, height: 1000 }) | jpeg %}" type="image/jpeg">
+                           <img src="{% getUrl "/assets/images/hli-award.jpg" | resize({ width: 1366, height: 1000 }) | jpeg %}" alt="" width="683" height="500" loading="lazy" decoding="async" aria-hidden="true">
+                        </picture>
                         <div class="before-after__after"></div>
                         <div class="before-after__slider" role="slider" aria-label="Adjust before and after comparison" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
                             <div class="before-after__handle"></div>
@@ -694,7 +831,21 @@ eleventyNavigation:
             <!-- Gallery Item 1 -->
             <article class="gallery-card">
                 <div class="gallery-card-main">
-                    <img src="/assets/images/landing1.png" alt="Modern patio with outdoor kitchen">
+                    <picture>
+                       <!--Mobile Image-->
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 576, height: 640 }) | avif %}" type="image/avif">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 576, height: 640 }) | webp %}" type="image/webp">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 576, height: 640 }) | jpeg %}" type="image/jpeg">
+                       <!--Tablet Image-->
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 1982, height: 640 }) | avif %}" type="image/avif">
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 1982, height: 640 }) | webp %}" type="image/webp">
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 1982, height: 640 }) | jpeg %}" type="image/jpeg">
+                       <!--Desktop Image-->
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 820, height: 640 }) | avif %}" type="image/avif">
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 820, height: 640 }) | webp %}" type="image/webp">
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 820, height: 640 }) | jpeg %}" type="image/jpeg">
+                       <img src="{% getUrl "/assets/images/landing1.png" | resize({ width: 820, height: 640 }) | jpeg %}" alt="" width="410" height="320" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>
                     <div class="gallery-card-footer">
                         <h3>Adamson Residence</h3>
                         <span class="gallery-button"></span>
@@ -708,7 +859,21 @@ eleventyNavigation:
             <!-- Gallery Item 2 -->
             <article class="gallery-card">
                 <div class="gallery-card-main">
-                    <img src="/assets/images/landing1.png" alt="Lush lawn with plant beds">
+                    <picture>
+                       <!--Mobile Image-->
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 576, height: 640 }) | avif %}" type="image/avif">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 576, height: 640 }) | webp %}" type="image/webp">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 576, height: 640 }) | jpeg %}" type="image/jpeg">
+                       <!--Tablet Image-->
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 1982, height: 640 }) | avif %}" type="image/avif">
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 1982, height: 640 }) | webp %}" type="image/webp">
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 1982, height: 640 }) | jpeg %}" type="image/jpeg">
+                       <!--Desktop Image-->
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 820, height: 640 }) | avif %}" type="image/avif">
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 820, height: 640 }) | webp %}" type="image/webp">
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 820, height: 640 }) | jpeg %}" type="image/jpeg">
+                       <img src="{% getUrl "/assets/images/landing1.png" | resize({ width: 820, height: 640 }) | jpeg %}" alt="" width="410" height="320" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>
                     <div class="gallery-card-footer">
                         <h3>Best Residence</h3>
                         <span class="gallery-button"></span>
@@ -722,7 +887,21 @@ eleventyNavigation:
             <!-- Gallery Item 3 -->
             <article class="gallery-card">
                 <div class="gallery-card-main">
-                    <img src="/assets/images/landing1.png" alt="Commercial walkway with lighting">
+                    <picture>
+                       <!--Mobile Image-->
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 576, height: 640 }) | avif %}" type="image/avif">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 576, height: 640 }) | webp %}" type="image/webp">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 576, height: 640 }) | jpeg %}" type="image/jpeg">
+                       <!--Tablet Image-->
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 1982, height: 640 }) | avif %}" type="image/avif">
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 1982, height: 640 }) | webp %}" type="image/webp">
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 1982, height: 640 }) | jpeg %}" type="image/jpeg">
+                       <!--Desktop Image-->
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 820, height: 640 }) | avif %}" type="image/avif">
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 820, height: 640 }) | webp %}" type="image/webp">
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 820, height: 640 }) | jpeg %}" type="image/jpeg">
+                       <img src="{% getUrl "/assets/images/landing1.png" | resize({ width: 820, height: 640 }) | jpeg %}" alt="" width="410" height="320" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>
                     <div class="gallery-card-footer">
                         <h3>Lowrey Residence</h3>
                         <span class="gallery-button"></span>
@@ -818,7 +997,21 @@ eleventyNavigation:
                 <a href="#" class="cs-button-solid">Start Your Project Today</a>
             </div>
             <picture class="cs-image">
-                <img src="/assets/images/landing1.png" alt="">
+                <picture>
+                   <!--Mobile Image-->
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 576, height: 1000 }) | avif %}" type="image/avif">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 576, height: 1000 }) | webp %}" type="image/webp">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 576, height: 1000 }) | jpeg %}" type="image/jpeg">
+                   <!--Tablet Image-->
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 1982, height: 1000 }) | avif %}" type="image/avif">
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 1982, height: 1000 }) | webp %}" type="image/webp">
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 1982, height: 1000 }) | jpeg %}" type="image/jpeg">
+                   <!--Desktop Image-->
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 1192, height: 1000 }) | avif %}" type="image/avif">
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 1192, height: 1000 }) | webp %}" type="image/webp">
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 1192, height: 1000 }) | jpeg %}" type="image/jpeg">
+                   <img src="{% getUrl "/assets/images/landing1.png" | resize({ width: 1192, height: 1000 }) | jpeg %}" alt="" width="596" height="500" loading="lazy" decoding="async" aria-hidden="true">
+                </picture>
             </picture>
         </div>
     </div>

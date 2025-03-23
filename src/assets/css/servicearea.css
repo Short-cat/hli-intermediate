@@ -1,0 +1,405 @@
+/*-- -------------------------- -->
+<---          Banner            -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #banner-1106 {
+    padding: var(--sectionPadding);
+    padding-top: 15.625rem;
+    padding-bottom: 7.5rem;
+    /* clips the line from causing overflow issues for going off screen */
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+  }
+  #banner-1106 .cs-container {
+    text-align: center;
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  #banner-1106 .cs-int-title {
+    /* 39px - 61px */
+    font-size: clamp(2.4375rem, 6.4vw, 3.8125rem);
+    font-weight: 900;
+    line-height: 1.2em;
+    text-align: inherit;
+    margin: 0;
+    color: var(--bodyTextColorWhite);
+    position: relative;
+  }
+  #banner-1106 .cs-breadcrumbs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #banner-1106 .cs-link {
+    font-size: 1rem;
+    line-height: 1.2em;
+    text-decoration: none;
+    color: var(--bodyTextColorWhite);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #banner-1106 .cs-link:last-of-type {
+    /* remove the chevron on the last list item */
+  }
+  #banner-1106 .cs-link:last-of-type::after {
+    display: none;
+  }
+  #banner-1106 .cs-link:after {
+    /* chevron */
+    content: "";
+    width: 0.4375rem;
+    height: 0.75rem;
+    margin: 0 1rem;
+    background: url("https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/white-chev.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    display: block;
+  }
+  #banner-1106 .cs-link.cs-active {
+    color: var(--primary);
+  }
+  #banner-1106 .cs-background {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  #banner-1106 .cs-background:before {
+    /* background color overlay */
+    content: "";
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: -moz-linear-gradient(left, rgba(26, 26, 26, 0.94) 0%, rgba(26, 26, 26, 0) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(26, 26, 26, 0.94) 0%, rgba(26, 26, 26, 0) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    opacity: 1;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  #banner-1106 .cs-background img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* Makes img tag act as a background image */
+    object-fit: cover;
+  }
+}
+/*-- -------------------------- -->
+<---         content            -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #service-areas {
+    padding: var(--sectionPadding);
+    position: relative;
+  }
+  #service-areas .container {
+    width: 100%;
+    max-width: 80em;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 1.25em;
+  }
+  #service-areas .sb-col {
+    width: 90%;
+    display: none;
+  }
+  #service-areas .col-group {
+    width: 100%;
+    text-decoration: none;
+  }
+  #service-areas .img-box {
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    list-style: none;
+    /* 260px - 320px */
+    height: clamp(16.25rem, 30vw, 18rem);
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /* prevents padding and border from affecting height and width */
+    position: relative;
+    z-index: 1;
+    border-top-left-radius: 0.625em;
+    border-top-right-radius: 0.625em;
+  }
+  #service-areas .img-box h2 {
+    color: #fff;
+    line-height: 1.4em;
+    font-size: clamp(2.25rem, 8vw, 2.5rem);
+  }
+  #service-areas .cs-background {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  #service-areas .cs-background:before {
+    /* background color overlay */
+    content: "";
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    opacity: 0.4;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: background-color 0.3s, opacity 0.3s;
+  }
+  #service-areas .cs-background img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* Makes img tag act as a background image */
+    object-fit: cover;
+  }
+  #service-areas .serv-title {
+    text-align: center;
+    list-style: none;
+    width: 100%;
+    font-size: clamp(0.8rem, 8vw, 1.2rem);
+    color: #000;
+    background: linear-gradient(90deg, #aace7b 28%, #c8e99d 60%, #dcffad 100%);
+    pointer-events: none;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    position: relative;
+    border-top: 0.8px solid #ae8b0d;
+  }
+  #service-areas .serv-title::before {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 0.07em;
+    width: 4em;
+    background: #000;
+    opacity: 1;
+    bottom: 18%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  #service-areas .city {
+    width: 100% ;
+    list-style: none;
+    background: linear-gradient(90deg, #aace7b 28%, #c8e99d 60%, #dcffad 100%);
+    border-top: 0.8px solid #ae8b0d;
+    font-weight: 500;
+    font-size: clamp(1.25rem, 8vw, 2.3rem);
+  }
+  #service-areas .city:first-of-type {
+    border-top: 1px solid transparent;
+  }
+  #service-areas .city:last-of-type {
+    border-bottom-left-radius: 0.625em;
+    border-bottom-right-radius: 0.625em;
+  }
+  #service-areas .city:hover {
+    background: #1a1a1a;
+  }
+  #service-areas .cs-link {
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    /* padding goes on the link, not the cs-item as is normal. We do this because we want the whole card to be hoverable. So we add the padding to the link tag to create the space inside the card. By adding the space inside the cs-link tag we can make the whole card hoverable since the padding is now contributing to the height and width of the link */
+    padding-left: 1.5625rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    /* prevents padding from affecting height and width */
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: clamp(1.25rem, 8vw, 1.4rem);
+    color: #fff;
+  }
+  @keyframes slide-across {
+    0% {
+      transform: translateX(0rem);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(60rem);
+      opacity: 0;
+    }
+  }
+  #service-areas .sb-content {
+    max-width: 56.25em;
+    padding-bottom: 8.75em;
+  }
+  #service-areas .sb-content .cs-h1 {
+    font-size: var(--headerFontSize);
+    padding-bottom: 0.625em;
+  }
+  #service-areas .sb-content .cs-topper {
+    padding-bottom: 0.625em;
+  }
+  #service-areas .sb-content .cs-p {
+    padding-bottom: 1.25em;
+    padding-top: 1.25em;
+  }
+  #service-areas .sb-content .cs-h2 {
+    font-size: clamp(1.7375rem, 3.4vw, 1.6625rem);
+    padding-bottom: 0.625em;
+    padding-top: 0.625em;
+    position: relative;
+  }
+  #service-areas .sb-content .cs-h3 {
+    font-size: clamp(1.0375rem, 3vw, 1.1625rem);
+    padding-top: 0.9375em;
+  }
+  #service-areas .sb-content .cs-ul {
+    padding-left: 2.5em;
+    padding-bottom: 0.625em;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #service-areas .sb-col {
+    display: flex;
+    padding-bottom: 8.75em;
+  }
+  #service-areas .sb-content {
+    max-width: 56.25em;
+    padding-bottom: 3.75em;
+    align-self: flex-start;
+    margin-left: 2.5em;
+  }
+}
+@media only screen and (min-width: 940px) {
+  #service-areas .cs-h2 {
+    font-size: clamp(1.7375rem, 3.4vw, 1.6625rem);
+    padding-bottom: 0.625em;
+    padding-top: 0.625em;
+    position: relative;
+  }
+  #service-areas .cs-h2::before {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 1em;
+    width: 0.2em;
+    border-radius: 0.3125em;
+    background: var(--primary);
+    opacity: 1;
+    top: 28%;
+    left: 0;
+    transform: translateX(-180%);
+  }
+  #service-areas .cs-h2:hover::before {
+    animation: slide-across 2s ease-in-out;
+    animation-fill-mode: forwards;
+  }
+}
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #service-areas .container {
+    flex-direction: row-reverse;
+  }
+  #service-areas .sb-col {
+    max-width: 18em;
+    margin-right: auto;
+    align-self: flex-start;
+  }
+  #service-areas .col-group {
+    width: 100%;
+    text-decoration: none;
+  }
+  #service-areas .serv-title {
+    text-align: center;
+    list-style: none;
+    width: clamp(16.25rem, 30vw, 18rem);
+    font-size: clamp(0.8rem, 8vw, 1.2rem);
+    color: #000;
+    background: linear-gradient(90deg, #8dad62 28%, #c8e99d 60%, #aace7b 100%);
+    pointer-events: none;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    position: relative;
+    border-top: 0.8px solid #92af6d;
+  }
+  #service-areas .serv-title::before {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 0.07em;
+    width: 4em;
+    background: #000;
+    opacity: 1;
+    bottom: 18%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  #service-areas .city {
+    width: clamp(16.25rem, 30vw, 18rem);
+    list-style: none;
+    background: linear-gradient(90deg, #8dad62 28%, #c8e99d 60%, #aace7b 100%);
+    border-top: 0.8px solid #92af6d;
+    font-weight: 500;
+    font-size: clamp(1.25rem, 8vw, 2.1rem);
+  }
+  #service-areas .city:first-of-type {
+    border-top: 1px solid transparent;
+  }
+  #service-areas .city:last-of-type {
+    border-bottom-left-radius: 0.625em;
+    border-bottom-right-radius: 0.625em;
+  }
+  #service-areas .city:hover {
+    background: #1a1a1a;
+  }
+  #service-areas .cs-link {
+    text-decoration: none;
+    width: clamp(16.25rem, 30vw, 18rem);
+    height: 100%;
+    /* padding goes on the link, not the cs-item as is normal. We do this because we want the whole card to be hoverable. So we add the padding to the link tag to create the space inside the card. By adding the space inside the cs-link tag we can make the whole card hoverable since the padding is now contributing to the height and width of the link */
+    padding-left: 1.5625rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    /* prevents padding from affecting height and width */
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: clamp(1.25rem, 8vw, 1.4rem);
+    color: #fff;
+  }
+  #service-areas .sb-content {
+    max-width: 56.25em;
+    padding-bottom: 8.75em;
+    align-self: flex-start;
+    margin-left: 2.5em;
+  }
+}
