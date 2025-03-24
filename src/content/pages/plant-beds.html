@@ -759,7 +759,7 @@ eleventyNavigation:
 
 <section id="recent-projects">
     <div class="cs-container">
-        <h2 class="cs-title">Recent Houston Plant Bed Projects</h2>
+        <h2 class="cs-title">Recent Houston Landscaping Projects</h2>
         <div class="cs-testimonial">
             <p>"HLI’s flower beds made our entrance pop—great work!"</p>
             <span>- Lisa P., Houston commercial property manager</span>
@@ -952,29 +952,6 @@ eleventyNavigation:
     </div>
 </section>
 
-<!-- ============================================ -->
-<!--             Contact Form                     -->
-<!-- ============================================ -->
-
-<section id="contact-form">
-    <div class="cs-container">
-        <h2 class="cs-title">Ready to Reshape Your Landscape?</h2>
-        <form class="cs-form">
-            <div class="cs-form-group">
-                <input type="text" id="name" name="name" placeholder="Name" required>
-            </div>
-            <div class="cs-form-group">
-                <input type="email" id="email" name="email" placeholder="Email" required>
-            </div>
-            <div class="cs-form-group">
-                <input type="tel" id="phone" name="phone" placeholder="Phone" required>
-            </div>
-            <div class="cs-form-group">
-                <textarea id="message" name="message" placeholder="Message" rows="4" required></textarea>
-            </div>
-            <button type="submit" class="cs-button-solid">Submit</button>
-        </form>
-    </div>
-</section>
+{% include "components/cta.html" %}
 
 {% endblock %}
