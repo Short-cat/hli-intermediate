@@ -54,18 +54,25 @@ document.addEventListener("mousemove", (e) => {
 });
 
 document.addEventListener("mouseup", (e) => {
-  e.preventDefault(); // Prevent text selection
+  // Only prevent default if we were dragging
+  if (isDragging) {
+    e.preventDefault(); // Prevent text selection
+  }
   stopDragging();
 });
 
 // Touch support for mobile
 slider.addEventListener("touchstart", (e) => {
-  e.preventDefault(); // Prevent text selection
+  // Only prevent default on the slider itself
+  if (e.target === slider || slider.contains(e.target)) {
+    e.preventDefault(); // Prevent text selection
+  }
   startDragging();
 });
 
 document.addEventListener("touchmove", (e) => {
   if (isDragging) {
+    // Only prevent default when dragging the slider
     e.preventDefault(); // Prevent text selection
     const touch = e.touches[0];
     moveSlider(touch.clientX);
@@ -73,6 +80,9 @@ document.addEventListener("touchmove", (e) => {
 });
 
 document.addEventListener("touchend", (e) => {
-  e.preventDefault(); // Prevent text selection
+  // Only prevent default when we were dragging the slider
+  if (isDragging) {
+    e.preventDefault(); // Prevent text selection
+  }
   stopDragging();
 });
