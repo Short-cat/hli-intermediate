@@ -343,6 +343,32 @@
   }
 }
 
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode {
+    #hero-section {
+      background-color: var(--dark);
+
+      .cs-content {
+        p {
+          color: var(--bodyTextColorWhite);
+        }
+      }
+
+      .cs-benefits {
+        h2 {
+            color: var(--bodyTextColorWhite);
+        }
+        background-color: var(--accent);
+      }
+
+      .cs-badge {
+        background-color: var(--accent);
+      }
+    }
+  }
+}
+
 /*-- -------------------------- -->
 <---    Design Differently       -->
 <--- -------------------------- -*/
@@ -459,6 +485,30 @@
             height: auto;
             display: block;
         }
+    }
+  }
+}
+
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode {
+    #design-differently {
+      background-color: var(--dark);
+      .cs-container {
+        .cs-content {
+          p {
+            color: var(--bodyTextColorWhite);
+          }
+        }
+
+        .cs-testimonial {
+          background-color: var(--accent);
+
+          span {
+            color: var(--bodyTextColorWhite);
+          }
+        }
+      }
     }
   }
 }
@@ -1004,6 +1054,40 @@
   }
 }
 
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode {
+    #design-options {
+      background-color: var(--dark);
+      
+      .cs-service {
+        background-color: var(--accent);
+        
+        &:hover {
+          .cs-service-content {
+            h3 {
+              color: var(--primary);
+            }
+            .cs-link {
+              color: var(--primary);
+            }
+          }
+        }
+        
+        
+      .cs-service-content {
+        background-color: var(--accent);
+        p,
+        h3,
+        a {
+          color: var(--bodyTextColorWhite);
+        }
+      }
+      }
+    }
+  }
+}
+
 /*-- -------------------------- -->
 <---       Pricing/Cost         -->
 <--- -------------------------- -->
@@ -1269,6 +1353,25 @@
   }
 }
 
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode {
+    #cost-section {
+      background-color: var(--primary);
+
+      .cs-cost-tier:nth-child(1),
+      .cs-cost-tier:nth-child(2) {
+        background-color: #fff;
+        h3, .cs-price, li {
+          color: #333;
+        }
+      }
+
+
+    }
+  }
+}
+
 
 
 /*-- -------------------------- -->
@@ -1425,6 +1528,20 @@
       .cs-image {
           width: 45%;
       }
+  }
+}
+
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode {
+    #custom-designs {
+      background-color: var(--dark);
+      .cs-content {
+        p {
+          color: var(--bodyTextColorWhite);
+        }
+      }
+    }
   }
 }
 
@@ -1850,6 +1967,37 @@
   }
 }
 
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode {
+    #recent-projects {
+      background-color: var(--dark);
+
+      .cs-testimonial {
+        background-color: var(--accent);
+
+        span {
+          color: var(--bodyTextColorWhite);
+        }
+      }
+
+     .gallery-card-footer {
+        background-color: var(--accent);
+        h3 {
+          color: var(--bodyTextColorWhite);
+        }
+      }
+
+      .gallery-card-dropdown {
+        background-color: var(--accent);
+        p {
+          color: var(--bodyTextColorWhite);
+        }
+      }
+    }
+  }
+}
+
 /*-- -------------------------- -->
 <---      Cost Section         -->
 <--- -------------------------- -*/
@@ -2073,6 +2221,31 @@
     }
   }
 
+}
+
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode {
+    #trusted-company {
+      background-color: var(--dark);
+
+      li {
+        background-color: var(--accent);
+
+        strong {
+          color: var(--bodyTextColorWhite);
+        }
+      }
+
+      .cs-testimonial {
+        background-color: var(--accent);
+
+        span {
+          color: var(--bodyTextColorWhite);
+        }
+      }
+    }
+  }
 }
 
 /*-- -------------------------- -->
