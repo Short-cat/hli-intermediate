@@ -1558,6 +1558,7 @@
     
     .before-after-container {
       width: 100%;
+      height: auto;
       max-width: (1280/16rem);
       margin: 0 auto; // Center the container
       box-sizing: border-box; // Ensure padding doesn't affect the width
@@ -1566,7 +1567,7 @@
     .before-after {
       position: relative;
       width: 100%;
-      height: (300/16rem); // Smaller height for mobile
+      height: (400/16rem); // Smaller height for mobile
       border-radius: (8/16rem) !important; /* Force border-radius with !important */
       overflow: hidden !important; /* Force overflow hidden to ensure border-radius works */
       user-select: none;
@@ -1678,7 +1679,7 @@
     }
     
     .before-after {
-      height: (400/16rem); // Taller for tablet
+      height: (500/16rem); // Taller for tablet
       border-radius: (8/16rem); /* Ensure consistent border-radius */
       
       &__slider {
