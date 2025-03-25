@@ -13,7 +13,7 @@ eleventyNavigation:
 {% block head %}
     <link rel="stylesheet" href="/assets/css/local.css"/>
     <link rel="stylesheet" href="/assets/css/critical.css"/>
-    <link rel="preload" href="{% getUrl "/assets/images/landing1.png" | resize({ width: 3840, height: 2030, position: "attention", fit: "outside" }) | jpeg({ quality: 80 }) %}"
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/landing1.png" | resize({ width: 3840, height: 2030, position: "attention", fit: "outside" }) | jpeg({ quality: 80 }) %}"/>
 
     <!-- Script for Netlify Identity -->
     <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
