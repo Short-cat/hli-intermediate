@@ -139,7 +139,7 @@ Doing this will complete the overlapping "breaking the container" look.
                  <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/bbb3.png" | resize({ width: 302, height: 134 }) | avif %}" type="image/avif">
                  <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/bbb3.png" | resize({ width: 302, height: 134 }) | webp %}" type="image/webp">
                  <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/bbb3.png" | resize({ width: 302, height: 134 }) | jpeg %}" type="image/jpeg">
-                 <img src="{% getUrl "/assets/images/bbb3.png" | resize({ width: 302, height: 134 }) | jpeg %}" alt="more about our business" width="151" height="67" loading="lazy" decoding="async" aria-hidden="true">
+                 <img src="{% getUrl "/assets/images/bbb3.png" | resize({ width: 302, height: 134 }) | jpeg %}" alt="more about our business" width="151" height="67" loading="eager" decoding="async" aria-hidden="true">
               </picture>
             </a>
             <a
