@@ -12,6 +12,14 @@ eleventyNavigation:
 
 {% block head %}
     <link rel="stylesheet" href="/assets/css/test.css">
+    <!-- Ensure carousel images load immediately -->
+    <script>
+        // This inline script helps with immediate loading of carousel resources
+        window.addEventListener('DOMContentLoaded', () => {
+            // Mark that the DOM is ready for image loading
+            document.documentElement.classList.add('images-ready');
+        });
+    </script>
 {% endblock %}
 
 {% block body %}
@@ -1018,4 +1026,6 @@ eleventyNavigation:
 
 {% include "components/cta.html" %}
 
+<!-- Load the carousel preloader script -->
+<script src="/assets/js/preload-carousel.js" defer></script>
 {% endblock %}
