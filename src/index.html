@@ -13,7 +13,8 @@ eleventyNavigation:
 {% block head %}
     <link rel="stylesheet" href="/assets/css/local.css"/>
     <link rel="stylesheet" href="/assets/css/critical.css"/>
-    <link rel="preload" as="image" href="{% getUrl "/assets/images/landing1.png" | resize({ width: 3840, height: 2030, position: "attention", fit: "outside" }) | jpeg({ quality: 80 }) %}"/>
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/landing1.png" | resize({ width: 3840, height: 2030 }) | jpeg({ quality: 80 }) %}"/>
+    <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/roboto-v29-latin-700.woff2" crossorigin>
 
     <!-- Script for Netlify Identity -->
     <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
@@ -125,64 +126,53 @@ Doing this will complete the overlapping "breaking the container" look.
               href="https://www.bbb.org/us/tx/richmond/profile/landscape-design/houston-landscape-images-0915-31003371"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="more about our business"
             >
-              <picture>
-                 <!--Mobile Image-->
-                 <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/bbb3.png" | resize({ width: 116, height: 56 }) | avif %}" type="image/avif">
-                 <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/bbb3.png" | resize({ width: 116, height: 56 }) | webp %}" type="image/webp">
-                 <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/bbb3.png" | resize({ width: 116, height: 56 }) | jpeg %}" type="image/jpeg">
-                 <!--Tablet Image-->
-                 <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/bbb3.png" | resize({ width: 302, height: 134 }) | avif %}" type="image/avif">
-                 <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/bbb3.png" | resize({ width: 302, height: 134 }) | webp %}" type="image/webp">
-                 <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/bbb3.png" | resize({ width: 302, height: 134 }) | jpeg %}" type="image/jpeg">
-                 <!--Desktop Image-->
-                 <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/bbb3.png" | resize({ width: 302, height: 134 }) | avif %}" type="image/avif">
-                 <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/bbb3.png" | resize({ width: 302, height: 134 }) | webp %}" type="image/webp">
-                 <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/bbb3.png" | resize({ width: 302, height: 134 }) | jpeg %}" type="image/jpeg">
-                 <img src="{% getUrl "/assets/images/bbb3.png" | resize({ width: 302, height: 134 }) | jpeg %}" alt="more about our business" width="151" height="67" loading="eager" decoding="async" aria-hidden="true">
-              </picture>
+            <picture>
+              <img
+                decoding="async"
+                loading="eager"
+                src="/assets/images/bbb3.png"
+                alt="click to email us"
+                width="200"
+                height="97"
+              />
+            </picture>
             </a>
             <a
               href="https://www.google.com/maps/place/Houston+Landscape+Images/@29.6580284,-95.7479361,17z/data=!3m1!4b1!4m6!3m5!1s0x86411fb08a560d31:0xfcea71026d38ed74!8m2!3d29.6580284!4d-95.7479361!16s%2Fg%2F11fn9p8rfy?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="view our reviews"
             >
-              <picture class="goog">
-                 <!--Mobile Image-->
-                 <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/google-trust5.png" | resize({ width: 116, height: 44 }) | avif %}" type="image/avif">
-                 <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/google-trust5.png" | resize({ width: 116, height: 44 }) | webp %}" type="image/webp">
-                 <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/google-trust5.png" | resize({ width: 116, height: 44 }) | jpeg %}" type="image/jpeg">
-                 <!--Tablet Image-->
-                 <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/google-trust5.png" | resize({ width: 302, height: 112 }) | avif %}" type="image/avif">
-                 <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/google-trust5.png" | resize({ width: 302, height: 112 }) | webp %}" type="image/webp">
-                 <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/google-trust5.png" | resize({ width: 302, height: 112 }) | jpeg %}" type="image/jpeg">
-                 <!--Desktop Image-->
-                 <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/google-trust5.png" | resize({ width: 302, height: 112 }) | avif %}" type="image/avif">
-                 <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/google-trust5.png" | resize({ width: 302, height: 112 }) | webp %}" type="image/webp">
-                 <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/google-trust5.png" | resize({ width: 302, height: 112 }) | jpeg %}" type="image/jpeg">
-                 <img src="{% getUrl "/assets/images/google-trust5.png" | resize({ width: 302, height: 112 }) | jpeg %}" alt="view our reviews" width="151" height="50" loading="eager" decoding="async" aria-hidden="true">
-              </picture>
+            <picture>
+              <img
+                class="goog"
+                decoding="async"
+                loading="eager"
+                src="/assets/images/google-trust5.png"
+                alt="click to email us"
+                width="200"
+                height="75"
+              />
+            </picture>
             </a>
             <a
               href="https://www.hfsfinancial.net/promo/HoustonLandscapeImagesTX/"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="click to get financing"
             >
-              <picture>
-                 <!--Mobile Image-->
-                 <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hfs-logo5.png" | resize({ width: 116, height: 56 }) | avif %}" type="image/avif">
-                 <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hfs-logo5.png" | resize({ width: 116, height: 56 }) | webp %}" type="image/webp">
-                 <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hfs-logo5.png" | resize({ width: 116, height: 56 }) | jpeg %}" type="image/jpeg">
-                 <!--Tablet Image-->
-                 <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hfs-logo5.png" | resize({ width: 302, height: 134 }) | avif %}" type="image/avif">
-                 <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hfs-logo5.png" | resize({ width: 302, height: 134 }) | webp %}" type="image/webp">
-                 <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hfs-logo5.png" | resize({ width: 302, height: 134 }) | jpeg %}" type="image/jpeg">
-                 <!--Desktop Image-->
-                 <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hfs-logo5.png" | resize({ width: 302, height: 134 }) | avif %}" type="image/avif">
-                 <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hfs-logo5.png" | resize({ width: 302, height: 134 }) | webp %}" type="image/webp">
-                 <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hfs-logo5.png" | resize({ width: 302, height: 134 }) | jpeg %}" type="image/jpeg">
-                 <img src="{% getUrl "/assets/images/hfs-logo5.png" | resize({ width: 302, height: 134 }) | jpeg %}" alt="click to get financing" width="151" height="67" loading="eager" decoding="async" aria-hidden="true">
-              </picture>
+            <picture>
+              <img
+                decoding="async"
+                loading="eager"
+                src="/assets/images/hfs-logo5.png"
+                alt="click to get financing"
+                width="200"
+                height="97"
+              />
+            </picture>
             </a>
           </div>
       </div>
@@ -225,7 +215,19 @@ Doing this will complete the overlapping "breaking the container" look.
                 <a href="" class="cs-link">Read More</a>
                 <!--Background Image-->
                 <picture class="cs-background">
-                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/hair1.jpg" alt="hair cut" width="480" height="425">
+                   <!--Mobile Image-->
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 576, height: 500 }) | avif %}" type="image/avif">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 576, height: 500 }) | webp %}" type="image/webp">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 576, height: 500 }) | jpeg %}" type="image/jpeg">
+                   <!--Tablet Image-->
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 970, height: 598 }) | avif %}" type="image/avif">
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 970, height: 598 }) | webp %}" type="image/webp">
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 970, height: 598 }) | jpeg %}" type="image/jpeg">
+                   <!--Desktop Image-->
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 690, height: 610 }) | avif %}" type="image/avif">
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 690, height: 610 }) | webp %}" type="image/webp">
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 690, height: 610 }) | jpeg %}" type="image/jpeg">
+                   <img src="{% getUrl "/assets/images/landing1.png" | resize({ width: 690, height: 610 }) | jpeg %}" alt="" width="345" height="305" loading="lazy" decoding="async" aria-hidden="true">
                 </picture>
             </li>
             <li class="cs-item">
@@ -239,7 +241,19 @@ Doing this will complete the overlapping "breaking the container" look.
                 <a href="" class="cs-link">Read More</a>
                 <!--Background Image-->
                 <picture class="cs-background">
-                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/hair2.jpg" alt="hair cut" width="480" height="425">
+                   <!--Mobile Image-->
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 576, height: 500 }) | avif %}" type="image/avif">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 576, height: 500 }) | webp %}" type="image/webp">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 576, height: 500 }) | jpeg %}" type="image/jpeg">
+                   <!--Tablet Image-->
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 970, height: 598 }) | avif %}" type="image/avif">
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 970, height: 598 }) | webp %}" type="image/webp">
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 970, height: 598 }) | jpeg %}" type="image/jpeg">
+                   <!--Desktop Image-->
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 690, height: 610 }) | avif %}" type="image/avif">
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 690, height: 610 }) | webp %}" type="image/webp">
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 690, height: 610 }) | jpeg %}" type="image/jpeg">
+                   <img src="{% getUrl "/assets/images/landing1.png" | resize({ width: 690, height: 610 }) | jpeg %}" alt="" width="345" height="305" loading="lazy" decoding="async" aria-hidden="true">
                 </picture>
             </li>
             <li class="cs-item">
@@ -253,7 +267,19 @@ Doing this will complete the overlapping "breaking the container" look.
                 <a href="" class="cs-link">Read More</a>
                 <!--Background Image-->
                 <picture class="cs-background">
-                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/hair3.jpg" alt="hair cut" width="480" height="425">
+                   <!--Mobile Image-->
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 576, height: 500 }) | avif %}" type="image/avif">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 576, height: 500 }) | webp %}" type="image/webp">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 576, height: 500 }) | jpeg %}" type="image/jpeg">
+                   <!--Tablet Image-->
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 970, height: 598 }) | avif %}" type="image/avif">
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 970, height: 598 }) | webp %}" type="image/webp">
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 970, height: 598 }) | jpeg %}" type="image/jpeg">
+                   <!--Desktop Image-->
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 690, height: 610 }) | avif %}" type="image/avif">
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 690, height: 610 }) | webp %}" type="image/webp">
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 690, height: 610 }) | jpeg %}" type="image/jpeg">
+                   <img src="{% getUrl "/assets/images/landing1.png" | resize({ width: 690, height: 610 }) | jpeg %}" alt="" width="345" height="305" loading="lazy" decoding="async" aria-hidden="true">
                 </picture>
             </li>
             <li class="cs-item">
@@ -267,7 +293,19 @@ Doing this will complete the overlapping "breaking the container" look.
                 <a href="" class="cs-link">Read More</a>
                 <!--Background Image-->
                 <picture class="cs-background">
-                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/hair3.jpg" alt="hair cut" width="480" height="425">
+                   <!--Mobile Image-->
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 576, height: 500 }) | avif %}" type="image/avif">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 576, height: 500 }) | webp %}" type="image/webp">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 576, height: 500 }) | jpeg %}" type="image/jpeg">
+                   <!--Tablet Image-->
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 970, height: 598 }) | avif %}" type="image/avif">
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 970, height: 598 }) | webp %}" type="image/webp">
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 970, height: 598 }) | jpeg %}" type="image/jpeg">
+                   <!--Desktop Image-->
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 690, height: 610 }) | avif %}" type="image/avif">
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 690, height: 610 }) | webp %}" type="image/webp">
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 690, height: 610 }) | jpeg %}" type="image/jpeg">
+                   <img src="{% getUrl "/assets/images/landing1.png" | resize({ width: 690, height: 610 }) | jpeg %}" alt="" width="345" height="305" loading="lazy" decoding="async" aria-hidden="true">
                 </picture>
             </li>
         </ul>

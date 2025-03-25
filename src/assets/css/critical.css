@@ -14,7 +14,7 @@
   }
   #hero-1250 .cs-container {
     width: 100%;
-    max-width: 90rem;
+    max-width: 80rem;
     padding: 0;
     margin: auto;
     display: flex;
@@ -62,7 +62,7 @@
     font-size: 1rem;
     /* 46px - 56px */
     line-height: clamp(2.875em, 5.5vw, 3.5em);
-    width: 11.25rem;
+    width: 9.375rem;
     text-decoration: none;
     font-weight: 700;
     margin: 0 0.5rem 1rem 0.5rem;
@@ -97,7 +97,7 @@
     font-size: 1rem;
     /* 46px - 56px */
     line-height: clamp(2.875em, 5.5vw, 3.5em);
-    width: 11.25rem;
+    width: 9.375rem;
     /* 46px - 56px */
     height: clamp(2.875em, 5.5vw, 3.5em);
     text-decoration: none;
