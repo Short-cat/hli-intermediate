@@ -1123,6 +1123,9 @@
   #cs-navigation .group {
     display: grid;
   }
+  #cs-navigation .cs-logo {
+    height: clamp(3.5rem, 5vw, 3.6rem);
+  }
   #cs-navigation .cs-nav-button {
     display: none;
   }
