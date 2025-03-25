@@ -614,6 +614,9 @@
   overflow: hidden;
   max-width: none;
   mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+  /* Hardware acceleration for smoother performance */
+  transform: translateZ(0);
+  will-change: transform;
 }
 #design-options .cs-carousel:before,
 #design-options .cs-carousel:after {
@@ -637,6 +640,8 @@
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   position: relative;
+  /* Force hardware acceleration */
+  transform: translateZ(0);
 }
 #design-options .cs-carousel-item:hover {
   transform: translateY(-5px);
@@ -655,11 +660,18 @@
   background: rgba(0, 0, 0, 0.1);
   transition: opacity 0.3s ease;
 }
+#design-options .cs-carousel-item picture,
 #design-options .cs-carousel-item img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
+  /* Optimizations for image loading */
+  will-change: transform, opacity;
+  transform: translateZ(0);
+  /* No delay in displaying image */
+  transition: opacity 0.1s ease;
+  opacity: 1;
 }
 #design-options .cs-service {
   background-color: #fff;
