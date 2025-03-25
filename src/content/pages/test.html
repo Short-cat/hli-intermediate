@@ -42,7 +42,7 @@ eleventyNavigation:
        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-landscapedesign2.jpg" | resize({ width: 3840, height: 1044, position: "center" }) | avif %}" type="image/avif">
        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-landscapedesign2.jpg" | resize({ width: 3840, height: 1044, position: "center" }) | webp %}" type="image/webp">
        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-landscapedesign2.jpg" | resize({ width: 3840, height: 1044, position: "center" }) | jpeg %}" type="image/jpeg">
-       <img src="{% getUrl "/assets/images/hli-landscapedesign2.jpg" | resize({ width: 3840, height: 1044, position: "center" }) | jpeg %}" alt="" width="1920" height="522" loading="lazy" decoding="async" aria-hidden="true">
+       <img src="{% getUrl "/assets/images/hli-landscapedesign2.jpg" | resize({ width: 3840, height: 1044, position: "center" }) | jpeg %}" alt="" width="1920" height="522" loading="eager" decoding="async" aria-hidden="true">
     </picture>
     <svg class="cs-mask" xmlns="http://www.w3.org/2000/svg" width="1920" height="136" viewBox="0 0 1920 136" fill="none">
         <path fill-rule="evenodd" clip-rule="evenodd" d="M1920 136V0C1803.21 45.3334 1445.52 136 951 136C456.485 136 111.116 45.3334 0 0V136H951H1920Z" fill="var(--maskBG)"/>
@@ -89,7 +89,7 @@ eleventyNavigation:
                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-river1.jpg" | resize({ width: 1280, height: 1040, position: "attention", fit: "fill" }) | avif({ quality: 100 }) %}" type="image/avif">
                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-river1.jpg" | resize({ width: 1280, height: 1040, position: "attention", fit: "fill" }) | webp({ quality: 100 }) %}" type="image/webp">
                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-river1.jpg" | resize({ width: 1280, height: 1040, position: "attention", fit: "fill" }) | jpeg({ quality: 100 }) %}" type="image/jpeg">
-               <img src="{% getUrl "/assets/images/hli-river1.jpg" | resize({ width: 1280, height: 1040, position: "attention", fit: "fill" }) | jpeg({ quality: 100 }) %}" alt="Beautiful outdoor landscape" width="640" height="520" loading="lazy" decoding="async" aria-hidden="true">
+               <img src="{% getUrl "/assets/images/hli-river1.jpg" | resize({ width: 1280, height: 1040, position: "attention", fit: "fill" }) | jpeg({ quality: 100 }) %}" alt="Beautiful outdoor landscape" width="640" height="520" loading="eager" decoding="async" aria-hidden="true">
             </picture>
         </div>
     </div>
