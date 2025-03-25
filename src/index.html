@@ -1,7 +1,6 @@
 ---
 title: 'Houston Landscape Images | Landscaper Houston, TX'
 description: 'Discover premier landscaping services in Houston, TX!'
-preloadImg: '/assets/images/landing.jpg'
 permalink: '/'
 tags: 'sitemap' # Sitemap will use all pages in content/, due to content.json. As index.html is not included in content/ we need to manually add the sitemap tag to this page (only).
 eleventyNavigation:
@@ -14,6 +13,7 @@ eleventyNavigation:
 {% block head %}
     <link rel="stylesheet" href="/assets/css/local.css"/>
     <link rel="stylesheet" href="/assets/css/critical.css"/>
+    <link rel="preload" href="{% getUrl "/assets/images/landing1.png" | resize({ width: 3840, height: 2030, position: "attention", fit: "outside" }) | jpeg({ quality: 80 }) %}"
 
     <!-- Script for Netlify Identity -->
     <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
@@ -160,7 +160,7 @@ Doing this will complete the overlapping "breaking the container" look.
                  <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/google-trust5.png" | resize({ width: 302, height: 112 }) | avif %}" type="image/avif">
                  <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/google-trust5.png" | resize({ width: 302, height: 112 }) | webp %}" type="image/webp">
                  <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/google-trust5.png" | resize({ width: 302, height: 112 }) | jpeg %}" type="image/jpeg">
-                 <img src="{% getUrl "/assets/images/google-trust5.png" | resize({ width: 302, height: 112 }) | jpeg %}" alt="view our reviews" width="151" height="50" loading="lazy" decoding="async" aria-hidden="true">
+                 <img src="{% getUrl "/assets/images/google-trust5.png" | resize({ width: 302, height: 112 }) | jpeg %}" alt="view our reviews" width="151" height="50" loading="eager" decoding="async" aria-hidden="true">
               </picture>
             </a>
             <a
@@ -181,7 +181,7 @@ Doing this will complete the overlapping "breaking the container" look.
                  <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hfs-logo5.png" | resize({ width: 302, height: 134 }) | avif %}" type="image/avif">
                  <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hfs-logo5.png" | resize({ width: 302, height: 134 }) | webp %}" type="image/webp">
                  <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hfs-logo5.png" | resize({ width: 302, height: 134 }) | jpeg %}" type="image/jpeg">
-                 <img src="{% getUrl "/assets/images/hfs-logo5.png" | resize({ width: 302, height: 134 }) | jpeg %}" alt="click to get financing" width="151" height="67" loading="lazy" decoding="async" aria-hidden="true">
+                 <img src="{% getUrl "/assets/images/hfs-logo5.png" | resize({ width: 302, height: 134 }) | jpeg %}" alt="click to get financing" width="151" height="67" loading="eager" decoding="async" aria-hidden="true">
               </picture>
             </a>
           </div>
