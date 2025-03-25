@@ -1,3 +1,12 @@
+.cs-title {
+  font-size: 2.5rem;
+  line-height: 1.2em;
+  font-weight: 900;
+  text-align: inherit;
+  margin: 0;
+  color: #000;
+  margin-bottom: 0.75rem;
+}
 /*-- -------------------------- -->
 <---          Banner            -->
 <--- -------------------------- -*/
@@ -229,7 +238,7 @@
   }
   #hero-section .cs-image {
     width: 100%;
-    height: auto;
+    height: 18.75rem;
     max-width: 40rem;
     margin: 1rem auto 0;
     border-radius: 0.5rem;
@@ -238,8 +247,9 @@
   }
   #hero-section .cs-image img {
     width: 100%;
-    height: auto;
+    height: 100%;
     display: block;
+    object-fit: cover;
   }
   #hero-section .cs-button-solid {
     margin-top: 1rem;
@@ -256,7 +266,7 @@
   }
   #hero-section .cs-content {
     text-align: left;
-    width: 58%;
+    width: 100%;
     margin: 0;
   }
   #hero-section .cs-badge {
@@ -264,8 +274,14 @@
   }
   #hero-section .cs-image {
     width: 100%;
-    height: auto;
+    height: clamp(28.5rem, 46vw, 36.375rem);
     margin: 0;
+  }
+  #hero-section .cs-image img {
+    height: 100%;
+    width: 100%;
+    display: block;
+    object-fit: cover;
   }
 }
 /* Desktop - 1024px */
@@ -348,16 +364,17 @@
     color: var(--bodyTextColor);
   }
   #design-differently .cs-image {
+    max-width: 40rem;
     width: 100%;
-    max-width: 33.75rem;
     border-radius: 0.5rem;
     overflow: hidden;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
   }
   #design-differently .cs-image img {
     width: 100%;
-    height: auto;
+    height: 100%;
     display: block;
+    object-fit: cover;
   }
   #design-differently .cs-button-solid {
     margin-top: 1rem;
@@ -371,10 +388,10 @@
   }
   #design-differently .cs-content {
     text-align: left;
-    width: 58%;
+    width: 100%;
   }
   #design-differently .cs-image {
-    width: 38%;
+    width: 100%;
   }
 }
 /* Desktop - 1024px */
@@ -393,8 +410,9 @@
   }
   #design-differently .cs-image img {
     width: 100%;
-    height: auto;
+    height: 100%;
     display: block;
+    object-fit: cover;
   }
 }
 /* Dark Mode */
@@ -436,7 +454,7 @@
     display: flex;
     flex-direction: column;
     /* 48px - 64px */
-    gap: clamp(2.5rem, 6vw, 3rem);
+    gap: clamp(3rem, 6vw, 4rem);
   }
   #steps-1713 .cs-content {
     /* set text align to center if content needs to be centrally aligned */
@@ -468,7 +486,7 @@
   }
   #steps-1713 .cs-number {
     /* 80px - 100px */
-    font-size: clamp(5rem, 9vw, 5.25rem);
+    font-size: clamp(5rem, 9vw, 6.25rem);
     font-weight: 900;
     line-height: 1.2em;
     letter-spacing: -2px;
@@ -478,7 +496,7 @@
     display: block;
   }
   #steps-1713 .cs-h3 {
-    font-size: 1.25rem;
+    font-size: 1.5625rem;
     font-weight: 700;
     line-height: 1.2em;
     margin: 0 0 0.75rem 0;
@@ -486,7 +504,7 @@
   }
   #steps-1713 .cs-item-text {
     /* 14px - 16px */
-    font-size: clamp(0.675rem, 2vw, 0.8rem);
+    font-size: clamp(0.875rem, 2vw, 1rem);
     line-height: 1.5em;
     text-align: left;
     margin: 0;
@@ -494,13 +512,12 @@
   }
   #steps-1713 .cs-background {
     width: 100%;
-    height: 100%;
+    height: 22.5rem;
     display: block;
-    align-content: center;
   }
   #steps-1713 .cs-background img {
     width: 100%;
-    height: 85%;
+    height: 100%;
     object-fit: cover;
   }
 }

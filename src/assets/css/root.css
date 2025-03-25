@@ -1366,8 +1366,12 @@
     width: 21.92857143rem;
     margin: auto;
   }
+  #footer .left-section .tik {
+    height: 2.25em;
+    width: 2.25em;
+  }
   #footer .left-section .tik img {
-    height: 3.125em;
+    height: 2.25em;
   }
   #footer .left-section .logo-box {
     display: flex;
