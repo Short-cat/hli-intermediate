@@ -1429,6 +1429,7 @@
   }
   .before-after-section .before-after__slider .before-after__handle::before {
     content: "↔";
+    padding-bottom: 0.125rem;
     font-size: 0.75rem;
     color: #333;
   }
