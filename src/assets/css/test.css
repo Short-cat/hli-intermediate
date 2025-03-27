@@ -7,6 +7,16 @@
   color: #000;
   margin-bottom: 0.75rem;
 }
+h2 {
+  font-size: 1.75rem;
+  line-height: 1.2em;
+  font-weight: 700;
+  text-align: inherit;
+  margin: 0;
+  color: #000;
+  margin-bottom: 0.75rem;
+  padding: 1rem 0;
+}
 /*-- -------------------------- -->
 <---          Banner            -->
 <--- -------------------------- -*/
@@ -1341,7 +1351,6 @@
   .before-after-section {
     user-select: none;
     width: 100%;
-    padding: var(--sectionPadding);
   }
   .before-after-section .before-after-container {
     width: 100%;
@@ -1859,6 +1868,10 @@
     font-size: 0.9rem;
     color: var(--bodyTextColor);
   }
+  #trusted-company .cs-trust-content {
+    justify-items: center;
+    margin-bottom: 2rem;
+  }
   #trusted-company .feat-img {
     position: absolute;
     display: block;
@@ -1899,6 +1912,9 @@
 @media only screen and (min-width: 64rem) {
   #trusted-company .cs-content {
     flex-direction: row-reverse;
+  }
+  #trusted-company .cs-trust-content {
+    justify-items: flex-start;
   }
   #trusted-company .cs-image {
     width: 49%;

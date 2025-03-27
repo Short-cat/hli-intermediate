@@ -64,6 +64,7 @@
     line-height: clamp(2.875em, 5.5vw, 3.5em);
     width: 9.375rem;
     text-decoration: none;
+    text-transform: none;
     font-weight: 700;
     margin: 0 0.5rem 1rem 0.5rem;
     color: var(--headerColor);

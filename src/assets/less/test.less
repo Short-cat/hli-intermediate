@@ -8,6 +8,16 @@
   margin-bottom: (12/16rem);
 }
 
+h2 {
+  font-size: (28/16rem);
+  line-height: 1.2em;
+  font-weight: 700;
+  text-align: inherit;
+  margin: 0;
+  color: #000;
+  margin-bottom: (12/16rem);
+  padding: 1rem 0;
+}
 /*-- -------------------------- -->
 <---          Banner            -->
 <--- -------------------------- -*/
@@ -1611,8 +1621,6 @@
   .before-after-section {
     user-select: none; // Prevent text selection on the entire section
     width: 100%;
-    padding: var(--sectionPadding);
-    
     .before-after-container {
       width: 100%;
       height: auto;
@@ -2225,6 +2233,11 @@
           }
       }
 
+      .cs-trust-content {
+          justify-items: center;
+          margin-bottom: 2rem;
+      }
+
       .feat-img {
         position: absolute;
         display: block;
@@ -2273,6 +2286,10 @@
     .cs-content {
       flex-direction: row-reverse;
     }
+
+    .cs-trust-content {
+      justify-items: flex-start;
+  }
 
     .cs-image {
       width: 49%;
