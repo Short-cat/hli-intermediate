@@ -977,6 +977,25 @@
   width: 2.5rem;
   height: 2.5rem;
 }
+#cost-section .cs-tier-icon1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.25rem;
+  margin-top: 0.5rem;
+  background-color: rgba(101, 194, 100, 0.08);
+  width: 4.375rem;
+  height: 4.375rem;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#cost-section .cs-tier-icon1 svg {
+  color: var(--primary);
+  opacity: 0.85;
+  width: 2.1875rem;
+  height: 2.1875rem;
+}
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
   #cost-section {

@@ -3,9 +3,6 @@ title: 'Houston Landscape Images | Landscaper Houston, TX'
 description: 'Discover premier landscaping services in Houston, TX!'
 permalink: '/'
 tags: 'sitemap' # Sitemap will use all pages in content/, due to content.json. As index.html is not included in content/ we need to manually add the sitemap tag to this page (only).
-eleventyNavigation:
-  key: Home
-  order: 100
 ---
 
 {% extends "layouts/base.html" %}
@@ -13,7 +10,7 @@ eleventyNavigation:
 {% block head %}
     <link rel="stylesheet" href="/assets/css/local.css"/>
     <link rel="stylesheet" href="/assets/css/critical.css"/>
-    <link rel="preload" as="image" href="{% getUrl "/assets/images/landing1.png" | resize({ width: 3840, height: 2030 }) | jpeg({ quality: 80 }) %}"/>
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 3840, height: 2030 }) | jpeg({ quality: 80 }) %}"/>
     <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/roboto-v29-latin-700.woff2" crossorigin>
 
     <!-- Script for Netlify Identity -->
@@ -182,18 +179,18 @@ Doing this will complete the overlapping "breaking the container" look.
     <!-- Background Image, there's a background image in the CSS for the parallax effect you'll need to change as well if you swap out our images -->
     <picture class="cs-background">
        <!--Mobile Image-->
-       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing1.png"  | resize({ width: 640, height: 2400 }) | avif({ quality: 80 }) %}" type="image/avif">
-       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing1.png"  | resize({ width: 640, height: 2400 }) | webp({ quality: 80 }) %}" type="image/webp">
-       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing1.png"  | resize({ width: 640, height: 2400 }) | jpeg({ quality: 80 }) %}" type="image/jpeg">
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-plants.jpg"  | resize({ width: 640, height: 2400 }) | avif({ quality: 80 }) %}" type="image/avif">
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-plants.jpg"  | resize({ width: 640, height: 2400 }) | webp({ quality: 80 }) %}" type="image/webp">
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-plants.jpg"  | resize({ width: 640, height: 2400 }) | jpeg({ quality: 80 }) %}" type="image/jpeg">
        <!--Tablet Image-->
-       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 2046, height: 2548 }) | avif({ quality: 80 }) %}" type="image/avif">
-       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 2046, height: 2548 }) | webp({ quality: 80 }) %}" type="image/webp">
-       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 2046, height: 2548 }) | jpeg({ quality: 80 }) %}" type="image/jpeg">
+       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 2046, height: 2548 }) | avif({ quality: 80 }) %}" type="image/avif">
+       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 2046, height: 2548 }) | webp({ quality: 80 }) %}" type="image/webp">
+       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 2046, height: 2548 }) | jpeg({ quality: 80 }) %}" type="image/jpeg">
        <!--Desktop Image-->
-       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 3840, height: 2030 }) | avif({ quality: 80 }) %}" type="image/avif">
-       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 3840, height: 2030 }) | webp({ quality: 80 }) %}" type="image/webp">
-       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 3840, height: 2030 }) | jpeg({ quality: 80 }) %}" type="image/jpeg">
-       <img src="{% getUrl "/assets/images/landing1.png" | resize({ width: 3840, height: 2030 }) | jpeg({ quality: 80 }) %}" alt="front yard" width="1920" height="1015" loading="eager" decoding="async" aria-hidden="true">
+       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 3840, height: 2030 }) | avif({ quality: 80 }) %}" type="image/avif">
+       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 3840, height: 2030 }) | webp({ quality: 80 }) %}" type="image/webp">
+       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 3840, height: 2030 }) | jpeg({ quality: 80 }) %}" type="image/jpeg">
+       <img src="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 3840, height: 2030 }) | jpeg({ quality: 80 }) %}" alt="front yard" width="1920" height="1015" loading="eager" decoding="async" aria-hidden="true">
     </picture>
 </section>
 

@@ -113,6 +113,7 @@
   #services-563 .cs-picture {
     /* changes at tablet */
     width: 100%;
+    border-radius: 1.5rem;
     /* changes to a clamp at tablet */
     height: 24.75rem;
     display: block;
@@ -125,6 +126,7 @@
     height: 100%;
     width: 100%;
     object-fit: contain;
+    border-radius: 1.5rem;
   }
 }
 /* Tablet - 768px */
