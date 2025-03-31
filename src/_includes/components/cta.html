@@ -10,14 +10,26 @@
             With Us Today
         </h2>
         <p>
-            Say something catchy, informative, and encouraging to click the button to go to the contact page. I like to add these to the bottom of all pages.
+            Transform your landscape with Houston Landscape Images's expert touch. Click below to get started on creating the outdoor space you've always wanted!
+
+
         </p>
         <a href="/contact" class="cs-button-solid">Get an Estimate Now</a>
     </div>
     <picture>
-        <source media="(max-width: 600px)" srcset="/assets/images/cabinets.jpg">
-        <source media="(min-width: 601px)" srcset="/assets/images/cabinets.jpg">
-        <img aria-hidden="true" decoding="async" src="/assets/images/cabinets.jpg" alt="kitchen cabinets" loading="lazy" width="2500" height="1667">
+       <!--Mobile Image-->
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 512, height: 874 }) | avif %}" type="image/avif">
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 512, height: 874 }) | webp %}" type="image/webp">
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 512, height: 874 }) | jpeg %}" type="image/jpeg">
+       <!--Tablet Image-->
+       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 1636, height: 822 }) | avif %}" type="image/avif">
+       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 1636, height: 822 }) | webp %}" type="image/webp">
+       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 1636, height: 822 }) | jpeg %}" type="image/jpeg">
+       <!--Desktop Image-->
+       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 3458, height: 862 }) | avif %}" type="image/avif">
+       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 3458, height: 862 }) | webp %}" type="image/webp">
+       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 3458, height: 862 }) | jpeg %}" type="image/jpeg">
+       <img src="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 3458, height: 862 }) | jpeg %}" alt="Home front walkway" width="1729" height="431" loading="lazy" decoding="async" aria-hidden="true">
     </picture>
 
 </section>

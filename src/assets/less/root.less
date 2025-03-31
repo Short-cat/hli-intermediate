@@ -77,6 +77,7 @@
         font-size: (16/16rem);
         line-height: (50/16em);
         font-weight: bold;
+        border-radius: (4/16rem);
 
         // Transition Properties
         color: #000;
@@ -101,6 +102,7 @@
             display: block;
             background-color: #000;
             height: 100%;
+            border-radius: (4/16rem);
 
             //Transition properties
             width: 0;
@@ -1530,6 +1532,9 @@
     #cta {
         position: relative;
         padding: (50/16rem) 0;
+        width: 80%;
+        margin: (50/16rem) auto;
+        
 
         .container {
             text-align: center;
@@ -1542,6 +1547,7 @@
             left: 0;
             height: 100%;
             width: 100%;
+            border-radius: 1rem;
 
             img {
                 position: absolute;
@@ -1550,6 +1556,7 @@
                 height: 100%;
                 width: 100%;
                 object-fit: cover;
+                border-radius: 1rem;
             }
         }
 
@@ -1584,6 +1591,11 @@
             background: #000;
             height: 100%;
             width: 100%;
+            border-radius: 1rem;
+        }
+
+        .cs-button-solid {
+            font-size: (14/16rem);
         }
     }
 }
@@ -1591,7 +1603,9 @@
 /* Small Desktop */
 @media only screen and (min-width: 64rem) {
     #cta {
-        padding: (168/16rem) 0;
+        padding: (60/16rem) 0;
+        margin-bottom: (100/16rem);
+        width: 80%;
     }
 }
 
@@ -1600,6 +1614,8 @@
     #cta {
         position: relative;
         margin-top: (100/16rem);
+        margin-bottom: (100/16rem);
+        width: 100%;
         .container {
             margin: auto;
             width: 90.0625%;
@@ -1621,6 +1637,7 @@
                 background: #000;
                 height: 100%;
                 width: 100%;
+                border-radius: 1rem;
             }
         }
         &:before {

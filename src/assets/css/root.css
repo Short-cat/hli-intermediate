@@ -65,6 +65,7 @@
     font-size: 1rem;
     line-height: 3.125em;
     font-weight: bold;
+    border-radius: 0.25rem;
     color: #000;
     transition: color 0.3s;
     transition-delay: 0.1s;
@@ -86,6 +87,7 @@
     display: block;
     background-color: #000;
     height: 100%;
+    border-radius: 0.25rem;
     width: 0;
     transition: width 0.3s;
   }
@@ -1240,6 +1242,8 @@
   #cta {
     position: relative;
     padding: 3.125rem 0;
+    width: 80%;
+    margin: 3.125rem auto;
   }
   #cta .container {
     text-align: center;
@@ -1251,6 +1255,7 @@
     left: 0;
     height: 100%;
     width: 100%;
+    border-radius: 1rem;
   }
   #cta picture img {
     position: absolute;
@@ -1259,6 +1264,7 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
+    border-radius: 1rem;
   }
   #cta .title {
     position: relative;
@@ -1289,12 +1295,18 @@
     background: #000;
     height: 100%;
     width: 100%;
+    border-radius: 1rem;
+  }
+  #cta .cs-button-solid {
+    font-size: 0.875rem;
   }
 }
 /* Small Desktop */
 @media only screen and (min-width: 64rem) {
   #cta {
-    padding: 10.5rem 0;
+    padding: 3.75rem 0;
+    margin-bottom: 6.25rem;
+    width: 80%;
   }
 }
 /* Large Desktop */
@@ -1302,6 +1314,8 @@
   #cta {
     position: relative;
     margin-top: 6.25rem;
+    margin-bottom: 6.25rem;
+    width: 100%;
   }
   #cta .container {
     margin: auto;
@@ -1323,6 +1337,7 @@
     background: #000;
     height: 100%;
     width: 100%;
+    border-radius: 1rem;
   }
   #cta:before {
     display: none;
