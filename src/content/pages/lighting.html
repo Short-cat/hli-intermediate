@@ -1,17 +1,14 @@
 ---
-title: 'Project One | Code Stitch Web Designs'
-description: 'Meta description for the page'
-preloadImg: '/assets/images/cabinets2.jpg'
-permalink: 'lighting/'
-eleventyNavigation:
-    key: FAQ
-    order: 600
+title: 'Professional Landscape Design Services in Houston, TX'
+description: 'Transform your Houston property with expert landscape design by Houston Landscape Images.'
+permalink: 'landscape-lighting/'
 ---
 
 {% extends "layouts/base.html" %}
 
 {% block head %}
-    <link rel="stylesheet" href="/assets/css/lighting.css">
+    <link rel="stylesheet" href="/assets/css/test.css">
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/hli-putting2.png" | resize({ width: 3840, height: 1044 }) | jpeg %}">
 {% endblock %}
 
 {% block body %}
@@ -24,17 +21,25 @@ eleventyNavigation:
     <div class="cs-container">
         <span class="cs-int-title">Landscape Lighting</span>
         <div class="cs-breadcrumbs">
-            <a href="" class="cs-link">Home</a>
-            <a href="" class="cs-link cs-active">Landscape Lighting</a>
+            <a href="/" class="cs-link">Home</a>
+            <a href="landscape-lighting/" class="cs-link cs-active">Landscape Lighting</a>
         </div>
     </div>
     <!--Background Image-->
     <picture class="cs-background">
-        <!--Mobile Image-->
-        <source media="(max-width: 600px)" srcset="/assets/images/cabinets.jpg">
-        <!--Tablet and above Image-->
-        <source media="(min-width: 601px)" srcset="/assets/images/cabinets.jpg">
-        <img decoding="async" src="/assets/images/cabinets.jpg" alt="people laughing" width="1280" height="568" aria-hidden="true">
+       <!--Mobile Image-->
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-putting2.png" | resize({ width: 640, height: 820 }) | avif %}" type="image/avif">
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-putting2.png" | resize({ width: 640, height: 820 }) | webp %}" type="image/webp">
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-putting2.png" | resize({ width: 640, height: 820 }) | jpeg %}" type="image/jpeg">
+       <!--Tablet Image-->
+       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-putting2.png" | resize({ width: 2046, height: 962 }) | avif %}" type="image/avif">
+       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-putting2.png" | resize({ width: 2046, height: 962 }) | webp %}" type="image/webp">
+       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-putting2.png" | resize({ width: 2046, height: 962 }) | jpeg %}" type="image/jpeg">
+       <!--Desktop Image-->
+       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-putting2.png" | resize({ width: 3840, height: 1044 }) | avif %}" type="image/avif">
+       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-putting2.png" | resize({ width: 3840, height: 1044 }) | webp %}" type="image/webp">
+       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-putting2.png" | resize({ width: 3840, height: 1044 }) | jpeg %}" type="image/jpeg">
+       <img src="{% getUrl "/assets/images/hli-putting2.png" | resize({ width: 3840, height: 1044 }) | jpeg %}" alt="" width="1920" height="522" decoding="async" aria-hidden="true">
     </picture>
     <svg class="cs-mask" xmlns="http://www.w3.org/2000/svg" width="1920" height="136" viewBox="0 0 1920 136" fill="none">
         <path fill-rule="evenodd" clip-rule="evenodd" d="M1920 136V0C1803.21 45.3334 1445.52 136 951 136C456.485 136 111.116 45.3334 0 0V136H951H1920Z" fill="var(--maskBG)"/>
@@ -45,203 +50,1015 @@ eleventyNavigation:
 <!--                 Content Page                 -->
 <!-- ============================================ -->
 
-<!-- ============================================ 
-    This Stitch is used for content heavy interior pages
-    that have no design or layout.  Often times these are 
-    content silos where you talk extensively about a topic
-    to educate your visitors and rank on Google for the 
-    content.  These are great for pages that have a TON
-    of content.  Design isn't important here, it's all 
-    about making the content accessible and easy to read.
-================================================= -->
-
-<section id="content-page-1399">
+<section id="hero-section">
     <div class="cs-container">
-        <div class="cs-image-group">
-            <div class="cs-flex">
-                <picture class="cs-background">
-                    <!--Mobile Image-->
-                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/on-computer2.jpg">
-                    <!--Tablet and above Image-->
-                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/on-computer2.jpg">
-                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/on-computer2.jpg" alt="people" width="542" height="728">
-                </picture>
-                <div class="cs-box">
-                    <img class="cs-box-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/gear-white.svg" alt="people" width="60" height="60">
-                    <span class="cs-desc">
-                        We’ve Over 26 Years of Experience
-                    </span>
+        <div class="cs-content">
+            <h1 class="cs-title">Professional Landscape Lighting Services in Houston, TX</h1>
+            <p>At Houston Landscape Images (HLI), we focus on providing practical landscape lighting—improving your outdoor space and boosting home value by 15%-20%. Dark yards become bright new scenes, hidden areas turn into highlighted designs, and everyday properties gain value—all with no subcontractors, just our family-run team. With expert design and wiring, we create outdoor solutions tailored to your needs in Houston, TX. Expect a clear process, durable results, and a property that shines every night.</p>
+            
+            <div class="cs-benefits">
+                <h2>What You Gain:</h2>
+                <ul>
+                    <li>A space built for you</li>
+                    <li>Long-lasting, practical results</li>
+                    <li>A hassle-free, professional experience</li>
+                    <li>A yard that enhances curb appeal and value</li>
+                </ul>
+            </div>
+            
+            <div class="cs-badge">
+                <p>Family-Run, No Subcontractors - Direct Quality Control.</p>
+            </div>
+            
+            <a href="/contact" class="cs-button-solid">Book Your Free Consultation</a>
+        </div>
+        <div class="cs-image">
+            <picture>
+               <!--Mobile Image-->
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-putting2.png" | resize({ width: 576, height: 242 }) | avif %}" type="image/avif">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-putting2.png" | resize({ width: 576, height: 242 }) | webp %}" type="image/webp">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-putting2.png" | resize({ width: 576, height: 242 }) | jpeg %}" type="image/jpeg">
+               <!--Tablet Image-->
+               <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-putting2.png" | resize({ width: 1280, height: 628 }) | avif %}" type="image/avif">
+               <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-putting2.png" | resize({ width: 1280, height: 628 }) | webp %}" type="image/webp">
+               <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-putting2.png" | resize({ width: 1280, height: 628 }) | jpeg %}" type="image/jpeg">
+               <!--Desktop Image-->
+               <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-putting2.png" | resize({ width: 1280, height: 1040 }) | avif %}" type="image/avif">
+               <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-putting2.png" | resize({ width: 1280, height: 1040 }) | webp %}" type="image/webp">
+               <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-putting2.png" | resize({ width: 1280, height: 1040 }) | jpeg %}" type="image/jpeg">
+               <img src="{% getUrl "/assets/images/hli-putting2.png" | resize({ width: 1280, height: 1040 }) | jpeg %}" alt="Beautiful outdoor landscape" width="640" height="520" loading="lazy" decoding="async" aria-hidden="true">
+            </picture>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                 Design Differently           -->
+<!-- ============================================ -->
+
+<section id="design-differently">
+    <div class="cs-container">
+        <div class="cs-image">
+            <picture class="">
+               <!--Mobile Image-->
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-fountain.jpg" | resize({ width: 576, height: 280 }) | avif %}" type="image/avif">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-fountain.jpg" | resize({ width: 576, height: 280 }) | webp %}" type="image/webp">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-fountain.jpg" | resize({ width: 576, height: 280 }) | jpeg %}" type="image/jpeg">
+               <!--Tablet Image-->
+               <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-fountain.jpg" | resize({ width: 752, height: 370 }) | avif %}" type="image/avif">
+               <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-fountain.jpg" | resize({ width: 752, height: 370 }) | webp %}" type="image/webp">
+               <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-fountain.jpg" | resize({ width: 752, height: 370 }) | jpeg %}" type="image/jpeg">
+               <!--Desktop Image-->
+               <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-fountain.jpg" | resize({ width: 1280, height: 1040 }) | avif %}" type="image/avif">
+               <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-fountain.jpg" | resize({ width: 1280, height: 1040 }) | webp %}" type="image/webp">
+               <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-fountain.jpg" | resize({ width: 1280, height: 1040 }) | jpeg %}" type="image/jpeg">
+               <img src="{% getUrl "/assets/images/hli-fountain.jpg" | resize({ width: 1280, height: 1040 }) | jpeg %}" alt="" width="640" height="520" loading="lazy" decoding="async" aria-hidden="true">
+            </picture>
+        </div>
+        <div class="cs-content">
+            <h2 class="cs-title">Houston Landscape Lighting Done Differently</h2>
+            <p>A well-planned lighting setup isn’t just about appearance—it’s an investment. The American Society of Landscape Architects says professional landscaping can boost home value by 15%-20%. We start with a site review—terrain, drainage, existing features—then craft a plan that fits your property’s unique needs. No cookie-cutter plans, just practical solutions from our Houston-based crew.</p>
+            <p>By managing the project in-house, from planning to installation, we keep communication clear, minimize delays, and aim for a solid outcome. The result is a well-crafted lighting system that enhances beauty, works for your lifestyle, and adds value to your property.</p>
+            
+            <div class="cs-testimonial">
+                <p>"HLI turned our bland front yard into a flower-filled masterpiece in just 2 weeks!"</p>
+                <span>- Sarah T., Houston homeowner</span>
+            </div>
+            
+            <a href="/contact" class="cs-button-solid">Get Started</a>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                   Steps                      -->
+<!-- ============================================ -->
+
+<section id="steps-1713">
+    <picture class="cs-background">
+       <!--Mobile Image-->
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-firepit1.jpg" | resize({ width: 640, height: 720, fit: "cover" }) | avif({ quality: 100 }) %}" type="image/avif">
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-firepit1.jpg" | resize({ width: 640, height: 720, fit: "cover" }) | webp({ quality: 100 }) %}" type="image/webp">
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-firepit1.jpg" | resize({ width: 640, height: 720, fit: "cover" }) | jpeg({ quality: 100 }) %}" type="image/jpeg">
+       <!--Tablet Image-->
+       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-firepit1.jpg" | resize({ width: 612, height: 1944, fit: "cover" }) | avif({ quality: 100 }) %}" type="image/avif">
+       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-firepit1.jpg" | resize({ width: 612, height: 1944, fit: "cover" }) | webp({ quality: 100 }) %}" type="image/webp">
+       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-firepit1.jpg" | resize({ width: 612, height: 1944, fit: "cover" }) | jpeg({ quality: 100 }) %}" type="image/jpeg">
+       <!--Desktop Image-->
+       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-firepit1.jpg" | resize({ width: 1920, height: 2224, fit: "cover" }) | avif({ quality: 100 }) %}" type="image/avif">
+       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-firepit1.jpg" | resize({ width: 1920, height: 2224, fit: "cover" }) | webp({ quality: 100 }) %}" type="image/webp">
+       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-firepit1.jpg" | resize({ width: 1920, height: 2224, fit: "cover" }) | jpeg({ quality: 100 }) %}" type="image/jpeg">
+       <img src="{% getUrl "/assets/images/hli-firepit1.jpg" | resize({ width: 1920, height: 2224, fit: "cover" }) | jpeg({ quality: 100 }) %}" alt="" width="960" height="1112" loading="lazy" decoding="async" aria-hidden="true">
+    </picture>
+    <div class="cs-container">
+        <div class="cs-wrapper">
+            <div class="cs-content">
+                <span class="cs-topper">Our Steps</span>
+                <h2 class="cs-title">HLI’s Landscape Lighting Process</h2>
+            </div>
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <span class="cs-number">01</span>
+                    <div class="cs-flex">
+                        <h3 class="cs-h3">Initial Consultation</h3>
+                        <p class="cs-item-text">
+                            During the initial consultation, we will discuss your needs, goals, and budget. We evaluate the property's layout, existing elements, and environmental conditions to develop a tailored landscape design.
+                        </p>
+                    </div>
+                </li>
+                <li class="cs-item">
+                    <span class="cs-number">02</span>
+                    <div class="cs-flex">
+                        <h3 class="cs-h3">Site Analysis & Design Development</h3>
+                        <p class="cs-item-text">
+                            We conduct an in-depth site analysis, assessing soil conditions, drainage, and sunlight exposure, then use these insights to create a detailed plan blending appeal, utility, and local compliance (e.g., HOA rules). This ensures your design is both functional and stunning.
+                    </p>
+                    </div>
+                </li>
+                <li class="cs-item">
+                    <span class="cs-number">03</span>
+                    <div class="cs-flex">
+                        <h3 class="cs-h3">Budgeting and Cost Estimation</h3>
+                        <p class="cs-item-text">
+                            Before moving forward, we provide a clear, itemized cost breakdown to ensure the project fits your budget without compromising on quality.
+                        </p>
+                    </div>
+                </li>
+                <li class="cs-item">
+                    <span class="cs-number">04</span>
+                    <div class="cs-flex">
+                        <h3 class="cs-h3">Installation and Final Walkthrough</h3>
+                        <p class="cs-item-text">
+                            Once installation is complete, we conduct a thorough final walkthrough. We provide maintenance guidance and answer any questions, ensuring you feel confident in the long-term care of your landscape.
+                        </p>
+                    </div>
+                </li>
+            </ul>
+            <a href="/contact" class="cs-button-solid">Schedule A Free Design Consult</a>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                 Design Options               -->
+<!-- ============================================ -->
+
+<section id="design-options">
+    <div class="cs-container">
+        <h2 class="cs-title">HLI’s Landscape Lighting Options</h2>
+        <div class="cs-carousel">
+            <div class="cs-carousel-track">
+                <div class="cs-carousel-item">
+                    <picture>
+                       <!--Mobile Image-->
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-putting1.jpg" | resize({ width: 800, height: 400 }) | avif({ quality: 60 }) %}" type="image/avif">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-putting1.jpg" | resize({ width: 800, height: 400 }) | webp({ quality: 60 }) %}" type="image/webp">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-putting1.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" type="image/jpeg">
+                       <!--Tablet Image-->
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-putting1.jpg" | resize({ width: 800, height: 400 }) | avif({ quality: 60 }) %}" type="image/avif">
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-putting1.jpg" | resize({ width: 800, height: 400 }) | webp({ quality: 60 }) %}" type="image/webp">
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-putting1.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" type="image/jpeg">
+                       <!--Desktop Image-->
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-putting1.jpg" | resize({ width: 800, height: 400 }) | avif({ quality: 60 }) %}" type="image/avif">
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-putting1.jpg" | resize({ width: 800, height: 400 }) | webp({ quality: 60 }) %}" type="image/webp">
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-putting1.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" type="image/jpeg">
+                       <img src="{% getUrl "/assets/images/hli-putting1.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" alt="" width="400" height="200" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>
+                </div>
+                <div class="cs-carousel-item">
+                    <picture>
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-patio1.jpg" | resize({ width: 800, height: 400 }) | avif({ quality: 60 }) %}" type="image/avif">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-patio1.jpg" | resize({ width: 800, height: 400 }) | webp ({ quality: 60 })%}" type="image/webp">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-patio1.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" type="image/jpeg">
+                        <!--Tablet Image-->
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-patio1.jpg" | resize({ width: 800, height: 400 }) | avif({ quality: 60 }) %}" type="image/avif">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-patio1.jpg" | resize({ width: 800, height: 400 }) | webp({ quality: 60 }) %}" type="image/webp">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-patio1.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" type="image/jpeg">
+                        <!--Desktop Image-->
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-patio1.jpg" | resize({ width: 800, height: 400 }) | avif({ quality: 60 }) %}" type="image/avif">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-patio1.jpg" | resize({ width: 800, height: 400 }) | webp({ quality: 60 }) %}" type="image/webp">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-patio1.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" type="image/jpeg">
+                        <img src="{% getUrl "/assets/images/hli-patio1.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" alt="" width="400" height="200" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>
+                </div>
+                <div class="cs-carousel-item">
+                    <picture>
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/lowrey-final1.jpg" | resize({ width: 800, height: 400 }) | avif({ quality: 60 }) %}" type="image/avif">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/lowrey-final1.jpg" | resize({ width: 800, height: 400 }) | webp({ quality: 60 }) %}" type="image/webp">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/lowrey-final1.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" type="image/jpeg">
+                        <!--Tablet Image-->
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/lowrey-final1.jpg" | resize({ width: 800, height: 400 }) | avif({ quality: 60 }) %}" type="image/avif">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/lowrey-final1.jpg" | resize({ width: 800, height: 400 }) | webp({ quality: 60 }) %}" type="image/webp">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/lowrey-final1.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" type="image/jpeg">
+                        <!--Desktop Image-->
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/lowrey-final1.jpg" | resize({ width: 800, height: 400 }) | avif({ quality: 60 }) %}" type="image/avif">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/lowrey-final1.jpg" | resize({ width: 800, height: 400 }) | webp ({ quality: 60 })%}" type="image/webp">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/lowrey-final1.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" type="image/jpeg">
+                        <img src="{% getUrl "/assets/images/lowrey-final1.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" alt="" width="400" height="200" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>
+                </div>
+                <div class="cs-carousel-item">
+                    <picture>
+                       <!--Mobile Image-->
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-fire1.jpg" | resize({ width: 800, height: 400 }) | avif({ quality: 60 }) %}" type="image/avif">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-fire1.jpg" | resize({ width: 800, height: 400 }) | webp({ quality: 60 }) %}" type="image/webp">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-fire1.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" type="image/jpeg">
+                       <!--Tablet Image-->
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-fire1.jpg" | resize({ width: 800, height: 400 }) | avif({ quality: 60 }) %}" type="image/avif">
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-fire1.jpg" | resize({ width: 800, height: 400 }) | webp({ quality: 60 }) %}" type="image/webp">
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-fire1.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" type="image/jpeg">
+                       <!--Desktop Image-->
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-fire1.jpg" | resize({ width: 800, height: 400 }) | avif({ quality: 60 }) %}" type="image/avif">
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-fire1.jpg" | resize({ width: 800, height: 400 }) | webp({ quality: 60 }) %}" type="image/webp">
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-fire1.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" type="image/jpeg">
+                       <img src="{% getUrl "/assets/images/hli-fire1.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" alt="" width="400" height="200" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>
+                </div>
+                <div class="cs-carousel-item">
+                    <picture>
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-river2.jpg" | resize({ width: 800, height: 400 }) | avif({ quality: 60 }) %}" type="image/avif">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-river2.jpg" | resize({ width: 800, height: 400 }) | webp({ quality: 60 }) %}" type="image/webp">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-river2.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" type="image/jpeg">
+                        <!--Tablet Image-->
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-river2.jpg" | resize({ width: 800, height: 400 }) | avif({ quality: 60 }) %}" type="image/avif">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-river2.jpg" | resize({ width: 800, height: 400 }) | webp({ quality: 60 }) %}" type="image/webp">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-river2.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" type="image/jpeg">
+                        <!--Desktop Image-->
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-river2.jpg" | resize({ width: 800, height: 400 }) | avif({ quality: 60 }) %}" type="image/avif">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-river2.jpg" | resize({ width: 800, height: 400 }) | webp({ quality: 60 }) %}" type="image/webp">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-river2.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" type="image/jpeg">
+                        <img src="{% getUrl "/assets/images/hli-river2.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" alt="" width="400" height="200" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>
+                </div>
+                <div class="cs-carousel-item">
+                    <picture>
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-ok2.png" | resize({ width: 800, height: 400 }) | avif({ quality: 60 }) %}" type="image/avif">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-ok2.png" | resize({ width: 800, height: 400 }) | webp({ quality: 60 }) %}" type="image/webp">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-ok2.png" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" type="image/jpeg">
+                        <!--Tablet Image-->
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-ok2.png" | resize({ width: 800, height: 400 }) | avif({ quality: 60 }) %}" type="image/avif">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-ok2.png" | resize({ width: 800, height: 400 }) | webp({ quality: 60 }) %}" type="image/webp">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-ok2.png" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" type="image/jpeg">
+                        <!--Desktop Image-->
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-ok2.png" | resize({ width: 800, height: 400 }) | avif({ quality: 60 }) %}" type="image/avif">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-ok2.png" | resize({ width: 800, height: 400 }) | webp({ quality: 60 }) %}" type="image/webp">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-ok2.png" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" type="image/jpeg">
+                        <img src="{% getUrl "/assets/images/hli-ok2.png" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" alt="" width="400" height="200" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>
+                </div>
+                <div class="cs-carousel-item">
+                    <picture>
+                       <!--Mobile Image-->
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-patio3.jpg" | resize({ width: 800, height: 400 }) | avif({ quality: 60 }) %}" type="image/avif">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-patio3.jpg" | resize({ width: 800, height: 400 }) | webp({ quality: 60 }) %}" type="image/webp">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-patio3.jpg" | resize({ width: 800, height: 400 }) | jpeg ({ quality: 60 })%}" type="image/jpeg">
+                       <!--Tablet Image-->
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-patio3.jpg" | resize({ width: 800, height: 400 }) | avif({ quality: 60 }) %}" type="image/avif">
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-patio3.jpg" | resize({ width: 800, height: 400 }) | webp ({ quality: 60 })%}" type="image/webp">
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-patio3.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" type="image/jpeg">
+                       <!--Desktop Image-->
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-patio3.jpg" | resize({ width: 800, height: 400 }) | avif({ quality: 60 }) %}" type="image/avif">
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-patio3.jpg" | resize({ width: 800, height: 400 }) | webp({ quality: 60 }) %}" type="image/webp">
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-patio3.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" type="image/jpeg">
+                       <img src="{% getUrl "/assets/images/hli-patio3.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" alt="" width="400" height="200" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>
+                </div>
+                <div class="cs-carousel-item">
+                    <picture>
+                       <!--Mobile Image-->
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/lott-final3.jpg" | resize({ width: 800, height: 400 }) | avif({ quality: 60 }) %}" type="image/avif">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/lott-final3.jpg" | resize({ width: 800, height: 400 }) | webp({ quality: 60 }) %}" type="image/webp">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/lott-final3.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" type="image/jpeg">
+                       <!--Tablet Image-->
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/lott-final3.jpg" | resize({ width: 800, height: 400 }) | avif({ quality: 60 }) %}" type="image/avif">
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/lott-final3.jpg" | resize({ width: 800, height: 400 }) | webp({ quality: 60 }) %}" type="image/webp">
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/lott-final3.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" type="image/jpeg">
+                       <!--Desktop Image-->
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/lott-final3.jpg" | resize({ width: 800, height: 400 }) | avif({ quality: 60 }) %}" type="image/avif">
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/lott-final3.jpg" | resize({ width: 800, height: 400 }) | webp({ quality: 60 }) %}" type="image/webp">
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/lott-final3.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" type="image/jpeg">
+                       <img src="{% getUrl "/assets/images/lott-final3.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" alt="" width="400" height="200" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>
+                </div>
+                <!-- Duplicate the first set of items for seamless looping -->
+                               <div class="cs-carousel-item">
+                    <picture>
+                       <!--Mobile Image-->
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-putting1.jpg" | resize({ width: 800, height: 400 }) | avif({ quality: 60 }) %}" type="image/avif">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-putting1.jpg" | resize({ width: 800, height: 400 }) | webp({ quality: 60 }) %}" type="image/webp">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-putting1.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" type="image/jpeg">
+                       <!--Tablet Image-->
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-putting1.jpg" | resize({ width: 800, height: 400 }) | avif({ quality: 60 }) %}" type="image/avif">
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-putting1.jpg" | resize({ width: 800, height: 400 }) | webp({ quality: 60 }) %}" type="image/webp">
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-putting1.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" type="image/jpeg">
+                       <!--Desktop Image-->
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-putting1.jpg" | resize({ width: 800, height: 400 }) | avif({ quality: 60 }) %}" type="image/avif">
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-putting1.jpg" | resize({ width: 800, height: 400 }) | webp({ quality: 60 }) %}" type="image/webp">
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-putting1.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" type="image/jpeg">
+                       <img src="{% getUrl "/assets/images/hli-putting1.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" alt="" width="400" height="200" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>
+                </div>
+                <div class="cs-carousel-item">
+                    <picture>
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-patio1.jpg" | resize({ width: 800, height: 400 }) | avif({ quality: 60 }) %}" type="image/avif">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-patio1.jpg" | resize({ width: 800, height: 400 }) | webp ({ quality: 60 })%}" type="image/webp">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-patio1.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" type="image/jpeg">
+                        <!--Tablet Image-->
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-patio1.jpg" | resize({ width: 800, height: 400 }) | avif({ quality: 60 }) %}" type="image/avif">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-patio1.jpg" | resize({ width: 800, height: 400 }) | webp({ quality: 60 }) %}" type="image/webp">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-patio1.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" type="image/jpeg">
+                        <!--Desktop Image-->
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-patio1.jpg" | resize({ width: 800, height: 400 }) | avif({ quality: 60 }) %}" type="image/avif">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-patio1.jpg" | resize({ width: 800, height: 400 }) | webp({ quality: 60 }) %}" type="image/webp">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-patio1.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" type="image/jpeg">
+                        <img src="{% getUrl "/assets/images/hli-patio1.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" alt="" width="400" height="200" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>
+                </div>
+                <div class="cs-carousel-item">
+                    <picture>
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/lowrey-final1.jpg" | resize({ width: 800, height: 400 }) | avif({ quality: 60 }) %}" type="image/avif">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/lowrey-final1.jpg" | resize({ width: 800, height: 400 }) | webp({ quality: 60 }) %}" type="image/webp">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/lowrey-final1.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" type="image/jpeg">
+                        <!--Tablet Image-->
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/lowrey-final1.jpg" | resize({ width: 800, height: 400 }) | avif({ quality: 60 }) %}" type="image/avif">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/lowrey-final1.jpg" | resize({ width: 800, height: 400 }) | webp({ quality: 60 }) %}" type="image/webp">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/lowrey-final1.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" type="image/jpeg">
+                        <!--Desktop Image-->
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/lowrey-final1.jpg" | resize({ width: 800, height: 400 }) | avif({ quality: 60 }) %}" type="image/avif">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/lowrey-final1.jpg" | resize({ width: 800, height: 400 }) | webp ({ quality: 60 })%}" type="image/webp">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/lowrey-final1.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" type="image/jpeg">
+                        <img src="{% getUrl "/assets/images/lowrey-final1.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" alt="" width="400" height="200" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>
+                </div>
+                <div class="cs-carousel-item">
+                    <picture>
+                       <!--Mobile Image-->
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-fire1.jpg" | resize({ width: 800, height: 400 }) | avif({ quality: 60 }) %}" type="image/avif">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-fire1.jpg" | resize({ width: 800, height: 400 }) | webp({ quality: 60 }) %}" type="image/webp">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-fire1.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" type="image/jpeg">
+                       <!--Tablet Image-->
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-fire1.jpg" | resize({ width: 800, height: 400 }) | avif({ quality: 60 }) %}" type="image/avif">
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-fire1.jpg" | resize({ width: 800, height: 400 }) | webp({ quality: 60 }) %}" type="image/webp">
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-fire1.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" type="image/jpeg">
+                       <!--Desktop Image-->
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-fire1.jpg" | resize({ width: 800, height: 400 }) | avif({ quality: 60 }) %}" type="image/avif">
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-fire1.jpg" | resize({ width: 800, height: 400 }) | webp({ quality: 60 }) %}" type="image/webp">
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-fire1.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" type="image/jpeg">
+                       <img src="{% getUrl "/assets/images/hli-fire1.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" alt="" width="400" height="200" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>
+                </div>
+                <div class="cs-carousel-item">
+                    <picture>
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-river2.jpg" | resize({ width: 800, height: 400 }) | avif({ quality: 60 }) %}" type="image/avif">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-river2.jpg" | resize({ width: 800, height: 400 }) | webp({ quality: 60 }) %}" type="image/webp">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-river2.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" type="image/jpeg">
+                        <!--Tablet Image-->
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-river2.jpg" | resize({ width: 800, height: 400 }) | avif({ quality: 60 }) %}" type="image/avif">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-river2.jpg" | resize({ width: 800, height: 400 }) | webp({ quality: 60 }) %}" type="image/webp">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-river2.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" type="image/jpeg">
+                        <!--Desktop Image-->({ quality: 60 })
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-river2.jpg" | resize({ width: 800, height: 400 }) | avif({ quality: 60 }) %}" type="image/avif">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-river2.jpg" | resize({ width: 800, height: 400 }) | webp({ quality: 60 }) %}" type="image/webp">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-river2.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" type="image/jpeg">
+                        <img src="{% getUrl "/assets/images/hli-river2.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" alt="" width="400" height="200" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>
+                </div>
+                <div class="cs-carousel-item">
+                    <picture>
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-ok2.png" | resize({ width: 800, height: 400 }) | avif({ quality: 60 }) %}" type="image/avif">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-ok2.png" | resize({ width: 800, height: 400 }) | webp({ quality: 60 }) %}" type="image/webp">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-ok2.png" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" type="image/jpeg">
+                        <!--Tablet Image-->
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-ok2.png" | resize({ width: 800, height: 400 }) | avif({ quality: 60 }) %}" type="image/avif">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-ok2.png" | resize({ width: 800, height: 400 }) | webp({ quality: 60 }) %}" type="image/webp">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-ok2.png" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" type="image/jpeg">
+                        <!--Desktop Image-->
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-ok2.png" | resize({ width: 800, height: 400 }) | avif({ quality: 60 }) %}" type="image/avif">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-ok2.png" | resize({ width: 800, height: 400 }) | webp({ quality: 60 }) %}" type="image/webp">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-ok2.png" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" type="image/jpeg">
+                        <img src="{% getUrl "/assets/images/hli-ok2.png" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" alt="" width="400" height="200" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>
+                </div>
+                <div class="cs-carousel-item">
+                    <picture>
+                       <!--Mobile Image-->
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-patio3.jpg" | resize({ width: 800, height: 400 }) | avif({ quality: 60 }) %}" type="image/avif">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-patio3.jpg" | resize({ width: 800, height: 400 }) | webp({ quality: 60 }) %}" type="image/webp">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-patio3.jpg" | resize({ width: 800, height: 400 }) | jpeg ({ quality: 60 })%}" type="image/jpeg">
+                       <!--Tablet Image-->
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-patio3.jpg" | resize({ width: 800, height: 400 }) | avif({ quality: 60 }) %}" type="image/avif">
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-patio3.jpg" | resize({ width: 800, height: 400 }) | webp ({ quality: 60 })%}" type="image/webp">
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-patio3.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" type="image/jpeg">
+                       <!--Desktop Image-->
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-patio3.jpg" | resize({ width: 800, height: 400 }) | avif({ quality: 60 }) %}" type="image/avif">
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-patio3.jpg" | resize({ width: 800, height: 400 }) | webp({ quality: 60 }) %}" type="image/webp">
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-patio3.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" type="image/jpeg">
+                       <img src="{% getUrl "/assets/images/hli-patio3.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" alt="" width="400" height="200" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>
+                </div>
+                <div class="cs-carousel-item">
+                    <picture>
+                       <!--Mobile Image-->
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/lott-final3.jpg" | resize({ width: 800, height: 400 }) | avif({ quality: 60 }) %}" type="image/avif">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/lott-final3.jpg" | resize({ width: 800, height: 400 }) | webp({ quality: 60 }) %}" type="image/webp">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/lott-final3.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" type="image/jpeg">
+                       <!--Tablet Image-->
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/lott-final3.jpg" | resize({ width: 800, height: 400 }) | avif({ quality: 60 }) %}" type="image/avif">
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/lott-final3.jpg" | resize({ width: 800, height: 400 }) | webp({ quality: 60 }) %}" type="image/webp">
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/lott-final3.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" type="image/jpeg">
+                       <!--Desktop Image-->
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/lott-final3.jpg" | resize({ width: 800, height: 400 }) | avif({ quality: 60 }) %}" type="image/avif">
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/lott-final3.jpg" | resize({ width: 800, height: 400 }) | webp({ quality: 60 }) %}" type="image/webp">
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/lott-final3.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" type="image/jpeg">
+                       <img src="{% getUrl "/assets/images/lott-final3.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" alt="" width="400" height="200" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>
                 </div>
             </div>
         </div>
-        <div class="cs-content">
-            <h1 class="cs-title">Professional Outdoor Landscape Lighting Services in <span class="cs-color">Houston, TX</span></h1>
-            <p>With over two decades of experience serving the Greater Houston area, Nature Springs Landscaping provides comprehensive outdoor landscape lighting solutions for both residential and commercial properties. As a leading landscape lighting company, we combine innovative designs with high-quality materials to enhance outdoor spaces with elegance and functionality. Our landscape lighting installation service prioritizes beauty, durability, and energy efficiency, making us Houston's trusted choice for all your exterior lighting needs.
-            </p>
-            <h2>About Us: Dedicated to Professional Landscape Lighting Installation in Houston, TX</h2>
-            <p>
-                Nature Springs Landscaping has illuminated countless Houston properties through our expert landscape lighting services, bringing warmth and sophistication to homes and businesses alike. Our team's deep understanding of outdoor lighting design and installation allows us to provide affordable and customized lighting solutions that enhance curb appeal and increase security. From subtle garden landscape lighting to large-scale commercial landscape lighting, we handle every project with precision and care, ensuring your complete satisfaction from consultation to installation.
-            </p>
+        
+        <div class="cs-services">
+            <div class="cs-service">
+                <div class="cs-service-content">
+                    <div class="cs-step-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 24 24" fill="currentColor"><path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
+                    </div>
+                    <h3>Landscape Lighting Installation</h3>
+                    <p>We design and install complete outdoor lighting systems to enhance safety, highlight key features, and extend the use of your landscape after dark. All systems are installed with weather-rated fixtures and clean wiring. Lighting layouts are customized to your home’s layout and outdoor lifestyle.</p>
+                    <ul>
+                        <li>Includes design, fixture placement, and wiring installation</li>
+                        <li>Increases nighttime visibility and curb appeal</li>
+                        <li>Built to last with low-voltage, energy-efficient fixtures</li>
+                    </ul>
+                </div>
+                <div class="cs-service-image">
+                    <picture>
+                       <!--Mobile Image-->
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 576, height: 282 }) | avif %}" type="image/avif">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 576, height: 282 }) | webp %}" type="image/webp">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 576, height: 282 }) | jpeg %}" type="image/jpeg">
+                       <!--Tablet Image-->
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 990, height: 942 }) | avif %}" type="image/avif">
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 990, height: 942 }) | webp %}" type="image/webp">
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 990, height: 942 }) | jpeg %}" type="image/jpeg">
+                       <!--Desktop Image-->
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 1280, height: 926 }) | avif %}" type="image/avif">
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 1280, height: 926 }) | webp %}" type="image/webp">
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 1280, height: 926 }) | jpeg %}" type="image/jpeg">
+                       <img src="{% getUrl "/assets/images/landing1.png" | resize({ width: 1280, height: 926 }) | jpeg %}" alt="" width="640" height="463" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>
+                </div>
+            </div>
+            
+            <div class="cs-service">
+                <div class="cs-service-content">
+                    <div class="cs-step-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 22c4.97 0 9-4.03 9-9-4.97 0-9 4.03-9 9zM5.6 10.25c0 1.38 1.12 2.5 2.5 2.5.53 0 1.01-.16 1.42-.44l-.02.19c0 1.38 1.12 2.5 2.5 2.5s2.5-1.12 2.5-2.5l-.02-.19c.4.28.89.44 1.42.44 1.38 0 2.5-1.12 2.5-2.5 0-1-.59-1.85-1.43-2.25.84-.4 1.43-1.25 1.43-2.25 0-1.38-1.12-2.5-2.5-2.5-.53 0-1.01.16-1.42.44l.02-.19C14.5 2.12 13.38 1 12 1S9.5 2.12 9.5 3.5l.02.19c-.4-.28-.89-.44-1.42-.44-1.38 0-2.5 1.12-2.5 2.5 0 1 .59 1.85 1.43 2.25-.84.4-1.43 1.25-1.43 2.25zM12 5.5c1.38 0 2.5 1.12 2.5 2.5s-1.12 2.5-2.5 2.5S9.5 9.38 9.5 8s1.12-2.5 2.5-2.5z"/></svg>
+                    </div>
+                    <h3>Path & Walkway Lighting</h3>
+                    <p>We install low-profile lights along <a href="/pathways-walkways" class="internal-link">walkways</a>, <a href="/driveways-sidewalks" class="internal-link">driveways</a>, and <a href="/driveways-sidewalks" class="internal-link">sidewalks</a> to guide foot traffic and define edges. These lights add both safety and subtle ambiance. Fixtures are evenly spaced and aimed for a soft, non-glare effect.</p>
+                    <ul>
+                        <li>Helps illuminate walkways and prevent trip hazards</li>
+                        <li>Low-voltage path lights placed along edges or curves</li>
+                        <li>Available in various styles and finishes to match landscape design</li>
+                    </ul>
+                </div>
+                <div class="cs-service-image">
+                    <picture>
+                       <!--Mobile Image-->
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 576, height: 282 }) | avif %}" type="image/avif">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 576, height: 282 }) | webp %}" type="image/webp">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 576, height: 282 }) | jpeg %}" type="image/jpeg">
+                       <!--Tablet Image-->
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 990, height: 942 }) | avif %}" type="image/avif">
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 990, height: 942 }) | webp %}" type="image/webp">
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 990, height: 942 }) | jpeg %}" type="image/jpeg">
+                       <!--Desktop Image-->
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 1280, height: 926 }) | avif %}" type="image/avif">
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 1280, height: 926 }) | webp %}" type="image/webp">
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 1280, height: 926 }) | jpeg %}" type="image/jpeg">
+                       <img src="{% getUrl "/assets/images/landing1.png" | resize({ width: 1280, height: 926 }) | jpeg %}" alt="" width="640" height="463" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>                </div>
+            </div>
+            
+            <div class="cs-service">
+                <div class="cs-service-content">
+                    <div class="cs-step-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 13v5h-3v-5h3m0-1h-3c-.55 0-1 .45-1 1v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-5c0-.55-.45-1-1-1zm-7-9.5c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3M10 9H3c0 2.79 1.64 5.2 4 6.32V21h2v-5.68C11.36 14.2 13 11.79 13 9h-3zm8.5-6.5c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3M21 9h-6c0 2.79 1.64 5.2 4 6.32V21h2v-5.68c2.36-1.12 4-3.53 4-6.32h-4z"/></svg>
+                    </div>
+                    <h3>Uplighting & Accent Lighting</h3>
+                    <p>We use uplights to highlight trees, architectural details, signs, or sculptures. This adds depth and drama to your landscape design. Lights are placed and angled to create strong focal points without overwhelming the space.</p>
+                    <ul>
+                        <li>Installed at base of trees, columns, or features</li>
+                        <li>Adds contrast and draws attention to focal elements</li>
+                        <li>Available in warm, cool, or color-changing LED options</li>
+                    </ul>
+                </div>
+                <div class="cs-service-image">
+                    <picture>
+                       <!--Mobile Image-->
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 576, height: 282 }) | avif %}" type="image/avif">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 576, height: 282 }) | webp %}" type="image/webp">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 576, height: 282 }) | jpeg %}" type="image/jpeg">
+                       <!--Tablet Image-->
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 990, height: 942 }) | avif %}" type="image/avif">
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 990, height: 942 }) | webp %}" type="image/webp">
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 990, height: 942 }) | jpeg %}" type="image/jpeg">
+                       <!--Desktop Image-->
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 1280, height: 926 }) | avif %}" type="image/avif">
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 1280, height: 926 }) | webp %}" type="image/webp">
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 1280, height: 926 }) | jpeg %}" type="image/jpeg">
+                       <img src="{% getUrl "/assets/images/landing1.png" | resize({ width: 1280, height: 926 }) | jpeg %}" alt="" width="640" height="463" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>                </div>
+            </div>
+            
+            <div class="cs-service">
+                <div class="cs-service-content">
+                    <div class="cs-step-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 24 24" fill="currentColor"><path d="M15 13V5c0-1.66-1.34-3-3-3S9 3.34 9 5v8c-1.21.91-2 2.37-2 4 0 2.76 2.24 5 5 5s5-2.24 5-5c0-1.63-.79-3.09-2-4zm-4-8c0-.55.45-1 1-1s1 .45 1 1h-2z"/></svg>
+                    </div>
+                    <h3>Step & Deck Lighting</h3>
+                    <p>Lights are installed on <a href="/pergolas-gazebos" class="internal-link">pergolas</a>, deck posts, stair risers, or step edges to improve visibility and enhance outdoor living areas. These fixtures help prevent accidents while creating a cozy, welcoming atmosphere.</p>
+                    <ul>
+                        <li>Mounted to decks, stairs, or retaining walls</li>
+                        <li>Improves safety for nighttime entertaining</li>
+                        <li>Options include recessed, surface-mount, or strip lighting</li>
+                    </ul>
+                </div>
+                <div class="cs-service-image">
+                    <picture>
+                       <!--Mobile Image-->
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 576, height: 282 }) | avif %}" type="image/avif">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 576, height: 282 }) | webp %}" type="image/webp">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 576, height: 282 }) | jpeg %}" type="image/jpeg">
+                       <!--Tablet Image-->
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 990, height: 942 }) | avif %}" type="image/avif">
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 990, height: 942 }) | webp %}" type="image/webp">
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 990, height: 942 }) | jpeg %}" type="image/jpeg">
+                       <!--Desktop Image-->
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 1280, height: 926 }) | avif %}" type="image/avif">
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 1280, height: 926 }) | webp %}" type="image/webp">
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 1280, height: 926 }) | jpeg %}" type="image/jpeg">
+                       <img src="{% getUrl "/assets/images/landing1.png" | resize({ width: 1280, height: 926 }) | jpeg %}" alt="" width="640" height="463" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>                </div>
+            </div>
+            
+            <div class="cs-service">
+                <div class="cs-service-content">
+                    <div class="cs-step-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 4c4.41 0 8 3.59 8 8s-3.59 8-8 8-8-3.59-8-8 3.59-8 8-8m0-2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 10c0-2.76-2.24-5-5-5s-5 2.24-5 5h2c0-1.66 1.34-3 3-3s3 1.34 3 3h2z"/></svg>
+                    </div>
+                    <h3>Garden & Plant Bed Lighting</h3>
+                    <p>We install subtle lighting around plant beds to highlight textures, blooms, and structure. These fixtures are angled to create layered lighting effects without overexposing the plants. Perfect for showcasing seasonal displays or softening edges at night.</p>
+                    <ul>
+                        <li>Enhances depth and color in <a href="/plant-beds" class="internal-link">flower beds</a> and foliage</li>
+                        <li>Low-glare fixtures for a soft, natural look</li>
+                        <li>Complements path and patio lighting layouts</li>
+                    </ul>
+                </div>
+                <div class="cs-service-image">
+                    <picture>
+                       <!--Mobile Image-->
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 576, height: 282 }) | avif %}" type="image/avif">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 576, height: 282 }) | webp %}" type="image/webp">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 576, height: 282 }) | jpeg %}" type="image/jpeg">
+                       <!--Tablet Image-->
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 990, height: 942 }) | avif %}" type="image/avif">
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 990, height: 942 }) | webp %}" type="image/webp">
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 990, height: 942 }) | jpeg %}" type="image/jpeg">
+                       <!--Desktop Image-->
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 1280, height: 926 }) | avif %}" type="image/avif">
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 1280, height: 926 }) | webp %}" type="image/webp">
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 1280, height: 926 }) | jpeg %}" type="image/jpeg">
+                       <img src="{% getUrl "/assets/images/landing1.png" | resize({ width: 1280, height: 926 }) | jpeg %}" alt="" width="640" height="463" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>                
+                </div>
+            </div>
+            
+            <div class="cs-service">
+                <div class="cs-service-content">
+                    <div class="cs-step-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3c-.46 0-.93.04-1.4.14-2.76.53-4.96 2.76-5.48 5.52-.48 2.61.48 5.01 2.22 6.56.43.38.66.91.66 1.47V19c0 1.1.9 2 2 2h.28c.35.6.98 1 1.72 1s1.38-.4 1.72-1H14c1.1 0 2-.9 2-2v-2.31c0-.55.22-1.09.64-1.46C18.09 13.95 19 12.08 19 10c0-3.87-3.13-7-7-7zm2 16h-4v-1h4v1zm0-2h-4v-1h4v1zm-1.5-5.59V14h-1v-2.59L9.67 9.59l.71-.71L12 10.5l1.62-1.62.71.71-1.83 1.82z"/></svg>
+                    </div>
+                    <h3>Smart Lighting Controls & Timers</h3>
+                    <p>We offer smart lighting systems that allow for scheduling, remote control, or motion activation. These systems make it easy to manage your lighting and energy use. Timers and sensors can be integrated into any low-voltage setup.</p>
+                    <ul>
+                        <li>Control lights from smartphone, timer, or motion sensor</li>
+                        <li>Saves energy and automates evening routines</li>
+                        <li>Compatible with most low-voltage LED systems</li>
+                    </ul>
+                </div>
+                <div class="cs-service-image">
+                    <picture>
+                       <!--Mobile Image-->
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 576, height: 282 }) | avif %}" type="image/avif">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 576, height: 282 }) | webp %}" type="image/webp">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 576, height: 282 }) | jpeg %}" type="image/jpeg">
+                       <!--Tablet Image-->
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 990, height: 942 }) | avif %}" type="image/avif">
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 990, height: 942 }) | webp %}" type="image/webp">
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 990, height: 942 }) | jpeg %}" type="image/jpeg">
+                       <!--Desktop Image-->
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 1280, height: 926 }) | avif %}" type="image/avif">
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 1280, height: 926 }) | webp %}" type="image/webp">
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 1280, height: 926 }) | jpeg %}" type="image/jpeg">
+                       <img src="{% getUrl "/assets/images/landing1.png" | resize({ width: 1280, height: 926 }) | jpeg %}" alt="" width="640" height="463" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>                </div>
+            </div>
+            <div class="cs-service">
+                <div class="cs-service-content">
+                    <div class="cs-step-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3c-.46 0-.93.04-1.4.14-2.76.53-4.96 2.76-5.48 5.52-.48 2.61.48 5.01 2.22 6.56.43.38.66.91.66 1.47V19c0 1.1.9 2 2 2h.28c.35.6.98 1 1.72 1s1.38-.4 1.72-1H14c1.1 0 2-.9 2-2v-2.31c0-.55.22-1.09.64-1.46C18.09 13.95 19 12.08 19 10c0-3.87-3.13-7-7-7zm2 16h-4v-1h4v1zm0-2h-4v-1h4v1zm-1.5-5.59V14h-1v-2.59L9.67 9.59l.71-.71L12 10.5l1.62-1.62.71.71-1.83 1.82z"/></svg>
+                    </div>
+                    <h3>Lighting Maintenance & Upgrades</h3>
+                    <p>We maintain and upgrade landscape lighting systems to keep them working and looking great. Services include bulb replacement, wire repair, and LED retrofits. This ensures your system stays energy-efficient and reliable over time.</p>
+                    <ul>
+                        <li>Troubleshooting and repair of low-voltage lighting systems</li>
+                        <li>Bulb replacement and fixture adjustments</li>
+                        <li>Upgrade paths or entire systems to long-lasting LED</li>
+                    </ul>
+                </div>
+                <div class="cs-service-image">
+                    <picture>
+                       <!--Mobile Image-->
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 576, height: 282 }) | avif %}" type="image/avif">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 576, height: 282 }) | webp %}" type="image/webp">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 576, height: 282 }) | jpeg %}" type="image/jpeg">
+                       <!--Tablet Image-->
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 990, height: 942 }) | avif %}" type="image/avif">
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 990, height: 942 }) | webp %}" type="image/webp">
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 990, height: 942 }) | jpeg %}" type="image/jpeg">
+                       <!--Desktop Image-->
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 1280, height: 926 }) | avif %}" type="image/avif">
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 1280, height: 926 }) | webp %}" type="image/webp">
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 1280, height: 926 }) | jpeg %}" type="image/jpeg">
+                       <img src="{% getUrl "/assets/images/landing1.png" | resize({ width: 1280, height: 926 }) | jpeg %}" alt="" width="640" height="463" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>                </div>
+            </div>
+        </div>
+        <a href="/contact" class="cs-button-solid">Get your free consultation</a>
+    </div>
+</section>
 
-            <h2>Our Complete Outdoor Landscape Lighting Services in Houston, TX</h2>
-            <h3>Landscape Lighting Installation</h3>
-            <p>
-                Our professional landscape lighting installation service enhances the beauty and safety of your property. We handle everything from selecting the right fixtures to installing low voltage landscape lighting, ensuring optimal performance and energy efficiency. Whether you need LED landscape lighting, solar landscape lighting, or modern landscape lighting, we have the right solution for your outdoor space.
-            </p>
-            <h3>Exterior Landscape Lighting Upgrades</h3>
-            <p>
-                If your existing lighting system is outdated or inefficient, we offer complete landscape lighting upgrades. Our team evaluates your current setup and installs energy-efficient LED landscape lighting, improving brightness, longevity, and cost-effectiveness.
-            </p>
-            <h3>Pathway Landscape Lighting</h3>
-            <p>
-                Illuminate walkways, driveways, and garden paths with professional landscape path lighting. Our installations provide safety while adding a stylish touch to your outdoor space. From classic designs to contemporary fixtures, we offer a range of options to complement your landscaping.
-            </p>
-            <h3>Backyard Landscape Lighting</h3>
-            <p>
-                Enhance your outdoor living area with beautifully designed backyard landscape lighting. Whether you want to highlight a patio, deck, pool area, or backyard fence lighting, our solutions create a warm and inviting atmosphere for nighttime enjoyment.
-            </p>
-            <h3>Commercial Landscape Lighting Solutions</h3>
-            <p>
-                We offer large-scale commercial landscape lighting installations for office parks, apartment complexes, retail centers, and more. Our expertly designed lighting solutions improve security, increase visibility, and elevate the overall appeal of your business property.
-            </p>
-            <h3>Garden Landscape Lighting</h3>
-            <p>
-                Showcase your garden’s natural beauty with professionally installed garden landscape lighting. Our strategic placements highlight plants, trees, and architectural features, creating a stunning nighttime ambiance.
-            </p>
-            <h3>Low Voltage Landscape Lighting Installation</h3>
-            <p>
-                For energy-efficient and cost-effective solutions, we specialize in low voltage landscape lighting. These systems provide the perfect balance of brightness and efficiency while reducing energy costs.
-            </p>
-            <h3>Solar Landscape Lighting Installation</h3>
-            <p>
-                For an eco-friendly approach, we offer solar landscape lighting solutions that harness the power of the sun to illuminate your property without increasing your electricity bill.
-            </p>
-            <h3>Landscape Lighting Maintenance Services</h3>
-            <p>
-                Proper maintenance ensures the longevity and effectiveness of your landscape lighting. We offer comprehensive landscape lighting maintenance, including bulb replacements, fixture adjustments, and system inspections to keep your lighting in top condition.
-            </p>
+<!-- ============================================ -->
+<!--           Residential Specialists            -->
+<!-- ============================================ -->
 
-            <h2>Residential & Commercial Landscape Lighting in Houston, TX</h2>
-            <h3>
-                Residential Services
-            </h3>
-            <ul>
-                <li>
-                    <p>Custom Outdoor Landscape Lighting Design and Installation</p>
-                </li>
-                <li>
-                    <p>Pathway Landscape Lighting for Driveways and Walkways</p>
-                </li>
-                <li>
-                    <p>Backyard Landscape Lighting for Patios, Pools, and Gardens</p>
-                </li>
-                <li>
-                    <p>Exterior Landscape Lighting for Home Security and Curb Appeal</p>
-                </li>
-                <li>
-                    <p>Energy-Efficient LED and Solar Landscape Lighting Solutions</p>
-                </li>
-            </ul>
-            <h3>Commercial Services</h3>
-            <ul>
-                <li>
-                    <p>Large-Scale Landscape Lighting Installation for Business Properties</p>
-                </li>
-                <li>
-                    <p>Commercial Landscape Lighting for Retail Centers, Offices, and HOAs</p>
-                </li>
-                <li>
-                    <p>Modern Landscape Lighting Designs for Architectural Enhancement</p>
-                </li>
-                <li>
-                    <p>Low Voltage and LED Landscape Lighting for Energy Savings</p>
-                </li>
-                <li>
-                    <p>Landscape Lighting Maintenance Programs for Long-Term Performance</p>
-                </li>
-            </ul>
-
-            <h2>Our Landscape Lighting Installation Process</h2>
-            <h3>Initial Consultation and Site Assessment</h3>
-            <p>
-                We begin with an on-site evaluation to assess your outdoor space, discuss your lighting preferences, and determine the most suitable landscape lighting solutions for your property.
-            </p>
-            <h3>Lighting Design and Cost Estimate</h3>
-            <p>
-                Based on our assessment, we provide a detailed quote that includes fixture selection, installation costs, and any necessary electrical work. We offer clear and upfront pricing tailored to your budget and lighting goals.
-            </p>
-            <h3>Installation and System Setup</h3>
-            <p>
-                Our team carefully installs each lighting fixture to maximize illumination while maintaining a seamless, natural aesthetic. We ensure all electrical connections are secure and weather-resistant.
-            </p>
-            <h3>Testing and Adjustments</h3>
-            <p>
-                Once installed, we test all lighting fixtures to ensure optimal brightness, proper coverage, and system functionality. We make necessary adjustments to achieve the perfect lighting balance.
-            </p>
-            <h3>Final Walkthrough and Maintenance Recommendations</h3>
-            <p>
-                After installation, we provide maintenance recommendations and demonstrate how to operate your new lighting system. We also conduct a final walkthrough to ensure your complete satisfaction.
-            </p>
-
-            <h2>Types of Landscape Lighting We Install in Houston, TX</h2>
-
-            <ul>
-                <li>
-                    <h3 class="h3list">Pathway Landscape Lighting</h3>
-                    <p>– Ideal for illuminating walkways and driveways.</p>
-                </li>
-                <li>
-                    <h3 class="h3list">Backyard Fence Lighting</h3>
-                    <p>– Enhances security and aesthetics along fences and walls.</p>
-                </li>
-                <li>
-                    <h3 class="h3list">LED Landscape Lighting</h3>
-                    <p>– Energy-efficient, long-lasting, and cost-effective.</p>
-                </li>
-                <li>
-                    <h3 class="h3list">Solar Landscape Lighting</h3>
-                    <p>– Harnesses sunlight for sustainable illumination.</p>
-                </li>
-                <li>
-                    <h3 class="h3list">Low Voltage Landscape Lighting</h3>
-                    <p>– Perfect for reducing energy consumption while maintaining brightness.</p>
-                </li>
-                 <li>
-                    <h3 class="h3list">Modern Landscape Lighting</h3>
-                    <p>– Contemporary designs for stylish outdoor aesthetics.</p>
-                </li>
-                <li>
-                    <h3 class="h3list">Garden Landscape Lighting</h3>
-                    <p>– Highlights flower beds, trees, and landscape features.</p>
-                </li>
-                <li>
-                    <h3 class="h3list">Commercial Landscape Lighting</h3>
-                    <p>– Professional lighting solutions for business properties.</p>
-                </li>
-            </ul>
-
-            <h2>How Much Does Landscape Lighting Cost in Houston, TX?</h2>
-            <h3>General price ranges for landscape lighting installation in Houston</h3>
-            <ul>
-                <li>Small Landscape Lighting Installation (up to 5 fixtures): $500 - $1,500</li>
-                <li>Medium Landscape Lighting Installation (5 - 15 fixtures): $1,500 - $5,000</li>
-                <li>Large Landscape Lighting Installation (15+ fixtures): $5,000+</li>
-            </ul>
-            <h3>Several factors affect landscape lighting cost in Houston</h3>
-            <ul>
-                <li>Lighting Type: LED, solar, or low voltage lighting options have different price points.</li>
-                <li>Installation Complexity: Wiring and fixture placements can influence costs.</li>
-                <li>Property Size: Larger landscapes require more fixtures and wiring.</li>
-                <li>Fixture Quality: Premium and custom lighting designs may increase the overall cost.</li>
-            </ul>
-
-
-
+<section id="custom-designs">
+    <div class="cs-container">
+        <h2 class="cs-title">Residential Landscaping Specialists—Properties We Serve</h2>
+        <div class="cs-property-types">
+            <!-- Before and After Slider Section -->
+            <div class="cs-section before-after-section">
+                <div class="cs-topper">Before & After</div>
+                <div class="before-after-container">
+                    <div class="before-after">
+                        <picture class="before-after__before-img">
+                           <!--Mobile Image-->
+                           <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/adams-final1.jpg" | resize({ width: 424, height:  600, fit: "inside"}) | avif %}" type="image/avif">
+                           <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/adams-final1.jpg" | resize({ width: 424, height:  600, fit: "inside"}) | webp %}" type="image/webp">
+                           <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/adams-final1.jpg" | resize({ width: 424, height:  600, fit: "inside"}) | jpeg %}" type="image/jpeg">
+                           <!--Tablet Image-->
+                           <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/adams-final1.jpg" | resize({ width: 1126, height: 1000, fit: "inside" }) | avif %}" type="image/avif">
+                           <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/adams-final1.jpg" | resize({ width: 1126, height: 1000, fit: "inside" }) | webp %}" type="image/webp">
+                           <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/adams-final1.jpg" | resize({ width: 1126, height: 1000, fit: "inside" }) | jpeg %}" type="image/jpeg">
+                           <!--Desktop Image-->
+                           <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/adams-final1.jpg" | resize({ width: 1366, height: 1000, fit: "inside" }) | avif %}" type="image/avif">
+                           <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/adams-final1.jpg" | resize({ width: 1366, height: 1000, fit: "inside" }) | webp %}" type="image/webp">
+                           <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/adams-final1.jpg" | resize({ width: 1366, height: 1000, fit: "inside" }) | jpeg %}" type="image/jpeg">
+                           <img src="{% getUrl "/assets/images/adams-final1.jpg" | resize({ width: 1366, height: 1000, fit: "inside" }) | jpeg %}" alt="" width="683" height="500" loading="lazy" decoding="async" aria-hidden="true">
+                        </picture>
+                        <picture class="before-after__after-img">
+                           <!--Mobile Image-->
+                           <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/adams-before1.jpg" | resize({ width: 424, height:  600, fit: "inside"}) | avif %}" type="image/avif">
+                           <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/adams-before1.jpg" | resize({ width: 424, height:  600, fit: "inside"}) | webp %}" type="image/webp">
+                           <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/adams-before1.jpg" | resize({ width: 424, height:  600, fit: "inside"}) | jpeg %}" type="image/jpeg">
+                           <!--Tablet Image-->
+                           <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/adams-before1.jpg" | resize({ width: 1126, height: 1000, fit: "inside" }) | avif %}" type="image/avif">
+                           <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/adams-before1.jpg" | resize({ width: 1126, height: 1000, fit: "inside" }) | webp %}" type="image/webp">
+                           <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/adams-before1.jpg" | resize({ width: 1126, height: 1000, fit: "inside" }) | jpeg %}" type="image/jpeg">
+                           <!--Desktop Image-->
+                           <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/adams-before1.jpg" | resize({ width: 1366, height: 1000, fit: "inside" }) | avif %}" type="image/avif">
+                           <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/adams-before1.jpg" | resize({ width: 1366, height: 1000, fit: "inside" }) | webp %}" type="image/webp">
+                           <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/adams-before1.jpg" | resize({ width: 1366, height: 1000, fit: "inside" }) | jpeg %}" type="image/jpeg">
+                           <img src="{% getUrl "/assets/images/adams-before1.jpg" | resize({ width: 1366, height: 1000, fit: "inside" }) | jpeg %}" alt="" width="683" height="500" loading="lazy" decoding="async" aria-hidden="true">
+                        </picture>
+                        <div class="before-after__after"></div>
+                        <div class="before-after__slider" role="slider" aria-label="Adjust before and after comparison" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
+                            <div class="before-after__handle"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cs-content">
+                <h3 class="section-header">Expert Residential Landscaping for Homes, Condos, and More in Houston, TX</h3>
+                <p>From homes to residential businesses, we serve a range of Houston properties:</p>
+                <ul>
+                    <li>Residential Homes</li>
+                    <li>Condominiums and HOA's</li>
+                    <li>Apartment Complexes</li>
+                    <li>Townhomes</li>
+                </ul>
+                <p>Our hands-on approach delivers what your property needs—no generic fixes, just results.</p>
+                <a href="/contact" class="cs-button-solid">Book Your Free Consultation</a>
+            </div>
         </div>
     </div>
-    <div class="cs-bubbles" aria-hidden="true"></div>
 </section>
-                                
 
+<!-- ============================================ -->
+<!--             Recent Projects                  -->
+<!-- ============================================ -->
+
+<section id="recent-projects">
+    <div class="cs-container">
+        <h2 class="cs-title">Recent Houston Projects</h2>
+        <div class="cs-testimonial">
+            <p>"HLI's lighting made our property safer and sharper at night—solid job!"</p>
+            <span>- Lisa P., Houston commercial property manager</span>
+        </div>
+        <div class="cs-gallery">
+            <!-- Gallery Item 1 -->
+            <article class="gallery-card">
+                <div class="gallery-card-main">
+                    <picture>
+                       <!--Mobile Image-->
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/adamson-residence.jpg" | resize({ width: 576, height: 640 }) | avif %}" type="image/avif">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/adamson-residence.jpg" | resize({ width: 576, height: 640 }) | webp %}" type="image/webp">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/adamson-residence.jpg" | resize({ width: 576, height: 640 }) | jpeg %}" type="image/jpeg">
+                       <!--Tablet Image-->
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/adamson-residence.jpg" | resize({ width: 1982, height: 640 }) | avif %}" type="image/avif">
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/adamson-residence.jpg" | resize({ width: 1982, height: 640 }) | webp %}" type="image/webp">
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/adamson-residence.jpg" | resize({ width: 1982, height: 640 }) | jpeg %}" type="image/jpeg">
+                       <!--Desktop Image-->
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/adamson-residence.jpg" | resize({ width: 820, height: 640 }) | avif %}" type="image/avif">
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/adamson-residence.jpg" | resize({ width: 820, height: 640 }) | webp %}" type="image/webp">
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/adamson-residence.jpg" | resize({ width: 820, height: 640 }) | jpeg %}" type="image/jpeg">
+                       <img src="{% getUrl "/assets/images/adamson-residence.jpg" | resize({ width: 820, height: 640 }) | jpeg %}" alt="" width="410" height="320" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>
+                    <div class="gallery-card-footer">
+                        <h3>Adamson Residence</h3>
+                        <span class="gallery-button"></span>
+                    </div>
+                </div>
+                <div class="gallery-card-dropdown">
+                    <p>The Adamson Residence backyard remodel was an extensive upgrade. The project included a complete patio build with patio cover, outdoor kitchen, firepit, fireplace, and border planter boxes with stone details.</p>
+                </div>
+            </article>
+            
+            <!-- Gallery Item 2 -->
+            <article class="gallery-card">
+                <div class="gallery-card-main">
+                    <picture>
+                       <!--Mobile Image-->
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/adams-final1.jpg" | resize({ width: 576, height: 640 }) | avif %}" type="image/avif">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/adams-final1.jpg" | resize({ width: 576, height: 640 }) | webp %}" type="image/webp">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/adams-final1.jpg" | resize({ width: 576, height: 640 }) | jpeg %}" type="image/jpeg">
+                       <!--Tablet Image-->
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/adams-final1.jpg" | resize({ width: 1982, height: 640 }) | avif %}" type="image/avif">
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/adams-final1.jpg" | resize({ width: 1982, height: 640 }) | webp %}" type="image/webp">
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/adams-final1.jpg" | resize({ width: 1982, height: 640 }) | jpeg %}" type="image/jpeg">
+                       <!--Desktop Image-->
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/adams-final1.jpg" | resize({ width: 820, height: 640 }) | avif %}" type="image/avif">
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/adams-final1.jpg" | resize({ width: 820, height: 640 }) | webp %}" type="image/webp">
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/adams-final1.jpg" | resize({ width: 820, height: 640 }) | jpeg %}" type="image/jpeg">
+                       <img src="{% getUrl "/assets/images/adams-final1.jpg" | resize({ width: 820, height: 640 }) | jpeg %}" alt="" width="410" height="320" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>
+                    <div class="gallery-card-footer">
+                        <h3>Adams Residence</h3>
+                        <span class="gallery-button"></span>
+                    </div>
+                </div>
+                <div class="gallery-card-dropdown">
+                    <p>The Adams Residence landscaping project was an outdoor living upgrade. We added an extension to the pool deck where we built a covered outdoor kitchen. The patio cover also has a side door with storage for pool equipment and toys.</p>
+                </div>
+            </article>
+            
+            <!-- Gallery Item 3 -->
+            <article class="gallery-card">
+                <div class="gallery-card-main">
+                    <picture>
+                       <!--Mobile Image-->
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/guillot-final2.png" | resize({ width: 576, height: 640 }) | avif %}" type="image/avif">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/guillot-final2.png" | resize({ width: 576, height: 640 }) | webp %}" type="image/webp">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/guillot-final2.png" | resize({ width: 576, height: 640 }) | jpeg %}" type="image/jpeg">
+                       <!--Tablet Image-->
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/guillot-final2.png" | resize({ width: 1982, height: 640 }) | avif %}" type="image/avif">
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/guillot-final2.png" | resize({ width: 1982, height: 640 }) | webp %}" type="image/webp">
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/guillot-final2.png" | resize({ width: 1982, height: 640 }) | jpeg %}" type="image/jpeg">
+                       <!--Desktop Image-->
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/guillot-final2.png" | resize({ width: 820, height: 640 }) | avif %}" type="image/avif">
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/guillot-final2.png" | resize({ width: 820, height: 640 }) | webp %}" type="image/webp">
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/guillot-final2.png" | resize({ width: 820, height: 640 }) | jpeg %}" type="image/jpeg">
+                       <img src="{% getUrl "/assets/images/guillot-final2.png" | resize({ width: 820, height: 640 }) | jpeg %}" alt="" width="410" height="320" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>
+                    <div class="gallery-card-footer">
+                        <h3>Guillot Residence</h3>
+                        <span class="gallery-button"></span>
+                    </div>
+                </div>
+                <div class="gallery-card-dropdown">
+                    <p>The Guillot backyard upgrade consisted of a homey patio extension with cover. Under the patio cover is a classic outdoor kitchen and fireplace.</p>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--             Cost Section                     -->
+<!-- ============================================ -->
+
+<section id="cost-section">
+    <div class="cs-container">
+        <h2 class="cs-title">The Cost of Landscape Lighting in Houston, TX</h2>
+        <div class="cs-cost-tiers">
+            <div class="cs-cost-tier">
+                <div class="cs-tier-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 14 14"><path fill="none" stroke="#aace7b" stroke-linecap="round" stroke-linejoin="round" d="M7 10.5v3m2-13l-8.5 13h13L5 .5" stroke-width="1"/></svg>
+                </div>
+                <h3>Entry-Level Lighting</h3>
+                <p class="cs-price">$1,500 to $3,000</p>
+                <ul class="cs-features">
+                    <li>Ideal for highlighting walkways, porches, or small garden beds</li>
+                    <li>Includes basic LED uplights or path lights with a low-voltage transformer</li>
+                    <li>Professionally installed with clean wiring and timer setup</li>
+                </ul>
+                <p class="cs-size">(4–6 fixtures)</p>
+            </div>
+            <div class="cs-cost-tier">
+                <div class="cs-tier-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 256 256"><g fill="#aace7b"><path d="M216 116.69V216h-64v-64h-48v64H40v-99.31l82.34-82.35a8 8 0 0 1 11.32 0Z" opacity="0.2"/><path d="M240 208h-16v-72l2.34 2.34A8 8 0 0 0 237.66 127l-98.35-98.32a16 16 0 0 0-22.62 0L18.34 127a8 8 0 0 0 11.32 11.31L32 136v72H16a8 8 0 0 0 0 16h224a8 8 0 0 0 0-16M48 120l80-80l80 80v88h-48v-56a8 8 0 0 0-8-8h-48a8 8 0 0 0-8 8v56H48Zm96 88h-32v-48h32Z"/></g></svg>
+                </div>
+                <h3>Mid-Range Systems</h3>
+                <p class="cs-price">$3,000 to $6,000</p>
+                <ul class="cs-features">
+                    <li>Designed for illuminating front yards, patios, or key landscape features</li>
+                    <li>Combination of spotlights, path lights, and wall washes</li>
+                    <li>Optional photocells, timers, or smart home integration</li>
+                </ul>
+                <p class="cs-size">(8–15 fixtures)</p>
+            </div>
+            <div class="cs-cost-tier">
+                <div class="cs-tier-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24"><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21"/></svg>
+                </div>
+                <h3>Custom Lighting Designs</h3>
+                <p class="cs-price">$6,000+</p>
+                <ul class="cs-features">
+                    <li>Full-property coverage with layered lighting for safety and ambiance</li>
+                    <li>High-end fixtures, zoning controls, and architectural highlighting</li>
+                    <li>Custom-designed layout for maximum visual impact and energy efficiency</li>
+                </ul>
+                <p class="cs-size">(15+ fixtures or large-scale installs)</p>
+            </div>
+        </div>
+        <p>We provide transparent, itemized estimates upfront, so you know exactly what you’re investing in.</p>
+        <a href="/contact" class="cs-button-solid">Request Your Estimate</a>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--             Trusted Company                  -->
+<!-- ============================================ -->
+
+<section id="trusted-company">
+    <div class="cs-container">
+        <h2 class="cs-title">A Trusted Houston Landscaping Company–Here’s Why</h2>
+        <div class="cs-content">
+            <div class="cs-trust-content">
+                <ul class="cs-trust-points">
+                    <li><strong>Decades of Experience:</strong> 500+ projects, small and large, completed across Houston.</li>
+                    <li><strong>Family Owned & Operated:</strong> We oversee every step ourselves.</li>
+                    <li><strong>On-Site First:</strong> Every job begins with a full property review.</li>
+                    <li><strong>Local Expertise:</strong> We understand Houston’s soils, climate, and city codes.</li>
+                    <li><strong>US-Based Team:</strong> Houston-Based crew and trusted U.S. suppliers.</li>
+                </ul>
+                <div class="cs-testimonial">
+                    <p>"HLI solved our muddy yard issues with beautiful plant beds—worth every penny!"</p>
+                    <span>- Mark R., Houston business owner</span>
+                </div>
+                <a href="/contact" class="cs-button-solid">Start Your Project Today</a>
+            </div>
+            <picture class="cs-image">
+                <picture>
+                   <!--Mobile Image-->
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-putting1.jpg" | resize({ width: 576, height: 1000 }) | avif %}" type="image/avif">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-putting1.jpg" | resize({ width: 576, height: 1000 }) | webp %}" type="image/webp">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-putting1.jpg" | resize({ width: 576, height: 1000 }) | jpeg %}" type="image/jpeg">
+                   <!--Tablet Image-->
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-putting1.jpg" | resize({ width: 1982, height: 1000 }) | avif %}" type="image/avif">
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-putting1.jpg" | resize({ width: 1982, height: 1000 }) | webp %}" type="image/webp">
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-putting1.jpg" | resize({ width: 1982, height: 1000 }) | jpeg %}" type="image/jpeg">
+                   <!--Desktop Image-->
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-putting1.jpg" | resize({ width: 1192, height: 1000 }) | avif %}" type="image/avif">
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-putting1.jpg" | resize({ width: 1192, height: 1000 }) | webp %}" type="image/webp">
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-putting1.jpg" | resize({ width: 1192, height: 1000 }) | jpeg %}" type="image/jpeg">
+                   <img src="{% getUrl "/assets/images/hli-putting1.jpg" | resize({ width: 1192, height: 1000 }) | jpeg %}" alt="" width="596" height="500" loading="lazy" decoding="async" aria-hidden="true">
+                </picture>
+            </picture>
+        </div>
+    </div>
+</section>
+
+{% include "components/cta.html" %}
+
+<script defer>
+    const slider = document.querySelector(".before-after__slider");
+    const afterImg = document.querySelector(".before-after__after-img");
+    const container = document.querySelector(".before-after");
+
+    if (!slider || !afterImg || !container) {
+        console.error("One or more elements not found:", { slider, afterImg, container });
+    }
+
+    let isDragging = false;
+    let originalUserSelect = ''; // Store the original user-select value
+
+    const moveSlider = (x) => {
+    const containerRect = container.getBoundingClientRect();
+    const newWidth = x - containerRect.left;
+    const percentage = (newWidth / containerRect.width) * 100;
+
+    // Constrain the slider between 0% and 100%
+    if (percentage >= 0 && percentage <= 100) {
+        // Update the clip-path to reveal more/less of the "after" image
+        afterImg.style.clipPath = `inset(0 ${100 - percentage}% 0 0)`;
+        slider.style.left = `${percentage}%`; // Move the slider
+        slider.setAttribute("aria-valuenow", Math.round(percentage));
+        console.log(`Slider moved to ${percentage}%`); // Debug log
+    }
+    };
+
+    const startDragging = () => {
+        isDragging = true;
+        // Store the original user-select value and disable text selection on the body
+        originalUserSelect = document.body.style.userSelect || document.body.style.webkitUserSelect || '';
+        document.body.style.userSelect = 'none';
+        document.body.style.webkitUserSelect = 'none'; // For Safari
+        console.log("Dragging started");
+    };
+
+    const stopDragging = () => {
+        isDragging = false;
+        // Restore the original user-select value
+        document.body.style.userSelect = originalUserSelect;
+        document.body.style.webkitUserSelect = originalUserSelect;
+        console.log("Dragging stopped");
+    };
+
+    slider.addEventListener("mousedown", (e) => {
+        e.preventDefault(); // Prevent text selection
+        startDragging();
+    });
+
+    document.addEventListener("mousemove", (e) => {
+    if (isDragging) {
+        e.preventDefault(); // Prevent text selection
+        moveSlider(e.clientX);
+    }
+    });
+
+    document.addEventListener("mouseup", (e) => {
+    // Only prevent default if we were dragging
+    if (isDragging) {
+        e.preventDefault(); // Prevent text selection
+    }
+    stopDragging();
+    });
+
+    // Touch support for mobile
+    slider.addEventListener("touchstart", (e) => {
+    // Only prevent default on the slider itself
+    if (e.target === slider || slider.contains(e.target)) {
+        e.preventDefault(); // Prevent text selection
+    }
+    startDragging();
+    });
+
+    document.addEventListener("touchmove", (e) => {
+    if (isDragging) {
+        // Only prevent default when dragging the slider
+        e.preventDefault(); // Prevent text selection
+        const touch = e.touches[0];
+        moveSlider(touch.clientX);
+    }
+    });
+
+    document.addEventListener("touchend", (e) => {
+    // Only prevent default when we were dragging the slider
+    if (isDragging) {
+        e.preventDefault(); // Prevent text selection
+    }
+    stopDragging();
+    });
+</script>
 
 {% endblock %}

@@ -558,6 +558,7 @@
     text-align: center;
     width: 100%;
     display: block;
+    padding: 0.75rem 0;
   }
   #cs-navigation .cs-dropdown {
     position: relative;
@@ -773,6 +774,7 @@
   }
   #cs-navigation .cs-drop-li {
     width: 100%;
+    padding: 0.3125rem 0;
   }
   #cs-navigation .cs-drop-li.drop3-active .cs-drop3 {
     visibility: visible;
@@ -793,6 +795,7 @@
   }
   #cs-navigation .cs-drop-li3 {
     list-style: none;
+    padding: 0.3125rem 0;
   }
 }
 /* Desktop - 1024px */

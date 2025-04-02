@@ -1,17 +1,14 @@
 ---
 title: 'Professional Landscape Design Services in Houston, TX'
 description: 'Transform your Houston property with expert landscape design by Houston Landscape Images.'
-preloadImg: '/assets/images/landing1.png'
 permalink: 'tree-trimming-removal/'
-eleventyNavigation:
-    key: Tree Removal
-    order: 600
 ---
 
 {% extends "layouts/base.html" %}
 
 {% block head %}
     <link rel="stylesheet" href="/assets/css/test.css">
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/hli-putting2.png" | resize({ width: 3840, height: 1044 }) | jpeg %}">
 {% endblock %}
 
 {% block body %}
@@ -42,7 +39,7 @@ eleventyNavigation:
        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-putting2.png" | resize({ width: 3840, height: 1044 }) | avif %}" type="image/avif">
        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-putting2.png" | resize({ width: 3840, height: 1044 }) | webp %}" type="image/webp">
        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-putting2.png" | resize({ width: 3840, height: 1044 }) | jpeg %}" type="image/jpeg">
-       <img src="{% getUrl "/assets/images/hli-putting2.png" | resize({ width: 3840, height: 1044 }) | jpeg %}" alt="" width="1920" height="522" loading="lazy" decoding="async" aria-hidden="true">
+       <img src="{% getUrl "/assets/images/hli-putting2.png" | resize({ width: 3840, height: 1044 }) | jpeg %}" alt="" width="1920" height="522" decoding="async" aria-hidden="true">
     </picture>
     <svg class="cs-mask" xmlns="http://www.w3.org/2000/svg" width="1920" height="136" viewBox="0 0 1920 136" fill="none">
         <path fill-rule="evenodd" clip-rule="evenodd" d="M1920 136V0C1803.21 45.3334 1445.52 136 951 136C456.485 136 111.116 45.3334 0 0V136H951H1920Z" fill="var(--maskBG)"/>
@@ -56,14 +53,13 @@ eleventyNavigation:
 <section id="hero-section">
     <div class="cs-container">
         <div class="cs-content">
-            <h1 class="cs-title">Professional Plant Bed Services in Houston, TX</h1>
-            <h2>From Dull to Dynamic: Elevating Your Yard with Plant Beds</h2>
-            <p>At Houston Landscape Images (HLI), we focus on creating practical plant beds that improve your outdoor space and can increase home value by up to 15%. Bare spots turn into well-kept plantings, overlooked areas get a lift, and average yards become more appealing—all done by our family-run team, without subcontractors. Using Houston-specific plant choices and intentional layouts, we design plant beds suited to your Houston, TX property. You’ll get a straightforward process, solid results, and a yard that looks good year-round.</p>
+            <h1 class="cs-title">Professional Tree Trimming and Removal Services in Houston, TX</h1>
+            <p>At Houston Landscape Images (HLI), we focus on providing practical tree trimming and removal—improving your outdoor space and boosting home value by 15%-20%. Overgrown trees become tidy features, hazardous limbs turn into safe yards, and everyday properties gain solid worth—all with no subcontractors, just our family-run team. With expert pruning and removal, we create outdoor solutions tailored to your needs in Houston, TX. Expect a clear process, durable results, and a property that looks good every day.</p>
             
             <div class="cs-benefits">
                 <h2>What You Gain:</h2>
                 <ul>
-                    <li>A custom plant bed designed for your space</li>
+                    <li>A safe, hazard-free yard</li>
                     <li>Long-lasting, eye-catching greenery</li>
                     <li>A hassle-free, professional experience</li>
                     <li>A yard that enhances curb appeal and value</li>
@@ -120,16 +116,16 @@ eleventyNavigation:
             </picture>
         </div>
         <div class="cs-content">
-            <h2 class="cs-title">Houston Plant Bed Design Done Differently</h2>
-            <p>Well-designed plant beds aren’t just about beauty—they’re an investment. The American Society of Landscape Architects notes that professional landscaping, including plant beds, can increase home value by 15%-20%. At Houston Landscape Images (HLI), we begin with a site review—assessing soil, sunlight, and drainage—then design plant beds that suit your property’s unique conditions. No generic layouts, just practical, Houston-specific solutions from our in-house team.</p>
-            <p>By managing every step—from design to planting—we ensure clear communication, minimal delays, and thriving results. The outcome is a vibrant plant bed that elevates your yard, matches your style, and adds lasting value.</p>
+            <h2 class="cs-title">Houston Tree Trimming Done Differently</h2>
+            <p>A well-managed tree service isn’t just about appearance—it’s an investment. The American Society of Landscape Architects says professional landscaping can boost home value by 15%-20%. We start with a site review—tree health, safety risks, existing layout—then craft a plan that fits your property’s unique needs. No cookie-cutter plans, just practical solutions from our Houston-based crew.</p>
+            <p>By managing the project in-house, from planning to completion, we keep communication clear, minimize delays, and aim for a solid outcome. The result is a well-handled tree service that enhances safety, works for your lifestyle, and adds value to your property.</p>
             
             <div class="cs-testimonial">
                 <p>"HLI turned our bland front yard into a flower-filled masterpiece in just 2 weeks!"</p>
                 <span>- Sarah T., Houston homeowner</span>
             </div>
             
-            <a href="/contact" class="cs-button-solid">Discover Your Plant Bed Upgrade</a>
+            <a href="/contact" class="cs-button-solid">Lets trim those branches</a>
         </div>
     </div>
 </section>
@@ -158,7 +154,7 @@ eleventyNavigation:
         <div class="cs-wrapper">
             <div class="cs-content">
                 <span class="cs-topper">Our Steps</span>
-                <h2 class="cs-title">HLI's Landscape Design Process</h2>
+                <h2 class="cs-title">HLI's Tree Trimming & Removal Process</h2>
             </div>
             <ul class="cs-card-group">
                 <li class="cs-item">
@@ -209,7 +205,7 @@ eleventyNavigation:
 
 <section id="design-options">
     <div class="cs-container">
-        <h2 class="cs-title">HLI’s Plant Bed Service Options</h2>
+        <h2 class="cs-title">HLI’s Tree Trimming and Removal Options</h2>
         <div class="cs-carousel">
             <div class="cs-carousel-track">
                 <div class="cs-carousel-item">
@@ -494,12 +490,12 @@ eleventyNavigation:
                     <div class="cs-step-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 24 24" fill="currentColor"><path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
                     </div>
-                    <h3>Houston Custom Plant Bed Design</h3>
-                    <p>Custom plant beds mean custom. At Houston Landscape Images (HLI), we design beds that fit your property—not a one-size-fits-all approach—enhancing its value and charm.</p>
+                    <h3>Tree Trimming & Pruning</h3>
+                    <p>We provide expert tree trimming and pruning to improve health, shape, and structure. Our team removes dead, low-hanging, or crowded branches to promote healthy growth and reduce risk. Services are tailored to each tree type and surrounding conditions.</p>
                     <ul>
-                        <li>Precise plant and mulch placement for seamless integration</li>
-                        <li>Detailed plans covering species, layout, and maintenance</li>
-                        <li>Designs tailored to Houston’s heat and humidity</li>
+                        <li>Includes crown thinning, shaping, and deadwood removal</li>
+                        <li>Promotes airflow, sun exposure, and long-term tree health</li>
+                        <li>Improves safety and overall appearance</li>
                     </ul>
                 </div>
                 <div class="cs-service-image">
@@ -526,12 +522,12 @@ eleventyNavigation:
                     <div class="cs-step-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 22c4.97 0 9-4.03 9-9-4.97 0-9 4.03-9 9zM5.6 10.25c0 1.38 1.12 2.5 2.5 2.5.53 0 1.01-.16 1.42-.44l-.02.19c0 1.38 1.12 2.5 2.5 2.5s2.5-1.12 2.5-2.5l-.02-.19c.4.28.89.44 1.42.44 1.38 0 2.5-1.12 2.5-2.5 0-1-.59-1.85-1.43-2.25.84-.4 1.43-1.25 1.43-2.25 0-1.38-1.12-2.5-2.5-2.5-.53 0-1.01.16-1.42.44l.02-.19C14.5 2.12 13.38 1 12 1S9.5 2.12 9.5 3.5l.02.19c-.4-.28-.89-.44-1.42-.44-1.38 0-2.5 1.12-2.5 2.5 0 1 .59 1.85 1.43 2.25-.84.4-1.43 1.25-1.43 2.25zM12 5.5c1.38 0 2.5 1.12 2.5 2.5s-1.12 2.5-2.5 2.5S9.5 9.38 9.5 8s1.12-2.5 2.5-2.5z"/></svg>
                     </div>
-                    <h3>Plant Selection & Layout for Houston Yards</h3>
-                    <p>In Houston’s unique climate, plant choice is key. We select species that thrive in your yard’s conditions for vibrant, low-maintenance beds.</p>
+                    <h3>Tree Removal Services</h3>
+                    <p>A well-executed removal starts with a planned approach. We deliver safe tree removal tailored to Houston’s codes and conditions.</p>
                     <ul>
-                        <li>Plants matched to soil, sunlight, and water needs</li>
-                        <li>Strategic layouts for trees, shrubs, and flowers</li>
-                        <li>Long-term planning for growth and seasonal beauty</li>
+                        <li>Full range of services: cutting, stump grinding, debris cleanup, and hauling</li>
+                        <li>Compliance with city codes ensures safety, clearance, and stability</li>
+                        <li>Purposeful methods boost functionality, safety, and appeal</li>
                     </ul>
                 </div>
                 <div class="cs-service-image">
@@ -557,12 +553,12 @@ eleventyNavigation:
                     <div class="cs-step-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 13v5h-3v-5h3m0-1h-3c-.55 0-1 .45-1 1v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-5c0-.55-.45-1-1-1zm-7-9.5c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3M10 9H3c0 2.79 1.64 5.2 4 6.32V21h2v-5.68C11.36 14.2 13 11.79 13 9h-3zm8.5-6.5c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3M21 9h-6c0 2.79 1.64 5.2 4 6.32V21h2v-5.68c2.36-1.12 4-3.53 4-6.32h-4z"/></svg>
                     </div>
-                    <h3>Raised Plant Beds & Edging</h3>
-                    <p>Elevate your yard with raised beds and clean edging for a polished look that lasts.</p>
+                    <h3>Tree Removal</h3>
+                    <p>We remove trees that are dead, diseased, damaged, or located too close to structures. Removals are done safely using controlled methods and proper equipment. Cleanup and hauling are included to leave your property clear and ready for next steps.</p>
                     <ul>
-                        <li>Options: wood, stone, or concrete edging</li>
-                        <li>Raised designs improve drainage and soil quality</li>
-                        <li>Durable construction tailored to Houston’s codes</li>
+                        <li>Full removal of trees, from canopy to ground level</li>
+                        <li>Ideal for trees causing safety, space, or property issues</li>
+                        <li>Includes debris removal and optional stump grinding</li>
                     </ul>
                 </div>
                 <div class="cs-service-image">
@@ -588,12 +584,12 @@ eleventyNavigation:
                     <div class="cs-step-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 24 24" fill="currentColor"><path d="M15 13V5c0-1.66-1.34-3-3-3S9 3.34 9 5v8c-1.21.91-2 2.37-2 4 0 2.76 2.24 5 5 5s5-2.24 5-5c0-1.63-.79-3.09-2-4zm-4-8c0-.55.45-1 1-1s1 .45 1 1h-2z"/></svg>
                     </div>
-                    <h3>Mulching & Soil Enhancement</h3>
-                    <p>Healthy plant beds start with the right foundation. Our mulching and soil prep ensure longevity.</p>
+                    <h3>Emergency Tree Services</h3>
+                    <p>Storm-damaged or fallen trees can be dangerous and disruptive. We offer fast-response emergency tree removal and limb clearing to restore safety and access. Priority is given to trees impacting homes, driveways, or power lines.</p>
                     <ul>
-                        <li>Organic mulch options control weeds and retain moisture</li>
-                        <li>Soil testing and amendments for optimal growth</li>
-                        <li>Customized to your yard’s specific needs</li>
+                        <li>Rapid removal of hazardous limbs or fallen trees</li>
+                        <li>Helps clear access and prevent further property damage</li>
+                        <li>Available after storms, high winds, or structural failure</li>
                     </ul>
                 </div>
                 <div class="cs-service-image">
@@ -619,12 +615,12 @@ eleventyNavigation:
                     <div class="cs-step-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 4c4.41 0 8 3.59 8 8s-3.59 8-8 8-8-3.59-8-8 3.59-8 8-8m0-2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 10c0-2.76-2.24-5-5-5s-5 2.24-5 5h2c0-1.66 1.34-3 3-3s3 1.34 3 3h2z"/></svg>
                     </div>
-                    <h3>Seasonal Plant Bed Refresh</h3>
-                    <p>Keep your beds stunning year-round with seasonal updates.</p>
+                    <h3>Stump Grinding & Removal</h3>
+                    <p>After tree removal, we grind or remove stumps to clear space and prevent regrowth. Our equipment reaches below ground level to eliminate root flare and allow for replanting or hardscaping.</p>
                     <ul>
-                        <li>Spring and fall planting for continuous color</li>
-                        <li>Cleanup, pruning, and replanting as needed</li>
-                        <li>Adapted to Houston’s seasonal shifts</li>
+                        <li>Grinds stumps below grade for full removal</li>
+                        <li>Prevents tripping hazards and future tree sprouting</li>
+                        <li>Clears area for <a href="/sod" class="internal-link">sod installation</a>, mulch, or new plantings</li>
                     </ul>
                 </div>
                 <div class="cs-service-image">
@@ -651,12 +647,72 @@ eleventyNavigation:
                     <div class="cs-step-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3c-.46 0-.93.04-1.4.14-2.76.53-4.96 2.76-5.48 5.52-.48 2.61.48 5.01 2.22 6.56.43.38.66.91.66 1.47V19c0 1.1.9 2 2 2h.28c.35.6.98 1 1.72 1s1.38-.4 1.72-1H14c1.1 0 2-.9 2-2v-2.31c0-.55.22-1.09.64-1.46C18.09 13.95 19 12.08 19 10c0-3.87-3.13-7-7-7zm2 16h-4v-1h4v1zm0-2h-4v-1h4v1zm-1.5-5.59V14h-1v-2.59L9.67 9.59l.71-.71L12 10.5l1.62-1.62.71.71-1.83 1.82z"/></svg>
                     </div>
-                    <h3>Irrigation for Plant Beds</h3>
-                    <p>Water-smart irrigation keeps your beds thriving without waste.</p>
+                    <h3>Canopy Raising & Thinning</h3>
+                    <p>Canopy trimming lifts low branches and selectively thins tree crowns for improved light, clearance, and air flow. This service is ideal for trees near <a href="/pathways-walkways" class="internal-link">walkways</a>, <a href="/driveways-sidewalks" class="internal-link">driveways</a>, or rooftops.</p>
                     <ul>
-                        <li>Drip systems for efficient, targeted watering</li>
-                        <li>Solutions prevent overwatering and runoff</li>
-                        <li>Reduces costs and protects your investment</li>
+                        <li>Raises canopy height for clearance and aesthetics</li>
+                        <li>Reduces weight and wind resistance in tree crowns</li>
+                        <li>Improves sunlight for turf, garden beds, or patios</li>
+                    </ul>
+                </div>
+                <div class="cs-service-image">
+                    <picture>
+                       <!--Mobile Image-->
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 576, height: 282 }) | avif %}" type="image/avif">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 576, height: 282 }) | webp %}" type="image/webp">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 576, height: 282 }) | jpeg %}" type="image/jpeg">
+                       <!--Tablet Image-->
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 990, height: 942 }) | avif %}" type="image/avif">
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 990, height: 942 }) | webp %}" type="image/webp">
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 990, height: 942 }) | jpeg %}" type="image/jpeg">
+                       <!--Desktop Image-->
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 1280, height: 926 }) | avif %}" type="image/avif">
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 1280, height: 926 }) | webp %}" type="image/webp">
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 1280, height: 926 }) | jpeg %}" type="image/jpeg">
+                       <img src="{% getUrl "/assets/images/landing1.png" | resize({ width: 1280, height: 926 }) | jpeg %}" alt="" width="640" height="463" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>                </div>
+            </div>
+            <div class="cs-service">
+                <div class="cs-service-content">
+                    <div class="cs-step-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3c-.46 0-.93.04-1.4.14-2.76.53-4.96 2.76-5.48 5.52-.48 2.61.48 5.01 2.22 6.56.43.38.66.91.66 1.47V19c0 1.1.9 2 2 2h.28c.35.6.98 1 1.72 1s1.38-.4 1.72-1H14c1.1 0 2-.9 2-2v-2.31c0-.55.22-1.09.64-1.46C18.09 13.95 19 12.08 19 10c0-3.87-3.13-7-7-7zm2 16h-4v-1h4v1zm0-2h-4v-1h4v1zm-1.5-5.59V14h-1v-2.59L9.67 9.59l.71-.71L12 10.5l1.62-1.62.71.71-1.83 1.82z"/></svg>
+                    </div>
+                    <h3>Lot & Land Clearing</h3>
+                    <p>We remove trees, brush, and overgrowth to prepare land for construction, landscaping, or resale. Clearing is done efficiently and safely, with grading and debris removal available as needed.</p>
+                    <ul>
+                        <li>Full clearing of trees, brush, and small vegetation</li>
+                        <li>Ideal for development, landscape renovation, or property prep</li>
+                        <li>Includes hauling and optional grading</li>
+                    </ul>
+                </div>
+                <div class="cs-service-image">
+                    <picture>
+                       <!--Mobile Image-->
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 576, height: 282 }) | avif %}" type="image/avif">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 576, height: 282 }) | webp %}" type="image/webp">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 576, height: 282 }) | jpeg %}" type="image/jpeg">
+                       <!--Tablet Image-->
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 990, height: 942 }) | avif %}" type="image/avif">
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 990, height: 942 }) | webp %}" type="image/webp">
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 990, height: 942 }) | jpeg %}" type="image/jpeg">
+                       <!--Desktop Image-->
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 1280, height: 926 }) | avif %}" type="image/avif">
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 1280, height: 926 }) | webp %}" type="image/webp">
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 1280, height: 926 }) | jpeg %}" type="image/jpeg">
+                       <img src="{% getUrl "/assets/images/landing1.png" | resize({ width: 1280, height: 926 }) | jpeg %}" alt="" width="640" height="463" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>                </div>
+            </div>
+            <div class="cs-service">
+                <div class="cs-service-content">
+                    <div class="cs-step-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3c-.46 0-.93.04-1.4.14-2.76.53-4.96 2.76-5.48 5.52-.48 2.61.48 5.01 2.22 6.56.43.38.66.91.66 1.47V19c0 1.1.9 2 2 2h.28c.35.6.98 1 1.72 1s1.38-.4 1.72-1H14c1.1 0 2-.9 2-2v-2.31c0-.55.22-1.09.64-1.46C18.09 13.95 19 12.08 19 10c0-3.87-3.13-7-7-7zm2 16h-4v-1h4v1zm0-2h-4v-1h4v1zm-1.5-5.59V14h-1v-2.59L9.67 9.59l.71-.71L12 10.5l1.62-1.62.71.71-1.83 1.82z"/></svg>
+                    </div>
+                    <h3>Tree Health Assessment</h3>
+                    <p>We evaluate tree condition to determine whether trimming, treatment, or removal is needed. Our assessments consider disease, root damage, and structural integrity. This helps you make informed decisions about tree care and safety.</p>
+                    <ul>
+                        <li>On-site inspection of tree health and structure</li>
+                        <li>Identifies pests, disease, damage, or stress</li>
+                        <li>Provides recommendations for trimming or removal</li>
                     </ul>
                 </div>
                 <div class="cs-service-image">
@@ -858,38 +914,40 @@ eleventyNavigation:
                 <div class="cs-tier-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 14 14"><path fill="none" stroke="#aace7b" stroke-linecap="round" stroke-linejoin="round" d="M7 10.5v3m2-13l-8.5 13h13L5 .5" stroke-width="1"/></svg>
                 </div>
-                <h3>Small Projects</h3>
-                <p class="cs-price">$2,000-$8,000</p>
+                <h3>Trimming & Pruning</h3>
+                <p class="cs-price">$300 to $1,500</p>
                 <ul class="cs-features">
-                    <li>Ideal for entryway beds</li>
-                    <li>Small gardens</li>
-                    <li>Accent features</li>
+                    <li>Ideal for routine maintenance, shape control, and safety clearance</li>
+                    <li>Includes removal of dead or overhanging branches</li>
+                    <li>Promotes healthy growth and improved appearance</li>
                 </ul>
-                <p class="cs-size">(under 500 sq ft)</p>
+                <p class="cs-size">(small to medium trees)</p>
             </div>
             <div class="cs-cost-tier">
                 <div class="cs-tier-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 256 256"><g fill="#aace7b"><path d="M216 116.69V216h-64v-64h-48v64H40v-99.31l82.34-82.35a8 8 0 0 1 11.32 0Z" opacity="0.2"/><path d="M240 208h-16v-72l2.34 2.34A8 8 0 0 0 237.66 127l-98.35-98.32a16 16 0 0 0-22.62 0L18.34 127a8 8 0 0 0 11.32 11.31L32 136v72H16a8 8 0 0 0 0 16h224a8 8 0 0 0 0-16M48 120l80-80l80 80v88h-48v-56a8 8 0 0 0-8-8h-48a8 8 0 0 0-8 8v56H48Zm96 88h-32v-48h32Z"/></g></svg>
                 </div>
-                <h3>Medium Projects</h3>
-                <p class="cs-price">$8,000-$15,000</p>
+                <h3>Tree Removal</h3>
+                <p class="cs-price">$1,500 to $3,500</p>
                 <ul class="cs-features">
-                    <li>Perfect for multiple beds</li>
-                    <li>Full-yard enhancements</li>
+                    <li>Safe removal of trees due to damage, disease, or proximity to structures</li>
+                    <li>Includes cutting, controlled takedown, and hauling away debris</li>
+                    <li>Stump grinding available as an add-on</li>
                 </ul>
-                <p class="cs-size">(500–1,500 sq ft)</p>
+                <p class="cs-size">(medium to large trees)</p>
             </div>
             <div class="cs-cost-tier">
                 <div class="cs-tier-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24"><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21"/></svg>
                 </div>
-                <h3>Large Projects</h3>
-                <p class="cs-price">$20,000+</p>
+                <h3>Complex Removals</h3>
+                <p class="cs-price">$3,500+</p>
                 <ul class="cs-features">
-                    <li>Custom designs with premium plants</li>
-                    <li>Raised features for expansive properties</li>
+                    <li>Requires cranes, climbing crews, or specialized equipment</li>
+                    <li>Common for trees near power lines, rooftops, or tight spaces</li>
+                    <li>Includes full cleanup, optional stump grinding, and permit handling if needed</li>
                 </ul>
-                <p class="cs-size">(over 1,500 sq ft)</p>
+                <p class="cs-size">(very large trees or hard-to-access locations)</p>
             </div>
         </div>
         <p>We provide transparent, itemized estimates upfront, so you know exactly what you’re investing in.</p>

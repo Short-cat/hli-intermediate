@@ -1,7 +1,6 @@
 ---
 title: 'Professional Landscape Design Services in Houston, TX'
 description: 'Transform your Houston property with expert landscape design by Houston Landscape Images.'
-preloadImg: '/assets/images/landing1.png'
 permalink: 'sod/'
 eleventyNavigation:
     key: Sod
@@ -12,6 +11,8 @@ eleventyNavigation:
 
 {% block head %}
     <link rel="stylesheet" href="/assets/css/test.css">
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/hli-putting2.png" | resize({ width: 3840, height: 1044 }) | jpeg %}">
+
 {% endblock %}
 
 {% block body %}
@@ -42,7 +43,7 @@ eleventyNavigation:
        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-putting2.png" | resize({ width: 3840, height: 1044 }) | avif %}" type="image/avif">
        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-putting2.png" | resize({ width: 3840, height: 1044 }) | webp %}" type="image/webp">
        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-putting2.png" | resize({ width: 3840, height: 1044 }) | jpeg %}" type="image/jpeg">
-       <img src="{% getUrl "/assets/images/hli-putting2.png" | resize({ width: 3840, height: 1044 }) | jpeg %}" alt="" width="1920" height="522" loading="lazy" decoding="async" aria-hidden="true">
+       <img src="{% getUrl "/assets/images/hli-putting2.png" | resize({ width: 3840, height: 1044 }) | jpeg %}" alt="" width="1920" height="522" decoding="async" aria-hidden="true">
     </picture>
     <svg class="cs-mask" xmlns="http://www.w3.org/2000/svg" width="1920" height="136" viewBox="0 0 1920 136" fill="none">
         <path fill-rule="evenodd" clip-rule="evenodd" d="M1920 136V0C1803.21 45.3334 1445.52 136 951 136C456.485 136 111.116 45.3334 0 0V136H951H1920Z" fill="var(--maskBG)"/>
@@ -57,13 +58,12 @@ eleventyNavigation:
     <div class="cs-container">
         <div class="cs-content">
             <h1 class="cs-title">Professional Sod Installation Services in Houston, TX</h1>
-            <h2>From Dull to Dynamic: Elevating Your Yard with Plant Beds</h2>
-            <p>At Houston Landscape Images (HLI), we focus on creating practical plant beds that improve your outdoor space and can increase home value by up to 15%. Bare spots turn into well-kept plantings, overlooked areas get a lift, and average yards become more appealing—all done by our family-run team, without subcontractors. Using Houston-specific plant choices and intentional layouts, we design plant beds suited to your Houston, TX property. You’ll get a straightforward process, solid results, and a yard that looks good year-round.</p>
+            <p>At Houston Landscape Images (HLI), we focus on installing practical sod—improving your outdoor space and boosting home value by 15%-20%. Patchy lawns become fresh green yards, bare spots turn into even surfaces, and everyday properties gain solid worth—all with no subcontractors, just our family-run team. With expert sod selection and prep, we create outdoor solutions tailored to your needs in Houston, TX. Expect a clear process, durable results, and a property that looks good every day.</p>
             
             <div class="cs-benefits">
                 <h2>What You Gain:</h2>
                 <ul>
-                    <li>A custom plant bed designed for your space</li>
+                    <li>Custom sod installation for your property</li>
                     <li>Long-lasting, eye-catching greenery</li>
                     <li>A hassle-free, professional experience</li>
                     <li>A yard that enhances curb appeal and value</li>
@@ -120,9 +120,9 @@ eleventyNavigation:
             </picture>
         </div>
         <div class="cs-content">
-            <h2 class="cs-title">Houston Plant Bed Design Done Differently</h2>
-            <p>Well-designed plant beds aren’t just about beauty—they’re an investment. The American Society of Landscape Architects notes that professional landscaping, including plant beds, can increase home value by 15%-20%. At Houston Landscape Images (HLI), we begin with a site review—assessing soil, sunlight, and drainage—then design plant beds that suit your property’s unique conditions. No generic layouts, just practical, Houston-specific solutions from our in-house team.</p>
-            <p>By managing every step—from design to planting—we ensure clear communication, minimal delays, and thriving results. The outcome is a vibrant plant bed that elevates your yard, matches your style, and adds lasting value.</p>
+            <h2 class="cs-title">Houston Sod Installation Done Differently</h2>
+            <p>A well-installed sod lawn isn’t just about appearance—it’s an investment. The American Society of Landscape Architects says professional landscaping can boost home value by 15%-20%. We start with a site review—terrain, drainage, existing features—then craft a design that fits your property’s unique needs. No cookie-cutter plans, just practical solutions from our Houston-based crew.</p>
+            <p>By managing the project in-house, from planning to installation, we keep communication clear, minimize delays, and aim for a solid outcome. The result is a well-installed sod lawn that enhances curb appeal, works for your lifestyle, and adds value to your property.</p>
             
             <div class="cs-testimonial">
                 <p>"HLI turned our bland front yard into a flower-filled masterpiece in just 2 weeks!"</p>
@@ -158,7 +158,7 @@ eleventyNavigation:
         <div class="cs-wrapper">
             <div class="cs-content">
                 <span class="cs-topper">Our Steps</span>
-                <h2 class="cs-title">HLI's Landscape Design Process</h2>
+                <h2 class="cs-title">HLI's Sod Installation Process</h2>
             </div>
             <ul class="cs-card-group">
                 <li class="cs-item">
@@ -494,12 +494,12 @@ eleventyNavigation:
                     <div class="cs-step-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 24 24" fill="currentColor"><path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
                     </div>
-                    <h3>Houston Custom Plant Bed Design</h3>
-                    <p>Custom plant beds mean custom. At Houston Landscape Images (HLI), we design beds that fit your property—not a one-size-fits-all approach—enhancing its value and charm.</p>
+                    <h3>Sod Installation</h3>
+                    <p>We provide full-service sod installation for new or renovated lawns. Each project includes site prep, delivery, and expert installation of fresh-cut sod. We lay sod in staggered seams and press it in for instant curb appeal and proper root contact.</p>
                     <ul>
-                        <li>Precise plant and mulch placement for seamless integration</li>
-                        <li>Detailed plans covering species, layout, and maintenance</li>
-                        <li>Designs tailored to Houston’s heat and humidity</li>
+                        <li>Installed with tight seams and proper base preparation</li>
+                        <li>Provides an instant, green, finished lawn</li>
+                        <li>Available for front, back, or full-yard applications</li>
                     </ul>
                 </div>
                 <div class="cs-service-image">
@@ -526,12 +526,12 @@ eleventyNavigation:
                     <div class="cs-step-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 22c4.97 0 9-4.03 9-9-4.97 0-9 4.03-9 9zM5.6 10.25c0 1.38 1.12 2.5 2.5 2.5.53 0 1.01-.16 1.42-.44l-.02.19c0 1.38 1.12 2.5 2.5 2.5s2.5-1.12 2.5-2.5l-.02-.19c.4.28.89.44 1.42.44 1.38 0 2.5-1.12 2.5-2.5 0-1-.59-1.85-1.43-2.25.84-.4 1.43-1.25 1.43-2.25 0-1.38-1.12-2.5-2.5-2.5-.53 0-1.01.16-1.42.44l.02-.19C14.5 2.12 13.38 1 12 1S9.5 2.12 9.5 3.5l.02.19c-.4-.28-.89-.44-1.42-.44-1.38 0-2.5 1.12-2.5 2.5 0 1 .59 1.85 1.43 2.25-.84.4-1.43 1.25-1.43 2.25zM12 5.5c1.38 0 2.5 1.12 2.5 2.5s-1.12 2.5-2.5 2.5S9.5 9.38 9.5 8s1.12-2.5 2.5-2.5z"/></svg>
                     </div>
-                    <h3>Plant Selection & Layout for Houston Yards</h3>
-                    <p>In Houston’s unique climate, plant choice is key. We select species that thrive in your yard’s conditions for vibrant, low-maintenance beds.</p>
+                    <h3>Lawn Removal & Site Prep</h3>
+                    <p>Before installing new sod, we remove old grass, weeds, and debris to ensure a clean base. We also grade the soil to improve <a href="/drainage-irrigation" class="internal-link">drainage</a> and prevent low spots. This prep work ensures the new sod establishes evenly and quickly.</p>
                     <ul>
-                        <li>Plants matched to soil, sunlight, and water needs</li>
-                        <li>Strategic layouts for trees, shrubs, and flowers</li>
-                        <li>Long-term planning for growth and seasonal beauty</li>
+                        <li>Removal of old grass, roots, and debris</li>
+                        <li>Grading for smoothness and proper water flow</li>
+                        <li>Prepares soil for healthy root development</li>
                     </ul>
                 </div>
                 <div class="cs-service-image">
@@ -557,12 +557,12 @@ eleventyNavigation:
                     <div class="cs-step-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 13v5h-3v-5h3m0-1h-3c-.55 0-1 .45-1 1v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-5c0-.55-.45-1-1-1zm-7-9.5c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3M10 9H3c0 2.79 1.64 5.2 4 6.32V21h2v-5.68C11.36 14.2 13 11.79 13 9h-3zm8.5-6.5c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3M21 9h-6c0 2.79 1.64 5.2 4 6.32V21h2v-5.68c2.36-1.12 4-3.53 4-6.32h-4z"/></svg>
                     </div>
-                    <h3>Raised Plant Beds & Edging</h3>
-                    <p>Elevate your yard with raised beds and clean edging for a polished look that lasts.</p>
+                    <h3>Soil Conditioning & Amendment</h3>
+                    <p>Healthy soil is the key to a lasting lawn. We amend your soil with compost, sand, or topsoil to improve texture, nutrients, and water retention. This step promotes faster rooting and long-term turf health.</p>
                     <ul>
-                        <li>Options: wood, stone, or concrete edging</li>
-                        <li>Raised designs improve drainage and soil quality</li>
-                        <li>Durable construction tailored to Houston’s codes</li>
+                        <li>Adds organic matter or sand to improve soil structure</li>
+                        <li>Boosts drainage and nutrient availability</li>
+                        <li>Tailored to match sod type and local soil conditions</li>
                     </ul>
                 </div>
                 <div class="cs-service-image">
@@ -588,12 +588,12 @@ eleventyNavigation:
                     <div class="cs-step-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 24 24" fill="currentColor"><path d="M15 13V5c0-1.66-1.34-3-3-3S9 3.34 9 5v8c-1.21.91-2 2.37-2 4 0 2.76 2.24 5 5 5s5-2.24 5-5c0-1.63-.79-3.09-2-4zm-4-8c0-.55.45-1 1-1s1 .45 1 1h-2z"/></svg>
                     </div>
-                    <h3>Mulching & Soil Enhancement</h3>
-                    <p>Healthy plant beds start with the right foundation. Our mulching and soil prep ensure longevity.</p>
+                    <h3>Sod Selection & Sourcing</h3>
+                    <p>We help you choose the right type of sod for your yard based on sunlight, foot traffic, and maintenance needs. We source fresh-cut sod from trusted local suppliers to ensure quality and performance.</p>
                     <ul>
-                        <li>Organic mulch options control weeds and retain moisture</li>
-                        <li>Soil testing and amendments for optimal growth</li>
-                        <li>Customized to your yard’s specific needs</li>
+                        <li>St. Augustine, Bermuda, Zoysia, and other varieties available</li>
+                        <li>Matches climate, usage, and care preferences</li>
+                        <li>Fresh, local sod delivered and installed promptly</li>
                     </ul>
                 </div>
                 <div class="cs-service-image">
@@ -619,12 +619,12 @@ eleventyNavigation:
                     <div class="cs-step-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 4c4.41 0 8 3.59 8 8s-3.59 8-8 8-8-3.59-8-8 3.59-8 8-8m0-2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 10c0-2.76-2.24-5-5-5s-5 2.24-5 5h2c0-1.66 1.34-3 3-3s3 1.34 3 3h2z"/></svg>
                     </div>
-                    <h3>Seasonal Plant Bed Refresh</h3>
-                    <p>Keep your beds stunning year-round with seasonal updates.</p>
+                    <h3>Edging & Lawn Shaping</h3>
+                    <p>We define clean, curved or straight edges where sod meets <a href="/plant-beds" class="internal-link">plant beds</a>, <a href="/driveways-sidewalks" class="internal-link">driveways</a>, or <a href="/pathways-walkways" class="internal-link">walkways</a>. This gives the lawn a crisp, professional look and helps prevent grass from spreading into unwanted areas.</p>
                     <ul>
-                        <li>Spring and fall planting for continuous color</li>
-                        <li>Cleanup, pruning, and replanting as needed</li>
-                        <li>Adapted to Houston’s seasonal shifts</li>
+                        <li>Clean transitions between lawn, beds, and hardscape</li>
+                        <li>Helps maintain lawn shape and minimize overgrowth</li>
+                        <li>Options for steel, stone, or trench-style edging</li>
                     </ul>
                 </div>
                 <div class="cs-service-image">
@@ -651,12 +651,72 @@ eleventyNavigation:
                     <div class="cs-step-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3c-.46 0-.93.04-1.4.14-2.76.53-4.96 2.76-5.48 5.52-.48 2.61.48 5.01 2.22 6.56.43.38.66.91.66 1.47V19c0 1.1.9 2 2 2h.28c.35.6.98 1 1.72 1s1.38-.4 1.72-1H14c1.1 0 2-.9 2-2v-2.31c0-.55.22-1.09.64-1.46C18.09 13.95 19 12.08 19 10c0-3.87-3.13-7-7-7zm2 16h-4v-1h4v1zm0-2h-4v-1h4v1zm-1.5-5.59V14h-1v-2.59L9.67 9.59l.71-.71L12 10.5l1.62-1.62.71.71-1.83 1.82z"/></svg>
                     </div>
-                    <h3>Irrigation for Plant Beds</h3>
-                    <p>Water-smart irrigation keeps your beds thriving without waste.</p>
+                    <h3>Watering & Establishment Guidance</h3>
+                    <p>After installation, we provide a detailed watering schedule to help the sod root successfully. We guide you on how to avoid overwatering, footprints, or dry patches during establishment.</p>
                     <ul>
-                        <li>Drip systems for efficient, targeted watering</li>
-                        <li>Solutions prevent overwatering and runoff</li>
-                        <li>Reduces costs and protects your investment</li>
+                        <li>Custom watering plan based on season and sod type</li>
+                        <li>Tips for early care, mowing, and fertilizing</li>
+                        <li>Helps reduce stress and promote strong root growth</li>
+                    </ul>
+                </div>
+                <div class="cs-service-image">
+                    <picture>
+                       <!--Mobile Image-->
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 576, height: 282 }) | avif %}" type="image/avif">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 576, height: 282 }) | webp %}" type="image/webp">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 576, height: 282 }) | jpeg %}" type="image/jpeg">
+                       <!--Tablet Image-->
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 990, height: 942 }) | avif %}" type="image/avif">
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 990, height: 942 }) | webp %}" type="image/webp">
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 990, height: 942 }) | jpeg %}" type="image/jpeg">
+                       <!--Desktop Image-->
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 1280, height: 926 }) | avif %}" type="image/avif">
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 1280, height: 926 }) | webp %}" type="image/webp">
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 1280, height: 926 }) | jpeg %}" type="image/jpeg">
+                       <img src="{% getUrl "/assets/images/landing1.png" | resize({ width: 1280, height: 926 }) | jpeg %}" alt="" width="640" height="463" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>                </div>
+            </div>
+            <div class="cs-service">
+                <div class="cs-service-content">
+                    <div class="cs-step-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3c-.46 0-.93.04-1.4.14-2.76.53-4.96 2.76-5.48 5.52-.48 2.61.48 5.01 2.22 6.56.43.38.66.91.66 1.47V19c0 1.1.9 2 2 2h.28c.35.6.98 1 1.72 1s1.38-.4 1.72-1H14c1.1 0 2-.9 2-2v-2.31c0-.55.22-1.09.64-1.46C18.09 13.95 19 12.08 19 10c0-3.87-3.13-7-7-7zm2 16h-4v-1h4v1zm0-2h-4v-1h4v1zm-1.5-5.59V14h-1v-2.59L9.67 9.59l.71-.71L12 10.5l1.62-1.62.71.71-1.83 1.82z"/></svg>
+                    </div>
+                    <h3>Sod Repair & Patching</h3>
+                    <p>We repair damaged or thinning areas of lawn without a full replacement. This includes cutting out bad sections, prepping the soil, and installing fresh sod to match.</p>
+                    <ul>
+                        <li>Ideal for pet spots, traffic wear, or drainage issues</li>
+                        <li>Matches existing grass for a seamless blend</li>
+                        <li>Quick and cost-effective solution to revive lawns</li>
+                    </ul>
+                </div>
+                <div class="cs-service-image">
+                    <picture>
+                       <!--Mobile Image-->
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 576, height: 282 }) | avif %}" type="image/avif">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 576, height: 282 }) | webp %}" type="image/webp">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 576, height: 282 }) | jpeg %}" type="image/jpeg">
+                       <!--Tablet Image-->
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 990, height: 942 }) | avif %}" type="image/avif">
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 990, height: 942 }) | webp %}" type="image/webp">
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 990, height: 942 }) | jpeg %}" type="image/jpeg">
+                       <!--Desktop Image-->
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 1280, height: 926 }) | avif %}" type="image/avif">
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 1280, height: 926 }) | webp %}" type="image/webp">
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/landing1.png" | resize({ width: 1280, height: 926 }) | jpeg %}" type="image/jpeg">
+                       <img src="{% getUrl "/assets/images/landing1.png" | resize({ width: 1280, height: 926 }) | jpeg %}" alt="" width="640" height="463" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>                </div>
+            </div>
+            <div class="cs-service">
+                <div class="cs-service-content">
+                    <div class="cs-step-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3c-.46 0-.93.04-1.4.14-2.76.53-4.96 2.76-5.48 5.52-.48 2.61.48 5.01 2.22 6.56.43.38.66.91.66 1.47V19c0 1.1.9 2 2 2h.28c.35.6.98 1 1.72 1s1.38-.4 1.72-1H14c1.1 0 2-.9 2-2v-2.31c0-.55.22-1.09.64-1.46C18.09 13.95 19 12.08 19 10c0-3.87-3.13-7-7-7zm2 16h-4v-1h4v1zm0-2h-4v-1h4v1zm-1.5-5.59V14h-1v-2.59L9.67 9.59l.71-.71L12 10.5l1.62-1.62.71.71-1.83 1.82z"/></svg>
+                    </div>
+                    <h3>Lawn Lighting</h3>
+                    <p>We install low-voltage <a href="/landscape-lighting" class="internal-link">landscape lighting</a> to accent your lawn and improve nighttime visibility. Lights can be placed along edges, around trees, or within planting beds to highlight your landscape.</p>
+                    <ul>
+                        <li>Includes path lights, uplights, or in-ground fixtures</li>
+                        <li>Enhances curb appeal and lawn visibility after dark</li>
+                        <li>Available with timers, dimmers, or smart controls</li>
                     </ul>
                 </div>
                 <div class="cs-service-image">
@@ -852,44 +912,46 @@ eleventyNavigation:
 
 <section id="cost-section">
     <div class="cs-container">
-        <h2 class="cs-title">The Cost of Plant Beds in Houston, TX</h2>
+        <h2 class="cs-title">The Cost of Sod Installation in Houston, TX</h2>
         <div class="cs-cost-tiers">
             <div class="cs-cost-tier">
                 <div class="cs-tier-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 14 14"><path fill="none" stroke="#aace7b" stroke-linecap="round" stroke-linejoin="round" d="M7 10.5v3m2-13l-8.5 13h13L5 .5" stroke-width="1"/></svg>
                 </div>
-                <h3>Small Projects</h3>
-                <p class="cs-price">$2,000-$8,000</p>
+                <h3>Small Lawns</h3>
+                <p class="cs-price">$1,000 to $2,500</p>
                 <ul class="cs-features">
-                    <li>Ideal for entryway beds</li>
-                    <li>Small gardens</li>
-                    <li>Accent features</li>
+                    <li>Ideal for front yards, side yards, or patch repairs</li>
+                    <li>Includes removal of existing grass, soil grading, and sod installation</li>
+                    <li>Common varieties like St. Augustine or Bermuda</li>
                 </ul>
-                <p class="cs-size">(under 500 sq ft)</p>
+                <p class="cs-size">(under 1000 sq ft)</p>
             </div>
             <div class="cs-cost-tier">
                 <div class="cs-tier-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 256 256"><g fill="#aace7b"><path d="M216 116.69V216h-64v-64h-48v64H40v-99.31l82.34-82.35a8 8 0 0 1 11.32 0Z" opacity="0.2"/><path d="M240 208h-16v-72l2.34 2.34A8 8 0 0 0 237.66 127l-98.35-98.32a16 16 0 0 0-22.62 0L18.34 127a8 8 0 0 0 11.32 11.31L32 136v72H16a8 8 0 0 0 0 16h224a8 8 0 0 0 0-16M48 120l80-80l80 80v88h-48v-56a8 8 0 0 0-8-8h-48a8 8 0 0 0-8 8v56H48Zm96 88h-32v-48h32Z"/></g></svg>
                 </div>
-                <h3>Medium Projects</h3>
-                <p class="cs-price">$8,000-$15,000</p>
+                <h3>Mid-Sized Lawns</h3>
+                <p class="cs-price">$2,500 to $5,000</p>
                 <ul class="cs-features">
-                    <li>Perfect for multiple beds</li>
-                    <li>Full-yard enhancements</li>
+                    <li>Suitable for full front or backyard installations</li>
+                    <li>Improved soil prep and leveling for long-term growth</li>
+                    <li>Optional soil amendments and initial watering</li>
                 </ul>
-                <p class="cs-size">(500–1,500 sq ft)</p>
+                <p class="cs-size">(1,000 – 3,000 sq ft)</p>
             </div>
             <div class="cs-cost-tier">
                 <div class="cs-tier-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24"><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21"/></svg>
                 </div>
-                <h3>Large Projects</h3>
-                <p class="cs-price">$20,000+</p>
+                <h3>Large or Custom Lawns</h3>
+                <p class="cs-price">$5,000+</p>
                 <ul class="cs-features">
-                    <li>Custom designs with premium plants</li>
-                    <li>Raised features for expansive properties</li>
+                    <li>Designed for full-yard transformations or new construction</li>
+                    <li>Includes edge detailing, seamless integration with beds and hardscapes</li>
+                    <li>Custom grass varieties, drainage solutions, or sprinkler adjustments</li>
                 </ul>
-                <p class="cs-size">(over 1,500 sq ft)</p>
+                <p class="cs-size">(3,000+ sq ft or detailed layouts)</p>
             </div>
         </div>
         <p>We provide transparent, itemized estimates upfront, so you know exactly what you’re investing in.</p>
