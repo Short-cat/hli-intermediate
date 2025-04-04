@@ -284,7 +284,7 @@ h2 {
   }
   #hero-section .cs-image {
     width: 100%;
-    height: clamp(28.5rem, 46vw, 36.375rem);
+    height: clamp(17.5rem, 1vw, 20.375rem);
     margin: 0;
   }
   #hero-section .cs-image img {
