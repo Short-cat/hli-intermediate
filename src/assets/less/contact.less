@@ -40,6 +40,11 @@
             margin: 0 0 (32/16rem) 0;
         }
 
+        input:focus {
+            outline: 2px solid var(--primary);
+            box-shadow: 0 0 0 2px rgba(var(--primaryRGB), 0.1);
+        }
+
         .cs-form {
             width: 100%;
             padding: 0;
@@ -84,6 +89,12 @@
                 color: #7D799C;
                 opacity: .6;
             }
+
+            &:focus {
+                outline: 2px solid var(--primary);
+                box-shadow: 0 0 0 2px rgba(var(--primaryRGB), 0.1);
+                border-radius: (1/16rem);
+            }
         }
 
         .cs-textarea {
@@ -93,7 +104,9 @@
         }
 
         .cs-button-solid {
+            display: block;
             font-size: (16/16rem);
+            width: 100%;
             /* 46px - 56px */
             line-height: clamp(2.875em, 5.5vw, 3.5em);
             text-decoration: none;
@@ -104,7 +117,6 @@
             border: none;
             padding: 0 (24/16rem);
             background-color: var(--primary);
-            display: inline-block;
             position: relative;
             z-index: 1;
             /* prevents padding from adding to the width */
@@ -301,6 +313,156 @@
                 object-fit: cover;
             }
         }
+
+        .hidden {
+            display: none;
+            visibility: hidden;
+            height: 0%;
+          }
+
+        .service-label {
+            margin-top: (20/16rem);
+            margin-bottom: (12/16rem);
+            /* 14px - 16px */
+            font-size: clamp(.875rem, 1.5vw, 1rem);
+            width: 100%;
+            color: var(--headerColor);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap: (4/16rem);
+        }
+
+        .cs-services {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: (4/16rem);
+            margin-bottom: (12/16rem);
+
+
+            input {
+                margin-bottom: (12/16rem);
+
+                &:focus {
+                    outline: none;
+                }
+            } 
+
+            [type="checkbox"] {
+                opacity: 0;
+            }
+
+            [type="checkbox"] + label {
+                position: relative;
+                cursor: pointer;
+                display: inline-flex;
+                padding-left: (15/16rem);
+                line-height: .9rem;
+                font-weight: 500;
+            }
+    
+    
+            [type="checkbox"] + label::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: (12/16rem);
+                height: (12/16rem);
+                outline: (1/16rem) solid #b4b2c7;
+                border-radius: (2/16rem);
+            }
+    
+            [type="checkbox"]:checked + label::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: (12/16rem);
+                height: (12/16rem);
+                outline: (1/16rem) solid #aace7b;
+                border-radius: (2/16rem);
+            }
+    
+            [type="checkbox"]:checked + label::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: (12/16rem);
+                height: (12/16rem);
+                border-radius: (2/16rem);
+                background-image: url("/assets/svgs/check.svg");
+                background-size: contain;
+                transform: scale(1);
+                transition: all 0.3s ease;
+            }
+    
+            [type="checkbox"]:not(:checked) + label::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: (12/16rem);
+                height: (12/16rem);
+                border-radius: (2/16rem);
+                background-image: url("/assets/svgs/check.svg");
+                background-size: contain;
+                transform: scale(0);
+                opacity: 0;
+            }
+        }
+
+        select {
+            width: 100%;
+        }
+
+
+
+        #select-budget {
+            font-size: (16/16rem);
+            width: 100%;
+            /* 46px - 56px */
+            height: clamp(2.875rem, 4vw, 3.5rem);
+            padding: 0;
+            padding-left: (24/16rem);
+            color: #b4b2c7;
+            background-color: #f7f7f7;
+            border: none;
+            /* prevents padding from adding to height and width */
+            box-sizing: border-box;
+            &::placeholder {
+                color: #7D799C;
+                opacity: .6;
+            }
+
+            &:focus {
+                outline: 2px solid var(--primary);
+                box-shadow: 0 0 0 2px rgba(var(--primaryRGB), 0.1);
+                border-radius: (1/16rem);
+            }
+
+            label {
+                margin-bottom: (3/16rem);
+            }
+        }
+    
+
+
+        .check-title {
+            /* 14px - 16px */
+            font-size: clamp(.875rem, 1.5vw, 1rem);
+            width: 100%;
+            color: var(--headerColor);
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap: (4/16rem);
+            margin-bottom: (12/16rem);
+        }
     }
 }
 
@@ -321,9 +483,11 @@
             width: 42%;
             margin: 0;
             padding: 0;
+            padding-left: (30/16rem);
             align-items: flex-start;
             order: 1;
         }
+
 
         .cs-form {
             padding: 0;
@@ -353,6 +517,21 @@
     }
 }
 
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+    #contact-1600 {
+        .cs-name,
+        .cs-phone,
+        .cs-city,
+        .cs-postal-code {
+            width: 47%;
+        }
+
+        .cs-services {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
 /* Large Desktop - 1500px */
 @media only screen and (min-width: 93.75rem) {
     #contact-1600 {
@@ -363,6 +542,7 @@
         .cs-background {
             left: (188/16rem);
         }
+
     }
 }
 

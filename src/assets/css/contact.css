@@ -36,6 +36,10 @@
   #contact-1600 .cs-title {
     margin: 0 0 2rem 0;
   }
+  #contact-1600 input:focus {
+    outline: 2px solid var(--primary);
+    box-shadow: 0 0 0 2px rgba(var(--primaryRGB), 0.1);
+  }
   #contact-1600 .cs-form {
     width: 100%;
     padding: 0;
@@ -78,13 +82,20 @@
     color: #7D799C;
     opacity: 0.6;
   }
+  #contact-1600 .cs-input:focus {
+    outline: 2px solid var(--primary);
+    box-shadow: 0 0 0 2px rgba(var(--primaryRGB), 0.1);
+    border-radius: 0.0625rem;
+  }
   #contact-1600 .cs-textarea {
     min-height: 7.5rem;
     padding-top: 1.5rem;
     font-family: inherit;
   }
   #contact-1600 .cs-button-solid {
+    display: block;
     font-size: 1rem;
+    width: 100%;
     /* 46px - 56px */
     line-height: clamp(2.875em, 5.5vw, 3.5em);
     text-decoration: none;
@@ -95,7 +106,6 @@
     border: none;
     padding: 0 1.5rem;
     background-color: var(--primary);
-    display: inline-block;
     position: relative;
     z-index: 1;
     /* prevents padding from adding to the width */
@@ -267,6 +277,134 @@
     /* Makes img tag act as a background image */
     object-fit: cover;
   }
+  #contact-1600 .hidden {
+    display: none;
+    visibility: hidden;
+    height: 0%;
+  }
+  #contact-1600 .service-label {
+    margin-top: 1.25rem;
+    margin-bottom: 0.75rem;
+    /* 14px - 16px */
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    width: 100%;
+    color: var(--headerColor);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.25rem;
+  }
+  #contact-1600 .cs-services {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0.25rem;
+    margin-bottom: 0.75rem;
+  }
+  #contact-1600 .cs-services input {
+    margin-bottom: 0.75rem;
+  }
+  #contact-1600 .cs-services input:focus {
+    outline: none;
+  }
+  #contact-1600 .cs-services [type="checkbox"] {
+    opacity: 0;
+  }
+  #contact-1600 .cs-services [type="checkbox"] + label {
+    position: relative;
+    cursor: pointer;
+    display: inline-flex;
+    padding-left: 0.9375rem;
+    line-height: 0.9rem;
+    font-weight: 500;
+  }
+  #contact-1600 .cs-services [type="checkbox"] + label::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0.75rem;
+    height: 0.75rem;
+    outline: 0.0625rem solid #b4b2c7;
+    border-radius: 0.125rem;
+  }
+  #contact-1600 .cs-services [type="checkbox"]:checked + label::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0.75rem;
+    height: 0.75rem;
+    outline: 0.0625rem solid #aace7b;
+    border-radius: 0.125rem;
+  }
+  #contact-1600 .cs-services [type="checkbox"]:checked + label::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 0.125rem;
+    background-image: url("/assets/svgs/check.svg");
+    background-size: contain;
+    transform: scale(1);
+    transition: all 0.3s ease;
+  }
+  #contact-1600 .cs-services [type="checkbox"]:not(:checked) + label::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 0.125rem;
+    background-image: url("/assets/svgs/check.svg");
+    background-size: contain;
+    transform: scale(0);
+    opacity: 0;
+  }
+  #contact-1600 select {
+    width: 100%;
+  }
+  #contact-1600 #select-budget {
+    font-size: 1rem;
+    width: 100%;
+    /* 46px - 56px */
+    height: clamp(2.875rem, 4vw, 3.5rem);
+    padding: 0;
+    padding-left: 1.5rem;
+    color: #b4b2c7;
+    background-color: #f7f7f7;
+    border: none;
+    /* prevents padding from adding to height and width */
+    box-sizing: border-box;
+  }
+  #contact-1600 #select-budget::placeholder {
+    color: #7D799C;
+    opacity: 0.6;
+  }
+  #contact-1600 #select-budget:focus {
+    outline: 2px solid var(--primary);
+    box-shadow: 0 0 0 2px rgba(var(--primaryRGB), 0.1);
+    border-radius: 0.0625rem;
+  }
+  #contact-1600 #select-budget label {
+    margin-bottom: 0.1875rem;
+  }
+  #contact-1600 .check-title {
+    /* 14px - 16px */
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    width: 100%;
+    color: var(--headerColor);
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.25rem;
+    margin-bottom: 0.75rem;
+  }
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
@@ -283,6 +421,7 @@
     width: 42%;
     margin: 0;
     padding: 0;
+    padding-left: 1.875rem;
     align-items: flex-start;
     order: 1;
   }
@@ -305,6 +444,18 @@
   }
   #contact-1600 .cs-background {
     display: block;
+  }
+}
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #contact-1600 .cs-name,
+  #contact-1600 .cs-phone,
+  #contact-1600 .cs-city,
+  #contact-1600 .cs-postal-code {
+    width: 47%;
+  }
+  #contact-1600 .cs-services {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 /* Large Desktop - 1500px */
