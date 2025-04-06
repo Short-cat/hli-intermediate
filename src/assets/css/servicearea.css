@@ -343,7 +343,7 @@
     width: clamp(16.25rem, 30vw, 18rem);
     font-size: clamp(0.8rem, 8vw, 1.2rem);
     color: #000;
-    background: linear-gradient(90deg, #8dad62 28%, #c8e99d 60%, #aace7b 100%);
+    background: linear-gradient(90deg, #8dad62 28%, #aace7b 100%);
     pointer-events: none;
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
@@ -365,7 +365,7 @@
   #service-areas .city {
     width: clamp(16.25rem, 30vw, 18rem);
     list-style: none;
-    background: linear-gradient(90deg, #8dad62 28%, #c8e99d 60%, #aace7b 100%);
+    background: linear-gradient(90deg, #8dad62 28%, #aace7b 100%);
     border-top: 0.8px solid #92af6d;
     font-weight: 500;
     font-size: clamp(1.25rem, 8vw, 2.1rem);
