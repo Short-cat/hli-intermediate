@@ -1,17 +1,17 @@
 ---
-title: 'Project One | Code Stitch Web Designs'
-description: 'Meta description for the page'
-preloadImg: '/assets/images/cabinets2.jpg'
+title: 'Professional Landscape Design Services in Houston, TX'
+description: 'Transform your Houston property with expert landscape design by Houston Landscape Images.'
 permalink: 'landscape-design/'
 eleventyNavigation:
-    key: FAQ
+    key: Landscape Design
     order: 600
 ---
 
 {% extends "layouts/base.html" %}
 
 {% block head %}
-    <link rel="stylesheet" href="/assets/css/landscape-design.css">
+    <link rel="stylesheet" href="/assets/css/test.css">
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/hli-landscapedesign2.jpg" | resize({ width: 3840, height: 1044, position: "center" }) | jpeg %}">
 {% endblock %}
 
 {% block body %}
@@ -30,11 +30,19 @@ eleventyNavigation:
     </div>
     <!--Background Image-->
     <picture class="cs-background">
-        <!--Mobile Image-->
-        <source media="(max-width: 600px)" srcset="/assets/images/cabinets.jpg">
-        <!--Tablet and above Image-->
-        <source media="(min-width: 601px)" srcset="/assets/images/cabinets.jpg">
-        <img decoding="async" src="/assets/images/cabinets.jpg" alt="people laughing" width="1280" height="568" aria-hidden="true">
+       <!--Mobile Image-->
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-landscapedesign2.jpg" | resize({ width: 640, height: 820, position: "center" }) | avif %}" type="image/avif">
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-landscapedesign2.jpg" | resize({ width: 640, height: 820, position: "center" }) | webp %}" type="image/webp">
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-landscapedesign2.jpg" | resize({ width: 640, height: 820, position: "center" }) | jpeg %}" type="image/jpeg">
+       <!--Tablet Image-->
+       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-landscapedesign2.jpg" | resize({ width: 2046, height: 962, position: "center" }) | avif %}" type="image/avif">
+       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-landscapedesign2.jpg" | resize({ width: 2046, height: 962, position: "center" }) | webp %}" type="image/webp">
+       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-landscapedesign2.jpg" | resize({ width: 2046, height: 962 , position: "center"}) | jpeg %}" type="image/jpeg">
+       <!--Desktop Image-->
+       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-landscapedesign2.jpg" | resize({ width: 3840, height: 1044, position: "center" }) | avif %}" type="image/avif">
+       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-landscapedesign2.jpg" | resize({ width: 3840, height: 1044, position: "center" }) | webp %}" type="image/webp">
+       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-landscapedesign2.jpg" | resize({ width: 3840, height: 1044, position: "center" }) | jpeg %}" type="image/jpeg">
+       <img src="{% getUrl "/assets/images/hli-landscapedesign2.jpg" | resize({ width: 3840, height: 1044, position: "center" }) | jpeg %}" alt="" width="1920" height="522" decoding="async" aria-hidden="true">
     </picture>
     <svg class="cs-mask" xmlns="http://www.w3.org/2000/svg" width="1920" height="136" viewBox="0 0 1920 136" fill="none">
         <path fill-rule="evenodd" clip-rule="evenodd" d="M1920 136V0C1803.21 45.3334 1445.52 136 951 136C456.485 136 111.116 45.3334 0 0V136H951H1920Z" fill="var(--maskBG)"/>
@@ -45,144 +53,1027 @@ eleventyNavigation:
 <!--                 Content Page                 -->
 <!-- ============================================ -->
 
-<!-- ============================================ 
-    This Stitch is used for content heavy interior pages
-    that have no design or layout.  Often times these are 
-    content silos where you talk extensively about a topic
-    to educate your visitors and rank on Google for the 
-    content.  These are great for pages that have a TON
-    of content.  Design isn't important here, it's all 
-    about making the content accessible and easy to read.
-================================================= -->
-
-<section id="content-page-1399">
+<section id="hero-section">
     <div class="cs-container">
-        <div class="cs-image-group">
-            <div class="cs-flex">
-                <picture class="cs-background">
-                    <!--Mobile Image-->
-                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/on-computer2.jpg">
-                    <!--Tablet and above Image-->
-                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/on-computer2.jpg">
-                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/on-computer2.jpg" alt="people" width="542" height="728">
-                </picture>
-                <div class="cs-box">
-                    <img class="cs-box-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/gear-white.svg" alt="people" width="60" height="60">
-                    <span class="cs-desc">
-                        We’ve Over 26 Years of Experience
-                    </span>
+        <div class="cs-content">
+            <h1 class="cs-title">Professional Landscape Design Services in Houston, TX</h1>
+            <p>At Houston Landscape Images (HLI), we don't just landscape—we transform your outdoor space—boosting home value by 15%-20%. Patchy lawns become new green landscapes, bare yards turn into purposeful designs, and everyday properties gain lasting worth—all with no subcontractors, just our family-run team. With expert design and hardscaping, we create outdoor solutions tailored to your needs in Houston, TX. Expect a clear process, durable results, and a property that shines every day.</p>
+            
+            <div class="cs-benefits">
+                <h2>What You Gain:</h2>
+                <ul>
+                    <li>A space built for you</li>
+                    <li>Long-lasting, attractive results</li>
+                    <li>A smooth, stress-free process</li>
+                    <li>A yard that boosts property value</li>
+                </ul>
+            </div>
+            
+            <div class="cs-badge">
+                <p>Family-Run, No Subcontractors - Direct Quality Control.</p>
+            </div>
+            
+            <a href="/contact" class="cs-button-solid">Book Your Free Consultation</a>
+        </div>
+        <div class="cs-image">
+            <picture>
+               <!--Mobile Image-->
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landscape-design-service.jpg" | resize({ width: 576, height: 242, position: "attention", fit: "cover" }) | avif({ quality: 100 }) %}" type="image/avif">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landscape-design-service.jpg" | resize({ width: 576, height: 242, position: "attention", fit: "cover" }) | webp({ quality: 100 }) %}" type="image/webp">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landscape-design-service.jpg" | resize({ width: 576, height: 242, position: "attention", fit: "cover" }) | jpeg({ quality: 100 }) %}" type="image/jpeg">
+               <!--Tablet Image-->
+               <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landscape-design-service.jpg" | resize({ width: 1280, height: 628, position: "attention", fit: "cover" }) | avif({ quality: 100 }) %}" type="image/avif">
+               <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landscape-design-service.jpg" | resize({ width: 1280, height: 628, position: "attention", fit: "cover" }) | webp({ quality: 100 }) %}" type="image/webp">
+               <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landscape-design-service.jpg" | resize({ width: 1280, height: 628, position: "attention", fit: "cover" }) | jpeg({ quality: 100 }) %}" type="image/jpeg">
+               <!--Desktop Image-->
+               <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/landscape-design-service.jpg" | resize({ width: 1280, height: 1040, position: "attention", fit: "cover" }) | avif({ quality: 100 }) %}" type="image/avif">
+               <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/landscape-design-service.jpg" | resize({ width: 1280, height: 1040, position: "attention", fit: "cover" }) | webp({ quality: 100 }) %}" type="image/webp">
+               <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/landscape-design-service.jpg" | resize({ width: 1280, height: 1040, position: "attention", fit: "cover" }) | jpeg({ quality: 100 }) %}" type="image/jpeg">
+               <img src="{% getUrl "/assets/images/landscape-design-service.jpg" | resize({ width: 1280, height: 1040, position: "attention", fit: "cover" }) | jpeg({ quality: 100 }) %}" alt="Beautiful outdoor landscape" width="640" height="520" loading="eager" decoding="async" aria-hidden="true">
+            </picture>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                 Design Differently           -->
+<!-- ============================================ -->
+
+<section id="design-differently">
+    <div class="cs-container">
+        <div class="cs-image">
+            <picture class="">
+               <!--Mobile Image-->
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-fountain.jpg" | resize({ width: 576, height: 280 }) | avif({ quality: 100 }) %}" type="image/avif">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-fountain.jpg" | resize({ width: 576, height: 280 }) | webp({ quality: 100 }) %}" type="image/webp">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-fountain.jpg" | resize({ width: 576, height: 280 }) | jpeg({ quality: 100 }) %}" type="image/jpeg">
+               <!--Tablet Image-->
+               <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-fountain.jpg" | resize({ width: 752, height: 370 }) | avif({ quality: 100 }) %}" type="image/avif">
+               <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-fountain.jpg" | resize({ width: 752, height: 370 }) | webp({ quality: 100 }) %}" type="image/webp">
+               <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-fountain.jpg" | resize({ width: 752, height: 370 }) | jpeg({ quality: 100 }) %}" type="image/jpeg">
+               <!--Desktop Image-->
+               <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-fountain.jpg" | resize({ width: 1280, height: 1040 }) | avif({quality: 100 }) %}" type="image/avif">
+               <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-fountain.jpg" | resize({ width: 1280, height: 1040 }) | webp({quality: 100 }) %}" type="image/webp">
+               <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-fountain.jpg" | resize({ width: 1280, height: 1040 }) | jpeg({quality: 100 }) %}" type="image/jpeg">
+               <img src="{% getUrl "/assets/images/hli-fountain.jpg" | resize({ width: 1280, height: 1040 }) | jpeg({quality: 100 }) %}" alt="" width="640" height="520" loading="lazy" decoding="async" aria-hidden="true">
+            </picture>
+        </div>
+        <div class="cs-content">
+            <h2 class="cs-title">Houston Landscape Design Done Differently</h2>
+            <p>A well-planned landscape isn't just about appearance—it's an investment. The American Society of Landscape Architects says professional landscaping can boost home value by 15%-20%. We start with a site review—terrain, drainage, existing features—then craft a design that fits your property's unique needs. No cookie-cutter plans, just practical solutions from our Houston-based crew.</p>
+            <p>By managing the project in-house, from planning to installation, we keep communication clear, minimize delays, and consistently deliver exceptional results. The result is a well-crafted landscape that enhances curb appeal, works for your lifestyle, and adds value to your property.</p>
+            
+            <div class="cs-testimonial">
+                <p>"HLI turned our soggy backyard into a dream patio in just 3 weeks!"</p>
+                <span>- Sarah T., Houston homeowner</span>
+            </div>
+            
+            <a href="/contact" class="cs-button-solid">Discover Your Transformation</a>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                   Steps                      -->
+<!-- ============================================ -->
+
+<section id="steps-1713">
+    <picture class="cs-background">
+       <!--Mobile Image-->
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-firepit1.jpg" | resize({ width: 640, height: 720, fit: "cover" }) | avif({ quality: 100 }) %}" type="image/avif">
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-firepit1.jpg" | resize({ width: 640, height: 720, fit: "cover" }) | webp({ quality: 100 }) %}" type="image/webp">
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-firepit1.jpg" | resize({ width: 640, height: 720, fit: "cover" }) | jpeg({ quality: 100 }) %}" type="image/jpeg">
+       <!--Tablet Image-->
+       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-firepit1.jpg" | resize({ width: 612, height: 1944, fit: "cover" }) | avif({ quality: 100 }) %}" type="image/avif">
+       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-firepit1.jpg" | resize({ width: 612, height: 1944, fit: "cover" }) | webp({ quality: 100 }) %}" type="image/webp">
+       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-firepit1.jpg" | resize({ width: 612, height: 1944, fit: "cover" }) | jpeg({ quality: 100 }) %}" type="image/jpeg">
+       <!--Desktop Image-->
+       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-firepit1.jpg" | resize({ width: 1920, height: 2224, fit: "cover" }) | avif({ quality: 100 }) %}" type="image/avif">
+       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-firepit1.jpg" | resize({ width: 1920, height: 2224, fit: "cover" }) | webp({ quality: 100 }) %}" type="image/webp">
+       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-firepit1.jpg" | resize({ width: 1920, height: 2224, fit: "cover" }) | jpeg({ quality: 100 }) %}" type="image/jpeg">
+       <img src="{% getUrl "/assets/images/hli-firepit1.jpg" | resize({ width: 1920, height: 2224, fit: "cover" }) | jpeg({ quality: 100 }) %}" alt="" width="960" height="1112" loading="lazy" decoding="async" aria-hidden="true">
+    </picture>
+    <div class="cs-container">
+        <div class="cs-wrapper">
+            <div class="cs-content">
+                <span class="cs-topper">Our Steps</span>
+                <h2 class="cs-title">HLI's Landscape Design Process</h2>
+            </div>
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <span class="cs-number">01</span>
+                    <div class="cs-flex">
+                        <h3 class="cs-h3">Initial Consultation</h3>
+                        <p class="cs-item-text">
+                            During the initial consultation, we will discuss your needs, goals, and budget. We evaluate the property's layout, existing elements, and environmental conditions to develop a tailored landscape design.
+                        </p>
+                    </div>
+                </li>
+                <li class="cs-item">
+                    <span class="cs-number">02</span>
+                    <div class="cs-flex">
+                        <h3 class="cs-h3">Site Analysis & Design Development</h3>
+                        <p class="cs-item-text">
+                            We conduct an in-depth site analysis, assessing soil conditions, drainage, and sunlight exposure, then use these insights to create a detailed plan blending appeal, utility, and local compliance (e.g., HOA rules). This ensures your design is both functional and stunning.
+                    </p>
+                    </div>
+                </li>
+                <li class="cs-item">
+                    <span class="cs-number">03</span>
+                    <div class="cs-flex">
+                        <h3 class="cs-h3">Budgeting and Cost Estimation</h3>
+                        <p class="cs-item-text">
+                            Before moving forward, we provide a clear, itemized cost breakdown to ensure the project fits your budget without compromising on quality.
+                        </p>
+                    </div>
+                </li>
+                <li class="cs-item">
+                    <span class="cs-number">04</span>
+                    <div class="cs-flex">
+                        <h3 class="cs-h3">Installation and Final Walkthrough</h3>
+                        <p class="cs-item-text">
+                            Once installation is complete, we conduct a thorough final walkthrough. We provide maintenance guidance and answer any questions, ensuring you feel confident in the long-term care of your landscape.
+                        </p>
+                    </div>
+                </li>
+            </ul>
+            <a href="/contact" class="cs-button-solid">Schedule A Free Design Consult</a>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                 Design Options               -->
+<!-- ============================================ -->
+
+<section id="design-options">
+    <div class="cs-container">
+        <h2 class="cs-title">HLI's Landscape Design Options</h2>
+        <div class="cs-carousel">
+            <div class="cs-carousel-track">
+                <div class="cs-carousel-item">
+                    <picture>
+                       <!--Mobile Image-->
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-putting1.jpg" | resize({ width: 800, height: 400 }) | avif({ quality: 60 }) %}" type="image/avif">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-putting1.jpg" | resize({ width: 800, height: 400 }) | webp({ quality: 60 }) %}" type="image/webp">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-putting1.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" type="image/jpeg">
+                       <!--Tablet Image-->
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-putting1.jpg" | resize({ width: 800, height: 400 }) | avif({ quality: 60 }) %}" type="image/avif">
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-putting1.jpg" | resize({ width: 800, height: 400 }) | webp({ quality: 60 }) %}" type="image/webp">
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-putting1.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" type="image/jpeg">
+                       <!--Desktop Image-->
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-putting1.jpg" | resize({ width: 800, height: 400 }) | avif({ quality: 60 }) %}" type="image/avif">
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-putting1.jpg" | resize({ width: 800, height: 400 }) | webp({ quality: 60 }) %}" type="image/webp">
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-putting1.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" type="image/jpeg">
+                       <img src="{% getUrl "/assets/images/hli-putting1.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" alt="" width="400" height="200" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>
+                </div>
+                <div class="cs-carousel-item">
+                    <picture>
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-patio1.jpg" | resize({ width: 800, height: 400 }) | avif({ quality: 60 }) %}" type="image/avif">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-patio1.jpg" | resize({ width: 800, height: 400 }) | webp ({ quality: 60 })%}" type="image/webp">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-patio1.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" type="image/jpeg">
+                        <!--Tablet Image-->
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-patio1.jpg" | resize({ width: 800, height: 400 }) | avif({ quality: 60 }) %}" type="image/avif">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-patio1.jpg" | resize({ width: 800, height: 400 }) | webp({ quality: 60 }) %}" type="image/webp">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-patio1.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" type="image/jpeg">
+                        <!--Desktop Image-->
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-patio1.jpg" | resize({ width: 800, height: 400 }) | avif({ quality: 60 }) %}" type="image/avif">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-patio1.jpg" | resize({ width: 800, height: 400 }) | webp({ quality: 60 }) %}" type="image/webp">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-patio1.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" type="image/jpeg">
+                        <img src="{% getUrl "/assets/images/hli-patio1.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" alt="" width="400" height="200" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>
+                </div>
+                <div class="cs-carousel-item">
+                    <picture>
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/lowrey-final1.jpg" | resize({ width: 800, height: 400 }) | avif({ quality: 60 }) %}" type="image/avif">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/lowrey-final1.jpg" | resize({ width: 800, height: 400 }) | webp({ quality: 60 }) %}" type="image/webp">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/lowrey-final1.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" type="image/jpeg">
+                        <!--Tablet Image-->
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/lowrey-final1.jpg" | resize({ width: 800, height: 400 }) | avif({ quality: 60 }) %}" type="image/avif">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/lowrey-final1.jpg" | resize({ width: 800, height: 400 }) | webp({ quality: 60 }) %}" type="image/webp">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/lowrey-final1.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" type="image/jpeg">
+                        <!--Desktop Image-->
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/lowrey-final1.jpg" | resize({ width: 800, height: 400 }) | avif({ quality: 60 }) %}" type="image/avif">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/lowrey-final1.jpg" | resize({ width: 800, height: 400 }) | webp ({ quality: 60 })%}" type="image/webp">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/lowrey-final1.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" type="image/jpeg">
+                        <img src="{% getUrl "/assets/images/lowrey-final1.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" alt="" width="400" height="200" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>
+                </div>
+                <div class="cs-carousel-item">
+                    <picture>
+                       <!--Mobile Image-->
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-fire1.jpg" | resize({ width: 800, height: 400 }) | avif({ quality: 60 }) %}" type="image/avif">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-fire1.jpg" | resize({ width: 800, height: 400 }) | webp({ quality: 60 }) %}" type="image/webp">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-fire1.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" type="image/jpeg">
+                       <!--Tablet Image-->
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-fire1.jpg" | resize({ width: 800, height: 400 }) | avif({ quality: 60 }) %}" type="image/avif">
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-fire1.jpg" | resize({ width: 800, height: 400 }) | webp({ quality: 60 }) %}" type="image/webp">
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-fire1.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" type="image/jpeg">
+                       <!--Desktop Image-->
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-fire1.jpg" | resize({ width: 800, height: 400 }) | avif({ quality: 60 }) %}" type="image/avif">
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-fire1.jpg" | resize({ width: 800, height: 400 }) | webp({ quality: 60 }) %}" type="image/webp">
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-fire1.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" type="image/jpeg">
+                       <img src="{% getUrl "/assets/images/hli-fire1.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" alt="" width="400" height="200" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>
+                </div>
+                <div class="cs-carousel-item">
+                    <picture>
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-river2.jpg" | resize({ width: 800, height: 400 }) | avif({ quality: 60 }) %}" type="image/avif">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-river2.jpg" | resize({ width: 800, height: 400 }) | webp({ quality: 60 }) %}" type="image/webp">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-river2.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" type="image/jpeg">
+                        <!--Tablet Image-->
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-river2.jpg" | resize({ width: 800, height: 400 }) | avif({ quality: 60 }) %}" type="image/avif">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-river2.jpg" | resize({ width: 800, height: 400 }) | webp({ quality: 60 }) %}" type="image/webp">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-river2.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" type="image/jpeg">
+                        <!--Desktop Image-->
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-river2.jpg" | resize({ width: 800, height: 400 }) | avif({ quality: 60 }) %}" type="image/avif">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-river2.jpg" | resize({ width: 800, height: 400 }) | webp({ quality: 60 }) %}" type="image/webp">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-river2.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" type="image/jpeg">
+                        <img src="{% getUrl "/assets/images/hli-river2.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" alt="" width="400" height="200" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>
+                </div>
+                <div class="cs-carousel-item">
+                    <picture>
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-ok2.png" | resize({ width: 800, height: 400 }) | avif({ quality: 60 }) %}" type="image/avif">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-ok2.png" | resize({ width: 800, height: 400 }) | webp({ quality: 60 }) %}" type="image/webp">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-ok2.png" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" type="image/jpeg">
+                        <!--Tablet Image-->
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-ok2.png" | resize({ width: 800, height: 400 }) | avif({ quality: 60 }) %}" type="image/avif">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-ok2.png" | resize({ width: 800, height: 400 }) | webp({ quality: 60 }) %}" type="image/webp">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-ok2.png" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" type="image/jpeg">
+                        <!--Desktop Image-->
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-ok2.png" | resize({ width: 800, height: 400 }) | avif({ quality: 60 }) %}" type="image/avif">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-ok2.png" | resize({ width: 800, height: 400 }) | webp({ quality: 60 }) %}" type="image/webp">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-ok2.png" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" type="image/jpeg">
+                        <img src="{% getUrl "/assets/images/hli-ok2.png" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" alt="" width="400" height="200" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>
+                </div>
+                <div class="cs-carousel-item">
+                    <picture>
+                       <!--Mobile Image-->
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-patio3.jpg" | resize({ width: 800, height: 400 }) | avif({ quality: 60 }) %}" type="image/avif">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-patio3.jpg" | resize({ width: 800, height: 400 }) | webp({ quality: 60 }) %}" type="image/webp">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-patio3.jpg" | resize({ width: 800, height: 400 }) | jpeg ({ quality: 60 })%}" type="image/jpeg">
+                       <!--Tablet Image-->
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-patio3.jpg" | resize({ width: 800, height: 400 }) | avif({ quality: 60 }) %}" type="image/avif">
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-patio3.jpg" | resize({ width: 800, height: 400 }) | webp ({ quality: 60 })%}" type="image/webp">
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-patio3.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" type="image/jpeg">
+                       <!--Desktop Image-->
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-patio3.jpg" | resize({ width: 800, height: 400 }) | avif({ quality: 60 }) %}" type="image/avif">
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-patio3.jpg" | resize({ width: 800, height: 400 }) | webp({ quality: 60 }) %}" type="image/webp">
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-patio3.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" type="image/jpeg">
+                       <img src="{% getUrl "/assets/images/hli-patio3.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" alt="" width="400" height="200" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>
+                </div>
+                <div class="cs-carousel-item">
+                    <picture>
+                       <!--Mobile Image-->
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/lott-final3.jpg" | resize({ width: 800, height: 400 }) | avif({ quality: 60 }) %}" type="image/avif">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/lott-final3.jpg" | resize({ width: 800, height: 400 }) | webp({ quality: 60 }) %}" type="image/webp">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/lott-final3.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" type="image/jpeg">
+                       <!--Tablet Image-->
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/lott-final3.jpg" | resize({ width: 800, height: 400 }) | avif({ quality: 60 }) %}" type="image/avif">
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/lott-final3.jpg" | resize({ width: 800, height: 400 }) | webp({ quality: 60 }) %}" type="image/webp">
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/lott-final3.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" type="image/jpeg">
+                       <!--Desktop Image-->
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/lott-final3.jpg" | resize({ width: 800, height: 400 }) | avif({ quality: 60 }) %}" type="image/avif">
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/lott-final3.jpg" | resize({ width: 800, height: 400 }) | webp({ quality: 60 }) %}" type="image/webp">
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/lott-final3.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" type="image/jpeg">
+                       <img src="{% getUrl "/assets/images/lott-final3.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" alt="" width="400" height="200" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>
+                </div>
+                <!-- Duplicate the first set of items for seamless looping -->
+                               <div class="cs-carousel-item">
+                    <picture>
+                       <!--Mobile Image-->
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-putting1.jpg" | resize({ width: 800, height: 400 }) | avif({ quality: 60 }) %}" type="image/avif">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-putting1.jpg" | resize({ width: 800, height: 400 }) | webp({ quality: 60 }) %}" type="image/webp">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-putting1.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" type="image/jpeg">
+                       <!--Tablet Image-->
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-putting1.jpg" | resize({ width: 800, height: 400 }) | avif({ quality: 60 }) %}" type="image/avif">
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-putting1.jpg" | resize({ width: 800, height: 400 }) | webp({ quality: 60 }) %}" type="image/webp">
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-putting1.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" type="image/jpeg">
+                       <!--Desktop Image-->
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-putting1.jpg" | resize({ width: 800, height: 400 }) | avif({ quality: 60 }) %}" type="image/avif">
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-putting1.jpg" | resize({ width: 800, height: 400 }) | webp({ quality: 60 }) %}" type="image/webp">
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-putting1.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" type="image/jpeg">
+                       <img src="{% getUrl "/assets/images/hli-putting1.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" alt="" width="400" height="200" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>
+                </div>
+                <div class="cs-carousel-item">
+                    <picture>
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-patio1.jpg" | resize({ width: 800, height: 400 }) | avif({ quality: 60 }) %}" type="image/avif">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-patio1.jpg" | resize({ width: 800, height: 400 }) | webp ({ quality: 60 })%}" type="image/webp">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-patio1.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" type="image/jpeg">
+                        <!--Tablet Image-->
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-patio1.jpg" | resize({ width: 800, height: 400 }) | avif({ quality: 60 }) %}" type="image/avif">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-patio1.jpg" | resize({ width: 800, height: 400 }) | webp({ quality: 60 }) %}" type="image/webp">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-patio1.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" type="image/jpeg">
+                        <!--Desktop Image-->
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-patio1.jpg" | resize({ width: 800, height: 400 }) | avif({ quality: 60 }) %}" type="image/avif">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-patio1.jpg" | resize({ width: 800, height: 400 }) | webp({ quality: 60 }) %}" type="image/webp">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-patio1.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" type="image/jpeg">
+                        <img src="{% getUrl "/assets/images/hli-patio1.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" alt="" width="400" height="200" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>
+                </div>
+                <div class="cs-carousel-item">
+                    <picture>
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/lowrey-final1.jpg" | resize({ width: 800, height: 400 }) | avif({ quality: 60 }) %}" type="image/avif">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/lowrey-final1.jpg" | resize({ width: 800, height: 400 }) | webp({ quality: 60 }) %}" type="image/webp">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/lowrey-final1.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" type="image/jpeg">
+                        <!--Tablet Image-->
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/lowrey-final1.jpg" | resize({ width: 800, height: 400 }) | avif({ quality: 60 }) %}" type="image/avif">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/lowrey-final1.jpg" | resize({ width: 800, height: 400 }) | webp({ quality: 60 }) %}" type="image/webp">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/lowrey-final1.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" type="image/jpeg">
+                        <!--Desktop Image-->
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/lowrey-final1.jpg" | resize({ width: 800, height: 400 }) | avif({ quality: 60 }) %}" type="image/avif">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/lowrey-final1.jpg" | resize({ width: 800, height: 400 }) | webp ({ quality: 60 })%}" type="image/webp">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/lowrey-final1.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" type="image/jpeg">
+                        <img src="{% getUrl "/assets/images/lowrey-final1.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" alt="" width="400" height="200" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>
+                </div>
+                <div class="cs-carousel-item">
+                    <picture>
+                       <!--Mobile Image-->
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-fire1.jpg" | resize({ width: 800, height: 400 }) | avif({ quality: 60 }) %}" type="image/avif">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-fire1.jpg" | resize({ width: 800, height: 400 }) | webp({ quality: 60 }) %}" type="image/webp">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-fire1.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" type="image/jpeg">
+                       <!--Tablet Image-->
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-fire1.jpg" | resize({ width: 800, height: 400 }) | avif({ quality: 60 }) %}" type="image/avif">
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-fire1.jpg" | resize({ width: 800, height: 400 }) | webp({ quality: 60 }) %}" type="image/webp">
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-fire1.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" type="image/jpeg">
+                       <!--Desktop Image-->
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-fire1.jpg" | resize({ width: 800, height: 400 }) | avif({ quality: 60 }) %}" type="image/avif">
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-fire1.jpg" | resize({ width: 800, height: 400 }) | webp({ quality: 60 }) %}" type="image/webp">
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-fire1.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" type="image/jpeg">
+                       <img src="{% getUrl "/assets/images/hli-fire1.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" alt="" width="400" height="200" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>
+                </div>
+                <div class="cs-carousel-item">
+                    <picture>
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-river2.jpg" | resize({ width: 800, height: 400 }) | avif({ quality: 60 }) %}" type="image/avif">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-river2.jpg" | resize({ width: 800, height: 400 }) | webp({ quality: 60 }) %}" type="image/webp">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-river2.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" type="image/jpeg">
+                        <!--Tablet Image-->
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-river2.jpg" | resize({ width: 800, height: 400 }) | avif({ quality: 60 }) %}" type="image/avif">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-river2.jpg" | resize({ width: 800, height: 400 }) | webp({ quality: 60 }) %}" type="image/webp">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-river2.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" type="image/jpeg">
+                        <!--Desktop Image-->({ quality: 60 })
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-river2.jpg" | resize({ width: 800, height: 400 }) | avif({ quality: 60 }) %}" type="image/avif">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-river2.jpg" | resize({ width: 800, height: 400 }) | webp({ quality: 60 }) %}" type="image/webp">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-river2.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" type="image/jpeg">
+                        <img src="{% getUrl "/assets/images/hli-river2.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" alt="" width="400" height="200" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>
+                </div>
+                <div class="cs-carousel-item">
+                    <picture>
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-ok2.png" | resize({ width: 800, height: 400 }) | avif({ quality: 60 }) %}" type="image/avif">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-ok2.png" | resize({ width: 800, height: 400 }) | webp({ quality: 60 }) %}" type="image/webp">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-ok2.png" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" type="image/jpeg">
+                        <!--Tablet Image-->
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-ok2.png" | resize({ width: 800, height: 400 }) | avif({ quality: 60 }) %}" type="image/avif">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-ok2.png" | resize({ width: 800, height: 400 }) | webp({ quality: 60 }) %}" type="image/webp">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-ok2.png" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" type="image/jpeg">
+                        <!--Desktop Image-->
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-ok2.png" | resize({ width: 800, height: 400 }) | avif({ quality: 60 }) %}" type="image/avif">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-ok2.png" | resize({ width: 800, height: 400 }) | webp({ quality: 60 }) %}" type="image/webp">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-ok2.png" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" type="image/jpeg">
+                        <img src="{% getUrl "/assets/images/hli-ok2.png" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" alt="" width="400" height="200" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>
+                </div>
+                <div class="cs-carousel-item">
+                    <picture>
+                       <!--Mobile Image-->
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-patio3.jpg" | resize({ width: 800, height: 400 }) | avif({ quality: 60 }) %}" type="image/avif">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-patio3.jpg" | resize({ width: 800, height: 400 }) | webp({ quality: 60 }) %}" type="image/webp">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-patio3.jpg" | resize({ width: 800, height: 400 }) | jpeg ({ quality: 60 })%}" type="image/jpeg">
+                       <!--Tablet Image-->
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-patio3.jpg" | resize({ width: 800, height: 400 }) | avif({ quality: 60 }) %}" type="image/avif">
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-patio3.jpg" | resize({ width: 800, height: 400 }) | webp ({ quality: 60 })%}" type="image/webp">
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-patio3.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" type="image/jpeg">
+                       <!--Desktop Image-->
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-patio3.jpg" | resize({ width: 800, height: 400 }) | avif({ quality: 60 }) %}" type="image/avif">
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-patio3.jpg" | resize({ width: 800, height: 400 }) | webp({ quality: 60 }) %}" type="image/webp">
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-patio3.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" type="image/jpeg">
+                       <img src="{% getUrl "/assets/images/hli-patio3.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" alt="" width="400" height="200" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>
+                </div>
+                <div class="cs-carousel-item">
+                    <picture>
+                       <!--Mobile Image-->
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/lott-final3.jpg" | resize({ width: 800, height: 400 }) | avif({ quality: 60 }) %}" type="image/avif">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/lott-final3.jpg" | resize({ width: 800, height: 400 }) | webp({ quality: 60 }) %}" type="image/webp">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/lott-final3.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" type="image/jpeg">
+                       <!--Tablet Image-->
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/lott-final3.jpg" | resize({ width: 800, height: 400 }) | avif({ quality: 60 }) %}" type="image/avif">
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/lott-final3.jpg" | resize({ width: 800, height: 400 }) | webp({ quality: 60 }) %}" type="image/webp">
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/lott-final3.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" type="image/jpeg">
+                       <!--Desktop Image-->
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/lott-final3.jpg" | resize({ width: 800, height: 400 }) | avif({ quality: 60 }) %}" type="image/avif">
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/lott-final3.jpg" | resize({ width: 800, height: 400 }) | webp({ quality: 60 }) %}" type="image/webp">
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/lott-final3.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" type="image/jpeg">
+                       <img src="{% getUrl "/assets/images/lott-final3.jpg" | resize({ width: 800, height: 400 }) | jpeg({ quality: 60 }) %}" alt="" width="400" height="200" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>
                 </div>
             </div>
         </div>
-        <div class="cs-content">
-            <h1 class="cs-title">Premium Landscape Design Specialists in <span class="cs-color">Houston, TX</span></h1>
-            <p>
-                Nature Springs Landscaping delivers professional landscape design services that enhance property value and create functional outdoor spaces. Our certified designers create customized plans for residential and commercial properties, focusing on sustainable solutions that thrive in Houston's climate. We provide full-service design and installation, ensuring every project meets the highest standards of quality and craftsmanship.
-            </p>
-            <h2>About Us: Dedicated Landscape Design Company | Serving Greater Houston for 10+ Years</h2>
-            <p>
-                Nature Springs Landscaping has established itself as a leading landscape design firm in Greater Houston through our commitment to excellence and professional expertise. We specialize in creating sustainable, low-maintenance landscapes that meet our clients' specific needs while adhering to local regulations and best practices.
-            </p>
-            <h2>What is Landscape Design? An Overview of Front Yard and Backyard Re-Design</h2>
-            <p>Professional landscape design involves the systematic planning and arrangement of outdoor elements to maximize property functionality and aesthetic appeal. Our designers evaluate your property's specific characteristics, including soil composition, drainage patterns, and sun exposure, to develop practical solutions. The design process integrates your preferences with technical requirements to create outdoor spaces that meet both immediate needs and long-term objectives.</p>
-            <h2>Our Landscape Design Process</h2>
-            <h3>Design Consultation</h3>
-            <p>
-                We begin with a comprehensive site evaluation and client meeting to document your requirements, assess existing conditions, and discuss budget parameters. This phase includes detailed measurements, soil testing, and analysis of existing vegetation and structures.
-            </p>
-            <h3>Custom Landscape Design</h3>
-            <p>
-                Our design team develops detailed construction documents including scaled drawings, plant specifications, and material selections. We provide clear visual representations of the proposed design through professional CAD drawings and detailed plant lists.
-            </p>
-            <h3>Installation</h3>
-            <p>
-                Our installation teams follow industry-standard procedures to implement your design, maintaining strict quality control measures throughout the construction process. We coordinate with utilities, obtain necessary permits, and ensure compliance with local building codes.
-            </p>
-            <h3>Final Walkthrough</h3>
-            <p>
-                We conduct a systematic inspection of all installed elements to verify proper implementation. This includes testing irrigation systems, verifying plant placement, and ensuring all hardscape elements meet specifications.
-            </p>
-            <h3>Ongoing Support</h3>
-            <p>
-                We provide detailed maintenance documentation and scheduled follow-up visits to monitor plant establishment and system performance. Our support includes seasonal maintenance recommendations and prompt response to any concerns.
-            </p>
-            <h2>Landscape Design Services We Offer</h2>
-            <h3>
-                Custom Landscape Planning
-            </h3>
-            <p>With years of experience in landscape design, we tailor each plan to match your property’s terrain, soil type, and climate. We detail exactly where hardscapes, plants, and utilities should go to ensure everything fits together seamlessly. Our step-by-step documentation covers material choices, installation methods, and upkeep recommendations to help you enjoy your space for years to come.</p>
-            <h3>Plant Selection and Layout</h3>
-            <p>Drawing on our in-depth knowledge of growth patterns and water needs, we handpick plants that thrive in local conditions. We focus on native and climate-adapted species to keep your maintenance tasks and water usage low. By placing each plant to maximize sunlight and airflow, we create healthy, beautiful landscapes that stay vibrant all year.</p>
-            <h3>Hardscape Design</h3>
-            <p>Our expert team designs patios, walkways, and other hardscape elements that withstand the elements and daily use. We carefully choose materials—like stone, pavers, or concrete—for durability and a cohesive look. To prevent water buildup and erosion, we factor in proper drainage from the start, ensuring a stable, long-lasting outdoor environment.</p>
-            <h3>Softscape Design</h3>
-            <p>We use proven techniques for soil preparation and planting to help your landscape flourish naturally. By choosing the right plant varieties and arranging them thoughtfully, we create balanced, visually appealing outdoor spaces. Our designs stand the test of time, requiring minimal adjustments while maintaining a lush appearance season after season.</p>
-            <h3>Outdoor Living Space Design</h3>
-            <p>With a focus on comfort and usability, we design patios, seating areas, and outdoor kitchens that fit your lifestyle. We account for traffic flow, safety features, and easy access to utilities so you can relax or entertain without hassle. Every space is completed with lighting, drainage, and high-quality materials for a seamless extension of your home.</p>
-            <h3>Garden Landscape Design</h3>
-            <p>Our garden designs blend aesthetic appeal with practical upkeep, whether you want a tranquil flower garden or a lively, pollinator-friendly spot. We specify soil amendments, irrigation setups, and plant spacing to encourage vigorous growth. By understanding local soil conditions and climate, we ensure your garden stays healthy and inviting year-round.</p>
-            <h3>Outdoor Lighting Design</h3>
-            <p>We enhance safety and highlight the best features of your landscape using energy-efficient lighting. Our team pinpoints the ideal places to install fixtures, whether it’s along pathways or around unique architectural elements. Each lighting plan follows electrical standards and complements the overall look of your outdoor space, making it welcoming at any hour.</p>
-            <h3>Water Feature Design</h3>
-            <p>From tranquil fountains to flowing waterfalls, we design water features that suit your style and space. Our expertise ensures proper filtration and reliable flow systems, so you can enjoy clear water without extra hassle. We also provide detailed installation instructions and maintenance tips to keep everything running smoothly.</p>
-            <h3>Erosion Control and Drainage Design</h3>
-            <p>We safeguard your property by creating grading and drainage solutions tailored to the local environment. This includes features like swales or French drains to channel water away from vulnerable areas. By focusing on proper water management, we help preserve your outdoor space’s stability and value.</p>
-            <h3>Irrigation System Design</h3>
-            <p>Our irrigation designs prioritize water efficiency and plant health, drawing on the latest technology to reduce waste. We break your landscape into specific zones so each area receives the right amount of water. By using tools like drip systems and smart controllers, we help keep your plants hydrated while keeping utility costs under control.</p>
+        
+        <div class="cs-services">
+            <div class="cs-service">
+                <div class="cs-service-content">
+                    <div class="cs-step-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 512 512"><path fill="#fff" d="M352 96c0 14.3-3.1 27.9-8.8 40.2l52.8 91.2c-23.7 25.3-54.2 44.1-88.5 53.6L256 192l-68 117.5c21.5 6.8 44.3 10.5 68.1 10.5c70.7 0 133.8-32.7 174.9-84c11.1-13.8 31.2-16 45-5s16 31.2 5 45c-52.9 65.8-134 108-225 108c-35.4 0-69.4-6.4-100.7-18.1l-56.6 97.8c-4.7 8.1-11.7 14.7-20.1 18.9l-55.4 27.7c-5 2.5-10.9 2.2-15.6-.7S0 501.5 0 496v-55.4c0-8.4 2.2-16.7 6.5-24.1l60-103.7c-12.8-11.2-24.7-23.5-35.3-36.8c-11.1-13.8-8.8-33.9 5-45s33.9-8.8 45 5c5.7 7.1 11.8 13.8 18.2 20.1l69.4-119.9C163.2 124 160 110.4 160 96c0-53 43-96 96-96s96 43 96 96m21 297.9c32.6-12.8 62.5-30.8 88.9-52.9l43.7 75.5c4.2 7.3 6.5 15.6 6.5 24.1V496c0 5.5-2.9 10.7-7.6 13.6s-10.6 3.2-15.6.7l-55.4-27.7c-8.4-4.2-15.4-10.8-20.1-18.9zM256 128a32 32 0 1 0 0-64a32 32 0 1 0 0 64"/></svg>
+                    </div>
+                    <h3>Custom Landscape Design Plans</h3>
+                    <p>We create tailored landscape design plans that outline the layout, structure, and overall vision for your outdoor space. These plans serve as the foundation for installation and include zones for planting, hardscapes, turf, and features. Every design is adapted to your property’s size, style, and use.</p>
+                    <ul>
+                        <li>Includes a scaled plan with labeled zones and layout details.</li>
+                        <li>Designed around property layout, function, and preferences.</li>
+                        <li>Serves as the base for accurate estimating and phased planning.</li>
+                    </ul>
+                    <a href="#" class="cs-link">Learn More </a>
+                </div>
+                <div class="cs-service-image">
+                    <picture>
+                       <!--Mobile Image-->
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-landscaping4.jpg" | resize({ width: 576, height: 282 }) | avif %}" type="image/avif">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-landscaping4.jpg" | resize({ width: 576, height: 282 }) | webp %}" type="image/webp">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-landscaping4.jpg" | resize({ width: 576, height: 282 }) | jpeg %}" type="image/jpeg">
+                       <!--Tablet Image-->
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-landscaping4.jpg" | resize({ width: 990, height: 942 }) | avif %}" type="image/avif">
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-landscaping4.jpg" | resize({ width: 990, height: 942 }) | webp %}" type="image/webp">
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-landscaping4.jpg" | resize({ width: 990, height: 942 }) | jpeg %}" type="image/jpeg">
+                       <!--Desktop Image-->
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-landscaping4.jpg" | resize({ width: 1280, height: 926 }) | avif %}" type="image/avif">
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-landscaping4.jpg" | resize({ width: 1280, height: 926 }) | webp %}" type="image/webp">
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-landscaping4.jpg" | resize({ width: 1280, height: 926 }) | jpeg %}" type="image/jpeg">
+                       <img src="{% getUrl "/assets/images/hli-landscaping4.jpg" | resize({ width: 1280, height: 926 }) | jpeg %}" alt="" width="640" height="463" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>
+                </div>
+            </div>
+            
+            <div class="cs-service">
+                <div class="cs-service-content">
+                    <div class="cs-step-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 22c4.97 0 9-4.03 9-9-4.97 0-9 4.03-9 9zM5.6 10.25c0 1.38 1.12 2.5 2.5 2.5.53 0 1.01-.16 1.42-.44l-.02.19c0 1.38 1.12 2.5 2.5 2.5s2.5-1.12 2.5-2.5l-.02-.19c.4.28.89.44 1.42.44 1.38 0 2.5-1.12 2.5-2.5 0-1-.59-1.85-1.43-2.25.84-.4 1.43-1.25 1.43-2.25 0-1.38-1.12-2.5-2.5-2.5-.53 0-1.01.16-1.42.44l.02-.19C14.5 2.12 13.38 1 12 1S9.5 2.12 9.5 3.5l.02.19c-.4-.28-.89-.44-1.42-.44-1.38 0-2.5 1.12-2.5 2.5 0 1 .59 1.85 1.43 2.25-.84.4-1.43 1.25-1.43 2.25zM12 5.5c1.38 0 2.5 1.12 2.5 2.5s-1.12 2.5-2.5 2.5S9.5 9.38 9.5 8s1.12-2.5 2.5-2.5z"/></svg>
+                    </div>
+                    <h3>Planting Layout & Selection</h3>
+                    <p>We select trees, shrubs, perennials, and groundcovers based on sunlight, soil, drainage, and style goals. Planting plans are designed for year-round interest, layering, and long-term success. Every layout balances form, color, and seasonal change.</p>
+                    <ul>
+                        <li>Includes placement of trees, shrubs, flowers, and groundcover.</li>
+                        <li>Plants selected for local climate and maintenance needs.</li>
+                        <li>Designed for visual interest, privacy, or shade.</li>
+                    </ul>
+                    <a href="#" class="cs-link">Learn More </a>
+                </div>
+                <div class="cs-service-image">
+                    <picture>
+                       <!--Mobile Image-->
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 576, height: 282 }) | avif %}" type="image/avif">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 576, height: 282 }) | webp %}" type="image/webp">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 576, height: 282 }) | jpeg %}" type="image/jpeg">
+                       <!--Tablet Image-->
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 990, height: 942 }) | avif %}" type="image/avif">
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 990, height: 942 }) | webp %}" type="image/webp">
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 990, height: 942 }) | jpeg %}" type="image/jpeg">
+                       <!--Desktop Image-->
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 1280, height: 926 }) | avif %}" type="image/avif">
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 1280, height: 926 }) | webp %}" type="image/webp">
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 1280, height: 926 }) | jpeg %}" type="image/jpeg">
+                       <img src="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 1280, height: 926 }) | jpeg %}" alt="" width="640" height="463" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>                
+                </div>
+            </div>
+            
+            <div class="cs-service">
+                <div class="cs-service-content">
+                    <div class="cs-step-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24"><path fill="#fff" d="M3 16h9v5H3zm-1-6h6v5H2zm7 0h6v5H9zm7 0h6v5h-6zm-3 6h8v5h-8zM3 4h8v5H3zm9 0h9v5h-9z"/></svg>
+                    </div>
+                    <h3>Hardscape Design & Integration</h3>
+                    <p>We design the layout of patios, walkways, borders, and walls as part of the landscape plan. Hardscape elements are coordinated with plantings and flow to create a unified outdoor space. Materials and layout are chosen to complement the home’s architecture.</p>
+                    <ul>
+                        <li>Incorporates patios, pathways, steps, walls, and edging.</li>
+                        <li>Designed for traffic flow, function, and structure.</li>
+                        <li>Material recommendations included for consistency and style.</li>
+                    </ul>
+                    <a href="#" class="cs-link">Learn More </a>
+                </div>
+                <div class="cs-service-image">
+                    <picture>
+                       <!--Mobile Image-->
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-outdoorkitchen1.png" | resize({ width: 576, height: 282 }) | avif %}" type="image/avif">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-outdoorkitchen1.png" | resize({ width: 576, height: 282 }) | webp %}" type="image/webp">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-outdoorkitchen1.png" | resize({ width: 576, height: 282 }) | jpeg %}" type="image/jpeg">
+                       <!--Tablet Image-->
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-outdoorkitchen1.png" | resize({ width: 990, height: 942 }) | avif %}" type="image/avif">
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-outdoorkitchen1.png" | resize({ width: 990, height: 942 }) | webp %}" type="image/webp">
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-outdoorkitchen1.png" | resize({ width: 990, height: 942 }) | jpeg %}" type="image/jpeg">
+                       <!--Desktop Image-->
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-outdoorkitchen1.png" | resize({ width: 1280, height: 926 }) | avif %}" type="image/avif">
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-outdoorkitchen1.png" | resize({ width: 1280, height: 926 }) | webp %}" type="image/webp">
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-outdoorkitchen1.png" | resize({ width: 1280, height: 926 }) | jpeg %}" type="image/jpeg">
+                       <img src="{% getUrl "/assets/images/hli-outdoorkitchen1.png" | resize({ width: 1280, height: 926 }) | jpeg %}" alt="" width="640" height="463" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>                
+                </div>
+            </div>
+            
+            <div class="cs-service">
+                <div class="cs-service-content">
+                    <div class="cs-step-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24"><path fill="#fff" d="M16 16q1.25 0 2.125.875T19 19t-.875 2.125T16 22q-.95 0-1.713-.55T13.2 20H6.85l-1 1.55q-.225.35-.637.438t-.763-.138t-.437-.638t.137-.762L8.1 14.4q-1.8-.825-2.95-2.537T4 8h14q0 2.15-1.15 3.863T13.9 14.4l.575.9q-.525.25-.862.5t-.738.7l-1-1.55q-.2.05-.425.05h-.9q-.225 0-.425-.05L8.15 18h5.05q.325-.9 1.088-1.45T16 16m0 4q.425 0 .713-.288T17 19t-.288-.712T16 18t-.712.288T15 19t.288.713T16 20m-5-7q1.5 0 2.738-.825T15.6 10H6.4q.65 1.35 1.875 2.175T11 13M8.4 7q.125-.725-.038-1.225t-.687-1.15q-.5-.65-.662-1.237T6.975 2h1q-.125.725.038 1.213T8.7 4.35t.675 1.238T9.4 7zm2.5 0q.125-.725-.025-1.225t-.675-1.15Q9.675 4 9.513 3.412T9.474 2h1q-.125.725.038 1.213T11.2 4.35q.5.625.663 1.213T11.9 7zm2.5 0q.125-.725-.025-1.225t-.675-1.15q-.525-.625-.687-1.213T11.974 2h1q-.125.725.038 1.213T13.7 4.35q.5.625.663 1.213T14.4 7zM11 13"/></svg>
+                    </div>
+                    <h3>Lawn & Turf Area Design</h3>
+                    <p>We plan natural sod or artificial turf areas for front yards, backyards, or recreational spaces. Each lawn area is sized and shaped to balance landscape features, sun exposure, and usage needs. Turf type is recommended based on performance and appearance.</p>
+                    <ul>
+                        <li>Includes layout and shape of sod or synthetic turf areas.</li>
+                        <li>Designed for durability, drainage, and daily use.</li>
+                        <li>Turf type recommendations provided based on goals and sun.</li>
+                    </ul>
+                    <a href="#" class="cs-link">Learn More </a>
+                </div>
+                <div class="cs-service-image">
+                    <picture>
+                       <!--Mobile Image-->
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-putting2.png" | resize({ width: 576, height: 282 }) | avif %}" type="image/avif">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-putting2.png" | resize({ width: 576, height: 282 }) | webp %}" type="image/webp">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-putting2.png" | resize({ width: 576, height: 282 }) | jpeg %}" type="image/jpeg">
+                       <!--Tablet Image-->
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-putting2.png" | resize({ width: 990, height: 942 }) | avif %}" type="image/avif">
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-putting2.png" | resize({ width: 990, height: 942 }) | webp %}" type="image/webp">
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-putting2.png" | resize({ width: 990, height: 942 }) | jpeg %}" type="image/jpeg">
+                       <!--Desktop Image-->
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-putting2.png" | resize({ width: 1280, height: 926 }) | avif %}" type="image/avif">
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-putting2.png" | resize({ width: 1280, height: 926 }) | webp %}" type="image/webp">
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-putting2.png" | resize({ width: 1280, height: 926 }) | jpeg %}" type="image/jpeg">
+                       <img src="{% getUrl "/assets/images/hli-putting2.png" | resize({ width: 1280, height: 926 }) | jpeg %}" alt="" width="640" height="463" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>                
+                </div>
+            </div>
+            
+            <div class="cs-service">
+                <div class="cs-service-content">
+                    <div class="cs-step-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24"><g fill="none"><path d="m12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036q-.016-.004-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.016-.018m.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01z"/><path fill="#fff" d="M6.356 3.235a1 1 0 0 1 1.168-.087c3.456 2.127 5.35 4.818 6.36 7.78c.25.733.445 1.48.596 2.236c1.029-1.73 2.673-3.102 5.149-4.092a1 1 0 0 1 1.329 1.215l-.181.604C19.417 15.419 19 16.806 19 20a1 1 0 1 1-2 0c0-3.055.38-4.7 1.37-8.042c-1.122.744-1.861 1.608-2.357 2.565C15.248 15.997 15 17.805 15 20a1 1 0 1 1-2 0c0-2.992-.13-5.847-1.009-8.427c-.59-1.729-1.522-3.351-3.018-4.802C9.99 10.631 10 14.355 10 19.745V20a1 1 0 1 1-2 0c0-2.29-.01-4.371-.577-6.13c-.326-1.013-.84-1.92-1.683-2.674C6.66 14.349 7 16.683 7 20a1 1 0 1 1-2 0c0-3.864-.472-6.255-1.949-10.684a1 1 0 0 1 1.32-1.244c1.395.557 2.455 1.301 3.255 2.18a24 24 0 0 0-1.554-5.88a1 1 0 0 1 .284-1.137"/></g></svg>
+                    </div>
+                    <h3>Drainage & Irrigation Planning</h3>
+                    <p>Drainage and irrigation systems are incorporated into the landscape plan for long-term health and performance. We include grading suggestions, drain placement, and irrigation zones to ensure proper water management. These elements are designed to work with the layout and plant needs.</p>
+                    <ul>
+                        <li>Plans include slope, drain placement, and irrigation layout.</li>
+                        <li>Supports healthy plant growth and prevents water issues.</li>
+                        <li>Integrated with zones, turf areas, and soil conditions.</li>
+                    </ul>
+                    <a href="#" class="cs-link">Learn More </a>
+                </div>
+                <div class="cs-service-image">
+                    <picture>
+                       <!--Mobile Image-->
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landscape-drainage.jpg" | resize({ width: 576, height: 282 }) | avif %}" type="image/avif">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landscape-drainage.jpg" | resize({ width: 576, height: 282 }) | webp %}" type="image/webp">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landscape-drainage.jpg" | resize({ width: 576, height: 282 }) | jpeg %}" type="image/jpeg">
+                       <!--Tablet Image-->
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landscape-drainage.jpg" | resize({ width: 990, height: 942 }) | avif %}" type="image/avif">
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landscape-drainage.jpg" | resize({ width: 990, height: 942 }) | webp %}" type="image/webp">
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landscape-drainage.jpg" | resize({ width: 990, height: 942 }) | jpeg %}" type="image/jpeg">
+                       <!--Desktop Image-->
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/landscape-drainage.jpg" | resize({ width: 1280, height: 926 }) | avif %}" type="image/avif">
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/landscape-drainage.jpg" | resize({ width: 1280, height: 926 }) | webp %}" type="image/webp">
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/landscape-drainage.jpg" | resize({ width: 1280, height: 926 }) | jpeg %}" type="image/jpeg">
+                       <img src="{% getUrl "/assets/images/landscape-drainage.jpg" | resize({ width: 1280, height: 926 }) | jpeg %}" alt="" width="640" height="463" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>                
+                </div>
+            </div>
+            
+            <div class="cs-service">
+                <div class="cs-service-content">
+                    <div class="cs-step-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3c-.46 0-.93.04-1.4.14-2.76.53-4.96 2.76-5.48 5.52-.48 2.61.48 5.01 2.22 6.56.43.38.66.91.66 1.47V19c0 1.1.9 2 2 2h.28c.35.6.98 1 1.72 1s1.38-.4 1.72-1H14c1.1 0 2-.9 2-2v-2.31c0-.55.22-1.09.64-1.46C18.09 13.95 19 12.08 19 10c0-3.87-3.13-7-7-7zm2 16h-4v-1h4v1zm0-2h-4v-1h4v1zm-1.5-5.59V14h-1v-2.59L9.67 9.59l.71-.71L12 10.5l1.62-1.62.71.71-1.83 1.82z"/></svg>
+                    </div>
+                    <h3>3D Renderings & Visual Concepts</h3>
+                    <p>We offer 3D renderings and visual mockups to help you see the design before installation. These tools provide perspective on layout, materials, and plant growth over time. This helps with planning, approvals, and decision-making.</p>
+                    <ul>
+                        <li>Optional photo-realistic or conceptual 3D visuals.</li>
+                        <li>Helps preview layout, spacing, and materials.</li>
+                        <li>Useful for HOA approvals or multi-phase planning.</li>
+                    </ul>
+                    <a href="#" class="cs-link">Learn More </a>
+                </div>
+                <div class="cs-service-image">
+                    <picture>
+                       <!--Mobile Image-->
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/3d-drawing.jpg" | resize({ width: 576, height: 282 }) | avif %}" type="image/avif">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/3d-drawing.jpg" | resize({ width: 576, height: 282 }) | webp %}" type="image/webp">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/3d-drawing.jpg" | resize({ width: 576, height: 282 }) | jpeg %}" type="image/jpeg">
+                       <!--Tablet Image-->
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/3d-drawing.jpg" | resize({ width: 990, height: 942 }) | avif %}" type="image/avif">
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/3d-drawing.jpg" | resize({ width: 990, height: 942 }) | webp %}" type="image/webp">
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/3d-drawing.jpg" | resize({ width: 990, height: 942 }) | jpeg %}" type="image/jpeg">
+                       <!--Desktop Image-->
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/3d-drawing.jpg" | resize({ width: 1280, height: 926 }) | avif %}" type="image/avif">
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/3d-drawing.jpg" | resize({ width: 1280, height: 926 }) | webp %}" type="image/webp">
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/3d-drawing.jpg" | resize({ width: 1280, height: 926 }) | jpeg %}" type="image/jpeg">
+                       <img src="{% getUrl "/assets/images/3d-drawing.jpg" | resize({ width: 1280, height: 926 }) | jpeg %}" alt="" width="640" height="463" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>                
+                </div>
+            </div>
+            
+            <div class="cs-service">
+                <div class="cs-service-content">
+                    <div class="cs-step-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c-5.33 4.55-8 8.48-8 11.8 0 4.98 3.8 8.2 8 8.2s8-3.22 8-8.2c0-3.32-2.67-7.25-8-11.8zm0 18c-3.35 0-6-2.57-6-6.2 0-2.34 1.95-5.44 6-9.14 4.05 3.7 6 6.79 6 9.14 0 3.63-2.65 6.2-6 6.2zm-4.17-6c.37 0 .67.26.74.62.41 2.22 2.28 2.98 3.64 2.87.43-.02.79.32.79.75 0 .4-.32.73-.72.75-2.13.13-4.62-1.09-5.19-4.12-.08-.45.28-.87.74-.87z"/></svg>
+                    </div>
+                    <h3>Material & Finish Recommendations</h3>
+                    <p>We suggest materials for mulch, stone, edging, lighting, and more to complete the design. These recommendations align with the overall aesthetic and performance needs of the landscape. Everything is selected for visual impact and long-term use.</p>
+                    <ul>
+                        <li>Guidance on mulch, gravel, stone, pavers, and lighting.</li>
+                        <li>Matches finishes with house style and landscape goals.</li>
+                        <li>Helps finalize product selections before installation.</li>
+                    </ul>
+                    <a href="#" class="cs-link">Learn More </a>
+                </div>
+                <div class="cs-service-image">
+                    <picture>
+                       <!--Mobile Image-->
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/materials.jpg" | resize({ width: 576, height: 282 }) | avif %}" type="image/avif">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/materials.jpg" | resize({ width: 576, height: 282 }) | webp %}" type="image/webp">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/materials.jpg" | resize({ width: 576, height: 282 }) | jpeg %}" type="image/jpeg">
+                       <!--Tablet Image-->
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/materials.jpg" | resize({ width: 990, height: 942 }) | avif %}" type="image/avif">
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/materials.jpg" | resize({ width: 990, height: 942 }) | webp %}" type="image/webp">
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/materials.jpg" | resize({ width: 990, height: 942 }) | jpeg %}" type="image/jpeg">
+                       <!--Desktop Image-->
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/materials.jpg" | resize({ width: 1280, height: 926 }) | avif %}" type="image/avif">
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/materials.jpg" | resize({ width: 1280, height: 926 }) | webp %}" type="image/webp">
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/materials.jpg" | resize({ width: 1280, height: 926 }) | jpeg %}" type="image/jpeg">
+                       <img src="{% getUrl "/assets/images/materials.jpg" | resize({ width: 1280, height: 926 }) | jpeg %}" alt="" width="640" height="463" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>                
+                </div>
+            </div>
+        </div>
+        <a href="/contact" class="cs-button-solid">Get Started</a>
+    </div>
+</section>
 
-            <h2>Commercial & Residential Landscape Design Services</h2>
-            <p>
-                Whether you're a homeowner seeking the perfect backyard retreat or a business owner maintaining your property's professional image, Nature Springs Landscaping delivers specialized care for every client type.
-            </p>
-            <h3>
-                Residential Services
-            </h3>
-            <ul>
-                <h4>
-                    <li>Master plan development for private estates</li>
-                </h4>
-                <h4>
-                    <li>Foundation planting design and installation</li>
-                </h4>
-                <h4>
-                    <li>Outdoor living space integration</li>
-                </h4>
-                <h4>
-                    <li>Environmental design solutions</li>
-                </h4>
-                <h4>
-                    <li>Water conservation planning</li>
-                </h4>
-            </ul>
-            <h3>Commercial Services</h3>
-            <ul>
-                <h4>
-                    <li>Site development planning</li>
-                </h4>
-                <h4>
-                    <li>Common area design</li>
-                </h4>
-                <h4>
-                    <li>Sustainable landscape implementation</li>
-                </h4>
-                <h4>
-                    <li>Property enhancement programs</li>
-                </h4>
-                <h4>
-                    <li>Construction documentation</li>
-                </h4>
-            </ul>
+<!-- ============================================ -->
+<!--           Residential Specialists            -->
+<!-- ============================================ -->
 
-            <h2>Benefits of Choosing Nature Springs Landscaping</h2>
-            <p>Our firm delivers value through professional project management, certified expertise, and documented quality control procedures. We maintain clear communication throughout the design and installation process, providing detailed documentation of all decisions and specifications. Our systematic approach ensures consistent results that meet both aesthetic and functional requirements.</p>
-
-            <h2>How Much Does Landscape Design Cost?</h2>
-            <p>Professional landscape design fees reflect project scope, site conditions, and design complexity. Initial design fees typically represent 10-15% of total project cost, with implementation costs varying based on material selections and site requirements. We provide detailed cost breakdowns during the consultation phase, allowing clients to make informed decisions about project scope and priorities.</p>
+<section id="custom-designs">
+    <div class="cs-container">
+        <h2 class="cs-title">Residential Landscaping Specialists—Properties We Serve</h2>
+        <div class="cs-property-types">
+            <!-- Before and After Slider Section -->
+            <div class="cs-section before-after-section">
+                <div class="cs-topper">Before & After</div>
+                <div class="before-after-container">
+                    <div class="before-after">
+                        <picture class="before-after__before-img">
+                           <!--Mobile Image-->
+                           <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/adams-final1.jpg" | resize({ width: 424, height:  600, fit: "inside"}) | avif %}" type="image/avif">
+                           <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/adams-final1.jpg" | resize({ width: 424, height:  600, fit: "inside"}) | webp %}" type="image/webp">
+                           <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/adams-final1.jpg" | resize({ width: 424, height:  600, fit: "inside"}) | jpeg %}" type="image/jpeg">
+                           <!--Tablet Image-->
+                           <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/adams-final1.jpg" | resize({ width: 1126, height: 1000, fit: "inside" }) | avif %}" type="image/avif">
+                           <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/adams-final1.jpg" | resize({ width: 1126, height: 1000, fit: "inside" }) | webp %}" type="image/webp">
+                           <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/adams-final1.jpg" | resize({ width: 1126, height: 1000, fit: "inside" }) | jpeg %}" type="image/jpeg">
+                           <!--Desktop Image-->
+                           <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/adams-final1.jpg" | resize({ width: 1366, height: 1000, fit: "inside" }) | avif %}" type="image/avif">
+                           <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/adams-final1.jpg" | resize({ width: 1366, height: 1000, fit: "inside" }) | webp %}" type="image/webp">
+                           <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/adams-final1.jpg" | resize({ width: 1366, height: 1000, fit: "inside" }) | jpeg %}" type="image/jpeg">
+                           <img src="{% getUrl "/assets/images/adams-final1.jpg" | resize({ width: 1366, height: 1000, fit: "inside" }) | jpeg %}" alt="" width="683" height="500" loading="lazy" decoding="async" aria-hidden="true">
+                        </picture>
+                        <picture class="before-after__after-img">
+                           <!--Mobile Image-->
+                           <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/adams-before1.jpg" | resize({ width: 424, height:  600, fit: "inside"}) | avif %}" type="image/avif">
+                           <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/adams-before1.jpg" | resize({ width: 424, height:  600, fit: "inside"}) | webp %}" type="image/webp">
+                           <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/adams-before1.jpg" | resize({ width: 424, height:  600, fit: "inside"}) | jpeg %}" type="image/jpeg">
+                           <!--Tablet Image-->
+                           <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/adams-before1.jpg" | resize({ width: 1126, height: 1000, fit: "inside" }) | avif %}" type="image/avif">
+                           <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/adams-before1.jpg" | resize({ width: 1126, height: 1000, fit: "inside" }) | webp %}" type="image/webp">
+                           <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/adams-before1.jpg" | resize({ width: 1126, height: 1000, fit: "inside" }) | jpeg %}" type="image/jpeg">
+                           <!--Desktop Image-->
+                           <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/adams-before1.jpg" | resize({ width: 1366, height: 1000, fit: "inside" }) | avif %}" type="image/avif">
+                           <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/adams-before1.jpg" | resize({ width: 1366, height: 1000, fit: "inside" }) | webp %}" type="image/webp">
+                           <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/adams-before1.jpg" | resize({ width: 1366, height: 1000, fit: "inside" }) | jpeg %}" type="image/jpeg">
+                           <img src="{% getUrl "/assets/images/adams-before1.jpg" | resize({ width: 1366, height: 1000, fit: "inside" }) | jpeg %}" alt="" width="683" height="500" loading="lazy" decoding="async" aria-hidden="true">
+                        </picture>
+                        <div class="before-after__after"></div>
+                        <div class="before-after__slider" role="slider" aria-label="Adjust before and after comparison" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
+                            <div class="before-after__handle"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cs-content">
+                <h3 class="section-header">Expert Residential Landscaping for Homes, Condos, and More in Houston, TX</h3>
+                <p>From homes to residential businesses, we serve a range of Houston properties:</p>
+                <ul>
+                    <li>Residential Homes</li>
+                    <li>Condominiums and HOA's</li>
+                    <li>Apartment Complexes</li>
+                    <li>Townhomes</li>
+                </ul>
+                <p>Our hands-on approach delivers what your property needs—no generic fixes, just results.</p>
+            </div>
         </div>
     </div>
-    <div class="cs-bubbles" aria-hidden="true"></div>
 </section>
-                                
+
+<!-- ============================================ -->
+<!--             Recent Projects                  -->
+<!-- ============================================ -->
+
+<section id="recent-projects">
+    <div class="cs-container">
+        <h2 class="cs-title">Recent Houston Projects</h2>
+        <div class="cs-testimonial">
+            <p>"HLI's lighting made our property safer and sharper at night—solid job!"</p>
+            <span>- Lisa P., Houston commercial property manager</span>
+        </div>
+        <div class="cs-gallery">
+            <!-- Gallery Item 1 -->
+            <article class="gallery-card">
+                <div class="gallery-card-main">
+                    <picture>
+                       <!--Mobile Image-->
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/adamson-residence.jpg" | resize({ width: 576, height: 640 }) | avif %}" type="image/avif">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/adamson-residence.jpg" | resize({ width: 576, height: 640 }) | webp %}" type="image/webp">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/adamson-residence.jpg" | resize({ width: 576, height: 640 }) | jpeg %}" type="image/jpeg">
+                       <!--Tablet Image-->
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/adamson-residence.jpg" | resize({ width: 1982, height: 640 }) | avif %}" type="image/avif">
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/adamson-residence.jpg" | resize({ width: 1982, height: 640 }) | webp %}" type="image/webp">
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/adamson-residence.jpg" | resize({ width: 1982, height: 640 }) | jpeg %}" type="image/jpeg">
+                       <!--Desktop Image-->
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/adamson-residence.jpg" | resize({ width: 820, height: 640 }) | avif %}" type="image/avif">
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/adamson-residence.jpg" | resize({ width: 820, height: 640 }) | webp %}" type="image/webp">
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/adamson-residence.jpg" | resize({ width: 820, height: 640 }) | jpeg %}" type="image/jpeg">
+                       <img src="{% getUrl "/assets/images/adamson-residence.jpg" | resize({ width: 820, height: 640 }) | jpeg %}" alt="" width="410" height="320" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>
+                    <div class="gallery-card-footer">
+                        <h3>Adamson Residence</h3>
+                        <span class="gallery-button"></span>
+                    </div>
+                </div>
+                <div class="gallery-card-dropdown">
+                    <p>The Adamson Residence backyard remodel was an extensive upgrade. The project included a complete patio build with patio cover, outdoor kitchen, firepit, fireplace, and border planter boxes with stone details.</p>
+                </div>
+            </article>
+            
+            <!-- Gallery Item 2 -->
+            <article class="gallery-card">
+                <div class="gallery-card-main">
+                    <picture>
+                       <!--Mobile Image-->
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/adams-final1.jpg" | resize({ width: 576, height: 640 }) | avif %}" type="image/avif">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/adams-final1.jpg" | resize({ width: 576, height: 640 }) | webp %}" type="image/webp">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/adams-final1.jpg" | resize({ width: 576, height: 640 }) | jpeg %}" type="image/jpeg">
+                       <!--Tablet Image-->
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/adams-final1.jpg" | resize({ width: 1982, height: 640 }) | avif %}" type="image/avif">
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/adams-final1.jpg" | resize({ width: 1982, height: 640 }) | webp %}" type="image/webp">
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/adams-final1.jpg" | resize({ width: 1982, height: 640 }) | jpeg %}" type="image/jpeg">
+                       <!--Desktop Image-->
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/adams-final1.jpg" | resize({ width: 820, height: 640 }) | avif %}" type="image/avif">
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/adams-final1.jpg" | resize({ width: 820, height: 640 }) | webp %}" type="image/webp">
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/adams-final1.jpg" | resize({ width: 820, height: 640 }) | jpeg %}" type="image/jpeg">
+                       <img src="{% getUrl "/assets/images/adams-final1.jpg" | resize({ width: 820, height: 640 }) | jpeg %}" alt="" width="410" height="320" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>
+                    <div class="gallery-card-footer">
+                        <h3>Adams Residence</h3>
+                        <span class="gallery-button"></span>
+                    </div>
+                </div>
+                <div class="gallery-card-dropdown">
+                    <p>The Adams Residence landscaping project was an outdoor living upgrade. We added an extension to the pool deck where we built a covered outdoor kitchen. The patio cover also has a side door with storage for pool equipment and toys.</p>
+                </div>
+            </article>
+            
+            <!-- Gallery Item 3 -->
+            <article class="gallery-card">
+                <div class="gallery-card-main">
+                    <picture>
+                       <!--Mobile Image-->
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/guillot-final2.png" | resize({ width: 576, height: 640 }) | avif %}" type="image/avif">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/guillot-final2.png" | resize({ width: 576, height: 640 }) | webp %}" type="image/webp">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/guillot-final2.png" | resize({ width: 576, height: 640 }) | jpeg %}" type="image/jpeg">
+                       <!--Tablet Image-->
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/guillot-final2.png" | resize({ width: 1982, height: 640 }) | avif %}" type="image/avif">
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/guillot-final2.png" | resize({ width: 1982, height: 640 }) | webp %}" type="image/webp">
+                       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/guillot-final2.png" | resize({ width: 1982, height: 640 }) | jpeg %}" type="image/jpeg">
+                       <!--Desktop Image-->
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/guillot-final2.png" | resize({ width: 820, height: 640 }) | avif %}" type="image/avif">
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/guillot-final2.png" | resize({ width: 820, height: 640 }) | webp %}" type="image/webp">
+                       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/guillot-final2.png" | resize({ width: 820, height: 640 }) | jpeg %}" type="image/jpeg">
+                       <img src="{% getUrl "/assets/images/guillot-final2.png" | resize({ width: 820, height: 640 }) | jpeg %}" alt="" width="410" height="320" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>
+                    <div class="gallery-card-footer">
+                        <h3>Guillot Residence</h3>
+                        <span class="gallery-button"></span>
+                    </div>
+                </div>
+                <div class="gallery-card-dropdown">
+                    <p>The Guillot backyard upgrade consisted of a homey patio extension with cover. Under the patio cover is a classic outdoor kitchen and fireplace.</p>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--             Cost Section                     -->
+<!-- ============================================ -->
+
+<section id="cost-section">
+    <div class="cs-container">
+        <h2 class="cs-title">The Cost of Landscape Design in Houston, TX</h2>
+        <div class="cs-cost-tiers">
+            <div class="cs-cost-tier">
+                <div class="cs-tier-icon1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 14 14"><path fill="none" stroke="#aace7b" stroke-linecap="round" stroke-linejoin="round" d="M7 10.5v3m2-13l-8.5 13h13L5 .5" stroke-width="1"/></svg>
+                </div>
+                <h3>Small Projects</h3>
+                <p class="cs-price">$5,000 - $15,000</p>
+                <ul class="cs-features">
+                    <li>Perfect for patios</li>
+                    <li>Garden updates</li>
+                    <li>Compact backyards</li>
+                </ul>
+                <p class="cs-size">(under 1,000 sq ft)</p>
+            </div>
+            <div class="cs-cost-tier">
+                <div class="cs-tier-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 256 256"><g fill="#aace7b"><path d="M216 116.69V216h-64v-64h-48v64H40v-99.31l82.34-82.35a8 8 0 0 1 11.32 0Z" opacity="0.2"/><path d="M240 208h-16v-72l2.34 2.34A8 8 0 0 0 237.66 127l-98.35-98.32a16 16 0 0 0-22.62 0L18.34 127a8 8 0 0 0 11.32 11.31L32 136v72H16a8 8 0 0 0 0 16h224a8 8 0 0 0 0-16M48 120l80-80l80 80v88h-48v-56a8 8 0 0 0-8-8h-48a8 8 0 0 0-8 8v56H48Zm96 88h-32v-48h32Z"/></g></svg>
+                </div>
+                <h3>Medium Projects</h3>
+                <p class="cs-price">$15,000 - $40,000</p>
+                <ul class="cs-features">
+                    <li>Ideal for detailed designs</li>
+                    <li>Front yard transformations</li>
+                    <li>Backyard transformations</li>
+                </ul>
+                <p class="cs-size">(1,000 - 3,000 sq ft)</p>
+            </div>
+            <div class="cs-cost-tier">
+                <div class="cs-tier-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24"><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21"/></svg>
+                </div>
+                <h3>Large Projects</h3>
+                <p class="cs-price">$50,000+</p>
+                <ul class="cs-features">
+                    <li>Custom designs</li>
+                    <li>Premium materials</li>
+                    <li>Estates or large yards</li>
+                </ul>
+                <p class="cs-size">(over 3,000 sq ft)</p>
+            </div>
+        </div>
+        <p>We provide detailed, itemized cost breakdowns before any work begins to ensure complete transparency. This approach allows you to understand every aspect of the investment and make informed decisions based on your needs and budget.</p>
+        <a href="#" class="cs-button-solid">Request Your Estimate</a>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--             Trusted Company                  -->
+<!-- ============================================ -->
+
+<section id="trusted-company">
+    <div class="cs-container">
+        <h2 class="cs-title">A Trusted Houston Landscaping Company–Here's Why</h2>
+        <div class="cs-content">
+            <div class="cs-trust-content">
+                <ul class="cs-trust-points">
+                    <li><strong>Decades of Experience:</strong> 500+ projects, small and large, completed across Houston.</li>
+                    <li><strong>Family Owned & Operated:</strong> We oversee every step ourselves.</li>
+                    <li><strong>On-Site First:</strong> Every job begins with a full property review.</li>
+                    <li><strong>Local Expertise:</strong> We understand Houston's soils, climate, and city codes.</li>
+                    <li><strong>US-Based Team:</strong> Houston-based crew and trusted U.S. suppliers.</li>
+                </ul>
+                <div class="cs-testimonial">
+                    <p>"Their team knew exactly how to handle our drainage issues—worth every penny!"</p>
+                    <span>- Mark R., Houston business owner</span>
+                </div>
+                <a href="#" class="cs-button-solid">Start Your Project Today</a>
+            </div>
+            <picture class="cs-image">
+                <picture>
+                   <!--Mobile Image-->
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-putting1.jpg" | resize({ width: 576, height: 1000 }) | avif %}" type="image/avif">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-putting1.jpg" | resize({ width: 576, height: 1000 }) | webp %}" type="image/webp">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-putting1.jpg" | resize({ width: 576, height: 1000 }) | jpeg %}" type="image/jpeg">
+                   <!--Tablet Image-->
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-putting1.jpg" | resize({ width: 1982, height: 1000 }) | avif %}" type="image/avif">
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-putting1.jpg" | resize({ width: 1982, height: 1000 }) | webp %}" type="image/webp">
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-putting1.jpg" | resize({ width: 1982, height: 1000 }) | jpeg %}" type="image/jpeg">
+                   <!--Desktop Image-->
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-putting1.jpg" | resize({ width: 1192, height: 1000 }) | avif %}" type="image/avif">
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-putting1.jpg" | resize({ width: 1192, height: 1000 }) | webp %}" type="image/webp">
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-putting1.jpg" | resize({ width: 1192, height: 1000 }) | jpeg %}" type="image/jpeg">
+                   <img src="{% getUrl "/assets/images/hli-putting1.jpg" | resize({ width: 1192, height: 1000 }) | jpeg %}" alt="" width="596" height="500" loading="lazy" decoding="async" aria-hidden="true">
+                </picture>
+            </picture>
+        </div>
+    </div>
+</section>
 
 
+{% include "components/cta.html" %}
+
+<script defer>
+    const slider = document.querySelector(".before-after__slider");
+    const afterImg = document.querySelector(".before-after__after-img");
+    const container = document.querySelector(".before-after");
+
+    if (!slider || !afterImg || !container) {
+        console.error("One or more elements not found:", { slider, afterImg, container });
+    }
+
+    let isDragging = false;
+    let originalUserSelect = ''; // Store the original user-select value
+
+    const moveSlider = (x) => {
+    const containerRect = container.getBoundingClientRect();
+    const newWidth = x - containerRect.left;
+    const percentage = (newWidth / containerRect.width) * 100;
+
+    // Constrain the slider between 0% and 100%
+    if (percentage >= 0 && percentage <= 100) {
+        // Update the clip-path to reveal more/less of the "after" image
+        afterImg.style.clipPath = `inset(0 ${100 - percentage}% 0 0)`;
+        slider.style.left = `${percentage}%`; // Move the slider
+        slider.setAttribute("aria-valuenow", Math.round(percentage));
+        console.log(`Slider moved to ${percentage}%`); // Debug log
+    }
+    };
+
+    const startDragging = () => {
+        isDragging = true;
+        // Store the original user-select value and disable text selection on the body
+        originalUserSelect = document.body.style.userSelect || document.body.style.webkitUserSelect || '';
+        document.body.style.userSelect = 'none';
+        document.body.style.webkitUserSelect = 'none'; // For Safari
+        console.log("Dragging started");
+    };
+
+    const stopDragging = () => {
+        isDragging = false;
+        // Restore the original user-select value
+        document.body.style.userSelect = originalUserSelect;
+        document.body.style.webkitUserSelect = originalUserSelect;
+        console.log("Dragging stopped");
+    };
+
+    slider.addEventListener("mousedown", (e) => {
+        e.preventDefault(); // Prevent text selection
+        startDragging();
+    });
+
+    document.addEventListener("mousemove", (e) => {
+    if (isDragging) {
+        e.preventDefault(); // Prevent text selection
+        moveSlider(e.clientX);
+    }
+    });
+
+    document.addEventListener("mouseup", (e) => {
+    // Only prevent default if we were dragging
+    if (isDragging) {
+        e.preventDefault(); // Prevent text selection
+    }
+    stopDragging();
+    });
+
+    // Touch support for mobile
+    slider.addEventListener("touchstart", (e) => {
+    // Only prevent default on the slider itself
+    if (e.target === slider || slider.contains(e.target)) {
+        e.preventDefault(); // Prevent text selection
+    }
+    startDragging();
+    });
+
+    document.addEventListener("touchmove", (e) => {
+    if (isDragging) {
+        // Only prevent default when dragging the slider
+        e.preventDefault(); // Prevent text selection
+        const touch = e.touches[0];
+        moveSlider(touch.clientX);
+    }
+    });
+
+    document.addEventListener("touchend", (e) => {
+    // Only prevent default when we were dragging the slider
+    if (isDragging) {
+        e.preventDefault(); // Prevent text selection
+    }
+    stopDragging();
+    });
+</script>
 {% endblock %}
