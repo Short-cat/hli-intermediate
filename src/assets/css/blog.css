@@ -1,5 +1,150 @@
 /* PAGE-SPECIFIC STYLES FOR THE BLOG AND ARTICLE PAGES */
 /*-- -------------------------- -->
+<---          Banner            -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #banner-1519 {
+    padding: var(--sectionPadding);
+    /* 190px - 268px */
+    padding-top: clamp(11.875rem, 25vw, 16.75rem);
+    /* 100px - 150px */
+    padding-bottom: clamp(6.25rem, 12vw, 9.375rem);
+    /* clips the line from causing overflow issues for going off screen */
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+  }
+  #banner-1519 .cs-container {
+    text-align: center;
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    /* 8px - 12px */
+    gap: clamp(0.5rem, 1vw, 0.75rem);
+  }
+  #banner-1519 .cs-int-title {
+    /* 39px - 61px */
+    font-size: clamp(2.4375rem, 6.4vw, 3.8125rem);
+    font-weight: 900;
+    line-height: 1.2em;
+    text-align: inherit;
+    margin: 0;
+    color: #fff;
+    position: relative;
+  }
+  #banner-1519 .cs-breadcrumbs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #banner-1519 .cs-link {
+    font-size: 1rem;
+    line-height: 1.2em;
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #banner-1519 .cs-link:last-of-type {
+    /* remove the chevron on the last list item */
+  }
+  #banner-1519 .cs-link:last-of-type::after {
+    display: none;
+  }
+  #banner-1519 .cs-link:after {
+    /* chevron */
+    content: '';
+    width: 0.4375rem;
+    height: 0.75rem;
+    margin: 0 1rem;
+    background: url("/assets/svgs/chevron.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    display: block;
+  }
+  #banner-1519 .cs-link.cs-active {
+    color: var(--primary);
+  }
+  #banner-1519 .cs-background {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  #banner-1519 .cs-background:before {
+    /* background color overlay */
+    content: "";
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: -moz-linear-gradient(left, rgba(26, 26, 26, 0.94) 0%, rgba(26, 26, 26, 0) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(26, 26, 26, 0.94) 0%, rgba(26, 26, 26, 0) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    opacity: 1;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  #banner-1519 .cs-background img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* Makes img tag act as a background image */
+    object-fit: cover;
+  }
+  #banner-1519 .cs-mask {
+    --maskBG: #ffffff;
+    width: 100%;
+    height: auto;
+    display: block;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    z-index: 100;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #banner-1519 .cs-background:before {
+    /* background color overlay */
+    content: "";
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: -moz-linear-gradient(left, rgba(26, 26, 26, 0.94) 0%, rgba(26, 26, 26, 0) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(26, 26, 26, 0.94) 0%, rgba(26, 26, 26, 0) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    opacity: 1;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+}
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode #banner-1519 .cs-mask {
+    --maskBG: var(--dark);
+  }
+}
+/*-- -------------------------- -->
 <---        Core Styles         -->
 <--- -------------------------- -*/
 /* Mobile - 360px */
@@ -101,90 +246,6 @@
     background: #000;
     height: 100%;
     width: 100%;
-  }
-}
-/*-- -------------------------- -->
-<---   Interior Page Header     -->
-<--- -------------------------- -*/
-/* Mobile */
-@media only screen and (min-width: 0rem) {
-  #int-hero {
-    z-index: 1;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 30vh;
-    padding-top: 3.125rem;
-  }
-  #int-hero picture {
-    z-index: -2;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-  }
-  #int-hero picture img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-  }
-  #int-hero h1 {
-    position: relative;
-    margin: 0 auto;
-    margin-top: 4.375rem;
-    margin-bottom: 1.875rem;
-    max-width: 31.25rem;
-    width: 96%;
-    font-size: 2.13333333rem;
-    color: #fff;
-    text-align: center;
-  }
-  #int-hero p {
-    display: block;
-    margin: auto;
-    margin-bottom: 1.875rem;
-    max-width: 25rem;
-    width: 96%;
-    color: #fff;
-    text-align: center;
-  }
-  #int-hero:before {
-    z-index: -1;
-    position: absolute;
-    top: 0;
-    left: 0;
-    content: "";
-    opacity: 0.7;
-    display: block;
-    background: #000;
-    height: 100%;
-    width: 100%;
-  }
-}
-/* Tablet */
-@media only screen and (min-width: 48rem) {
-  #int-hero {
-    font-size: 100%;
-  }
-  #int-hero h1 {
-    font-size: 4rem;
-  }
-}
-/* Small Desktop */
-@media only screen and (min-width: 64rem) {
-  #int-hero {
-    background-attachment: fixed;
-    min-height: 18.75rem;
-    height: auto;
-    padding-top: 11.25rem;
-    font-size: inherit;
-    padding-block-end: 6.25rem;
   }
 }
 /*-- -------------------------- -->

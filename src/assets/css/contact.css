@@ -621,6 +621,9 @@
   body.dark-mode #contact-1600 .cs-item-text {
     opacity: 0.8;
   }
+  body.dark-mode #contact-1600 .service-label {
+    color: var(--bodyTextColorWhite);
+  }
   body.dark-mode #contact-1600 #select-budget {
     background-color: var(--medium);
     color: rgba(193, 193, 193, 0.787);

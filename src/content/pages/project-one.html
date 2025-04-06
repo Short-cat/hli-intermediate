@@ -1,0 +1,590 @@
+---
+title: 'Project One | Code Stitch Web Designs'
+description: 'Meta description for the page'
+preloadImg: '/assets/images/cabinets2.jpg'
+permalink: 'gallery/'
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/projects.css">
+{% endblock %}
+
+{% block body %}
+
+<!-- ============================================ -->
+<!--                   Banner                     -->
+<!-- ============================================ -->
+
+<div id="banner-1519">
+    <div class="cs-container">
+        <span class="cs-int-title">Gallery</span>
+        <div class="cs-breadcrumbs">
+            <a href="/" class="cs-link">Home</a>
+            <a href="gallery/" class="cs-link cs-active">Gallery</a>
+        </div>
+    </div>
+    <!--Background Image-->
+    <picture class="cs-background">
+       <!--Mobile Image-->
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 640, height: 820 }) | avif %}" type="image/avif">
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 640, height: 820 }) | webp %}" type="image/webp">
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 640, height: 820 }) | jpeg %}" type="image/jpeg">
+       <!--Tablet Image-->
+       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 2046, height: 962 }) | avif %}" type="image/avif">
+       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 2046, height: 962 }) | webp %}" type="image/webp">
+       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 2046, height: 962 }) | jpeg %}" type="image/jpeg">
+       <!--Desktop Image-->
+       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 3840, height: 1044 }) | avif %}" type="image/avif">
+       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 3840, height: 1044 }) | webp %}" type="image/webp">
+       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 3840, height: 1044 }) | jpeg %}" type="image/jpeg">
+       <img src="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 3840, height: 1044 }) | jpeg %}" alt="" loading="eager" width="1920" height="522" decoding="async" aria-hidden="true">
+    </picture>
+    <svg class="cs-mask" xmlns="http://www.w3.org/2000/svg" width="1920" height="136" viewBox="0 0 1920 136" fill="none">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M1920 136V0C1803.21 45.3334 1445.52 136 951 136C456.485 136 111.116 45.3334 0 0V136H951H1920Z" fill="var(--maskBG)"/>
+    </svg>
+</div>
+                                
+
+
+
+<!-- ============================================ -->
+<!--                   Gallery                    -->
+<!-- ============================================ -->
+
+<section id="gallery-453">
+    <div class="cs-container">
+        <div class="cs-content">
+            <div class="cs-flex">
+                <span class="cs-topper">Portfolio</span>
+                <h2 class="cs-title">Our Gallery</h2>
+            </div>
+            <div class="cs-button-group">
+                <!--When adding extra galleries, copy and paste the button and make data-filter equal to four, then five, etc. Do the same for the corresponding gallery and it's data attribute-->
+                <button class="cs-button" data-filter="one">
+                    Landscaping
+                </button>
+                <button class="cs-button" data-filter="two">
+                    Patio Covers
+                </button>
+                <button class="cs-button" data-filter="three">
+                    Outdoor Kitchens
+                </button>
+                <button class="cs-button" data-filter="four">
+                    Artificial Turf
+                </button>
+            </div>
+        </div>
+        <div class="cs-wrapper">
+            <!--Gallery 1-->
+            <div class="cs-gallery" data-category="one">
+                <!--Picture 1-->
+                <picture class="cs-image">
+                   <!--Mobile Image-->
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 272, height: 372 }) | avif %}" type="image/avif">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 272, height: 372 }) | webp %}" type="image/webp">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 272, height: 372 }) | jpeg %}" type="image/jpeg">
+                   <!--Tablet Image-->
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 460, height: 644 }) | avif %}" type="image/avif">
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 460, height: 644 }) | webp %}" type="image/webp">
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 460, height: 644 }) | jpeg %}" type="image/jpeg">
+                   <!--Desktop Image-->
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 596, height: 832 }) | avif %}" type="image/avif">
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 596, height: 832 }) | webp %}" type="image/webp">
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 596, height: 832 }) | jpeg %}" type="image/jpeg">
+                   <img src="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 596, height: 832 }) | jpeg %}" alt="" width="298" height="416" loading="eager" decoding="async" aria-hidden="true">
+                </picture>
+                <!--Picture 2-->
+                <picture class="cs-image">
+                   <!--Mobile Image-->
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-landscapedesign2.jpg" | resize({ width: 272, height: 372 }) | avif %}" type="image/avif">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-landscapedesign2.jpg" | resize({ width: 272, height: 372 }) | webp %}" type="image/webp">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-landscapedesign2.jpg" | resize({ width: 272, height: 372 }) | jpeg %}" type="image/jpeg">
+                   <!--Tablet Image-->
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-landscapedesign2.jpg" | resize({ width: 460, height: 644 }) | avif %}" type="image/avif">
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-landscapedesign2.jpg" | resize({ width: 460, height: 644 }) | webp %}" type="image/webp">
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-landscapedesign2.jpg" | resize({ width: 460, height: 644 }) | jpeg %}" type="image/jpeg">
+                   <!--Desktop Image-->
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-landscapedesign2.jpg" | resize({ width: 596, height: 832 }) | avif %}" type="image/avif">
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-landscapedesign2.jpg" | resize({ width: 596, height: 832 }) | webp %}" type="image/webp">
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-landscapedesign2.jpg" | resize({ width: 596, height: 832 }) | jpeg %}" type="image/jpeg">
+                   <img src="{% getUrl "/assets/images/hli-landscapedesign2.jpg" | resize({ width: 596, height: 832 }) | jpeg %}" alt="" width="298" height="416" loading="eager" decoding="async" aria-hidden="true">
+                </picture>
+                <!--Picture 3-->
+                <picture class="cs-image">
+                   <!--Mobile Image-->
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-landscapedesign.jpg" | resize({ width: 272, height: 372 }) | avif %}" type="image/avif">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-landscapedesign.jpg" | resize({ width: 272, height: 372 }) | webp %}" type="image/webp">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-landscapedesign.jpg" | resize({ width: 272, height: 372 }) | jpeg %}" type="image/jpeg">
+                   <!--Tablet Image-->
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-landscapedesign.jpg" | resize({ width: 460, height: 644 }) | avif %}" type="image/avif">
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-landscapedesign.jpg" | resize({ width: 460, height: 644 }) | webp %}" type="image/webp">
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-landscapedesign.jpg" | resize({ width: 460, height: 644 }) | jpeg %}" type="image/jpeg">
+                   <!--Desktop Image-->
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-landscapedesign.jpg" | resize({ width: 596, height: 832 }) | avif %}" type="image/avif">
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-landscapedesign.jpg" | resize({ width: 596, height: 832 }) | webp %}" type="image/webp">
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-landscapedesign.jpg" | resize({ width: 596, height: 832 }) | jpeg %}" type="image/jpeg">
+                   <img src="{% getUrl "/assets/images/hli-landscapedesign.jpg" | resize({ width: 596, height: 832 }) | jpeg %}" alt="" width="298" height="416" loading="eager" decoding="async" aria-hidden="true">
+                </picture>
+                <!--Picture 4-->
+                <picture class="cs-image">
+                   <!--Mobile Image-->
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/plant-layout.jpg" | resize({ width: 272, height: 372 }) | avif %}" type="image/avif">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/plant-layout.jpg" | resize({ width: 272, height: 372 }) | webp %}" type="image/webp">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/plant-layout.jpg" | resize({ width: 272, height: 372 }) | jpeg %}" type="image/jpeg">
+                   <!--Tablet Image-->
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/plant-layout.jpg" | resize({ width: 460, height: 644 }) | avif %}" type="image/avif">
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/plant-layout.jpg" | resize({ width: 460, height: 644 }) | webp %}" type="image/webp">
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/plant-layout.jpg" | resize({ width: 460, height: 644 }) | jpeg %}" type="image/jpeg">
+                   <!--Desktop Image-->
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/plant-layout.jpg" | resize({ width: 596, height: 832 }) | avif %}" type="image/avif">
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/plant-layout.jpg" | resize({ width: 596, height: 832 }) | webp %}" type="image/webp">
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/plant-layout.jpg" | resize({ width: 596, height: 832 }) | jpeg %}" type="image/jpeg">
+                   <img src="{% getUrl "/assets/images/plant-layout.jpg" | resize({ width: 596, height: 832 }) | jpeg %}" alt="" width="298" height="416" loading="eager" decoding="async" aria-hidden="true">
+                </picture>
+                <!--Picture 1-->
+                <picture class="cs-image">
+                   <!--Mobile Image-->
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/seasonal-accent-planting.jpg" | resize({ width: 272, height: 372 }) | avif %}" type="image/avif">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/seasonal-accent-planting.jpg" | resize({ width: 272, height: 372 }) | webp %}" type="image/webp">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/seasonal-accent-planting.jpg" | resize({ width: 272, height: 372 }) | jpeg %}" type="image/jpeg">
+                   <!--Tablet Image-->
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/seasonal-accent-planting.jpg" | resize({ width: 460, height: 644 }) | avif %}" type="image/avif">
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/seasonal-accent-planting.jpg" | resize({ width: 460, height: 644 }) | webp %}" type="image/webp">
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/seasonal-accent-planting.jpg" | resize({ width: 460, height: 644 }) | jpeg %}" type="image/jpeg">
+                   <!--Desktop Image-->
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/seasonal-accent-planting.jpg" | resize({ width: 596, height: 832 }) | avif %}" type="image/avif">
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/seasonal-accent-planting.jpg" | resize({ width: 596, height: 832 }) | webp %}" type="image/webp">
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/seasonal-accent-planting.jpg" | resize({ width: 596, height: 832 }) | jpeg %}" type="image/jpeg">
+                   <img src="{% getUrl "/assets/images/seasonal-accent-planting.jpg" | resize({ width: 596, height: 832 }) | jpeg %}" alt="" width="298" height="416" loading="lazy" decoding="async" aria-hidden="true">
+                </picture>
+                <!--Picture 2-->
+                <picture class="cs-image">
+                   <!--Mobile Image-->
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/tiered-retaining-wall.jpg" | resize({ width: 272, height: 372 }) | avif %}" type="image/avif">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/tiered-retaining-wall.jpg" | resize({ width: 272, height: 372 }) | webp %}" type="image/webp">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/tiered-retaining-wall.jpg" | resize({ width: 272, height: 372 }) | jpeg %}" type="image/jpeg">
+                   <!--Tablet Image-->
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/tiered-retaining-wall.jpg" | resize({ width: 460, height: 644 }) | avif %}" type="image/avif">
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/tiered-retaining-wall.jpg" | resize({ width: 460, height: 644 }) | webp %}" type="image/webp">
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/tiered-retaining-wall.jpg" | resize({ width: 460, height: 644 }) | jpeg %}" type="image/jpeg">
+                   <!--Desktop Image-->
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/tiered-retaining-wall.jpg" | resize({ width: 596, height: 832 }) | avif %}" type="image/avif">
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/tiered-retaining-wall.jpg" | resize({ width: 596, height: 832 }) | webp %}" type="image/webp">
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/tiered-retaining-wall.jpg" | resize({ width: 596, height: 832 }) | jpeg %}" type="image/jpeg">
+                   <img src="{% getUrl "/assets/images/tiered-retaining-wall.jpg" | resize({ width: 596, height: 832 }) | jpeg %}" alt="" width="298" height="416" loading="lazy" decoding="async" aria-hidden="true">
+                </picture>
+                <!--Picture 3-->
+                <picture class="cs-image">
+                   <!--Mobile Image-->
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-landscaping4.jpg" | resize({ width: 272, height: 372 }) | avif %}" type="image/avif">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-landscaping4.jpg" | resize({ width: 272, height: 372 }) | webp %}" type="image/webp">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-landscaping4.jpg" | resize({ width: 272, height: 372 }) | jpeg %}" type="image/jpeg">
+                   <!--Tablet Image-->
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-landscaping4.jpg" | resize({ width: 460, height: 644 }) | avif %}" type="image/avif">
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-landscaping4.jpg" | resize({ width: 460, height: 644 }) | webp %}" type="image/webp">
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-landscaping4.jpg" | resize({ width: 460, height: 644 }) | jpeg %}" type="image/jpeg">
+                   <!--Desktop Image-->
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-landscaping4.jpg" | resize({ width: 596, height: 832 }) | avif %}" type="image/avif">
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-landscaping4.jpg" | resize({ width: 596, height: 832 }) | webp %}" type="image/webp">
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-landscaping4.jpg" | resize({ width: 596, height: 832 }) | jpeg %}" type="image/jpeg">
+                   <img src="{% getUrl "/assets/images/hli-landscaping4.jpg" | resize({ width: 596, height: 832 }) | jpeg %}" alt="" width="298" height="416" loading="lazy" decoding="async" aria-hidden="true">
+                </picture>
+                <!--Picture 4-->
+                <picture class="cs-image">
+                   <!--Mobile Image-->
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/adamson-residence.jpg" | resize({ width: 272, height: 372 }) | avif %}" type="image/avif">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/adamson-residence.jpg" | resize({ width: 272, height: 372 }) | webp %}" type="image/webp">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/adamson-residence.jpg" | resize({ width: 272, height: 372 }) | jpeg %}" type="image/jpeg">
+                   <!--Tablet Image-->
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/adamson-residence.jpg" | resize({ width: 460, height: 644 }) | avif %}" type="image/avif">
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/adamson-residence.jpg" | resize({ width: 460, height: 644 }) | webp %}" type="image/webp">
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/adamson-residence.jpg" | resize({ width: 460, height: 644 }) | jpeg %}" type="image/jpeg">
+                   <!--Desktop Image-->
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/adamson-residence.jpg" | resize({ width: 596, height: 832 }) | avif %}" type="image/avif">
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/adamson-residence.jpg" | resize({ width: 596, height: 832 }) | webp %}" type="image/webp">
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/adamson-residence.jpg" | resize({ width: 596, height: 832 }) | jpeg %}" type="image/jpeg">
+                   <img src="{% getUrl "/assets/images/adamson-residence.jpg" | resize({ width: 596, height: 832 }) | jpeg %}" alt="" width="298" height="416" loading="lazy" decoding="async" aria-hidden="true">
+                </picture>
+                
+            </div>
+            <!--Gallery 2-->
+            <div class="cs-gallery cs-hidden" data-category="two">
+                <!--Picture 1-->
+                <picture class="cs-image">
+                   <!--Mobile Image-->
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/patio-cover-service.jpg" | resize({ width: 272, height: 372 }) | avif %}" type="image/avif">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/patio-cover-service.jpg" | resize({ width: 272, height: 372 }) | webp %}" type="image/webp">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/patio-cover-service.jpg" | resize({ width: 272, height: 372 }) | jpeg %}" type="image/jpeg">
+                   <!--Tablet Image-->
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/patio-cover-service.jpg" | resize({ width: 460, height: 644 }) | avif %}" type="image/avif">
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/patio-cover-service.jpg" | resize({ width: 460, height: 644 }) | webp %}" type="image/webp">
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/patio-cover-service.jpg" | resize({ width: 460, height: 644 }) | jpeg %}" type="image/jpeg">
+                   <!--Desktop Image-->
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/patio-cover-service.jpg" | resize({ width: 596, height: 832 }) | avif %}" type="image/avif">
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/patio-cover-service.jpg" | resize({ width: 596, height: 832 }) | webp %}" type="image/webp">
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/patio-cover-service.jpg" | resize({ width: 596, height: 832 }) | jpeg %}" type="image/jpeg">
+                   <img src="{% getUrl "/assets/images/patio-cover-service.jpg" | resize({ width: 596, height: 832 }) | jpeg %}" alt="" width="298" height="416" loading="lazy" decoding="async" aria-hidden="true">
+                </picture>
+                <!--Picture 2-->
+                <picture class="cs-image">
+                   <!--Mobile Image-->
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/guillot-final2.png" | resize({ width: 272, height: 372 }) | avif %}" type="image/avif">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/guillot-final2.png" | resize({ width: 272, height: 372 }) | webp %}" type="image/webp">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/guillot-final2.png" | resize({ width: 272, height: 372 }) | jpeg %}" type="image/jpeg">
+                   <!--Tablet Image-->
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/guillot-final2.png" | resize({ width: 460, height: 644 }) | avif %}" type="image/avif">
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/guillot-final2.png" | resize({ width: 460, height: 644 }) | webp %}" type="image/webp">
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/guillot-final2.png" | resize({ width: 460, height: 644 }) | jpeg %}" type="image/jpeg">
+                   <!--Desktop Image-->
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/guillot-final2.png" | resize({ width: 596, height: 832 }) | avif %}" type="image/avif">
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/guillot-final2.png" | resize({ width: 596, height: 832 }) | webp %}" type="image/webp">
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/guillot-final2.png" | resize({ width: 596, height: 832 }) | jpeg %}" type="image/jpeg">
+                   <img src="{% getUrl "/assets/images/guillot-final2.png" | resize({ width: 596, height: 832 }) | jpeg %}" alt="" width="298" height="416" loading="lazy" decoding="async" aria-hidden="true">
+                </picture>
+                <!--Picture 3-->
+                <picture class="cs-image">
+                   <!--Mobile Image-->
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/add-covers.jpg" | resize({ width: 272, height: 372 }) | avif %}" type="image/avif">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/add-covers.jpg" | resize({ width: 272, height: 372 }) | webp %}" type="image/webp">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/add-covers.jpg" | resize({ width: 272, height: 372 }) | jpeg %}" type="image/jpeg">
+                   <!--Tablet Image-->
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/add-covers.jpg" | resize({ width: 460, height: 644 }) | avif %}" type="image/avif">
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/add-covers.jpg" | resize({ width: 460, height: 644 }) | webp %}" type="image/webp">
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/add-covers.jpg" | resize({ width: 460, height: 644 }) | jpeg %}" type="image/jpeg">
+                   <!--Desktop Image-->
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/add-covers.jpg" | resize({ width: 596, height: 832 }) | avif %}" type="image/avif">
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/add-covers.jpg" | resize({ width: 596, height: 832 }) | webp %}" type="image/webp">
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/add-covers.jpg" | resize({ width: 596, height: 832 }) | jpeg %}" type="image/jpeg">
+                   <img src="{% getUrl "/assets/images/add-covers.jpg" | resize({ width: 596, height: 832 }) | jpeg %}" alt="" width="298" height="416" loading="lazy" decoding="async" aria-hidden="true">
+                </picture>
+                <!--Picture 4-->
+                <picture class="cs-image">
+                   <!--Mobile Image-->
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/pergola-cover.jpg" | resize({ width: 272, height: 372 }) | avif %}" type="image/avif">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/pergola-cover.jpg" | resize({ width: 272, height: 372 }) | webp %}" type="image/webp">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/pergola-cover.jpg" | resize({ width: 272, height: 372 }) | jpeg %}" type="image/jpeg">
+                   <!--Tablet Image-->
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/pergola-cover.jpg" | resize({ width: 460, height: 644 }) | avif %}" type="image/avif">
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/pergola-cover.jpg" | resize({ width: 460, height: 644 }) | webp %}" type="image/webp">
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/pergola-cover.jpg" | resize({ width: 460, height: 644 }) | jpeg %}" type="image/jpeg">
+                   <!--Desktop Image-->
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/pergola-cover.jpg" | resize({ width: 596, height: 832 }) | avif %}" type="image/avif">
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/pergola-cover.jpg" | resize({ width: 596, height: 832 }) | webp %}" type="image/webp">
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/pergola-cover.jpg" | resize({ width: 596, height: 832 }) | jpeg %}" type="image/jpeg">
+                   <img src="{% getUrl "/assets/images/pergola-cover.jpg" | resize({ width: 596, height: 832 }) | jpeg %}" alt="" width="298" height="416" loading="lazy" decoding="async" aria-hidden="true">
+                </picture>
+                <!--Picture 5-->
+                <picture class="cs-image">
+                   <!--Mobile Image-->
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/lott-final1.jpg" | resize({ width: 272, height: 372 }) | avif %}" type="image/avif">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/lott-final1.jpg" | resize({ width: 272, height: 372 }) | webp %}" type="image/webp">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/lott-final1.jpg" | resize({ width: 272, height: 372 }) | jpeg %}" type="image/jpeg">
+                   <!--Tablet Image-->
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/lott-final1.jpg" | resize({ width: 460, height: 644 }) | avif %}" type="image/avif">
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/lott-final1.jpg" | resize({ width: 460, height: 644 }) | webp %}" type="image/webp">
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/lott-final1.jpg" | resize({ width: 460, height: 644 }) | jpeg %}" type="image/jpeg">
+                   <!--Desktop Image-->
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/lott-final1.jpg" | resize({ width: 596, height: 832 }) | avif %}" type="image/avif">
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/lott-final1.jpg" | resize({ width: 596, height: 832 }) | webp %}" type="image/webp">
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/lott-final1.jpg" | resize({ width: 596, height: 832 }) | jpeg %}" type="image/jpeg">
+                   <img src="{% getUrl "/assets/images/lott-final1.jpg" | resize({ width: 596, height: 832 }) | jpeg %}" alt="" width="298" height="416" loading="lazy" decoding="async" aria-hidden="true">
+                </picture>
+                <!--Picture 6-->
+                <picture class="cs-image">
+                   <!--Mobile Image-->
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/patio-cover-installation.jpg" | resize({ width: 272, height: 372 }) | avif %}" type="image/avif">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/patio-cover-installation.jpg" | resize({ width: 272, height: 372 }) | webp %}" type="image/webp">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/patio-cover-installation.jpg" | resize({ width: 272, height: 372 }) | jpeg %}" type="image/jpeg">
+                   <!--Tablet Image-->
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/patio-cover-installation.jpg" | resize({ width: 460, height: 644 }) | avif %}" type="image/avif">
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/patio-cover-installation.jpg" | resize({ width: 460, height: 644 }) | webp %}" type="image/webp">
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/patio-cover-installation.jpg" | resize({ width: 460, height: 644 }) | jpeg %}" type="image/jpeg">
+                   <!--Desktop Image-->
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/patio-cover-installation.jpg" | resize({ width: 596, height: 832 }) | avif %}" type="image/avif">
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/patio-cover-installation.jpg" | resize({ width: 596, height: 832 }) | webp %}" type="image/webp">
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/patio-cover-installation.jpg" | resize({ width: 596, height: 832 }) | jpeg %}" type="image/jpeg">
+                   <img src="{% getUrl "/assets/images/patio-cover-installation.jpg" | resize({ width: 596, height: 832 }) | jpeg %}" alt="" width="298" height="416" loading="lazy" decoding="async" aria-hidden="true">
+                </picture>
+                <!--Picture 7-->
+                <picture class="cs-image">
+                   <!--Mobile Image-->
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/adams-final1.jpg" | resize({ width: 272, height: 372 }) | avif %}" type="image/avif">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/adams-final1.jpg" | resize({ width: 272, height: 372 }) | webp %}" type="image/webp">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/adams-final1.jpg" | resize({ width: 272, height: 372 }) | jpeg %}" type="image/jpeg">
+                   <!--Tablet Image-->
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/adams-final1.jpg" | resize({ width: 460, height: 644 }) | avif %}" type="image/avif">
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/adams-final1.jpg" | resize({ width: 460, height: 644 }) | webp %}" type="image/webp">
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/adams-final1.jpg" | resize({ width: 460, height: 644 }) | jpeg %}" type="image/jpeg">
+                   <!--Desktop Image-->
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/adams-final1.jpg" | resize({ width: 596, height: 832 }) | avif %}" type="image/avif">
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/adams-final1.jpg" | resize({ width: 596, height: 832 }) | webp %}" type="image/webp">
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/adams-final1.jpg" | resize({ width: 596, height: 832 }) | jpeg %}" type="image/jpeg">
+                   <img src="{% getUrl "/assets/images/adams-final1.jpg" | resize({ width: 596, height: 832 }) | jpeg %}" alt="" width="298" height="416" loading="lazy" decoding="async" aria-hidden="true">
+                </picture>
+                <!--Picture 8-->
+                <picture class="cs-image">
+                   <!--Mobile Image-->
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/lott-final3.jpg" | resize({ width: 272, height: 372 }) | avif %}" type="image/avif">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/lott-final3.jpg" | resize({ width: 272, height: 372 }) | webp %}" type="image/webp">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/lott-final3.jpg" | resize({ width: 272, height: 372 }) | jpeg %}" type="image/jpeg">
+                   <!--Tablet Image-->
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/lott-final3.jpg" | resize({ width: 460, height: 644 }) | avif %}" type="image/avif">
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/lott-final3.jpg" | resize({ width: 460, height: 644 }) | webp %}" type="image/webp">
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/lott-final3.jpg" | resize({ width: 460, height: 644 }) | jpeg %}" type="image/jpeg">
+                   <!--Desktop Image-->
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/lott-final3.jpg" | resize({ width: 596, height: 832 }) | avif %}" type="image/avif">
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/lott-final3.jpg" | resize({ width: 596, height: 832 }) | webp %}" type="image/webp">
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/lott-final3.jpg" | resize({ width: 596, height: 832 }) | jpeg %}" type="image/jpeg">
+                   <img src="{% getUrl "/assets/images/lott-final3.jpg" | resize({ width: 596, height: 832 }) | jpeg %}" alt="" width="298" height="416" loading="lazy" decoding="async" aria-hidden="true">
+                </picture>
+            </div>
+            <!--Gallery 3-->
+            <div class="cs-gallery cs-hidden" data-category="three">
+                <!--Picture 1-->
+                <picture class="cs-image">
+                   <!--Mobile Image-->
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/outdoor-kitchen-service.jpg" | resize({ width: 272, height: 372 }) | avif %}" type="image/avif">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/outdoor-kitchen-service.jpg" | resize({ width: 272, height: 372 }) | webp %}" type="image/webp">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/outdoor-kitchen-service.jpg" | resize({ width: 272, height: 372 }) | jpeg %}" type="image/jpeg">
+                   <!--Tablet Image-->
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/outdoor-kitchen-service.jpg" | resize({ width: 460, height: 644 }) | avif %}" type="image/avif">
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/outdoor-kitchen-service.jpg" | resize({ width: 460, height: 644 }) | webp %}" type="image/webp">
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/outdoor-kitchen-service.jpg" | resize({ width: 460, height: 644 }) | jpeg %}" type="image/jpeg">
+                   <!--Desktop Image-->
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/outdoor-kitchen-service.jpg" | resize({ width: 596, height: 832 }) | avif %}" type="image/avif">
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/outdoor-kitchen-service.jpg" | resize({ width: 596, height: 832 }) | webp %}" type="image/webp">
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/outdoor-kitchen-service.jpg" | resize({ width: 596, height: 832 }) | jpeg %}" type="image/jpeg">
+                   <img src="{% getUrl "/assets/images/outdoor-kitchen-service.jpg" | resize({ width: 596, height: 832 }) | jpeg %}" alt="" width="298" height="416" loading="lazy" decoding="async" aria-hidden="true">
+                </picture>
+                <!--Picture 2-->
+                <picture class="cs-image">
+                   <!--Mobile Image-->
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/outdoor-kitchen-grill.jpg" | resize({ width: 272, height: 372 }) | avif %}" type="image/avif">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/outdoor-kitchen-grill.jpg" | resize({ width: 272, height: 372 }) | webp %}" type="image/webp">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/outdoor-kitchen-grill.jpg" | resize({ width: 272, height: 372 }) | jpeg %}" type="image/jpeg">
+                   <!--Tablet Image-->
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/outdoor-kitchen-grill.jpg" | resize({ width: 460, height: 644 }) | avif %}" type="image/avif">
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/outdoor-kitchen-grill.jpg" | resize({ width: 460, height: 644 }) | webp %}" type="image/webp">
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/outdoor-kitchen-grill.jpg" | resize({ width: 460, height: 644 }) | jpeg %}" type="image/jpeg">
+                   <!--Desktop Image-->
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/outdoor-kitchen-grill.jpg" | resize({ width: 596, height: 832 }) | avif %}" type="image/avif">
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/outdoor-kitchen-grill.jpg" | resize({ width: 596, height: 832 }) | webp %}" type="image/webp">
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/outdoor-kitchen-grill.jpg" | resize({ width: 596, height: 832 }) | jpeg %}" type="image/jpeg">
+                   <img src="{% getUrl "/assets/images/outdoor-kitchen-grill.jpg" | resize({ width: 596, height: 832 }) | jpeg %}" alt="" width="298" height="416" loading="lazy" decoding="async" aria-hidden="true">
+                </picture>
+                <!--Picture 3-->
+                <picture class="cs-image">
+                   <!--Mobile Image-->
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-outdoorkitchen1.png" | resize({ width: 272, height: 372 }) | avif %}" type="image/avif">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-outdoorkitchen1.png" | resize({ width: 272, height: 372 }) | webp %}" type="image/webp">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-outdoorkitchen1.png" | resize({ width: 272, height: 372 }) | jpeg %}" type="image/jpeg">
+                   <!--Tablet Image-->
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-outdoorkitchen1.png" | resize({ width: 460, height: 644 }) | avif %}" type="image/avif">
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-outdoorkitchen1.png" | resize({ width: 460, height: 644 }) | webp %}" type="image/webp">
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-outdoorkitchen1.png" | resize({ width: 460, height: 644 }) | jpeg %}" type="image/jpeg">
+                   <!--Desktop Image-->
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-outdoorkitchen1.png" | resize({ width: 596, height: 832 }) | avif %}" type="image/avif">
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-outdoorkitchen1.png" | resize({ width: 596, height: 832 }) | webp %}" type="image/webp">
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-outdoorkitchen1.png" | resize({ width: 596, height: 832 }) | jpeg %}" type="image/jpeg">
+                   <img src="{% getUrl "/assets/images/hli-outdoorkitchen1.png" | resize({ width: 596, height: 832 }) | jpeg %}" alt="" width="298" height="416" loading="lazy" decoding="async" aria-hidden="true">
+                </picture>
+                <!--Picture 4-->
+                <picture class="cs-image">
+                   <!--Mobile Image-->
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/outdoor-kitchen1.png" | resize({ width: 272, height: 372 }) | avif %}" type="image/avif">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/outdoor-kitchen1.png" | resize({ width: 272, height: 372 }) | webp %}" type="image/webp">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/outdoor-kitchen1.png" | resize({ width: 272, height: 372 }) | jpeg %}" type="image/jpeg">
+                   <!--Tablet Image-->
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/outdoor-kitchen1.png" | resize({ width: 460, height: 644 }) | avif %}" type="image/avif">
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/outdoor-kitchen1.png" | resize({ width: 460, height: 644 }) | webp %}" type="image/webp">
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/outdoor-kitchen1.png" | resize({ width: 460, height: 644 }) | jpeg %}" type="image/jpeg">
+                   <!--Desktop Image-->
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/outdoor-kitchen1.png" | resize({ width: 596, height: 832 }) | avif %}" type="image/avif">
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/outdoor-kitchen1.png" | resize({ width: 596, height: 832 }) | webp %}" type="image/webp">
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/outdoor-kitchen1.png" | resize({ width: 596, height: 832 }) | jpeg %}" type="image/jpeg">
+                   <img src="{% getUrl "/assets/images/outdoor-kitchen1.png" | resize({ width: 596, height: 832 }) | jpeg %}" alt="" width="298" height="416" loading="lazy" decoding="async" aria-hidden="true">
+                </picture>
+                <!--Picture 5-->
+                <picture class="cs-image">
+                   <!--Mobile Image-->
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-outdoorkitchen2.jpg" | resize({ width: 272, height: 372 }) | avif %}" type="image/avif">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-outdoorkitchen2.jpg" | resize({ width: 272, height: 372 }) | webp %}" type="image/webp">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-outdoorkitchen2.jpg" | resize({ width: 272, height: 372 }) | jpeg %}" type="image/jpeg">
+                   <!--Tablet Image-->
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-outdoorkitchen2.jpg" | resize({ width: 460, height: 644 }) | avif %}" type="image/avif">
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-outdoorkitchen2.jpg" | resize({ width: 460, height: 644 }) | webp %}" type="image/webp">
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-outdoorkitchen2.jpg" | resize({ width: 460, height: 644 }) | jpeg %}" type="image/jpeg">
+                   <!--Desktop Image-->
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-outdoorkitchen2.jpg" | resize({ width: 596, height: 832 }) | avif %}" type="image/avif">
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-outdoorkitchen2.jpg" | resize({ width: 596, height: 832 }) | webp %}" type="image/webp">
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-outdoorkitchen2.jpg" | resize({ width: 596, height: 832 }) | jpeg %}" type="image/jpeg">
+                   <img src="{% getUrl "/assets/images/hli-outdoorkitchen2.jpg" | resize({ width: 596, height: 832 }) | jpeg %}" alt="" width="298" height="416" loading="lazy" decoding="async" aria-hidden="true">
+                </picture>
+                <!--Picture 6-->
+                <picture class="cs-image">
+                   <!--Mobile Image-->
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/outdoor-kitchen3.jpg" | resize({ width: 272, height: 372 }) | avif %}" type="image/avif">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/outdoor-kitchen3.jpg" | resize({ width: 272, height: 372 }) | webp %}" type="image/webp">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/outdoor-kitchen3.jpg" | resize({ width: 272, height: 372 }) | jpeg %}" type="image/jpeg">
+                   <!--Tablet Image-->
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/outdoor-kitchen3.jpg" | resize({ width: 460, height: 644 }) | avif %}" type="image/avif">
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/outdoor-kitchen3.jpg" | resize({ width: 460, height: 644 }) | webp %}" type="image/webp">
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/outdoor-kitchen3.jpg" | resize({ width: 460, height: 644 }) | jpeg %}" type="image/jpeg">
+                   <!--Desktop Image-->
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/outdoor-kitchen3.jpg" | resize({ width: 596, height: 832 }) | avif %}" type="image/avif">
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/outdoor-kitchen3.jpg" | resize({ width: 596, height: 832 }) | webp %}" type="image/webp">
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/outdoor-kitchen3.jpg" | resize({ width: 596, height: 832 }) | jpeg %}" type="image/jpeg">
+                   <img src="{% getUrl "/assets/images/outdoor-kitchen3.jpg" | resize({ width: 596, height: 832 }) | jpeg %}" alt="" width="298" height="416" loading="lazy" decoding="async" aria-hidden="true">
+                </picture>
+                <!--Picture 7-->
+                <picture class="cs-image">
+                   <!--Mobile Image-->
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/outdoor-kitchen-modern.jpg" | resize({ width: 272, height: 372 }) | avif %}" type="image/avif">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/outdoor-kitchen-modern.jpg" | resize({ width: 272, height: 372 }) | webp %}" type="image/webp">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/outdoor-kitchen-modern.jpg" | resize({ width: 272, height: 372 }) | jpeg %}" type="image/jpeg">
+                   <!--Tablet Image-->
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/outdoor-kitchen-modern.jpg" | resize({ width: 460, height: 644 }) | avif %}" type="image/avif">
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/outdoor-kitchen-modern.jpg" | resize({ width: 460, height: 644 }) | webp %}" type="image/webp">
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/outdoor-kitchen-modern.jpg" | resize({ width: 460, height: 644 }) | jpeg %}" type="image/jpeg">
+                   <!--Desktop Image-->
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/outdoor-kitchen-modern.jpg" | resize({ width: 596, height: 832 }) | avif %}" type="image/avif">
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/outdoor-kitchen-modern.jpg" | resize({ width: 596, height: 832 }) | webp %}" type="image/webp">
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/outdoor-kitchen-modern.jpg" | resize({ width: 596, height: 832 }) | jpeg %}" type="image/jpeg">
+                   <img src="{% getUrl "/assets/images/outdoor-kitchen-modern.jpg" | resize({ width: 596, height: 832 }) | jpeg %}" alt="" width="298" height="416" loading="lazy" decoding="async" aria-hidden="true">
+                </picture>
+                <!--Picture 8-->
+                <picture class="cs-image">
+                   <!--Mobile Image-->
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-outdoorliving.jpg" | resize({ width: 272, height: 372 }) | avif %}" type="image/avif">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-outdoorliving.jpg" | resize({ width: 272, height: 372 }) | webp %}" type="image/webp">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-outdoorliving.jpg" | resize({ width: 272, height: 372 }) | jpeg %}" type="image/jpeg">
+                   <!--Tablet Image-->
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-outdoorliving.jpg" | resize({ width: 460, height: 644 }) | avif %}" type="image/avif">
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-outdoorliving.jpg" | resize({ width: 460, height: 644 }) | webp %}" type="image/webp">
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-outdoorliving.jpg" | resize({ width: 460, height: 644 }) | jpeg %}" type="image/jpeg">
+                   <!--Desktop Image-->
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-outdoorliving.jpg" | resize({ width: 596, height: 832 }) | avif %}" type="image/avif">
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-outdoorliving.jpg" | resize({ width: 596, height: 832 }) | webp %}" type="image/webp">
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-outdoorliving.jpg" | resize({ width: 596, height: 832 }) | jpeg %}" type="image/jpeg">
+                   <img src="{% getUrl "/assets/images/hli-outdoorliving.jpg" | resize({ width: 596, height: 832 }) | jpeg %}" alt="" width="298" height="416" loading="lazy" decoding="async" aria-hidden="true">
+                </picture>
+            </div>
+            <!--Gallery 4-->
+            <div class="cs-gallery cs-hidden" data-category="four">
+                <!--Picture 1-->
+                <picture class="cs-image">
+                   <!--Mobile Image-->
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-putting2.png" | resize({ width: 272, height: 372 }) | avif %}" type="image/avif">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-putting2.png" | resize({ width: 272, height: 372 }) | webp %}" type="image/webp">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-putting2.png" | resize({ width: 272, height: 372 }) | jpeg %}" type="image/jpeg">
+                   <!--Tablet Image-->
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-putting2.png" | resize({ width: 460, height: 644 }) | avif %}" type="image/avif">
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-putting2.png" | resize({ width: 460, height: 644 }) | webp %}" type="image/webp">
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-putting2.png" | resize({ width: 460, height: 644 }) | jpeg %}" type="image/jpeg">
+                   <!--Desktop Image-->
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-putting2.png" | resize({ width: 596, height: 832 }) | avif %}" type="image/avif">
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-putting2.png" | resize({ width: 596, height: 832 }) | webp %}" type="image/webp">
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-putting2.png" | resize({ width: 596, height: 832 }) | jpeg %}" type="image/jpeg">
+                   <img src="{% getUrl "/assets/images/hli-putting2.png" | resize({ width: 596, height: 832 }) | jpeg %}" alt="" width="298" height="416" loading="lazy" decoding="async" aria-hidden="true">
+                </picture>
+                <!--Picture 2-->
+                <picture class="cs-image">
+                   <!--Mobile Image-->
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/turf-base-prep.webp" | resize({ width: 272, height: 372 }) | avif %}" type="image/avif">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/turf-base-prep.webp" | resize({ width: 272, height: 372 }) | webp %}" type="image/webp">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/turf-base-prep.webp" | resize({ width: 272, height: 372 }) | jpeg %}" type="image/jpeg">
+                   <!--Tablet Image-->
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/turf-base-prep.webp" | resize({ width: 460, height: 644 }) | avif %}" type="image/avif">
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/turf-base-prep.webp" | resize({ width: 460, height: 644 }) | webp %}" type="image/webp">
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/turf-base-prep.webp" | resize({ width: 460, height: 644 }) | jpeg %}" type="image/jpeg">
+                   <!--Desktop Image-->
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/turf-base-prep.webp" | resize({ width: 596, height: 832 }) | avif %}" type="image/avif">
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/turf-base-prep.webp" | resize({ width: 596, height: 832 }) | webp %}" type="image/webp">
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/turf-base-prep.webp" | resize({ width: 596, height: 832 }) | jpeg %}" type="image/jpeg">
+                   <img src="{% getUrl "/assets/images/turf-base-prep.webp" | resize({ width: 596, height: 832 }) | jpeg %}" alt="" width="298" height="416" loading="lazy" decoding="async" aria-hidden="true">
+                </picture>
+                <!--Picture 3-->
+                <picture class="cs-image">
+                   <!--Mobile Image-->
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-putting1.jpg" | resize({ width: 272, height: 372 }) | avif %}" type="image/avif">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-putting1.jpg" | resize({ width: 272, height: 372 }) | webp %}" type="image/webp">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-putting1.jpg" | resize({ width: 272, height: 372 }) | jpeg %}" type="image/jpeg">
+                   <!--Tablet Image-->
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-putting1.jpg" | resize({ width: 460, height: 644 }) | avif %}" type="image/avif">
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-putting1.jpg" | resize({ width: 460, height: 644 }) | webp %}" type="image/webp">
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-putting1.jpg" | resize({ width: 460, height: 644 }) | jpeg %}" type="image/jpeg">
+                   <!--Desktop Image-->
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-putting1.jpg" | resize({ width: 596, height: 832 }) | avif %}" type="image/avif">
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-putting1.jpg" | resize({ width: 596, height: 832 }) | webp %}" type="image/webp">
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-putting1.jpg" | resize({ width: 596, height: 832 }) | jpeg %}" type="image/jpeg">
+                   <img src="{% getUrl "/assets/images/hli-putting1.jpg" | resize({ width: 596, height: 832 }) | jpeg %}" alt="" width="298" height="416" loading="lazy" decoding="async" aria-hidden="true">
+                </picture>
+                <!--Picture 4-->
+                <picture class="cs-image">
+                   <!--Mobile Image-->
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/turf-infill.jpg" | resize({ width: 272, height: 372 }) | avif %}" type="image/avif">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/turf-infill.jpg" | resize({ width: 272, height: 372 }) | webp %}" type="image/webp">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/turf-infill.jpg" | resize({ width: 272, height: 372 }) | jpeg %}" type="image/jpeg">
+                   <!--Tablet Image-->
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/turf-infill.jpg" | resize({ width: 460, height: 644 }) | avif %}" type="image/avif">
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/turf-infill.jpg" | resize({ width: 460, height: 644 }) | webp %}" type="image/webp">
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/turf-infill.jpg" | resize({ width: 460, height: 644 }) | jpeg %}" type="image/jpeg">
+                   <!--Desktop Image-->
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/turf-infill.jpg" | resize({ width: 596, height: 832 }) | avif %}" type="image/avif">
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/turf-infill.jpg" | resize({ width: 596, height: 832 }) | webp %}" type="image/webp">
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/turf-infill.jpg" | resize({ width: 596, height: 832 }) | jpeg %}" type="image/jpeg">
+                   <img src="{% getUrl "/assets/images/turf-infill.jpg" | resize({ width: 596, height: 832 }) | jpeg %}" alt="" width="298" height="416" loading="lazy" decoding="async" aria-hidden="true">
+                </picture>
+            </div>
+        </div>
+    </div>
+</section>
+                                
+{% include "components/cta.html" %}
+
+<script defer>
+    class CS_GalleryFilter {
+        filtersSelector = '.cs-button';
+        galleriesSelector = '.cs-gallery';
+        activeClass = 'cs-active';
+        hiddenClass = 'cs-hidden';
+
+        constructor() {
+            this.$galleries = document.querySelectorAll(this.galleriesSelector);
+            const $filters = document.querySelectorAll(this.filtersSelector);
+
+            this.onClick($filters[0]);
+
+            for (const $filter of $filters) {
+                $filter.addEventListener('click', () => this.onClick($filter));
+            }
+        }
+
+        onClick($filter) {
+            this.filter($filter.dataset.filter);
+
+            const { activeClass } = this;
+
+            this.$activeFilter?.classList.remove(activeClass);
+            $filter.classList.add(activeClass);
+
+            this.$activeFilter = $filter;
+        }
+
+        filter(filter) {
+            const showAll = filter == 'all';
+            const { hiddenClass } = this;
+
+            for (const $gallery of this.$galleries) {
+                const show = showAll || $gallery.dataset.category == filter;
+                $gallery.classList.toggle(hiddenClass, !show);
+            }
+        }
+}
+
+new CS_GalleryFilter();
+</script>
+
+{% endblock %}
