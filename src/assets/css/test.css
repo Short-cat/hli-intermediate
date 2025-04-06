@@ -1235,6 +1235,8 @@ h2 {
   }
   #custom-designs .cs-content {
     text-align: left;
+    align-self: center;
+    width: 80%;
   }
   #custom-designs .cs-content p {
     font-size: 1rem;
@@ -1292,7 +1294,7 @@ h2 {
     gap: 2rem;
   }
   #custom-designs .cs-content {
-    width: 100%;
+    width: 80%;
     padding-right: 0;
   }
   #custom-designs .cs-content ul {
@@ -1558,6 +1560,9 @@ h2 {
     display: block;
     font-size: 0.9rem;
     color: var(--bodyTextColor);
+  }
+  #recent-projects .cs-button-solid {
+    margin-top: 3rem;
   }
   #recent-projects .cs-gallery {
     display: grid;
