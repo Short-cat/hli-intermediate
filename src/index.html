@@ -59,6 +59,38 @@ tags: 'sitemap' # Sitemap will use all pages in content/, due to content.json. A
                     {% endif %}
                 },
             {% endif %}
+            "openingHours": "Mo,Tu,We,Th,Fr,Sa,Su 06:00-19:00",
+            "areaServed": [
+                "Arcola",
+                "Bellaire",
+                "Brookshire",
+                "Bunker Hill Village",
+                "Cypress",
+                "Four Corners",
+                "Fresno",
+                "Fulshear",
+                "Great Wood",
+                "Hunters Creek Village",
+                "Jersey Village",
+                "Katy",
+                "Pearland",
+                "Pecan Grove",
+                "Piney Point Village",
+                "Richmond",
+                "Rosenberg",
+                "Sienna",
+                "Southside Place",
+                "Spring",
+                "Sugar Land",
+                "The Woodlands",
+                "Waller",
+                "West University Place"
+            ],
+            "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "5",
+                "reviewCount": "49"
+            },
             {% if client.domain and page.url %}"url": "{{ client.domain }}{{ page.url }}",{% endif %}
             {% if client.socials %}
                 "sameAs": [{% for platform, url in client.socials %}
@@ -682,7 +714,7 @@ Doing this will complete the overlapping "breaking the container" look.
         <div class="cs-wrapper">
             <div class="cs-content">
                 <span class="cs-topper">Our Steps</span>
-                <h2 class="cs-title">HLI’s Driveway & Sidewalk Process</h2>
+                <h2 class="cs-title">HLI’s Landscaping Process</h2>
             </div>
             <ul class="cs-card-group">
                 <li class="cs-item">
