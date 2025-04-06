@@ -1808,6 +1808,12 @@ h2 {
     max-width: 21.875rem;
   }
 }
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode #cost-section p {
+    color: #000;
+  }
+}
 /*-- -------------------------- -->
 <---     Trusted Company       -->
 <--- -------------------------- -*/
