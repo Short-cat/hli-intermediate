@@ -3,12 +3,12 @@
     "short_name": "",
     "icons": [
         {
-            "src": "/assets/svgs/hli-logo6.svg",
+            "src": "/assets/svgs/hli-logo.svg",
             "sizes": "192x192",
             "type": "image/svg+xml"
         },
         {
-            "src": "/assets/svgs/hli-logo6.svg",
+            "src": "/assets/svgs/hli-logo.svg",
             "sizes": "384x384",
             "type": "image/svg+xml"
         }
