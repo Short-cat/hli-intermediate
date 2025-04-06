@@ -15,167 +15,281 @@ eleventyNavigation:
 {% endblock %}
 
 {% block body %}
-    <!-- ============================================ -->
-    <!--                   Banner                     -->
-    <!-- ============================================ -->
+<!-- ============================================ -->
+<!--                   Banner                     -->
+<!-- ============================================ -->
 
-    <div id="banner-1106">
-        <div class="cs-container">
-            <span class="cs-int-title">About Us</span>
-            <div class="cs-breadcrumbs">
-                <a href="" class="cs-link">Home</a>
-                <a href="" class="cs-link cs-active">About</a>
-            </div>
+<div id="banner-1519">
+    <div class="cs-container">
+        <span class="cs-int-title">About Us</span>
+        <div class="cs-breadcrumbs">
+            <a href="/" class="cs-link">Home</a>
+            <a href="about/" class="cs-link cs-active">About Us</a>
         </div>
-        <!--Background Image-->
-        <picture class="cs-background">
-            <!--Mobile Image-->
-            <source media="(max-width: 600px)" srcset="/assets/images/cabinets.jpg">
-            <!--Tablet and above Image-->
-            <source media="(min-width: 601px)" srcset="/assets/images/cabinets.jpg">
-            <img decoding="async" src="/assets/images/cabinets.jpg" alt="mechanic" width="1280" height="568" aria-hidden="true">
-        </picture>
     </div>
+    <!--Background Image-->
+    <picture class="cs-background">
+       <!--Mobile Image-->
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 640, height: 820 }) | avif %}" type="image/avif">
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 640, height: 820 }) | webp %}" type="image/webp">
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 640, height: 820 }) | jpeg %}" type="image/jpeg">
+       <!--Tablet Image-->
+       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 2046, height: 962 }) | avif %}" type="image/avif">
+       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 2046, height: 962 }) | webp %}" type="image/webp">
+       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 2046, height: 962 }) | jpeg %}" type="image/jpeg">
+       <!--Desktop Image-->
+       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 3840, height: 1044 }) | avif %}" type="image/avif">
+       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 3840, height: 1044 }) | webp %}" type="image/webp">
+       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 3840, height: 1044 }) | jpeg %}" type="image/jpeg">
+       <img src="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 3840, height: 1044 }) | jpeg %}" alt="" width="1920" height="522" decoding="async" aria-hidden="true">
+    </picture>
+    <svg class="cs-mask" xmlns="http://www.w3.org/2000/svg" width="1920" height="136" viewBox="0 0 1920 136" fill="none">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M1920 136V0C1803.21 45.3334 1445.52 136 951 136C456.485 136 111.116 45.3334 0 0V136H951H1920Z" fill="var(--maskBG)"/>
+    </svg>
+</div>
                                 
 
-    <!-- ============================================ -->
-    <!--                 Side By Side                 -->
-    <!-- ============================================ -->
+<!-- ============================================ -->
+<!--              About  Side By Side             -->
+<!-- ============================================ -->
 
     <section id="sbs">
         <div class="cs-container">
             <!-- Left Image Section -->
             <div class="cs-left">
                 <picture class="cs-picture cs-picture1">
-                    <source media="(max-width: 600px)" srcset="/assets/images/cabinets.jpg">
-                    <source media="(min-width: 601px)" srcset="/assets/images/cabinets.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/cabinets.jpg" alt="cabinets" loading="lazy" width="400" height="563">
+                   <!--Mobile Image-->
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-landscapedesign.jpg" | resize({ width: 482, height: 536, position: "right" }) | flop | avif %}" type="image/avif">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-landscapedesign.jpg" | resize({ width: 482, height: 536, position: "right" }) | flop | webp %}" type="image/webp">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-landscapedesign.jpg" | resize({ width: 482, height: 536, position: "right" }) | flop | jpeg %}" type="image/jpeg">
+                   <!--Tablet Image-->
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-landscapedesign.jpg" | resize({ width: 730, height: 812, position: "right" }) | flop | avif %}" type="image/avif">
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-landscapedesign.jpg" | resize({ width: 730, height: 812, position: "right" }) | flop | webp %}" type="image/webp">
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-landscapedesign.jpg" | resize({ width: 730, height: 812, position: "right" }) | flop | jpeg %}" type="image/jpeg">
+                   <!--Desktop Image-->
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-landscapedesign.jpg" | resize({ width: 1044, height: 1162, position: "right" }) | flop | avif %}" type="image/avif">
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-landscapedesign.jpg" | resize({ width: 1044, height: 1162, position: "right" }) | flop | webp %}" type="image/webp">
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-landscapedesign.jpg" | resize({ width: 1044, height: 1162, position: "right" }) | flop | jpeg %}" type="image/jpeg">
+                   <img src="{% getUrl "/assets/images/hli-landscapedesign.jpg" | resize({ width: 1044, height: 1162, position: "right" }) | flop | jpeg %}" alt="" width="522" height="581" loading="lazy" decoding="async" aria-hidden="true">
                 </picture>
                 <picture class="cs-picture cs-picture2">
-                    <source media="(max-width: 600px)" srcset="/assets/images/construction-m.jpg">
-                    <source media="(min-width: 601px)" srcset="/assets/images/construction.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/construction.jpg" alt="house" loading="lazy" width="400" height="563">
+                   <!--Mobile Image-->
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-patio-cover1.jpg" | resize({ width: 364, height: 350 }) | avif %}" type="image/avif">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-patio-cover1.jpg" | resize({ width: 364, height: 350 }) | webp %}" type="image/webp">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-patio-cover1.jpg" | resize({ width: 364, height: 350 }) | jpeg %}" type="image/jpeg">
+                   <!--Tablet Image-->
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-patio-cover1.jpg" | resize({ width: 546, height: 528 }) | avif %}" type="image/avif">
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-patio-cover1.jpg" | resize({ width: 546, height: 528 }) | webp %}" type="image/webp">
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-patio-cover1.jpg" | resize({ width: 546, height: 528 }) | jpeg %}" type="image/jpeg">
+                   <!--Desktop Image-->
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-patio-cover1.jpg" | resize({ width: 780, height: 752 }) | avif %}" type="image/avif">
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-patio-cover1.jpg" | resize({ width: 780, height: 752 }) | webp %}" type="image/webp">
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-patio-cover1.jpg" | resize({ width: 780, height: 752 }) | jpeg %}" type="image/jpeg">
+                   <img src="{% getUrl "/assets/images/hli-patio-cover1.jpg" | resize({ width: 780, height: 752 }) | jpeg %}" alt="" width="390" height="376" loading="lazy" decoding="async" aria-hidden="true">
                 </picture>
             </div>
             <!-- Right Content Section-->
             <div class="cs-right">
-                <span class="cs-topper">About Us</span>
-                <h2 class="cs-title">About Company Title</h2>
+                <span class="cs-topper">About HLI</span>
+                <h2 class="cs-title">Houston’s Landscaping Partner—Yesterday, Today, and Tomorrow
+                </h2>
                 <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
+                    Time is a valuable thing—and time is what has made Houston Landscape Images the dependable landscaping company it is today. With over 30 years of dedication, and 1,000+ projects, we have grown strong in the Houston community.
+
                 </p>
                 <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
+                    As a family-run business, we bring that experience to every job—landscaping, grading, irrigation, tree services, and our specialty in hardscaping—all with one skilled team. No need for multiple contractors; we streamline the process to maximize your investment. Whether it’s a large-scale installation or a custom home design, we deliver results that exceed expectations. We’re not just here for a single project—we aim to be your trusted team for every landscaping need, year after year.
                 </p>
                 <div class="cs-flex-group">
                     <p class="cs-flex-p">
-                        In consequat tincidunt turpis sit amet imperdiet. Praesent Classei consequat tincidunt turpis sit amet imperdiet for mind.
+                        “Landscaping is more than my work—it’s my craft. Every job, small or large, gets my full care. I’m here to lead my team, deliver more than you expect, and stick with you for every project down the line.” 
+
                     </p>
-                    <span class="cs-name">Justin Time</span>
-                    <span class="cs-job">CEO-Founder</span>
+                    <span class="cs-name">Sanson Faltine</span>
+                    <span class="cs-job">Owner-Founder</span>
                     <img class="cs-quote-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg" alt="gavel" width="136" height="77">
                 </div>
-                <a href="/projects" class="cs-button-solid">Our Projects</a>
+                <a href="/gallery" class="cs-button-solid">Our Projects</a>
             </div>
         </div>
-    </section>
+    </section>   
 
-    <!-- ============================================ -->
-    <!--                  Reviews                     -->
-    <!-- ============================================ -->
+<!-- ============================================ -->
+<!--                 Side By Side 2               -->
+<!-- ============================================ -->
 
-    <section id="about-1451">
-        <div class="cs-container">
-            <h2 class="team">Meet The Team</h2>
-            <div class="cs-info">
-                <picture class="cs-picture">
-                    <!--Mobile Image-->
-                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/team1.jpg">
-                    <!--Tablet and above Image-->
-                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/team1.jpg">
-                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/team1.jpg" alt="person" width="522" height="696">
-                </picture>
-                <div class="cs-content">
-                    <span class="cs-header">Leslie Alexander</span>
-                    <p class="cs-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quo in tenetur eveniet iste voluptates vel, molestiae id ab nisi, nihil ipsam voluptas, sapiente doloribus facere earum vitae provident! Aperiam modi cupiditate facere eos consectetur illo necessitatibus. Deleniti corrupti molestias mollitia ipsam eius, vel dolorum quaerat totam recusandae eum voluptas quisquam harum accusantium blanditiis, reprehenderit, a aperiam nihil. Doloremque eius placeat alias excepturi esse cupiditate? Illum iure reprehenderit expedita, incidunt optio non quae harum molestiae quas sit. Dicta, ullam tempo
-                    </p>
-                    <p class="cs-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quo in tenetur eveniet iste voluptates vel, molestiae id ab nisi, nihil ipsam voluptas, sapiente doloribus facere earum vitae provident! Aperiam modi cupiditate facere eos consectetur illo necessitatibus. Deleniti corrupti molestias mollitia ipsam eius, vel dolorum quaerat totam recusandae eum voluptas quisquam harum accusantium blanditiis, reprehenderit, a aperiam nihil. Doloremque eius placeat alias excepturi esse cupiditate? Illum iure reprehenderit expedita, incidunt optio non quae harum molestiae quas sit. Dicta, ullam tempo
-                    </p>
-                </div>
+    <section id="service-areas">
+        <div class="container">
+            <div class="sb-content">
+                <h2 class="cs-title">
+                    A Local Family Owned Landscaping Company in {{client.address.state}}
+                    Near You
+                </h2>
+                <span class="cs-topper"
+                    >Based in {{client.address.city}}, Serving
+                    {{client.address.state}}</span
+                >
+                <p class="cs-p">
+                    Based in {{client.address.city}}, {{client.name}} proudly serves the
+                    entire region with top-tier landscaping services. We&apos;re committed
+                    to enhancing the beauty of our local communities, offering personalized
+                    solutions that cater to the diverse needs of homeowners and businesses
+                    alike. Whether you&apos;re in Rosenberg, the Woodlands, or anywhere in
+                    between, our team is ready to bring your outdoor space to life with
+                    exceptional design and craftsmanship. No matter where you are in
+                    {{client.address.city}}, you can count on us to deliver the quality and
+                    service you deserve.
+                </p>
+                <h3 class="cs-h3">Committed to Customer Satisfaction</h3>
+                <p class="cs-p">
+                    At {{client.name}}, we are dedicated to exceeding our customers'
+                    expectations on every project. From the initial consultation to the
+                    final touches, our commitment to quality and customer satisfaction is
+                    unwavering. We take pride in delivering beautifully crafted landscapes
+                    that reflect your vision and enhance the natural beauty of your
+                    property. Our team works closely with you throughout the process,
+                    ensuring clear communication, attention to detail, and a seamless
+                    experience from start to finish. Your satisfaction is our top priority,
+                    and we strive to create outdoor spaces you&apos;ll love for years to
+                    come.
+                </p>
+                <h3 class="cs-h3">A {{client.address.state}} Landscaper Near You That You Can Trust</h3>
+                <p class="cs-p">
+                    {{client.name}} is a local company you can trust to bring your outdoor
+                    vision to life. With deep roots in the community, we understand the
+                    unique needs and challenges of landscaping in {{client.address.state}}.
+                    Our dedicated team combines expertise, reliability, and a passion for
+                    excellence to deliver stunning results every time. We take the time to
+                    listen to your ideas, provide honest advice, and work diligently to
+                    ensure your landscape reflects your style and needs. When you choose
+                    {{client.name}}, you&apos;re partnering with a team that values your
+                    trust and is committed to your complete satisfaction.
+                </p>
+                <h3 class="cs-h3">Contact {{client.name}} Today!</h3>
+                <p class="cs-p">
+                    Ready to transform your outdoor space? Contact {{client.name}} today to
+                    schedule your consultation. Our team is here to answer any questions and
+                    help you start the journey toward a beautiful, customized landscape.
+                    Reach out to us by phone, email, or through our easy online form, and
+                    we&apos;ll be in touch promptly to discuss your project and how we can
+                    bring your vision to life.
+                </p>
             </div>
-            <div class="cs-info">
-                <picture class="cs-picture">
-                    <!--Mobile Image-->
-                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/team2.jpg">
-                    <!--Tablet and above Image-->
-                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/team2.jpg">
-                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/team2.jpg" alt="person" width="522" height="696">
-                </picture>
-                <div class="cs-content">
-                    <span class="cs-header">Guy Hawkins</span>
-                    <p class="cs-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quo in tenetur eveniet iste voluptates vel, molestiae id ab nisi, nihil ipsam voluptas, sapiente doloribus facere earum vitae provident! Aperiam modi cupiditate facere eos consectetur illo necessitatibus. Deleniti corrupti molestias mollitia ipsam eius, vel dolorum quaerat totam recusandae eum voluptas quisquam harum accusantium blanditiis, reprehenderit, a aperiam nihil. Doloremque eius placeat alias excepturi esse cupiditate? Illum iure reprehenderit expedita, incidunt optio non quae harum molestiae quas sit. Dicta, ullam tempo
-                    </p>
-                    <p class="cs-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quo in tenetur eveniet iste voluptates vel, molestiae id ab nisi, nihil ipsam voluptas, sapiente doloribus facere earum vitae provident! Aperiam modi cupiditate facere eos consectetur illo necessitatibus. Deleniti corrupti molestias mollitia ipsam eius, vel dolorum quaerat totam recusandae eum voluptas quisquam harum accusantium blanditiis, reprehenderit, a aperiam nihil. Doloremque eius placeat alias excepturi esse cupiditate? Illum iure reprehenderit expedita, incidunt optio non quae harum molestiae quas sit. Dicta, ullam tempo
-                    </p>
-                </div>
-            </div>
-            <div class="cs-info">
-                <picture class="cs-picture">
-                    <!--Mobile Image-->
-                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/team3.jpg">
-                    <!--Tablet and above Image-->
-                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/team3.jpg">
-                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/team3.jpg" alt="person" width="522" height="696">
-                </picture>
-                <div class="cs-content">
-                    <span class="cs-header">Cameron Williamson</span>
-                    <p class="cs-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quo in tenetur eveniet iste voluptates vel, molestiae id ab nisi, nihil ipsam voluptas, sapiente doloribus facere earum vitae provident! Aperiam modi cupiditate facere eos consectetur illo necessitatibus. Deleniti corrupti molestias mollitia ipsam eius, vel dolorum quaerat totam recusandae eum voluptas quisquam harum accusantium blanditiis, reprehenderit, a aperiam nihil. Doloremque eius placeat alias excepturi esse cupiditate? Illum iure reprehenderit expedita, incidunt optio non quae harum molestiae quas sit. Dicta, ullam tempo
-                    </p>
-                    <p class="cs-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quo in tenetur eveniet iste voluptates vel, molestiae id ab nisi, nihil ipsam voluptas, sapiente doloribus facere earum vitae provident! Aperiam modi cupiditate facere eos consectetur illo necessitatibus. Deleniti corrupti molestias mollitia ipsam eius, vel dolorum quaerat totam recusandae eum voluptas quisquam harum accusantium blanditiis, reprehenderit, a aperiam nihil. Doloremque eius placeat alias excepturi esse cupiditate? Illum iure reprehenderit expedita, incidunt optio non quae harum molestiae quas sit. Dicta, ullam tempo
-                    </p>
-                </div>
-            </div>
-            <div class="cs-info">
-                <picture class="cs-picture">
-                    <!--Mobile Image-->
-                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/team4.jpg">
-                    <!--Tablet and above Image-->
-                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/team4.jpg">
-                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/team4.jpg" alt="person" width="522" height="696">
-                </picture>
-                <div class="cs-content">
-                    <span class="cs-header">Kristin Watson</span>
-                    <p class="cs-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quo in tenetur eveniet iste voluptates vel, molestiae id ab nisi, nihil ipsam voluptas, sapiente doloribus facere earum vitae provident! Aperiam modi cupiditate facere eos consectetur illo necessitatibus. Deleniti corrupti molestias mollitia ipsam eius, vel dolorum quaerat totam recusandae eum voluptas quisquam harum accusantium blanditiis, reprehenderit, a aperiam nihil. Doloremque eius placeat alias excepturi esse cupiditate? Illum iure reprehenderit expedita, incidunt optio non quae harum molestiae quas sit. Dicta, ullam tempo
-                    </p>
-                    <p class="cs-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quo in tenetur eveniet iste voluptates vel, molestiae id ab nisi, nihil ipsam voluptas, sapiente doloribus facere earum vitae provident! Aperiam modi cupiditate facere eos consectetur illo necessitatibus. Deleniti corrupti molestias mollitia ipsam eius, vel dolorum quaerat totam recusandae eum voluptas quisquam harum accusantium blanditiis, reprehenderit, a aperiam nihil. Doloremque eius placeat alias excepturi esse cupiditate? Illum iure reprehenderit expedita, incidunt optio non quae harum molestiae quas sit. Dicta, ullam tempo
-                    </p>
-                </div>
-            </div>
-            <div class="cs-info">
-                <picture class="cs-picture">
-                    <!--Mobile Image-->
-                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/team3.jpg">
-                    <!--Tablet and above Image-->
-                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/team3.jpg">
-                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/team3.jpg" alt="person" width="522" height="696">
-                </picture>
-                <div class="cs-content">
-                    <span class="cs-header">Cameron Williamson</span>
-                    <p class="cs-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quo in tenetur eveniet iste voluptates vel, molestiae id ab nisi, nihil ipsam voluptas, sapiente doloribus facere earum vitae provident! Aperiam modi cupiditate facere eos consectetur illo necessitatibus. Deleniti corrupti molestias mollitia ipsam eius, vel dolorum quaerat totam recusandae eum voluptas quisquam harum accusantium blanditiis, reprehenderit, a aperiam nihil. Doloremque eius placeat alias excepturi esse cupiditate? Illum iure reprehenderit expedita, incidunt optio non quae harum molestiae quas sit. Dicta, ullam tempo
-                    </p>
-                    <p class="cs-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quo in tenetur eveniet iste voluptates vel, molestiae id ab nisi, nihil ipsam voluptas, sapiente doloribus facere earum vitae provident! Aperiam modi cupiditate facere eos consectetur illo necessitatibus. Deleniti corrupti molestias mollitia ipsam eius, vel dolorum quaerat totam recusandae eum voluptas quisquam harum accusantium blanditiis, reprehenderit, a aperiam nihil. Doloremque eius placeat alias excepturi esse cupiditate? Illum iure reprehenderit expedita, incidunt optio non quae harum molestiae quas sit. Dicta, ullam tempo
-                    </p>
-                </div>
+            <div class="sb-col">
+                <ul class="col-group">
+                    <li class="img-box">
+                        <h2>Services</h2>
+                        <picture class="cs-background">
+                            <!--Mobile Image-->
+                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 576, height: 576 }) | avif %}" type="image/avif">
+                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 576, height: 576 }) | webp %}" type="image/webp">
+                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 576, height: 576 }) | jpeg %}" type="image/jpeg">
+                            <!--Tablet Image-->
+                            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 544, height: 544 }) | avif %}" type="image/avif">
+                            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 544, height: 544 }) | webp %}" type="image/webp">
+                            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 544, height: 544 }) | jpeg %}" type="image/jpeg">
+                            <!--Desktop Image-->
+                            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 544, height: 544 }) | avif %}" type="image/avif">
+                            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 544, height: 544 }) | webp %}" type="image/webp">
+                            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 544, height: 544 }) | jpeg %}" type="image/jpeg">
+                            <img src="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 544, height: 544 }) | jpeg %}" alt="landscaping" width="272" height="272" loading="lazy" decoding="async" aria-hidden="true">
+                        </picture>
+                    </li>
+                    <li class="serv-title">
+                        Landscaping
+                    </li>
+                    <li class="city">
+                        <a href="/landscape-design" class="cs-link">
+                            Landscape Design
+                        </a>
+                    </li>
+                    <li class="city">
+                        <a href="/plant-beds" class="cs-link">
+                            Planting & Garden Design
+                        </a>
+                    </li>
+                    <li class="city">
+                        <a href="/turf-putting-greens" class="cs-link">
+                            Turf & Putting Greens
+                        </a>
+                    </li>
+                    <li class="city">
+                        <a href="/sod" class="cs-link">
+                            Sod
+                        </a>
+                    </li>
+                    <li class="city">
+                        <a href="/tree-trimming-removal" class="cs-link">
+                            Tree Trimming & Removal
+                        </a>
+                    </li>
+                    <li class="serv-title">
+                        Hardscaping
+                    </li>
+                    <li class="city">
+                        <a href="/patio-covers" class="cs-link">
+                            Patio Covers
+                        </a>
+                    </li>
+                    <li class="city">
+                        <a href="/concrete-overlay" class="cs-link">
+                            Concrete Overlay
+                        </a>
+                    </li>
+                    <li class="city">
+                        <a href="/driveways-sidewalks" class="cs-link">
+                            Driveways & Sidewalks
+                        </a>
+                    </li>
+                    <li class="city">
+                        <a href="/outdoor-kitchens" class="cs-link">
+                            Outdoor Kitchens
+                        </a>
+                    </li>
+                    <li class="city">
+                        <a href="/pathways-walkways" class="cs-link">
+                            Pathways & Walkways
+                        </a>
+                    </li>
+                    <li class="city">
+                        <a href="/stone-borders-retaining-walls" class="cs-link">
+                            Borders & Retaining Walls
+                        </a>
+                    </li>
+                    <li class="city">
+                        <a href="/patios" class="cs-link">
+                            Patios
+                        </a>
+                    </li>
+                    <li class="city">
+                        <a href="/fire-water-features" class="cs-link">
+                            Fire & Water Features
+                        </a>
+                    </li>
+                    <li class="serv-title">
+                        Drainage & Irrigation
+                    </li>
+                    <li class="city">
+                        <a href="/drainage-irrigation" class="cs-link">
+                            Drainage & Irrigation
+                        </a>
+                    <li class="serv-title">
+                        Wood Work
+                    </li>
+                    <li class="city">
+                        <a href="/pergolas-gazebos" class="cs-link">
+                            Pergolas & Gazebos
+                        </a>
+                    </li>
+                    <li class="serv-title">
+                        Lighting
+                    </li>
+                    <li class="city">
+                        <a href="/landscape-lighting" class="cs-link">
+                            Landscape Lighting
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
     </section>

@@ -266,6 +266,9 @@
   body.dark-mode #hero-1250 .cs-text {
     color: #fff;
   }
+  body.dark-mode #hero-1250 .cs-topper {
+    color: var(--primary);
+  }
 }
 /*-- -------------------------- -->
 <---          Services          -->

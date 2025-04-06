@@ -6,15 +6,17 @@
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-    #banner-1106 {
+    #banner-1519 {
         padding: var(--sectionPadding);
-        padding-top: (250/16rem);
-        padding-bottom: (120/16rem);
+        /* 190px - 268px */
+        padding-top: clamp(11.875rem, 25vw, 16.75rem);
+        /* 100px - 150px */
+        padding-bottom: clamp(6.25rem, 12vw, 9.375rem);
         /* clips the line from causing overflow issues for going off screen */
         overflow: hidden;
         position: relative;
         z-index: 1;
-
+        
         .cs-container {
             text-align: center;
             width: 100%;
@@ -25,9 +27,10 @@
             justify-content: center;
             align-items: flex-start;
             flex-direction: column;
-            gap: (12/16rem);
+            /* 8px - 12px */
+            gap: clamp(.5rem, 1vw, .75rem);
         }
-
+    
         .cs-int-title {
             /* 39px - 61px */
             font-size: clamp(2.4375rem, 6.4vw, 3.8125rem);
@@ -35,7 +38,7 @@
             line-height: 1.2em;
             text-align: inherit;
             margin: 0;
-            color: var(--bodyTextColorWhite);
+            color: #fff;
             position: relative;
         }
 
@@ -49,7 +52,7 @@
             font-size: (16/16rem);
             line-height: 1.2em;
             text-decoration: none;
-            color: var(--bodyTextColorWhite);
+            color: #fff;
             position: relative;
             display: flex;
             justify-content: center;
@@ -64,11 +67,11 @@
 
             &:after {
                 /* chevron */
-                content: "";
+                content: '';
                 width: (7/16rem);
                 height: (12/16rem);
                 margin: 0 (16/16rem);
-                background: url("https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/white-chev.svg");
+                background: url("/assets/svgs/chevron.svg");
                 background-size: contain;
                 background-position: center;
                 background-repeat: no-repeat;
@@ -121,6 +124,59 @@
                 width: 100%;
                 /* Makes img tag act as a background image */
                 object-fit: cover;
+            }
+        }
+
+        .cs-mask {
+            --maskBG: #ffffff;
+
+            width: 100%;
+            height: auto;
+            display: block;
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            z-index: 100;
+        }
+    }
+}
+
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #banner-1519 {
+        .cs-background {
+            &:before {
+                /* background color overlay */
+                content: "";
+                position: absolute;
+                display: block;
+                height: 100%;
+                width: 100%;
+                background: -moz-linear-gradient(
+                    left,
+                    rgba(26, 26, 26, 0.94) 0%,
+                    rgba(26, 26, 26, 0) 100%
+                ); /* FF3.6-15 */
+                background: -webkit-linear-gradient(
+                    left,
+                    rgba(26, 26, 26, 0.94) 0%,
+                    rgba(26, 26, 26, 0) 100%
+                ); /* Chrome10-25,Safari5.1-6 */
+                opacity: 1;
+                top: 0;
+                left: 0;
+                z-index: 1;
+            }
+        }
+    }
+}
+
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+    body.dark-mode {
+        #banner-1519 {
+            .cs-mask {
+                --maskBG: var(--dark);
             }
         }
     }

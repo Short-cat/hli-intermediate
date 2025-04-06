@@ -99,14 +99,14 @@ Doing this will complete the overlapping "breaking the container" look.
 <section id="hero-1250">
     <div class="cs-container">
       <div class="cs-content">
-          <h2 class="cs-topper cs-color">Serving Southwest Houston</h2>
+          <h2 class="cs-topper">Serving Southwest Houston</h2>
           <h1 class="cs-title">Houston Landscaping Professionals</h1>
           <p class="cs-text">
               Get a <span class="cs-color"> <strong>100% FREE Consultation & Quote </strong></span> Today. Click below to get this offer!
           </p>
           <div class="button-box">
               <a href="/contact" class="cs-button-solid">Get A Quote</a>
-              <a href="" class="cs-button-transparent">
+              <a href="/contact" class="cs-button-transparent">
                 <img
                   class="cs-img"
                   loading="lazy"
@@ -116,7 +116,7 @@ Doing this will complete the overlapping "breaking the container" look.
                   width="17"
                   height="17"
                 />
-                Get A Quote
+                Get In Touch
               </a>
           </div>
           <div class="trust">
@@ -180,18 +180,18 @@ Doing this will complete the overlapping "breaking the container" look.
     <!-- Background Image, there's a background image in the CSS for the parallax effect you'll need to change as well if you swap out our images -->
     <picture class="cs-background">
        <!--Mobile Image-->
-       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-plants.jpg"  | resize({ width: 640, height: 2400 }) | avif({ quality: 80 }) %}" type="image/avif">
-       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-plants.jpg"  | resize({ width: 640, height: 2400 }) | webp({ quality: 80 }) %}" type="image/webp">
-       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-plants.jpg"  | resize({ width: 640, height: 2400 }) | jpeg({ quality: 80 }) %}" type="image/jpeg">
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-plants.jpg"  | resize({ width: 640, height: 2400 }) | avif({ quality: 30 }) %}" type="image/avif">
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-plants.jpg"  | resize({ width: 640, height: 2400 }) | webp({ quality: 30 }) %}" type="image/webp">
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-plants.jpg"  | resize({ width: 640, height: 2400 }) | jpeg({ quality: 30 }) %}" type="image/jpeg">
        <!--Tablet Image-->
-       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 2046, height: 2548 }) | avif({ quality: 80 }) %}" type="image/avif">
-       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 2046, height: 2548 }) | webp({ quality: 80 }) %}" type="image/webp">
-       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 2046, height: 2548 }) | jpeg({ quality: 80 }) %}" type="image/jpeg">
+       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 2046, height: 2548 }) | avif({ quality: 30 }) %}" type="image/avif">
+       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 2046, height: 2548 }) | webp({ quality: 30 }) %}" type="image/webp">
+       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 2046, height: 2548 }) | jpeg({ quality: 30 }) %}" type="image/jpeg">
        <!--Desktop Image-->
-       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 3840, height: 2030 }) | avif({ quality: 80 }) %}" type="image/avif">
-       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 3840, height: 2030 }) | webp({ quality: 80 }) %}" type="image/webp">
-       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 3840, height: 2030 }) | jpeg({ quality: 80 }) %}" type="image/jpeg">
-       <img src="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 3840, height: 2030 }) | jpeg({ quality: 80 }) %}" alt="front yard" width="1920" height="1015" loading="eager" decoding="async" aria-hidden="true">
+       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 3840, height: 2030 }) | avif({ quality: 30 }) %}" type="image/avif">
+       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 3840, height: 2030 }) | webp({ quality: 30 }) %}" type="image/webp">
+       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 3840, height: 2030 }) | jpeg({ quality: 30 }) %}" type="image/jpeg">
+       <img src="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 3840, height: 2030 }) | jpeg({ quality: 30 }) %}" alt="front yard" width="1920" height="1015" loading="eager" decoding="async" aria-hidden="true">
     </picture>
 </section>
 
@@ -210,7 +210,7 @@ Doing this will complete the overlapping "breaking the container" look.
                 <p class="cs-item-text">
                     We design custom landscapes for Houston properties, using precise layouts and plants to improve function and value.
                 </p>
-                <a href="" class="cs-link">Read More</a>
+                <a href="/landscape-design" class="cs-link">Read More</a>
                 <!--Background Image-->
                 <picture class="cs-background">
                    <!--Mobile Image-->
@@ -236,7 +236,7 @@ Doing this will complete the overlapping "breaking the container" look.
                 <p class="cs-item-text">
                     We build durable patio covers for Houston homes, offering shade and weather protection with clean design.
                 </p>
-                <a href="" class="cs-link">Read More</a>
+                <a href="/patio-covers" class="cs-link">Read More</a>
                 <!--Background Image-->
                 <picture class="cs-background">
                    <!--Mobile Image-->
@@ -262,7 +262,7 @@ Doing this will complete the overlapping "breaking the container" look.
                 <p class="cs-item-text">
                     We construct outdoor kitchens for Houston yards, designed for cooking and gatherings, suited to local conditions.
                 </p>
-                <a href="" class="cs-link">Read More</a>
+                <a href="/outdoor-kitchens" class="cs-link">Read More</a>
                 <!--Background Image-->
                 <picture class="cs-background">
                    <!--Mobile Image-->
@@ -288,7 +288,7 @@ Doing this will complete the overlapping "breaking the container" look.
                 <p class="cs-item-text">
                     We set up drainage and irrigation for Houston landscapes, managing water to protect and maintain your yard.
                 </p>
-                <a href="" class="cs-link">Read More</a>
+                <a href="/drainage-irrigation" class="cs-link">Read More</a>
                 <!--Background Image-->
                 <picture class="cs-background">
                    <!--Mobile Image-->
@@ -344,7 +344,7 @@ Doing this will complete the overlapping "breaking the container" look.
             <p class="cs-text">
                 We often let the reviews speak for themselves—and our community has spoken. HLI has been graciously recognized for outstanding customer satisfaction based on genuine customer feedback, not nominations or votes. For over three decades, every project and partnership in the Houston area has contributed to the expertise we envisioned from HLI’s very beginning. This 2024 award reflects the trust our customers have placed in us and the passion we bring to every design and installation. This award fuels our drive to keep exceeding expectations. Let’s create something extraordinary together—reach out today and see why Houston trusts HLI.
             </p>
-            <a href="" class="cs-button-solid">Contact Us</a>
+            <a href="/contact" class="cs-button-solid">Contact Us</a>
         </div>
     </div>
 </section>
@@ -410,7 +410,7 @@ Doing this will complete the overlapping "breaking the container" look.
                     <span class="cs-job">Owner-Founder</span>
                     <img class="cs-quote-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg" alt="gavel" width="136" height="77">
                 </div>
-                <a href="/gallery" class="cs-button-solid">Our Projects</a>
+                <a href="/about" class="cs-button-solid">About Us</a>
             </div>
         </div>
     </section>                   
@@ -462,7 +462,7 @@ Doing this will complete the overlapping "breaking the container" look.
             <img src="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 1304, height: 1032 }) | jpeg %}" alt="" width="652" height="516" loading="lazy" decoding="async" aria-hidden="true">
       </picture>
       <h3 class="gt">Landscaping</h3>
-      <a href="/landscaping" class="cs-button-solid">Landscaping</a>
+      <a href="/landscape-design" class="cs-button-solid">Landscaping</a>
     </div>
     <div class="box2">
       <picture class="s-pic s-pic2">
@@ -481,7 +481,7 @@ Doing this will complete the overlapping "breaking the container" look.
             <img src="{% getUrl "/assets/images/hli-patio4.jpg" | resize({ width: 1304, height: 500 }) | jpeg %}" alt="" width="652" height="250" loading="lazy" decoding="async" aria-hidden="true">
         </picture>
       <h3 class="gt">Patios</h3>
-      <a href="/services#pw" class="cs-button-solid">Patios</a>
+      <a href="/patios" class="cs-button-solid">Patios</a>
     </div>
     <div class="box3">
       <picture class="s-pic s-pic3">
@@ -500,7 +500,7 @@ Doing this will complete the overlapping "breaking the container" look.
             <img src="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 1304, height: 500 }) | jpeg %}" alt="" width="652" height="250" loading="lazy" decoding="async" aria-hidden="true">
         </picture>
       <h3 class="gt">Artificial Turf</h3>
-      <a href="/services#pb" class="cs-button-solid">Artificial Turf</a>
+      <a href="/turf-putting-greens" class="cs-button-solid">Artificial Turf</a>
     </div>
     <div class="box4">
       <picture class="s-pic s-pic4">
@@ -519,7 +519,7 @@ Doing this will complete the overlapping "breaking the container" look.
             <img src="{% getUrl "/assets/images/hli-waterfall.jpg" | resize({ width: 1304, height: 500 }) | jpeg %}" alt="" width="652" height="250" loading="lazy" decoding="async" aria-hidden="true">
         </picture>
       <h3 class="gt">Fire & Water Features</h3>
-      <a href="/services#fw" class="cs-button-solid">Fire & Water Features</a>
+      <a href="/fire-water-features" class="cs-button-solid">Fire & Water Features</a>
     </div>
     <div class="box5">
       <picture class="s-pic s-pic5">
@@ -528,9 +528,9 @@ Doing this will complete the overlapping "breaking the container" look.
             <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/outdoor-kitchen1.png" | resize({ width: 576 , height: 460, position: "bottom" }) | webp %}" type="image/webp">
             <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/outdoor-kitchen1.png" | resize({ width: 576 , height: 460, position: "bottom" }) | jpeg %}" type="image/jpeg">
             <!--Tablet Image-->
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/outdoor-kitchen1.png" | resize({ width: 944 , height: 210, position: "bottom" }) | avif %}" type="image/avif">
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/outdoor-kitchen1.png" | resize({ width: 944 , height: 210, position: "bottom" }) | webp %}" type="image/webp">
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/outdoor-kitchen1.png" | resize({ width: 944 , height: 210, position: "bottom" }) | jpeg %}" type="image/jpeg">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/outdoor-kitchen1.png" | resize({ width: 944 , height: 210, position: "entropy" }) | avif %}" type="image/avif">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/outdoor-kitchen1.png" | resize({ width: 944 , height: 210, position: "entropy" }) | webp %}" type="image/webp">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/outdoor-kitchen1.png" | resize({ width: 944 , height: 210, position: "entropy" }) | jpeg %}" type="image/jpeg">
             <!--Desktop Image-->
             <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/outdoor-kitchen1.png" | resize({ width: 1304, height: 500, position: "bottom" }) | avif %}" type="image/avif">
             <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/outdoor-kitchen1.png" | resize({ width: 1304, height: 500, position: "bottom" }) | webp %}" type="image/webp">
@@ -538,7 +538,7 @@ Doing this will complete the overlapping "breaking the container" look.
             <img src="{% getUrl "/assets/images/outdoor-kitchen1.png" | resize({ width: 1304, height: 500, position: "bottom" }) | jpeg %}" alt="" width="652" height="250" loading="lazy" decoding="async" aria-hidden="true">
         </picture>
       <h3 class="gt">Outdoor Kitchens</h3>
-      <a href="/services#ok" class="cs-button-solid">Outdoor Kitchens</a>
+      <a href="/outdoor-kitchens" class="cs-button-solid">Outdoor Kitchens</a>
     </div>
     <div class="box6">
       <picture class="s-pic s-pic6">
@@ -557,7 +557,7 @@ Doing this will complete the overlapping "breaking the container" look.
         <img src="{% getUrl "/assets/images/hli-patio-cover1.webp" | resize({ width: 1304, height: 1032 }) | jpeg %}" alt="" width="652" height="516" loading="lazy" decoding="async" aria-hidden="true">
       </picture>
       <h3 class="gt">Patio Covers</h3>
-      <a href="/services#p" class="cs-button-solid">Patio Covers</a>
+      <a href="/patio-covers" class="cs-button-solid">Patio Covers</a>
     </div>
   </div>
   <div class="cb">
@@ -651,9 +651,9 @@ Doing this will complete the overlapping "breaking the container" look.
             <p class="cs-text">
                 <strong>Here are three spotlight services to upgrade your Backyard:</strong>
             </p>
-            <a href="/fencing" class="cs-button-solid">Concrete Overlay</a>
-            <a href="/fencing" class="cs-button-solid">Pergolas</a>
-            <a href="/fencing" class="cs-button-solid">Landscape Lighting</a>
+            <a href="/concrete-overlay" class="cs-button-solid">Concrete Overlay</a>
+            <a href="/pergolas-gazebos" class="cs-button-solid">Pergolas</a>
+            <a href="/landscape-lighting" class="cs-button-solid">Landscape Lighting</a>
         </div>
     </div>
 </section>
@@ -664,56 +664,60 @@ Doing this will complete the overlapping "breaking the container" look.
 
 <section id="steps-1713">
     <picture class="cs-background">
-        <!--Mobile Image-->
-        <source media="(max-width: 600px)"
-                srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/business-meeting-women.jpeg">
-        <!--Tablet and above Image-->
-        <source media="(min-width: 601px)"
-                srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/business-meeting-women.jpeg">
-        <img loading="lazy" decoding="async"
-                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/business-meeting-women.jpeg"
-                alt="busines meeting" width="522" height="609" aria-hidden="true">
+       <!--Mobile Image-->
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-firepit1.jpg" | resize({ width: 640, height: 720, fit: "cover" }) | avif({ quality: 100 }) %}" type="image/avif">
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-firepit1.jpg" | resize({ width: 640, height: 720, fit: "cover" }) | webp({ quality: 100 }) %}" type="image/webp">
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-firepit1.jpg" | resize({ width: 640, height: 720, fit: "cover" }) | jpeg({ quality: 100 }) %}" type="image/jpeg">
+       <!--Tablet Image-->
+       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-firepit1.jpg" | resize({ width: 612, height: 1944, fit: "cover" }) | avif({ quality: 100 }) %}" type="image/avif">
+       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-firepit1.jpg" | resize({ width: 612, height: 1944, fit: "cover" }) | webp({ quality: 100 }) %}" type="image/webp">
+       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-firepit1.jpg" | resize({ width: 612, height: 1944, fit: "cover" }) | jpeg({ quality: 100 }) %}" type="image/jpeg">
+       <!--Desktop Image-->
+       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-firepit1.jpg" | resize({ width: 1920, height: 2224, fit: "cover" }) | avif({ quality: 100 }) %}" type="image/avif">
+       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-firepit1.jpg" | resize({ width: 1920, height: 2224, fit: "cover" }) | webp({ quality: 100 }) %}" type="image/webp">
+       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-firepit1.jpg" | resize({ width: 1920, height: 2224, fit: "cover" }) | jpeg({ quality: 100 }) %}" type="image/jpeg">
+       <img src="{% getUrl "/assets/images/hli-firepit1.jpg" | resize({ width: 1920, height: 2224, fit: "cover" }) | jpeg({ quality: 100 }) %}" alt="" width="960" height="1112" loading="lazy" decoding="async" aria-hidden="true">
     </picture>
     <div class="cs-container">
         <div class="cs-wrapper">
             <div class="cs-content">
                 <span class="cs-topper">Our Steps</span>
-                <h2 class="cs-title">How To Get Started</h2>
+                <h2 class="cs-title">HLI’s Driveway & Sidewalk Process</h2>
             </div>
             <ul class="cs-card-group">
                 <li class="cs-item">
                     <span class="cs-number">01</span>
                     <div class="cs-flex">
-                        <h3 class="cs-h3">Connect With Us</h3>
+                        <h3 class="cs-h3">Initial Consultation</h3>
                         <p class="cs-item-text">
-                            We provide some of the finest quality, most responsive and reliable, and cost effective services and solutions.
+                            During the initial consultation, we will discuss your needs, goals, and budget. We evaluate the property's layout, existing elements, and environmental conditions to develop a tailored landscape design.
                         </p>
                     </div>
                 </li>
                 <li class="cs-item">
                     <span class="cs-number">02</span>
                     <div class="cs-flex">
-                        <h3 class="cs-h3">Make A schedule</h3>
+                        <h3 class="cs-h3">Site Analysis & Design Development</h3>
                         <p class="cs-item-text">
-                            Fortune 500 companies to smaller and medium-sized companies to help manage risks to as low as reasonably practical.
+                            We conduct an in-depth site analysis, assessing soil conditions, drainage, and sunlight exposure, then use these insights to create a detailed plan blending appeal, utility, and local compliance (e.g., HOA rules). This ensures your design is both functional and stunning.
                     </p>
                     </div>
                 </li>
                 <li class="cs-item">
                     <span class="cs-number">03</span>
                     <div class="cs-flex">
-                        <h3 class="cs-h3">Describe Your Problem</h3>
+                        <h3 class="cs-h3">Budgeting and Cost Estimation</h3>
                         <p class="cs-item-text">
-                            Highly experienced staff of more than 100 professionals averaging 29+ years in industry and hands-on knowledge.
+                            Before moving forward, we provide a clear, itemized cost breakdown to ensure the project fits your budget without compromising on quality.
                         </p>
                     </div>
                 </li>
                 <li class="cs-item">
                     <span class="cs-number">04</span>
                     <div class="cs-flex">
-                        <h3 class="cs-h3">Get Expert Consultation</h3>
+                        <h3 class="cs-h3">Installation and Final Walkthrough</h3>
                         <p class="cs-item-text">
-                            Highly experienced staff of more than 100 professionals averaging 29+ years in industry and hands-on knowledge.
+                            Once installation is complete, we conduct a thorough final walkthrough. We provide maintenance guidance and answer any questions, ensuring you feel confident in the long-term care of your landscape.
                         </p>
                     </div>
                 </li>
@@ -738,69 +742,175 @@ Doing this will complete the overlapping "breaking the container" look.
             <!--In order from top left to top right, then bottom left to bototm right-->
             <!--Picture 1-->
             <picture class="cs-picture cs-picture1">
-                <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/leaves2-m.jpg">
-                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/leaves2.jpg">
-                <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/leaves2.jpg" alt="gallery image" width="424" height="190">
+               <!--Tablet Image-->
+               <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 660, height: 272 }) | avif %}" type="image/avif">
+               <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 660, height: 272 }) | webp %}" type="image/webp">
+               <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 660, height: 272 }) | jpeg %}" type="image/jpeg">
+               <!--Desktop Image-->
+               <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 1056, height: 384 }) | avif %}" type="image/avif">
+               <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 1056, height: 384 }) | webp %}" type="image/webp">
+               <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 1056, height: 384 }) | jpeg %}" type="image/jpeg">
+               <img src="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 1056, height: 384 }) | jpeg %}" alt="" width="528" height="192" loading="lazy" decoding="async" aria-hidden="true">
             </picture>
             <!--Picture 2-->
             <picture class="cs-picture cs-picture2">
-                <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/leaves2-m.jpg">
-                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/leaves2.jpg">
-                <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/leaves2.jpg" alt="gallery image" width="571" height="390">
+               <!--Mobile Image-->
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/outdoor-kitchen-service.jpg" | resize({ width: 376, height: 244 }) | avif %}" type="image/avif">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/outdoor-kitchen-service.jpg" | resize({ width: 376, height: 244 }) | webp %}" type="image/webp">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/outdoor-kitchen-service.jpg" | resize({ width: 376, height: 244 }) | jpeg %}" type="image/jpeg">
+               <!--Tablet Image-->
+               <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/outdoor-kitchen-service.jpg" | resize({ width: 660, height: 574 }) | avif %}" type="image/avif">
+               <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/outdoor-kitchen-service.jpg" | resize({ width: 660, height: 574 }) | webp %}" type="image/webp">
+               <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/outdoor-kitchen-service.jpg" | resize({ width: 660, height: 574 }) | jpeg %}" type="image/jpeg">
+               <!--Desktop Image-->
+               <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/outdoor-kitchen-service.jpg" | resize({ width: 1056, height: 826 }) | avif %}" type="image/avif">
+               <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/outdoor-kitchen-service.jpg" | resize({ width: 1056, height: 826 }) | webp %}" type="image/webp">
+               <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/outdoor-kitchen-service.jpg" | resize({ width: 1056, height: 826 }) | jpeg %}" type="image/jpeg">
+               <img src="{% getUrl "/assets/images/outdoor-kitchen-service.jpg" | resize({ width: 1056, height: 826 }) | jpeg %}" alt="" width="528" height="413" loading="lazy" decoding="async" aria-hidden="true">
             </picture>
             <!--Picture 3-->
             <picture class="cs-picture cs-picture3">
-                <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/leaves2-m.jpg">
-                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/leaves2.jpg">
-                <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/leaves2.jpg" alt="gallery image" width="268" height="190">
+               <!--Mobile Image-->
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/pergola-columns.jpg" | resize({ width: 176, height: 110 }) | avif %}" type="image/avif">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/pergola-columns.jpg" | resize({ width: 176, height: 110 }) | webp %}" type="image/webp">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/pergola-columns.jpg" | resize({ width: 176, height: 110 }) | jpeg %}" type="image/jpeg">
+               <!--Tablet Image-->
+               <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/pergola-columns.jpg" | resize({ width: 314, height: 272 }) | avif %}" type="image/avif">
+               <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/pergola-columns.jpg" | resize({ width: 314, height: 272 }) | webp %}" type="image/webp">
+               <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/pergola-columns.jpg" | resize({ width: 314, height: 272 }) | jpeg %}" type="image/jpeg">
+               <!--Desktop Image-->
+               <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/pergola-columns.jpg" | resize({ width: 498, height: 384 }) | avif %}" type="image/avif">
+               <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/pergola-columns.jpg" | resize({ width: 498, height: 384 }) | webp %}" type="image/webp">
+               <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/pergola-columns.jpg" | resize({ width: 498, height: 384 }) | jpeg %}" type="image/jpeg">
+               <img src="{% getUrl "/assets/images/pergola-columns.jpg" | resize({ width: 498, height: 384 }) | jpeg %}" alt="" width="249" height="192" loading="lazy" decoding="async" aria-hidden="true">
             </picture>
             <!--Picture 4-->
             <picture class="cs-picture cs-picture4">
-                <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/leaves2-m.jpg">
-                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/leaves2.jpg">
-                <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/leaves2.jpg" alt="gallery image" width="268" height="190">
+               <!--Mobile Image-->
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/banner-retaining-walls.jpg" | resize({ width: 276, height: 110 }) | avif %}" type="image/avif">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/banner-retaining-walls.jpg" | resize({ width: 276, height: 110 }) | webp %}" type="image/webp">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/banner-retaining-walls.jpg" | resize({ width: 276, height: 110 }) | jpeg %}" type="image/jpeg">
+               <!--Tablet Image-->
+               <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/banner-retaining-walls.jpg" | resize({ width: 314, height: 272 }) | avif %}" type="image/avif">
+               <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/banner-retaining-walls.jpg" | resize({ width: 314, height: 272 }) | webp %}" type="image/webp">
+               <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/banner-retaining-walls.jpg" | resize({ width: 314, height: 272 }) | jpeg %}" type="image/jpeg">
+               <!--Desktop Image-->
+               <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/banner-retaining-walls.jpg" | resize({ width: 498, height: 384 }) | avif %}" type="image/avif">
+               <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/banner-retaining-walls.jpg" | resize({ width: 498, height: 384 }) | webp %}" type="image/webp">
+               <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/banner-retaining-walls.jpg" | resize({ width: 498, height: 384 }) | jpeg %}" type="image/jpeg">
+               <img src="{% getUrl "/assets/images/banner-retaining-walls.jpg" | resize({ width: 498, height: 384 }) | jpeg %}" alt="" width="249" height="192" loading="lazy" decoding="async" aria-hidden="true">
             </picture>
             <!--Picture 5-->
             <picture class="cs-picture cs-picture5">
-                <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/leaves2-m.jpg">
-                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/leaves2.jpg">
-                <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/leaves2.jpg" alt="gallery image" width="268" height="390">
+               <!--Mobile Image-->
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-fountain.jpg" | resize({ width: 276, height: 244 }) | avif %}" type="image/avif">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-fountain.jpg" | resize({ width: 276, height: 244 }) | webp %}" type="image/webp">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-fountain.jpg" | resize({ width: 276, height: 244 }) | jpeg %}" type="image/jpeg">
+               <!--Tablet Image-->
+               <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-fountain.jpg" | resize({ width: 276, height: 276 }) | avif %}" type="image/avif">
+               <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-fountain.jpg" | resize({ width: 276, height: 276 }) | webp %}" type="image/webp">
+               <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-fountain.jpg" | resize({ width: 276, height: 276 }) | jpeg %}" type="image/jpeg">
+               <!--Desktop Image-->
+               <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-fountain.jpg" | resize({ width: 498, height: 826 }) | avif %}" type="image/avif">
+               <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-fountain.jpg" | resize({ width: 498, height: 826 }) | webp %}" type="image/webp">
+               <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-fountain.jpg" | resize({ width: 498, height: 826 }) | jpeg %}" type="image/jpeg">
+               <img src="{% getUrl "/assets/images/hli-fountain.jpg" | resize({ width: 498, height: 826 }) | jpeg %}" alt="" width="249" height="413" loading="lazy" decoding="async" aria-hidden="true">
             </picture>
             <!--Picture 6-->
             <picture class="cs-picture cs-picture6">
-                <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/leaves2-m.jpg">
-                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/leaves2.jpg">
-                <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/leaves2.jpg" alt="gallery image" width="425" height="390">
+               <!--Mobile Image-->
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-putting2.png" | resize({ width: 376, height: 244 }) | avif %}" type="image/avif">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-putting2.png" | resize({ width: 376, height: 244 }) | webp %}" type="image/webp">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-putting2.png" | resize({ width: 376, height: 244 }) | jpeg %}" type="image/jpeg">
+               <!--Tablet Image-->
+               <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-putting2.png" | resize({ width: 660, height: 574 }) | avif %}" type="image/avif">
+               <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-putting2.png" | resize({ width: 660, height: 574 }) | webp %}" type="image/webp">
+               <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-putting2.png" | resize({ width: 660, height: 574 }) | jpeg %}" type="image/jpeg">
+               <!--Desktop Image-->
+               <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-putting2.png" | resize({ width: 1056, height: 826 }) | avif %}" type="image/avif">
+               <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-putting2.png" | resize({ width: 1056, height: 826 }) | webp %}" type="image/webp">
+               <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-putting2.png" | resize({ width: 1056, height: 826 }) | jpeg %}" type="image/jpeg">
+               <img src="{% getUrl "/assets/images/hli-putting2.png" | resize({ width: 1056, height: 826 }) | jpeg %}" alt="" width="528" height="413" loading="lazy" decoding="async" aria-hidden="true">
             </picture>
             <!--Picture 7-->
             <picture class="cs-picture cs-picture7">
-                <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/leaves2-m.jpg">
-                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/leaves2.jpg">
-                <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/leaves2.jpg" alt="gallery image" width="273" height="190">
+               <!--Mobile Image-->
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/pergola-service.jpg" | resize({ width: 176, height: 110 }) | avif %}" type="image/avif">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/pergola-service.jpg" | resize({ width: 176, height: 110 }) | webp %}" type="image/webp">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/pergola-service.jpg" | resize({ width: 176, height: 110 }) | jpeg %}" type="image/jpeg">
+               <!--Tablet Image-->
+               <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/pergola-service.jpg" | resize({ width: 314, height: 272 }) | avif %}" type="image/avif">
+               <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/pergola-service.jpg" | resize({ width: 314, height: 272 }) | webp %}" type="image/webp">
+               <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/pergola-service.jpg" | resize({ width: 314, height: 272 }) | jpeg %}" type="image/jpeg">
+               <!--Desktop Image-->
+               <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/pergola-service.jpg" | resize({ width: 498, height: 384 }) | avif %}" type="image/avif">
+               <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/pergola-service.jpg" | resize({ width: 498, height: 384 }) | webp %}" type="image/webp">
+               <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/pergola-service.jpg" | resize({ width: 498, height: 384 }) | jpeg %}" type="image/jpeg">
+               <img src="{% getUrl "/assets/images/pergola-service.jpg" | resize({ width: 498, height: 384 }) | jpeg %}" alt="" width="249" height="192" loading="lazy" decoding="async" aria-hidden="true">
             </picture>
             <!--Picture 8-->
             <picture class="cs-picture cs-picture8">
-                <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/leaves2-m.jpg">
-                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/leaves2.jpg">
-                <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/leaves2.jpg" alt="gallery image" width="273" height="190">
+               <!--Mobile Image-->
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/fire-feature-repair.jpg" | resize({ width: 176, height: 110 }) | avif %}" type="image/avif">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/fire-feature-repair.jpg" | resize({ width: 176, height: 110 }) | webp %}" type="image/webp">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/fire-feature-repair.jpg" | resize({ width: 176, height: 110 }) | jpeg %}" type="image/jpeg">
+               <!--Tablet Image-->
+               <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/fire-feature-repair.jpg" | resize({ width: 314, height: 272 }) | avif %}" type="image/avif">
+               <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/fire-feature-repair.jpg" | resize({ width: 314, height: 272 }) | webp %}" type="image/webp">
+               <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/fire-feature-repair.jpg" | resize({ width: 314, height: 272 }) | jpeg %}" type="image/jpeg">
+               <!--Desktop Image-->
+               <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/fire-feature-repair.jpg" | resize({ width: 498, height: 384 }) | avif %}" type="image/avif">
+               <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/fire-feature-repair.jpg" | resize({ width: 498, height: 384 }) | webp %}" type="image/webp">
+               <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/fire-feature-repair.jpg" | resize({ width: 498, height: 384 }) | jpeg %}" type="image/jpeg">
+               <img src="{% getUrl "/assets/images/fire-feature-repair.jpg" | resize({ width: 498, height: 384 }) | jpeg %}" alt="" width="249" height="192" loading="lazy" decoding="async" aria-hidden="true">
             </picture>
             <!--Picture 9-->
             <picture class="cs-picture cs-picture9">
-                <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/leaves2-m.jpg">
-                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/leaves2.jpg">
-                <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/leaves2.jpg" alt="gallery image" width="268" height="390">
+               <!--Mobile Image-->
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-patio-cover1.webp" | resize({ width: 176, height: 244 }) | avif %}" type="image/avif">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-patio-cover1.webp" | resize({ width: 176, height: 244 }) | webp %}" type="image/webp">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-patio-cover1.webp" | resize({ width: 176, height: 244 }) | jpeg %}" type="image/jpeg">
+               <!--Tablet Image-->
+               <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-patio-cover1.webp" | resize({ width: 314, height: 574 }) | avif %}" type="image/avif">
+               <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-patio-cover1.webp" | resize({ width:314 , height:574  }) | webp %}" type="image/webp">
+               <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-patio-cover1.webp" | resize({ width: 314, height: 574 }) | jpeg %}" type="image/jpeg">
+               <!--Desktop Image-->
+               <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-patio-cover1.webp" | resize({ width: 498, height: 826 }) | avif %}" type="image/avif">
+               <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-patio-cover1.webp" | resize({ width: 498, height: 826 }) | webp %}" type="image/webp">
+               <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-patio-cover1.webp" | resize({ width: 498, height: 826 }) | jpeg %}" type="image/jpeg">
+               <img src="{% getUrl "/assets/images/hli-patio-cover1.webp" | resize({ width: 498, height: 826 }) | jpeg %}" alt="" width="249" height="413" loading="lazy" decoding="async" aria-hidden="true">
             </picture>
             <!--Picture 10-->
             <picture class="cs-picture cs-picture10">
-                <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/leaves2-m.jpg">
-                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/leaves2.jpg">
-                <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/leaves2.jpg" alt="gallery image" width="268" height="390">
+               <!--Mobile Image-->
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/garden-path.jpg" | resize({ width: 276, height: 244 }) | avif %}" type="image/avif">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/garden-path.jpg" | resize({ width: 276, height: 244 }) | webp %}" type="image/webp">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/garden-path.jpg" | resize({ width: 276, height: 244 }) | jpeg %}" type="image/jpeg">
+               <!--Tablet Image-->
+               <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/garden-path.jpg" | resize({ width: 314, height: 574 }) | avif %}" type="image/avif">
+               <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/garden-path.jpg" | resize({ width:314 , height:574  }) | webp %}" type="image/webp">
+               <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/garden-path.jpg" | resize({ width: 314, height: 574 }) | jpeg %}" type="image/jpeg">
+               <!--Desktop Image-->
+               <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/garden-path.jpg" | resize({ width: 498, height: 826 }) | avif %}" type="image/avif">
+               <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/garden-path.jpg" | resize({ width: 498, height: 826 }) | webp %}" type="image/webp">
+               <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/garden-path.jpg" | resize({ width: 498, height: 826 }) | jpeg %}" type="image/jpeg">
+               <img src="{% getUrl "/assets/images/garden-path.jpg" | resize({ width: 498, height: 826 }) | jpeg %}" alt="" width="249" height="413" loading="lazy" decoding="async" aria-hidden="true">
             </picture>
             <!--Picture 11-->
             <picture class="cs-picture cs-picture11">
-                <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/leaves2-m.jpg">
-                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/leaves2.jpg">
-                <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/leaves2.jpg" alt="gallery image" width="268" height="190">
+               <!--Mobile Image-->
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-patio-cover1.jpg" | resize({ width: 276, height: 110 }) | avif %}" type="image/avif">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-patio-cover1.jpg" | resize({ width: 276, height: 110 }) | webp %}" type="image/webp">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-patio-cover1.jpg" | resize({ width: 276, height: 110 }) | jpeg %}" type="image/jpeg">
+               <!--Tablet Image-->
+               <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-patio-cover1.jpg" | resize({ width: 314, height: 272 }) | avif %}" type="image/avif">
+               <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-patio-cover1.jpg" | resize({ width: 314, height: 272 }) | webp %}" type="image/webp">
+               <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-patio-cover1.jpg" | resize({ width: 314, height: 272 }) | jpeg %}" type="image/jpeg">
+               <!--Desktop Image-->
+               <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-patio-cover1.jpg" | resize({ width: 498, height: 384 }) | avif %}" type="image/avif">
+               <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-patio-cover1.jpg" | resize({ width: 498, height: 384 }) | webp %}" type="image/webp">
+               <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-patio-cover1.jpg" | resize({ width: 498, height: 384 }) | jpeg %}" type="image/jpeg">
+               <img src="{% getUrl "/assets/images/hli-patio-cover1.jpg" | resize({ width: 498, height: 384 }) | jpeg %}" alt="" width="249" height="192" loading="lazy" decoding="async" aria-hidden="true">
             </picture>
         </div>
         <a href="/gallery" class="cs-button-solid">View Our Work</a>
@@ -993,9 +1103,6 @@ Doing this will complete the overlapping "breaking the container" look.
       </div>
     </div>
   </div>
-  <div class="fbut">
-    <a href="/faq" class="cs-button-solid">More FAQ</a>
-  </div>
   
 </section>
 
@@ -1010,7 +1117,7 @@ Doing this will complete the overlapping "breaking the container" look.
                 <span class="cs-topper">News And Articles</span>
                 <h2 class="cs-title">Directly From The Latest News and Articles</h2>
             </div>
-            <a href="" class="cs-button-solid">View All</a>
+            <a href="/blog" class="cs-button-solid">View All</a>
         </div>
         <ul class="cs-card-group">
             <li class="cs-item">
@@ -1175,7 +1282,7 @@ Doing this will complete the overlapping "breaking the container" look.
   <div class="container">
     <div class="content-left">
       <h2 class="count-on">
-        A Landscaping Company In {{client.address.county}} You Can Count On
+        A Landscaping Company In TX You Can Count On
       </h2>
       <p class="bp">We are available 24/7 via email and telephone.</p>
     </div>
