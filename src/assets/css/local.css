@@ -202,6 +202,9 @@
     /* scaling the font size with the view width */
     font-size: min(2.31vw, 0.7em);
   }
+  #sbs .cs-color {
+    color: var(--primary);
+  }
   #sbs .cs-picture {
     position: absolute;
     display: block;
@@ -322,9 +325,6 @@
     /* 6px - 12px */
     border: clamp(0.375em, 1.5vw, 0.75em) solid var(--dark);
     background-color: var(--dark);
-  }
-  body.dark-mode #sbs .cs-topper {
-    color: var(--primaryLight);
   }
   body.dark-mode #sbs .cs-title,
   body.dark-mode #sbs .cs-text,

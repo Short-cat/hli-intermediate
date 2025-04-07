@@ -6,7 +6,7 @@
 @media only screen and (min-width: 0rem) {
   :root {
     --primary: #aace7b;
-    --primaryLight: #82d179;
+    --primaryLight: #aace7b;
     --secondary: #001f3f;
     --secondaryLight: #001f3f;
     --headerColor: #1a1a1a;
@@ -1588,6 +1588,20 @@
   #footer .credit .copyright {
     display: block;
     font-size: 1rem;
+  }
+  #footer .toc-privacy {
+    display: flex;
+    justify-content: center;
+    gap: 0.625em;
+    margin-top: 1.25rem;
+  }
+  #footer .toc-privacy a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  #footer .toc-privacy a:hover {
+    text-decoration: underline;
   }
 }
 /* Small Desktop */

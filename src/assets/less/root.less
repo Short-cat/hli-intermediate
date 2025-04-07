@@ -9,7 +9,7 @@
     // Website colors
     :root {
         --primary: #aace7b;
-        --primaryLight: #82d179;
+        --primaryLight: #aace7b;
         --secondary: #001f3f;
         --secondaryLight: #001f3f;
         --headerColor: #1a1a1a;
@@ -1931,6 +1931,21 @@
         .copyright {
           display: block;
           font-size: (16/16rem);
+        }
+      }
+
+      .toc-privacy {
+        display: flex;
+        justify-content: center;
+        gap: (10/16em);
+        margin-top: (20/16rem);
+        a {
+          color: #fff;
+          text-decoration: none;
+          font-size: (16/16rem);
+          &:hover {
+            text-decoration: underline;
+          }
         }
       }
     }
