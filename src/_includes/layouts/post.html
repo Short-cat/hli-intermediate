@@ -34,17 +34,35 @@
 {% endblock %}
 
 {% block body %}
-    <!-- ============================================ -->
-    <!--                    LANDING                   -->
-    <!-- ============================================ -->
+<!-- ============================================ -->
+<!--                   Banner                     -->
+<!-- ============================================ -->
 
-    <section id="int-hero">
-        <picture>
-            <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
-            <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
-            <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="kitchen cabinets" loading="eager" width="2500" height="1667">
-        </picture>
-    </section>
+<div id="banner-1519">
+    <div class="cs-container">
+        <span class="cs-int-title">Blog</span>
+        <div class="cs-breadcrumbs">
+            <a href="/" class="cs-link">Home</a>
+            <a href="blog/" class="cs-link cs-active">Blog</a>
+        </div>
+    </div>
+    <!--Background Image-->
+    <picture class="cs-background">
+       <!--Mobile Image-->
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 640, height: 820 }) | avif({ quality: 30}) %}" type="image/avif">
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 640, height: 820 }) | webp({ quality: 30}) %}" type="image/webp">
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 640, height: 820 }) | jpeg({ quality: 30}) %}" type="image/jpeg">
+       <!--Tablet Image-->
+       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 2046, height: 962 }) | avif({ quality: 30}) %}" type="image/avif">
+       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 2046, height: 962 }) | webp({ quality: 30}) %}" type="image/webp">
+       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 2046, height: 962 }) | jpeg({ quality: 30}) %}" type="image/jpeg">
+       <!--Desktop Image-->
+       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 3840, height: 1044 }) | avif({ quality: 30}) %}" type="image/avif">
+       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 3840, height: 1044 }) | webp({ quality: 30}) %}" type="image/webp">
+       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 3840, height: 1044 }) | jpeg({ quality: 30}) %}" type="image/jpeg">
+       <img src="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 3840, height: 1044 }) | jpeg({ quality: 30}) %}" alt="" width="1920" height="522" loading="eager" decoding="async" aria-hidden="true">
+    </picture>
+</div>
 
     <!-- ============================================ -->
     <!--              Main Blog Content               -->
