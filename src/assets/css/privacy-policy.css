@@ -164,7 +164,7 @@
     gap: clamp(0.5rem, 1vw, 0.75rem);
   }
   #privacy-policy .cs-content {
-    max-width: 60%;
+    max-width: 100%;
     margin: auto;
     justify-content: center;
     align-self: center;
