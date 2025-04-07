@@ -10,8 +10,9 @@ tags: 'sitemap' # Sitemap will use all pages in content/, due to content.json. A
 {% block head %}
     <link rel="stylesheet" href="/assets/css/local.css"/>
     <link rel="stylesheet" href="/assets/css/critical.css"/>
-    <link rel="preload" as="image" href="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 3840, height: 2030 }) | jpeg({ quality: 80 }) %}"/>
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 3840, height: 2030 }) | avif({ quality: 30 }) %}"/>
     <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/roboto-v29-latin-700.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/roboto-v29-latin-regular.woff2" crossorigin>
 
     <!-- Script for Netlify Identity -->
     <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
@@ -89,7 +90,7 @@ tags: 'sitemap' # Sitemap will use all pages in content/, due to content.json. A
             "aggregateRating": {
                 "@type": "AggregateRating",
                 "ratingValue": "5",
-                "reviewCount": "49"
+                "reviewCount": "50"
             },
             {% if client.domain and page.url %}"url": "{{ client.domain }}{{ page.url }}",{% endif %}
             {% if client.socials %}
@@ -141,7 +142,7 @@ Doing this will complete the overlapping "breaking the container" look.
               <a href="/contact" class="cs-button-transparent">
                 <img
                   class="cs-img"
-                  loading="lazy"
+                  loading="eager"
                   decoding="async"
                   src="/assets/svgs/play-icon.svg"
                   alt="play icon"
@@ -246,18 +247,18 @@ Doing this will complete the overlapping "breaking the container" look.
                 <!--Background Image-->
                 <picture class="cs-background">
                    <!--Mobile Image-->
-                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-landscaping4.jpg" | resize({ width: 576, height: 500 }) | avif %}" type="image/avif">
-                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-landscaping4.jpg" | resize({ width: 576, height: 500 }) | webp %}" type="image/webp">
-                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-landscaping4.jpg" | resize({ width: 576, height: 500 }) | jpeg %}" type="image/jpeg">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-landscaping4.jpg" | resize({ width: 576, height: 500 }) | avif({ quality: 30 }) %}" type="image/avif">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-landscaping4.jpg" | resize({ width: 576, height: 500 }) | webp({ quality: 30 }) %}" type="image/webp">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-landscaping4.jpg" | resize({ width: 576, height: 500 }) | jpeg({ quality: 30 }) %}" type="image/jpeg">
                    <!--Tablet Image-->
-                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-landscaping4.jpg" | resize({ width: 970, height: 598 }) | avif %}" type="image/avif">
-                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-landscaping4.jpg" | resize({ width: 970, height: 598 }) | webp %}" type="image/webp">
-                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-landscaping4.jpg" | resize({ width: 970, height: 598 }) | jpeg %}" type="image/jpeg">
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-landscaping4.jpg" | resize({ width: 970, height: 598 }) | avif({ quality: 30 }) %}" type="image/avif">
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-landscaping4.jpg" | resize({ width: 970, height: 598 }) | webp({ quality: 30 }) %}" type="image/webp">
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-landscaping4.jpg" | resize({ width: 970, height: 598 }) | jpeg({ quality: 30 }) %}" type="image/jpeg">
                    <!--Desktop Image-->
-                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-landscaping4.jpg" | resize({ width: 690, height: 610 }) | avif %}" type="image/avif">
-                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-landscaping4.jpg" | resize({ width: 690, height: 610 }) | webp %}" type="image/webp">
-                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-landscaping4.jpg" | resize({ width: 690, height: 610 }) | jpeg %}" type="image/jpeg">
-                   <img src="{% getUrl "/assets/images/hli-landscaping4.jpg" | resize({ width: 690, height: 610 }) | jpeg %}" alt="" width="345" height="305" loading="lazy" decoding="async" aria-hidden="true">
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-landscaping4.jpg" | resize({ width: 690, height: 610 }) | avif({ quality: 30 }) %}" type="image/avif">
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-landscaping4.jpg" | resize({ width: 690, height: 610 }) | webp({ quality: 30 }) %}" type="image/webp">
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-landscaping4.jpg" | resize({ width: 690, height: 610 }) | jpeg({ quality: 30 }) %}" type="image/jpeg">
+                   <img src="{% getUrl "/assets/images/hli-landscaping4.jpg" | resize({ width: 690, height: 610 }) | jpeg({ quality: 30 }) %}" alt="" width="345" height="305" loading="lazy" decoding="async" aria-hidden="true">
                 </picture>
             </li>
             <li class="cs-item">
@@ -272,18 +273,18 @@ Doing this will complete the overlapping "breaking the container" look.
                 <!--Background Image-->
                 <picture class="cs-background">
                    <!--Mobile Image-->
-                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-patio-cover1.webp" | resize({ width: 576, height: 500 }) | avif %}" type="image/avif">
-                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-patio-cover1.webp" | resize({ width: 576, height: 500 }) | webp %}" type="image/webp">
-                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-patio-cover1.webp" | resize({ width: 576, height: 500 }) | jpeg %}" type="image/jpeg">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-patio-cover1.webp" | resize({ width: 576, height: 500 }) | avif({ quality: 30 }) %}" type="image/avif">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-patio-cover1.webp" | resize({ width: 576, height: 500 }) | webp({ quality: 30 }) %}" type="image/webp">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-patio-cover1.webp" | resize({ width: 576, height: 500 }) | jpeg({ quality: 30 }) %}" type="image/jpeg">
                    <!--Tablet Image-->
-                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-patio-cover1.webp" | resize({ width: 970, height: 598 }) | avif %}" type="image/avif">
-                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-patio-cover1.webp" | resize({ width: 970, height: 598 }) | webp %}" type="image/webp">
-                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-patio-cover1.webp" | resize({ width: 970, height: 598 }) | jpeg %}" type="image/jpeg">
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-patio-cover1.webp" | resize({ width: 970, height: 598 }) | avif({ quality: 30 }) %}" type="image/avif">
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-patio-cover1.webp" | resize({ width: 970, height: 598 }) | webp({ quality: 30 }) %}" type="image/webp">
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-patio-cover1.webp" | resize({ width: 970, height: 598 }) | jpeg({ quality: 30 }) %}" type="image/jpeg">
                    <!--Desktop Image-->
-                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-patio-cover1.webp" | resize({ width: 690, height: 610 }) | avif %}" type="image/avif">
-                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-patio-cover1.webp" | resize({ width: 690, height: 610 }) | webp %}" type="image/webp">
-                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-patio-cover1.webp" | resize({ width: 690, height: 610 }) | jpeg %}" type="image/jpeg">
-                   <img src="{% getUrl "/assets/images/hli-patio-cover1.webp" | resize({ width: 690, height: 610 }) | jpeg %}" alt="" width="345" height="305" loading="lazy" decoding="async" aria-hidden="true">
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-patio-cover1.webp" | resize({ width: 690, height: 610 }) | avif ({ quality: 30 })%}" type="image/avif">
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-patio-cover1.webp" | resize({ width: 690, height: 610 }) | webp({ quality: 30 }) %}" type="image/webp">
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-patio-cover1.webp" | resize({ width: 690, height: 610 }) | jpeg({ quality: 30 }) %}" type="image/jpeg">
+                   <img src="{% getUrl "/assets/images/hli-patio-cover1.webp" | resize({ width: 690, height: 610 }) | jpeg({ quality: 30 }) %}" alt="" width="345" height="305" loading="lazy" decoding="async" aria-hidden="true">
                 </picture>
             </li>
             <li class="cs-item">
@@ -298,18 +299,18 @@ Doing this will complete the overlapping "breaking the container" look.
                 <!--Background Image-->
                 <picture class="cs-background">
                    <!--Mobile Image-->
-                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-outdoorkitchen1.png" | resize({ width: 576, height: 500 }) | avif %}" type="image/avif">
-                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-outdoorkitchen1.png" | resize({ width: 576, height: 500 }) | webp %}" type="image/webp">
-                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-outdoorkitchen1.png" | resize({ width: 576, height: 500 }) | jpeg %}" type="image/jpeg">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-outdoorkitchen1.png" | resize({ width: 576, height: 500 }) | avif({ quality: 30 }) %}" type="image/avif">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-outdoorkitchen1.png" | resize({ width: 576, height: 500 }) | webp({ quality: 30 }) %}" type="image/webp">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-outdoorkitchen1.png" | resize({ width: 576, height: 500 }) | jpeg({ quality: 30 }) %}" type="image/jpeg">
                    <!--Tablet Image-->
-                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-outdoorkitchen1.png" | resize({ width: 970, height: 598 }) | avif %}" type="image/avif">
-                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-outdoorkitchen1.png" | resize({ width: 970, height: 598 }) | webp %}" type="image/webp">
-                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-outdoorkitchen1.png" | resize({ width: 970, height: 598 }) | jpeg %}" type="image/jpeg">
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-outdoorkitchen1.png" | resize({ width: 970, height: 598 }) | avif({ quality: 30 }) %}" type="image/avif">
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-outdoorkitchen1.png" | resize({ width: 970, height: 598 }) | webp({ quality: 30 }) %}" type="image/webp">
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-outdoorkitchen1.png" | resize({ width: 970, height: 598 }) | jpeg({ quality: 30 }) %}" type="image/jpeg">
                    <!--Desktop Image-->
-                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-outdoorkitchen1.png" | resize({ width: 690, height: 610 }) | avif %}" type="image/avif">
-                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-outdoorkitchen1.png" | resize({ width: 690, height: 610 }) | webp %}" type="image/webp">
-                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-outdoorkitchen1.png" | resize({ width: 690, height: 610 }) | jpeg %}" type="image/jpeg">
-                   <img src="{% getUrl "/assets/images/hli-outdoorkitchen1.png" | resize({ width: 690, height: 610 }) | jpeg %}" alt="" width="345" height="305" loading="lazy" decoding="async" aria-hidden="true">
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-outdoorkitchen1.png" | resize({ width: 690, height: 610 }) | avif({ quality: 30 }) %}" type="image/avif">
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-outdoorkitchen1.png" | resize({ width: 690, height: 610 }) | webp({ quality: 30 }) %}" type="image/webp">
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-outdoorkitchen1.png" | resize({ width: 690, height: 610 }) | jpeg({ quality: 30 }) %}" type="image/jpeg">
+                   <img src="{% getUrl "/assets/images/hli-outdoorkitchen1.png" | resize({ width: 690, height: 610 }) | jpeg({ quality: 30 }) %}" alt="" width="345" height="305" loading="lazy" decoding="async" aria-hidden="true">
                 </picture>
             </li>
             <li class="cs-item">
@@ -324,18 +325,18 @@ Doing this will complete the overlapping "breaking the container" look.
                 <!--Background Image-->
                 <picture class="cs-background">
                    <!--Mobile Image-->
-                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/sprinklers.png" | resize({ width: 576, height: 500 }) | avif %}" type="image/avif">
-                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/sprinklers.png" | resize({ width: 576, height: 500 }) | webp %}" type="image/webp">
-                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/sprinklers.png" | resize({ width: 576, height: 500 }) | jpeg %}" type="image/jpeg">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/sprinklers.png" | resize({ width: 576, height: 500 }) | avif({ quality: 30 }) %}" type="image/avif">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/sprinklers.png" | resize({ width: 576, height: 500 }) | webp({ quality: 30 }) %}" type="image/webp">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/sprinklers.png" | resize({ width: 576, height: 500 }) | jpeg({ quality: 30 }) %}" type="image/jpeg">
                    <!--Tablet Image-->
-                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/sprinklers.png" | resize({ width: 970, height: 598 }) | avif %}" type="image/avif">
-                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/sprinklers.png" | resize({ width: 970, height: 598 }) | webp %}" type="image/webp">
-                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/sprinklers.png" | resize({ width: 970, height: 598 }) | jpeg %}" type="image/jpeg">
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/sprinklers.png" | resize({ width: 970, height: 598 }) | avif({ quality: 30 }) %}" type="image/avif">
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/sprinklers.png" | resize({ width: 970, height: 598 }) | webp({ quality: 30 }) %}" type="image/webp">
+                   <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/sprinklers.png" | resize({ width: 970, height: 598 }) | jpeg({ quality: 30 }) %}" type="image/jpeg">
                    <!--Desktop Image-->
-                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/sprinklers.png" | resize({ width: 690, height: 610 }) | avif %}" type="image/avif">
-                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/sprinklers.png" | resize({ width: 690, height: 610 }) | webp %}" type="image/webp">
-                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/sprinklers.png" | resize({ width: 690, height: 610 }) | jpeg %}" type="image/jpeg">
-                   <img src="{% getUrl "/assets/images/sprinklers.png" | resize({ width: 690, height: 610 }) | jpeg %}" alt="" width="345" height="305" loading="lazy" decoding="async" aria-hidden="true">
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/sprinklers.png" | resize({ width: 690, height: 610 }) | avif({ quality: 30 }) %}" type="image/avif">
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/sprinklers.png" | resize({ width: 690, height: 610 }) | webp({ quality: 30 }) %}" type="image/webp">
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/sprinklers.png" | resize({ width: 690, height: 610 }) | jpeg({ quality: 30 }) %}" type="image/jpeg">
+                   <img src="{% getUrl "/assets/images/sprinklers.png" | resize({ width: 690, height: 610 }) | jpeg({ quality: 30 }) %}" alt="" width="345" height="305" loading="lazy" decoding="async" aria-hidden="true">
                 </picture>
             </li>
         </ul>
@@ -356,18 +357,18 @@ Doing this will complete the overlapping "breaking the container" look.
     <div class="cs-container">
         <picture class="cs-picture">
            <!--Mobile Image-->
-           <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-award.jpg" | resize({ width: 576, height: 912, fit: "inside", kernel: "mitchell" }) | avif({ quality: 100 }) %}" type="image/avif">
-           <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-award.jpg" | resize({ width: 576, height: 912, fit: "inside", kernel: "mitchell" }) | webp({ quality: 100 }) %}" type="image/webp">
-           <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-award.jpg" | resize({ width: 576, height: 912, fit: "inside", kernel: "mitchell" }) | jpeg({ quality: 100 }) %}" type="image/jpeg">
+           <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-award.jpg" | resize({ width: 576, height: 912, fit: "inside", kernel: "mitchell" }) | avif({ quality: 30 }) %}" type="image/avif">
+           <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-award.jpg" | resize({ width: 576, height: 912, fit: "inside", kernel: "mitchell" }) | webp({ quality: 30 }) %}" type="image/webp">
+           <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-award.jpg" | resize({ width: 576, height: 912, fit: "inside", kernel: "mitchell" }) | jpeg({ quality: 30 }) %}" type="image/jpeg">
            <!--Tablet Image-->
-           <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-award.jpg" | resize({ width: 1700, height: 942, fit: "inside", kernel: "mitchell" }) | avif({ quality: 100 }) %}" type="image/avif">
-           <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-award.jpg" | resize({ width: 1700, height: 942, fit: "inside", kernel: "mitchell" }) | webp({ quality: 100 }) %}" type="image/webp">
-           <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-award.jpg" | resize({ width: 1700, height: 942, fit: "inside", kernel: "mitchell" }) | jpeg({ quality: 100 }) %}" type="image/jpeg">
+           <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-award.jpg" | resize({ width: 1700, height: 942, fit: "inside", kernel: "mitchell" }) | avif({ quality: 30 }) %}" type="image/avif">
+           <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-award.jpg" | resize({ width: 1700, height: 942, fit: "inside", kernel: "mitchell" }) | webp({ quality: 30 }) %}" type="image/webp">
+           <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-award.jpg" | resize({ width: 1700, height: 942, fit: "inside", kernel: "mitchell" }) | jpeg({ quality: 30 }) %}" type="image/jpeg">
            <!--Desktop Image-->
-           <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-award.jpg" | resize({ width: 1476, height: 1196, fit: "inside", kernel: "mitchell" }) | avif({ quality: 100 }) %}" type="image/avif">
-           <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-award.jpg" | resize({ width: 1476, height: 1196, fit: "inside", kernel: "mitchell" }) | webp({ quality: 100 }) %}" type="image/webp">
-           <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-award.jpg" | resize({ width: 1476, height: 1196, fit: "inside", kernel: "mitchell" }) | jpeg({ quality: 100 }) %}" type="image/jpeg">
-           <img src="{% getUrl "/assets/images/hli-award.jpg" | resize({ width: 1476, height: 1196, fit: "inside", kernel: "mitchell" }) | jpeg({ quality: 100 }) %}" alt="HLI Awarded best landscaper 2024" width="738" height="598" loading="lazy" decoding="async" aria-hidden="true">
+           <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-award.jpg" | resize({ width: 1476, height: 1196, fit: "inside", kernel: "mitchell" }) | avif({ quality: 30 }) %}" type="image/avif">
+           <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-award.jpg" | resize({ width: 1476, height: 1196, fit: "inside", kernel: "mitchell" }) | webp({ quality: 30 }) %}" type="image/webp">
+           <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-award.jpg" | resize({ width: 1476, height: 1196, fit: "inside", kernel: "mitchell" }) | jpeg({ quality: 30 }) %}" type="image/jpeg">
+           <img src="{% getUrl "/assets/images/hli-award.jpg" | resize({ width: 1476, height: 1196, fit: "inside", kernel: "mitchell" }) | jpeg({ quality: 30 }) %}" alt="HLI Awarded best landscaper 2024" width="738" height="598" loading="lazy" decoding="async" aria-hidden="true">
         </picture>
         <div class="cs-content">
             <span class="cs-topper cs-color">Houston’s Top Landscaper</span>
@@ -620,7 +621,7 @@ Doing this will complete the overlapping "breaking the container" look.
         can call home.</span
       >
     </div>
-    <script
+    <script defer
       type="text/javascript"
       src="https://reputationhub.site/reputation/assets/review-widget.js"
     ></script>
@@ -1140,7 +1141,7 @@ Doing this will complete the overlapping "breaking the container" look.
 
 <!-- ============================================ -->
 <!--                    Blog                      -->
-<!-- ============================================ -->
+<!-- ============================================ 
 
 <section id="blog-1580">
     <div class="cs-container">
@@ -1207,7 +1208,7 @@ Doing this will complete the overlapping "breaking the container" look.
         </ul>
     </div>
 </section>
-
+-->
 <!-- ============================================ -->
 <!--             Final Call to Action  2          -->
 <!-- ============================================ -->

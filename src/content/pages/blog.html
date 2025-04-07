@@ -23,10 +23,10 @@ eleventyNavigation:
 
 <div id="banner-1519">
     <div class="cs-container">
-        <span class="cs-int-title">Concrete Overlay</span>
+        <span class="cs-int-title">Blog</span>
         <div class="cs-breadcrumbs">
             <a href="/" class="cs-link">Home</a>
-            <a href="concrete-overlay/" class="cs-link cs-active">Concrete Overlay</a>
+            <a href="blog/" class="cs-link cs-active">Blog</a>
         </div>
     </div>
     <!--Background Image-->
@@ -43,7 +43,7 @@ eleventyNavigation:
        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 3840, height: 1044 }) | avif %}" type="image/avif">
        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 3840, height: 1044 }) | webp %}" type="image/webp">
        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 3840, height: 1044 }) | jpeg %}" type="image/jpeg">
-       <img src="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 3840, height: 1044 }) | jpeg %}" alt="" width="1920" height="522" decoding="async" aria-hidden="true">
+       <img src="{% getUrl "/assets/images/hli-plants.jpg" | resize({ width: 3840, height: 1044 }) | jpeg %}" alt="" width="1920" height="522" decoding="async" loading="eager" aria-hidden="true">
     </picture>
     <svg class="cs-mask" xmlns="http://www.w3.org/2000/svg" width="1920" height="136" viewBox="0 0 1920 136" fill="none">
         <path fill-rule="evenodd" clip-rule="evenodd" d="M1920 136V0C1803.21 45.3334 1445.52 136 951 136C456.485 136 111.116 45.3334 0 0V136H951H1920Z" fill="var(--maskBG)"/>
