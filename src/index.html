@@ -1141,7 +1141,7 @@ Doing this will complete the overlapping "breaking the container" look.
 
 <!-- ============================================ -->
 <!--                    Blog                      -->
-<!-- ============================================ 
+<!-- ============================================ -->
 
 <section id="blog-1580">
     <div class="cs-container">
@@ -1153,62 +1153,26 @@ Doing this will complete the overlapping "breaking the container" look.
             <a href="/blog" class="cs-button-solid">View All</a>
         </div>
         <ul class="cs-card-group">
-            <li class="cs-item">
-                <a href="" class="cs-link">
-                    <picture class="cs-picture" aria-hidden="true">
-                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/fishing4.jpg">
-                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/fishing4.jpg">
-                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/fishing4.jpg" alt="people" width="413" height="284">
-                    </picture>
-                    <div class="cs-flex">
-                        <span class="cs-date">8th Oct, 2025</span>
-                        <h3 class="cs-h3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum unde</h3>
-                        <p class="cs-item-text">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum unde...
-                        </p>
-                    </div>
+            {%- for post in collections.featured | reverse -%}
+              <li class="cs-item">
+                <a href="{{ post.url }}" class="cs-link">
+                  <picture class="cs-picture">
+                    <img src="{{ post.data.image }}" alt="{{ post.data.imageAlt }}" width="413" height="284" loading="lazy" decoding="async"/>
+                  </picture>
+                  <div class="cs-flex">
+                    <span class="cs-date">{{ post.date | postDate }}</span>
+                    <h3 class="cs-h3">{{ post.data.title }}</h3>
+                    <p class="cs-item-text">
+                      {{ post.data.description }}
+                    </p>
+                  </div>
                 </a>
-            </li>
-            <li class="cs-item">
-                <a href="" class="cs-link">
-                    <picture class="cs-picture" aria-hidden="true">
-                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/fishing5.jpg">
-                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/fishing5.jpg">
-                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/fishing5.jpg" alt="people" width="413" height="284">
-                    </picture>
-                    <div class="cs-flex">
-                        <span class="cs-date">8th Oct, 2025</span>
-                        <h3 class="cs-h3">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum unde
-                        </h3>
-                        <p class="cs-item-text">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum unde...
-                        </p>
-                    </div>
-                </a>
-            </li>
-            <li class="cs-item">
-                <a href="" class="cs-link">
-                    <picture class="cs-picture" aria-hidden="true">
-                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/fishing6.jpg">
-                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/fishing6.jpg">
-                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/fishing6.jpg" alt="people" width="413" height="284">
-                    </picture>
-                    <div class="cs-flex">
-                        <span class="cs-date">8th Oct, 2025</span>
-                        <h3 class="cs-h3">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum unde
-                        </h3>
-                        <p class="cs-item-text">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum unde...
-                        </p>
-                    </div>
-                </a>
-            </li>
+              </li>
+            {%- endfor -%}
         </ul>
     </div>
 </section>
--->
+
 <!-- ============================================ -->
 <!--             Final Call to Action  2          -->
 <!-- ============================================ -->

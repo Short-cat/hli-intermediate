@@ -56,7 +56,13 @@ eleventyNavigation:
             <span class="cs-topper">Contact Us</span>
             <h2 class="cs-title">Get In Touch</h2>
             <!--Form-->
-            <form class="cs-form" id="cs-form-1600" name="Contact Form" method="post" data-netlify="true">
+            <form class="cs-form" id="cs-form-1600" name="Contact Form" method="post" data-netlify="true" netlify-honeypot="bot-field">
+                <!--Hidden Field-->
+                <p class="hidden">
+                    <label>
+                        Don't fill this out if you're human: <input name="bot-field" />
+                    </label>
+                </p>
                 <label class="cs-label cs-name">
                     Name
                     <input class="cs-input" required type="text" id="name-1600" name="name" placeholder="Name">
