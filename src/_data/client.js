@@ -1,6 +1,6 @@
 module.exports = {
     "name": "Houston Landscape Images",
-    "email": "help@gmail.app",
+    "email": "houstonlandscapeimages@gmail.com",
     "phoneForTel": "832-545-9435",
     "phoneFormatted": "(832) 545-9435",
     "founder": "Sanson Faltine",
