@@ -437,6 +437,12 @@
             align-items: center;
         }
 
+        @media not all and (min-resolution:.001dpcm) { /* Targets Safari */
+            .cs-logo {
+                top: 120px; /* Fine-tune this value */
+            }
+        }
+
         .cs-logo {
             width: auto;
             /* 56px - 80px */
