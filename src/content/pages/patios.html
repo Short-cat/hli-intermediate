@@ -86,7 +86,7 @@ permalink: 'patios/'
                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-patio3.jpg" | resize({ width: 1280, height: 1040 }) | avif %}" type="image/avif">
                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-patio3.jpg" | resize({ width: 1280, height: 1040 }) | webp %}" type="image/webp">
                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-patio3.jpg" | resize({ width: 1280, height: 1040 }) | jpeg %}" type="image/jpeg">
-               <img src="{% getUrl "/assets/images/hli-patio3.jpg" | resize({ width: 1280, height: 1040 }) | jpeg %}" alt="Beautiful outdoor landscape" width="640" height="520" loading="lazy" decoding="async" aria-hidden="true">
+               <img src="{% getUrl "/assets/images/hli-patio3.jpg" | resize({ width: 1280, height: 1040 }) | jpeg %}" alt="Beautiful outdoor landscape" width="640" height="520" loading="eager" decoding="async" aria-hidden="true">
             </picture>
         </div>
     </div>
