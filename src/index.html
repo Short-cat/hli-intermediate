@@ -10,7 +10,7 @@ tags: 'sitemap' # Sitemap will use all pages in content/, due to content.json. A
 {% block head %}
     <link rel="stylesheet" href="/assets/css/local.css"/>
     <link rel="stylesheet" href="/assets/css/critical.css"/>
-    <link rel="preload" as="image" href="{% getUrl "/assets/images/hli-patio1.jpg"  | resize({ width: 640, height: 809 }) | avif({ quality: 10 }) %}"/>
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/hli-plants2.jpg"  | resize({ width: 640, height: 809 }) | avif({ quality: 10 }) %}"/>
     <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/roboto-v29-latin-700.woff2" crossorigin>
     <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/roboto-v29-latin-regular.woff2" crossorigin>
 
@@ -213,18 +213,18 @@ Doing this will complete the overlapping "breaking the container" look.
     <!-- Background Image, there's a background image in the CSS for the parallax effect you'll need to change as well if you swap out our images -->
     <picture class="cs-background">
        <!--Mobile Image-->
-       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-patio1.jpg"  | resize({ width: 640, height: 809 }) | avif({ quality: 10 }) %}" type="image/avif">
-       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-patio1.jpg"  | resize({ width: 640, height: 809 }) | webp({ quality: 10 }) %}" type="image/webp">
-       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-patio1.jpg"  | resize({ width: 640, height: 809 }) | jpeg({ quality: 10 }) %}" type="image/jpeg">
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-plants2.jpg"  | resize({ width: 640, height: 809 }) | avif({ quality: 10 }) %}" type="image/avif">
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-plants2.jpg"  | resize({ width: 640, height: 809 }) | webp({ quality: 10 }) %}" type="image/webp">
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hli-plants2.jpg"  | resize({ width: 640, height: 809 }) | jpeg({ quality: 10 }) %}" type="image/jpeg">
        <!--Tablet Image-->
-       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-patio1.jpg" | resize({ width: 2046, height: 2238 }) | avif({ quality: 10 }) %}" type="image/avif">
-       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-patio1.jpg" | resize({ width: 2046, height: 2238 }) | webp({ quality: 10 }) %}" type="image/webp">
-       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-patio1.jpg" | resize({ width: 2046, height: 2238 }) | jpeg({ quality: 10 }) %}" type="image/jpeg">
+       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-plants2.jpg" | resize({ width: 2046, height: 2238 }) | avif({ quality: 10 }) %}" type="image/avif">
+       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-plants2.jpg" | resize({ width: 2046, height: 2238 }) | webp({ quality: 10 }) %}" type="image/webp">
+       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hli-plants2.jpg" | resize({ width: 2046, height: 2238 }) | jpeg({ quality: 10 }) %}" type="image/jpeg">
        <!--Desktop Image-->
-       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-patio1.jpg" | resize({ width: 2000, height: 1120 }) | avif({ quality: 10 }) %}" type="image/avif">
-       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-patio1.jpg" | resize({ width: 2000, height: 1120 }) | webp({ quality: 10 }) %}" type="image/webp">
-       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-patio1.jpg" | resize({ width: 2000, height: 1120 }) | jpeg({ quality: 10 }) %}" type="image/jpeg">
-       <img src="{% getUrl "/assets/images/hli-patio1.jpg" | resize({ width: 2000, height: 1120 }) | jpeg({ quality: 10 }) %}" alt="front yard" width="1920" height="1120" loading="eager" decoding="async" aria-hidden="true">
+       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-plants2.jpg" | resize({ width: 2000, height: 1120 }) | avif({ quality: 10 }) %}" type="image/avif">
+       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-plants2.jpg" | resize({ width: 2000, height: 1120 }) | webp({ quality: 10 }) %}" type="image/webp">
+       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hli-plants2.jpg" | resize({ width: 2000, height: 1120 }) | jpeg({ quality: 10 }) %}" type="image/jpeg">
+       <img src="{% getUrl "/assets/images/hli-plants2.jpg" | resize({ width: 2000, height: 1120 }) | jpeg({ quality: 10 }) %}" alt="front yard" width="1920" height="1120" loading="eager" decoding="async" aria-hidden="true">
     </picture>
 </section>
 
