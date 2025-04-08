@@ -62,7 +62,6 @@ if (isDragging) {
 slider.addEventListener("touchstart", (e) => {
 // Only prevent default on the slider itself
 if (e.target === slider || slider.contains(e.target)) {
-    e.preventDefault(); // Prevent text selection
 }
 startDragging();
 });
@@ -70,7 +69,6 @@ startDragging();
 document.addEventListener("touchmove", (e) => {
 if (isDragging) {
     // Only prevent default when dragging the slider
-    e.preventDefault(); // Prevent text selection
     const touch = e.touches[0];
     moveSlider(touch.clientX);
 }
@@ -79,7 +77,7 @@ if (isDragging) {
 document.addEventListener("touchend", (e) => {
 // Only prevent default when we were dragging the slider
 if (isDragging) {
-    e.preventDefault(); // Prevent text selection
+
 }
 stopDragging();
 });
