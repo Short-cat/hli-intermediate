@@ -1,4 +1,3 @@
-
 const slider = document.querySelector(".before-after__slider");
 const afterImg = document.querySelector(".before-after__after-img");
 const container = document.querySelector(".before-after");
@@ -43,13 +42,11 @@ const stopDragging = () => {
 };
 
 slider.addEventListener("mousedown", (e) => {
-    e.preventDefault(); // Prevent text selection
     startDragging();
 });
 
 document.addEventListener("mousemove", (e) => {
 if (isDragging) {
-    e.preventDefault(); // Prevent text selection
     moveSlider(e.clientX);
 }
 });
@@ -57,9 +54,8 @@ if (isDragging) {
 document.addEventListener("mouseup", (e) => {
 // Only prevent default if we were dragging
 if (isDragging) {
-    e.preventDefault(); // Prevent text selection
+    stopDragging();
 }
-stopDragging();
 });
 
 // Touch support for mobile
