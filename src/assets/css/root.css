@@ -538,8 +538,8 @@
   #cs-navigation {
     /* Targets Safari */
   }
-  #cs-navigation .cs-logo {
-    top: 120px;
+  #cs-navigation .cs-logo svg {
+    width: 150px;
     /* Fine-tune this value */
   }
 }
