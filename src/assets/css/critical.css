@@ -183,6 +183,16 @@
     /* makes the top of the image start at the top of the parent */
     object-position: top;
   }
+  #hero-1250 .hero-icon {
+    width: clamp(4rem, 8vw, 8rem);
+    height: auto;
+    transform: scale(1);
+    transition: ease 0.3s;
+  }
+  #hero-1250 .hero-icon:hover {
+    transform: scale(1.1);
+    transition: ease 0.3s;
+  }
   #hero-1250 .trust {
     display: flex;
     justify-content: center;
@@ -247,7 +257,7 @@
     color: #fff;
   }
   #hero-1250 .cs-background {
-    background-image: url("/assets/images/hli-plants.jpg");
+    background-image: url("/assets/images/hli-plants3.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
