@@ -184,7 +184,7 @@
     object-position: top;
   }
   #hero-1250 .hero-icon {
-    width: clamp(4rem, 8vw, 8rem);
+    width: clamp(4.9rem, 12vw, 8rem);
     height: auto;
     transform: scale(1);
     transition: ease 0.3s;
@@ -198,21 +198,8 @@
     justify-content: center;
     align-items: center;
     align-content: center;
-    gap: 3.75em;
+    gap: clamp(2.6rem, 11vw, 3.75rem);
     padding-top: clamp(2.8rem, 15vw, 6rem);
-  }
-  #hero-1250 .trust picture img {
-    height: 9vw;
-    width: 18.2vw;
-    transform: scale(1);
-    transition: ease 0.3s;
-  }
-  #hero-1250 .trust picture img:hover {
-    transform: scale(1.1);
-    transition: ease 0.3s;
-  }
-  #hero-1250 .trust .goog {
-    height: 7vw;
   }
 }
 /* Tablet - 768px */
